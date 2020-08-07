@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<O21Aliens.PawnConverter.PawnConvertingDef>
+		<defName>O21_Conversion_Illithid</defName>
+		<label>Illithid</label>
+		<description>Converts a pawn of any kind into an Illithid.</description>
+
+		<requiredHediffs>
+			<li>O21_Hediff_IllithidCeremorphosis</li>
+		</requiredHediffs>
+		<removeRequiredHediffs>True</removeRequiredHediffs>
+
+		<outputDef>O21_Illithid</outputDef>
+		<forcedBody>Male</forcedBody>
+		<randomHair>True</randomHair>
+		<randomSkinColor>True</randomSkinColor>
+		<makeFriendly>True</makeFriendly>
+	</O21Aliens.PawnConverter.PawnConvertingDef>
+
+</Defs>

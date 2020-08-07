@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>O21_ImplantIllithidTadpole</defName>
+		<label>implant illithid tadpole</label>
+		<description>Implant an illithid tadpole into the brain of the victim, causing them to turn into a new illithid.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Implanting illithid tadpole.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>O21_Item_IllithidTadpole</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>O21_Item_IllithidTadpole</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>O21_Hediff_IllithidCeremorphosis</addsHediff>
+		<anesthetize>false</anesthetize>
+		<isViolation>true</isViolation>
+		<surgerySuccessChanceFactor>100</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+	</RecipeDef>
+
+</Defs>

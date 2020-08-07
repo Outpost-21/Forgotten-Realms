@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="O21ElfColonyBase">
+		<defName>O21_DarkElfPlayerColony</defName>
+		<label>Dark Elf Colony</label>
+		<description>Your own community.</description>
+		<basicMemberKind>O21_DarkElfColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="O21ElfTribeBase">
+		<defName>O21_DarkElfPlayerTribe</defName>
+		<label>Dark Elf Tribe</label>
+		<description>A small Dark Elf tribe.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>O21_DarkElfTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

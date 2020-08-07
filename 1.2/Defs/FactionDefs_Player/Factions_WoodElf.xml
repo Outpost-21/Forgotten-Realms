@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="O21ElfColonyBase">
+		<defName>O21_WoodElfPlayerColony</defName>
+		<label>Wood Elf Colony</label>
+		<description>Your own community.</description>
+		<basicMemberKind>O21_WoodElfColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="O21ElfTribeBase">
+		<defName>O21_WoodElfPlayerTribe</defName>
+		<label>Wood Elf Tribe</label>
+		<description>A small Wood Elf tribe.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>O21_WoodElfTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

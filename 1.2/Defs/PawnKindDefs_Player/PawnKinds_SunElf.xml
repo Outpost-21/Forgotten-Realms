@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="O21_ElfBaseColonyPawnKind">
+		<defName>O21_SunElfColonist</defName>
+		<label>Sun Elf</label>
+		<race>O21_Alien_SunElf</race>
+		<defaultFactionType>O21_SunElfPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="O21_ElfBaseTribalPawnKind">
+		<defName>O21_SunElfTribal</defName>
+		<label>Tribal Sun Elf</label>
+		<race>O21_Alien_SunElf</race>
+		<defaultFactionType>O21_SunElfPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>O21_Building_ElderBrainPool</defName>
+		<label>elder brain pool</label>
+		<description>The Elder Brain pool stores and produces Illithid tadpoles, as well as the Elder Brain itself, which will passively progress research with no interaction necessary.</description>
+    	<thingClass>O21Toolbox.ThingProducer.Building_ThingProducer</thingClass>
+		<graphicData>
+			<texPath>Things/Illithid/ElderBrainPool</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>4.3</drawSize>
+		</graphicData>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+		<uiIconScale>1.1</uiIconScale>
+		<size>(4,4)</size>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.5</fillPercent>
+		<designationCategory>Misc</designationCategory>
+		<canOverlapZones>false</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    	<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>3000</WorkToBuild>
+			<Mass>100</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<O21_Item_ElderBrain>1</O21_Item_ElderBrain>
+		</costList>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>180</costStuffCount>
+		<comps>
+			<li Class="O21Toolbox.Research.CompProperties_AutoResearch">
+				<requiresPower>false</requiresPower>
+				<researchSpeedFactor>1.2</researchSpeedFactor>
+				<pawnKind>O21_Illithid</pawnKind>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="O21Toolbox.ThingProducer.DefModExt_ThingProducer">
+				<thingDef>O21_Item_IllithidTadpole</thingDef>
+				<productionTime>6000</productionTime>
+				<maxThings>8</maxThings>
+				<retrievalString>Extract Tadpole</retrievalString>
+				<requiresPower>False</requiresPower>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+</Defs>

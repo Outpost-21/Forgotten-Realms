@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="O21ElfColonyBase">
+		<defName>O21_SunElfPlayerColony</defName>
+		<label>Sun Elf Colony</label>
+		<description>Your own community.</description>
+		<basicMemberKind>O21_SunElfColonist</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="O21ElfTribeBase">
+		<defName>O21_SunElfPlayerTribe</defName>
+		<label>Sun Elf Tribe</label>
+		<description>A small Sun Elf tribe.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>O21_SunElfTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[O21] Elves</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+						<AlienRace.RaceSettings>
+							<defName>O21_ExtraElf_Settings</defName>
+							<pawnKindSettings>
+								<startingColonists>
+									<li>
+										<pawnKindEntries>
+											<li>
+												<kindDefs>
+													<li>O21_DarkElf_Colonist</li>
+													<li>O21_MoonElf_Colonist</li>
+													<li>O21_SunElf_Colonist</li>
+													<li>O21_WoodElf_Colonist</li>
+												</kindDefs>
+												<chance>1.0</chance>
+											</li>
+										</pawnKindEntries>
+										<factionDefs>
+											<li>PlayerColony</li> 
+										</factionDefs>
+									</li>
+									<li>
+										<pawnKindEntries>
+											<li>
+												<kindDefs>
+													<li>O21_DarkElf_Tribal</li>
+													<li>O21_MoonElf_Tribal</li>
+													<li>O21_SunElf_Tribal</li>
+													<li>O21_WoodElf_Tribal</li>
+												</kindDefs>
+												<chance>1.0</chance>
+											</li>
+										</pawnKindEntries>
+										<factionDefs>
+											<li>PlayerTribe</li> 
+										</factionDefs>
+									</li>
+								</startingColonists>
+								<alienwandererkinds>
+									<li>
+										<pawnKindEntries>
+											<li>
+												<kindDefs>
+													<li>O21_DarkElf_Colonist</li>
+													<li>O21_MoonElf_Colonist</li>
+													<li>O21_SunElf_Colonist</li>
+													<li>O21_WoodElf_Colonist</li>
+												</kindDefs>
+												<chance>1.0</chance>
+											</li>
+										</pawnKindEntries>
+										<factionDefs>
+											<li>PlayerColony</li> 
+										</factionDefs>
+									</li>
+									<li>
+										<pawnKindEntries>
+											<li>
+												<kindDefs>
+													<li>O21_DarkElf_Tribal</li>
+													<li>O21_MoonElf_Tribal</li>
+													<li>O21_SunElf_Tribal</li>
+													<li>O21_WoodElf_Tribal</li>
+												</kindDefs>
+												<chance>1.0</chance>
+											</li>
+										</pawnKindEntries>
+										<factionDefs>
+											<li>PlayerTribe</li> 
+										</factionDefs>
+									</li>
+								</alienwandererkinds>
+							</pawnKindSettings>
+						</AlienRace.RaceSettings>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

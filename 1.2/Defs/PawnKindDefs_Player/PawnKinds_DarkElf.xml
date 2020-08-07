@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="O21_ElfBaseColonyPawnKind">
+		<defName>O21_DarkElfColonist</defName>
+		<label>Dark Elf</label>
+		<race>O21_Alien_DarkElf</race>
+		<defaultFactionType>O21_DarkElfPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="O21_ElfBaseTribalPawnKind">
+		<defName>O21_DarkElfTribal</defName>
+		<label>Tribal Dark Elf</label>
+		<race>O21_Alien_DarkElf</race>
+		<defaultFactionType>O21_DarkElfPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

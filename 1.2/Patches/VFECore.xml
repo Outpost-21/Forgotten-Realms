@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[@Name="O21_ElvenSettlementPawnBase"]</xpath>
+                    <value>
+						<li Class="VFECore.PawnKindDefExtension">
+							<factionColourApparelPartList>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Legs</li>
+							</factionColourApparelPartList>
+							<factionColourApparelLayerList>
+								<li>OnSkin</li>
+								<li>Middle</li>
+								<li>Shell</li>
+								<li>VFEC_OuterShell</li>
+								<li>OnSkin</li>
+							</factionColourApparelLayerList>
+						</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[@Name="O21_GithTribePawnBase"]</xpath>
+                    <value>
+						<li Class="VFECore.PawnKindDefExtension">
+							<factionColourApparelPartList>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Legs</li>
+							</factionColourApparelPartList>
+							<factionColourApparelLayerList>
+								<li>OnSkin</li>
+								<li>Middle</li>
+								<li>Shell</li>
+								<li>VFEC_OuterShell</li>
+								<li>OnSkin</li>
+							</factionColourApparelLayerList>
+						</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[@Name="O21_GoblinTribePawnBase"]</xpath>
+                    <value>
+						<li Class="VFECore.PawnKindDefExtension">
+							<factionColourApparelPartList>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Legs</li>
+							</factionColourApparelPartList>
+							<factionColourApparelLayerList>
+								<li>OnSkin</li>
+								<li>Middle</li>
+								<li>Shell</li>
+								<li>VFEC_OuterShell</li>
+								<li>OnSkin</li>
+							</factionColourApparelLayerList>
+						</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[@Name="O21_HobgoblinTribePawnBase"]</xpath>
+                    <value>
+						<li Class="VFECore.PawnKindDefExtension">
+							<factionColourApparelPartList>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Legs</li>
+							</factionColourApparelPartList>
+							<factionColourApparelLayerList>
+								<li>OnSkin</li>
+								<li>Middle</li>
+								<li>Shell</li>
+								<li>VFEC_OuterShell</li>
+								<li>OnSkin</li>
+							</factionColourApparelLayerList>
+						</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[@Name="O21_IllithidTribePawnBase"]</xpath>
+                    <value>
+						<li Class="VFECore.PawnKindDefExtension">
+							<factionColourApparelPartList>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Legs</li>
+							</factionColourApparelPartList>
+							<factionColourApparelLayerList>
+								<li>OnSkin</li>
+								<li>Middle</li>
+								<li>Shell</li>
+								<li>VFEC_OuterShell</li>
+								<li>OnSkin</li>
+							</factionColourApparelLayerList>
+						</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[@Name="O21_KoboldTribePawnBase"]</xpath>
+                    <value>
+						<li Class="VFECore.PawnKindDefExtension">
+							<factionColourApparelPartList>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Legs</li>
+							</factionColourApparelPartList>
+							<factionColourApparelLayerList>
+								<li>OnSkin</li>
+								<li>Middle</li>
+								<li>Shell</li>
+								<li>VFEC_OuterShell</li>
+								<li>OnSkin</li>
+							</factionColourApparelLayerList>
+						</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[@Name="O21_OrcTribePawnBase"]</xpath>
+                    <value>
+						<li Class="VFECore.PawnKindDefExtension">
+							<factionColourApparelPartList>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Legs</li>
+							</factionColourApparelPartList>
+							<factionColourApparelLayerList>
+								<li>OnSkin</li>
+								<li>Middle</li>
+								<li>Shell</li>
+								<li>VFEC_OuterShell</li>
+								<li>OnSkin</li>
+							</factionColourApparelLayerList>
+						</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[@Name="O21_TieflingTribePawnBase"]</xpath>
+                    <value>
+						<li Class="VFECore.PawnKindDefExtension">
+							<factionColourApparelPartList>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Legs</li>
+							</factionColourApparelPartList>
+							<factionColourApparelLayerList>
+								<li>OnSkin</li>
+								<li>Middle</li>
+								<li>Shell</li>
+								<li>VFEC_OuterShell</li>
+								<li>OnSkin</li>
+							</factionColourApparelLayerList>
+						</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/PawnKindDef[@Name="O21_WarforgedTribePawnBase"]</xpath>
+                    <value>
+						<li Class="VFECore.PawnKindDefExtension">
+							<factionColourApparelPartList>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Torso</li>
+								<li>Legs</li>
+							</factionColourApparelPartList>
+							<factionColourApparelLayerList>
+								<li>OnSkin</li>
+								<li>Middle</li>
+								<li>Shell</li>
+								<li>VFEC_OuterShell</li>
+								<li>OnSkin</li>
+							</factionColourApparelLayerList>
+						</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

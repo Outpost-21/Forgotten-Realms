@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="O21_ElfBaseColonyPawnKind">
+		<defName>O21_MoonElfColonist</defName>
+		<label>Moon Elf</label>
+		<race>O21_Alien_MoonElf</race>
+		<defaultFactionType>O21_MoonElfPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="O21_ElfBaseTribalPawnKind">
+		<defName>O21_MoonElfTribal</defName>
+		<label>Tribal Moon Elf</label>
+		<race>O21_Alien_MoonElf</race>
+		<defaultFactionType>O21_MoonElfPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>
