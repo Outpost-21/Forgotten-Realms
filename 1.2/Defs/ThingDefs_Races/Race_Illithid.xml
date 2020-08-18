@@ -257,6 +257,7 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 			</ageGenerationCurve>
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
+                <li>Human</li>
 			</hediffGiverSets>
 		</race>
 		<recipes>

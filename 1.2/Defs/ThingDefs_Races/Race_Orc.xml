@@ -357,6 +357,7 @@
 			</ageGenerationCurve>
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
+                <li>Human</li>
 			</hediffGiverSets>
 		</race>
 		<recipes>

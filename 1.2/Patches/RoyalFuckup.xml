@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- This shouldn't need to be a patch but here we are. Yaay for having to accomodate a shitty DLC I vehemently disagree with the existence of or else users won't shut the fuck up about it! -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+                    <value>
+                        <li>O21_DarkElfKingdoms</li>
+                        <li>O21_GithTribes</li>
+                        <li>O21_GoblinTribes</li>
+                        <li>O21_HobgoblinTribes</li>
+                        <li>O21_IllithidTribes</li>
+                        <li>O21_KoboldTribes</li>
+                        <li>O21_MoonElfKingdoms</li>
+                        <li>O21_OrcTribes</li>
+                        <li>O21_SunElfKingdoms</li>
+                        <li>O21_TieflingTribes</li>
+                        <li>O21_WarforgedTribes</li>
+                        <li>O21_WoodElfKingdoms</li>
+
+                        <li>O21_DarkElfPlayerColony</li>
+                        <li>O21_DarkElfPlayerTribe</li>
+                        <li>O21_GithPlayerColony</li>
+                        <li>O21_GithPlayerTribe</li>
+                        <li>O21_GoblinPlayerColony</li>
+                        <li>O21_GoblinPlayerTribe</li>
+                        <li>O21_HalfOrcPlayerColony</li>
+                        <li>O21_HalfOrcPlayerTribe</li>
+                        <li>O21_HobgoblinPlayerColony</li>
+                        <li>O21_HobgoblinPlayerTribe</li>
+                        <li>O21_IllithidPlayerColony</li>
+                        <li>O21_IllithidPlayerTribe</li>
+                        <li>O21_MoonElfPlayerColony</li>
+                        <li>O21_MoonElfPlayerTribe</li>
+                        <li>O21_OrcPlayerColony</li>
+                        <li>O21_OrcPlayerTribe</li>
+                        <li>O21_KoboldPlayerColony</li>
+                        <li>O21_KoboldPlayerTribe</li>
+                        <li>O21_WarforgedPlayerColony</li>
+                        <li>O21_WarforgedPlayerTribe</li>
+                        <li>O21_SunElfPlayerColony</li>
+                        <li>O21_SunElfPlayerTribe</li>
+                        <li>O21_TieflingPlayerColony</li>
+                        <li>O21_TieflingPlayerTribe</li>
+                        <li>O21_WoodElfPlayerColony</li>
+                        <li>O21_WoodElfPlayerTribe</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
