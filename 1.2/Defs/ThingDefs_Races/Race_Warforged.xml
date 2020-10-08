@@ -401,6 +401,21 @@
 				<growthTicks>6000</growthTicks>
 				<growthText>Reassembly: </growthText>
 			</li>
+            <li Class="O21Toolbox.Needs.ArtificialPawnProperties">
+                <noSkillLoss>False</noSkillLoss>
+                <canSocialize>True</canSocialize>
+                <colonyCaresIfDead>True</colonyCaresIfDead>
+                <tweakCorpseRot>True</tweakCorpseRot>
+                <corpseEdible>False</corpseEdible>
+                <needFood>False</needFood>
+                <needRest>False</needRest>
+                <needJoy>False</needJoy>
+                <needComfort>False</needComfort>
+                <needBeauty>True</needBeauty>
+                <needRoomSize>True</needRoomSize>
+                <needOutdoors>False</needOutdoors>
+                <affectedByEMP>False</affectedByEMP>
+            </li>
 		</modExtensions>
 	</AlienRace.ThingDef_AlienRace>
 	

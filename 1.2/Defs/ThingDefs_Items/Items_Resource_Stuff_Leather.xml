@@ -73,6 +73,25 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="LeatherBase">
+		<defName>O21_Leather_Dwarf</defName>
+		<label>Dwarf leather</label>
+		<description>Tanned, dried, scraped DWarf skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+		<graphicData>
+			<color>(216, 164, 111)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.2</MarketValue>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(216, 164, 111)</color>
+			<commonality>0.0025</commonality>
+		</stuffProps>
+	</ThingDef>
+	
+	<ThingDef ParentName="LeatherBase">
 		<defName>O21_Leather_Gith</defName>
 		<label>Gith leather</label>
 		<description>Tanned, dried, scraped Gith skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>

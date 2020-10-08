@@ -12,7 +12,7 @@ namespace O21Settings_ForgottenRealms
 {
     public class ForgottenRealmsMod : Mod
     {
-        public ForgottenRealmsSettings settings;
+        public static ForgottenRealmsSettings settings;
         public static ForgottenRealmsMod mod;
 
         public ForgottenRealmsMod(ModContentPack content) : base(content)
@@ -26,17 +26,18 @@ namespace O21Settings_ForgottenRealms
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
             listingStandard.Label("Faction Settings - Changing any of these requires a restart to take effect.");
+            listingStandard.CheckboxLabeled("Dwarves", ref settings.faction_dwarf, "Dwarf Faction");
             listingStandard.CheckboxLabeled("Dark Elves", ref settings.faction_elfDark, "Dark Elf Faction");
             listingStandard.CheckboxLabeled("Moon Elves", ref settings.faction_elfMoon, "Moon Elf Faction");
             listingStandard.CheckboxLabeled("Sun Elves", ref settings.faction_elfSun, "Sun Elf Faction");
             listingStandard.CheckboxLabeled("Wood Elves", ref settings.faction_elfWood, "Wood Elf Faction");
             listingStandard.CheckboxLabeled("Gith", ref settings.faction_gith, "Gith Faction");
-            listingStandard.CheckboxLabeled("Goblin", ref settings.faction_goblin, "Goblin Faction");
-            listingStandard.CheckboxLabeled("Hobgoblin", ref settings.faction_hobgoblin, "Hobgoblin Faction");
-            listingStandard.CheckboxLabeled("Illithid", ref settings.faction_illithid, "Illithid Faction");
-            listingStandard.CheckboxLabeled("Kobold", ref settings.faction_kobold, "Kobold Faction");
-            listingStandard.CheckboxLabeled("Orc", ref settings.faction_orc, "Orc Faction");
-            listingStandard.CheckboxLabeled("Tiefling", ref settings.faction_tiefling, "Tiefling Faction");
+            listingStandard.CheckboxLabeled("Goblins", ref settings.faction_goblin, "Goblin Faction");
+            listingStandard.CheckboxLabeled("Hobgoblins", ref settings.faction_hobgoblin, "Hobgoblin Faction");
+            listingStandard.CheckboxLabeled("Illithids", ref settings.faction_illithid, "Illithid Faction");
+            listingStandard.CheckboxLabeled("Kobolds", ref settings.faction_kobold, "Kobold Faction");
+            listingStandard.CheckboxLabeled("Orcs", ref settings.faction_orc, "Orc Faction");
+            listingStandard.CheckboxLabeled("Tieflings", ref settings.faction_tiefling, "Tiefling Faction");
             listingStandard.CheckboxLabeled("Warforged", ref settings.faction_warforged, "Warforged Faction");
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);
@@ -55,6 +56,7 @@ namespace O21Settings_ForgottenRealms
         public bool faction_elfSun = true;
         public bool faction_elfWood = true;
 
+        public bool faction_dwarf = true;
         public bool faction_gith = true;
         public bool faction_goblin = true;
         public bool faction_hobgoblin = true;
@@ -72,6 +74,7 @@ namespace O21Settings_ForgottenRealms
             Scribe_Values.Look(ref faction_elfSun, "faction_elfSun", true);
             Scribe_Values.Look(ref faction_elfWood, "faction_elfWood", true);
 
+            Scribe_Values.Look(ref faction_dwarf, "faction_dwarf", true);
             Scribe_Values.Look(ref faction_gith, "faction_gith", true);
             Scribe_Values.Look(ref faction_goblin, "faction_goblin", true);
             Scribe_Values.Look(ref faction_hobgoblin, "faction_hobgoblin", true);

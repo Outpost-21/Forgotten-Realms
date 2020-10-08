@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<FactionDef ParentName="HumanFactionBase" Name="O21_DwarfTribeBase">
+        <defName>O21_DwarfTribes</defName>
+        <label>Dwarf settlements</label>
+        <description>The collective settlements of Dwarf in this realm.</description>
+        <colorSpectrum>
+            <li>(232, 201, 116)</li>
+        </colorSpectrum>
+        <startingGoodwill>
+            <min>-10</min>
+            <max>-10</max>
+        </startingGoodwill>
+        <naturalColonyGoodwill>
+            <min>-20</min>
+            <max>10</max>
+        </naturalColonyGoodwill>
+		<pawnSingular>Dwarf</pawnSingular>
+		<pawnsPlural>Dwarf</pawnsPlural>
+		<leaderTitle>chief</leaderTitle>
+		<listOrderPriority>20</listOrderPriority>
+		<settlementGenerationWeight>0.25</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canStageAttacks>true</canStageAttacks>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<factionIconPath>World/Dwarf/DwarfTribeIcon</factionIconPath>
+		<geneticVariance>0.1</geneticVariance>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+		<techLevel>Medieval</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<hairTags>
+			<li>Tribal</li>
+			<li>Rural</li>
+		</hairTags>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 1)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<caravanTraderKinds>
+			<li>Caravan_Neolithic_BulkGoods</li>
+			<li>Caravan_Neolithic_WarMerchant</li>
+			<li>Caravan_Neolithic_Slaver</li>
+			<li>Caravan_Neolithic_ShamanMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Neolithic_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Neolithic_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+		<min>-40</min>
+		<max>45</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+		<points>
+			<li>(0,35)</li>
+			<li>(70, 50)</li>
+			<li>(800, 100)</li>
+			<li>(1300, 150)</li>
+			<li>(100000, 10000)</li>
+		</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+            <li>
+                <!-- Normal fights, ranged with melee mix-ins -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <O21_DwarfTribes_Peasant>20</O21_DwarfTribes_Peasant>
+                    <O21_DwarfTribes_Fighter>40</O21_DwarfTribes_Fighter>
+                    <O21_DwarfTribes_Warrior>30</O21_DwarfTribes_Warrior>
+                    <O21_DwarfTribes_Bowman>30</O21_DwarfTribes_Bowman>
+                    <O21_DwarfTribes_Champion>30</O21_DwarfTribes_Champion>
+                    <O21_DwarfTribes_Chief>10</O21_DwarfTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, ranged only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <O21_DwarfTribes_Bowman>100</O21_DwarfTribes_Bowman>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, melee only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <O21_DwarfTribes_Peasant>15</O21_DwarfTribes_Peasant>
+                    <O21_DwarfTribes_Fighter>40</O21_DwarfTribes_Fighter>
+                    <O21_DwarfTribes_Warrior>40</O21_DwarfTribes_Warrior>
+                    <O21_DwarfTribes_Champion>30</O21_DwarfTribes_Champion>
+                    <O21_DwarfTribes_Chief>5</O21_DwarfTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <O21_DwarfTribes_Fighter>30</O21_DwarfTribes_Fighter>
+                    <O21_DwarfTribes_Warrior>30</O21_DwarfTribes_Warrior>
+                    <O21_DwarfTribes_Bowman>30</O21_DwarfTribes_Bowman>
+                    <O21_DwarfTribes_Champion>20</O21_DwarfTribes_Champion>
+                    <O21_DwarfTribes_Chief>10</O21_DwarfTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <O21_DwarfTribes_Merchant>1</O21_DwarfTribes_Merchant>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2.5</Alpaca>
+                    <Elephant>2</Elephant>
+                </carriers>
+                <guards>
+                    <O21_DwarfTribes_Fighter>30</O21_DwarfTribes_Fighter>
+                    <O21_DwarfTribes_Warrior>30</O21_DwarfTribes_Warrior>
+                    <O21_DwarfTribes_Bowman>30</O21_DwarfTribes_Bowman>
+                    <O21_DwarfTribes_Champion>20</O21_DwarfTribes_Champion>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <O21_DwarfTribes_Peasant>20</O21_DwarfTribes_Peasant>
+                    <O21_DwarfTribes_Fighter>20</O21_DwarfTribes_Fighter>
+                    <O21_DwarfTribes_Warrior>20</O21_DwarfTribes_Warrior>
+                    <O21_DwarfTribes_Bowman>50</O21_DwarfTribes_Bowman>
+                    <O21_DwarfTribes_Champion>30</O21_DwarfTribes_Champion>
+                    <O21_DwarfTribes_Chief>50</O21_DwarfTribes_Chief>
+                </options>
+            </li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+</Defs>

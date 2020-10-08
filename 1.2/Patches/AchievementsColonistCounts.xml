@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Adds achievements if Vanilla Achievements Expanded is installed, adding a new tab and relevant achievements that can be obtained with this mod. -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Achievements Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <!-- Have 10 Elves (of any kind) -->
+                        <AchievementsExpanded.AchievementDef>
+                            <defName>O21_VAE_TenElves</defName>
+                            <label>Uptight Beauty</label>
+                            <description>Have 10 Elves (of any kind) in your colony.</description>
+                            
+                            <tracker Class="AchievementsExpanded.RaceDefTracker">
+                                <kindDefDict>
+                                    <li>
+                                        <key>O21_DarkElfColonist</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_DarkElfTribal</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_MoonElfColonist</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_MoonElfTribal</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_SunElfColonist</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_SunElfTribal</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_WoodElfColonist</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_WoodElfTribal</key>
+                                        <value>10</value>
+                                    </li>
+                                </kindDefDict>
+                                <requireAll>false</requireAll>
+                            </tracker>
+                            
+                            <texPath>Achievements/ForgottenRealms/TenElves</texPath>
+                            <points>15</points>
+                            <tab>O21_FR_AchievementTab</tab>
+                        </AchievementsExpanded.AchievementDef>
+
+                        <!-- Have 10 Orcs -->
+                        <AchievementsExpanded.AchievementDef>
+                            <defName>O21_VAE_TenOrcs</defName>
+                            <label>One Horde, One WAAGGHHH!</label>
+                            <description>Have 10 Orcs in your colony.</description>
+                            
+                            <tracker Class="AchievementsExpanded.RaceDefTracker">
+                                <kindDefDict>
+                                    <li>
+                                        <key>O21_Orc</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_OrcTribal</key>
+                                        <value>10</value>
+                                    </li>
+                                </kindDefDict>
+                                <requireAll>false</requireAll>
+                            </tracker>
+                            
+                            <texPath>Achievements/ForgottenRealms/TenOrcs</texPath>
+                            <points>15</points>
+                            <tab>O21_FR_AchievementTab</tab>
+                        </AchievementsExpanded.AchievementDef>
+
+                        <!-- Have 10 Kobolds -->
+                        <AchievementsExpanded.AchievementDef>
+                            <defName>O21_VAE_TenKobolds</defName>
+                            <label>Small but Fiery!</label>
+                            <description>Have 10 Kobolds in your colony.</description>
+                            
+                            <tracker Class="AchievementsExpanded.RaceDefTracker">
+                                <kindDefDict>
+                                    <li>
+                                        <key>O21_Kobold</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_KoboldTribal</key>
+                                        <value>10</value>
+                                    </li>
+                                </kindDefDict>
+                                <requireAll>false</requireAll>
+                            </tracker>
+                            
+                            <texPath>Achievements/ForgottenRealms/TenKobolds</texPath>
+                            <points>15</points>
+                            <tab>O21_FR_AchievementTab</tab>
+                        </AchievementsExpanded.AchievementDef>
+
+                        <!-- Have 10 Half-Orcs -->
+                        <AchievementsExpanded.AchievementDef>
+                            <defName>O21_VAE_TenHalfOrcs</defName>
+                            <label>Mutts Across the Board</label>
+                            <description>Have 10 Half-Orcs in your colony.</description>
+                            
+                            <tracker Class="AchievementsExpanded.RaceDefTracker">
+                                <kindDefDict>
+                                    <li>
+                                        <key>O21_HalfOrc</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_HalfOrcTribal</key>
+                                        <value>10</value>
+                                    </li>
+                                </kindDefDict>
+                                <requireAll>false</requireAll>
+                            </tracker>
+                            
+                            <texPath>Achievements/ForgottenRealms/TenHalfOrcs</texPath>
+                            <points>15</points>
+                            <tab>O21_FR_AchievementTab</tab>
+                        </AchievementsExpanded.AchievementDef>
+
+                        <!-- Have 10 Warforged -->
+                        <AchievementsExpanded.AchievementDef>
+                            <defName>O21_VAE_TenWarforged</defName>
+                            <label>Forged In War</label>
+                            <description>Have 10 Warforged in your colony.</description>
+                            
+                            <tracker Class="AchievementsExpanded.RaceDefTracker">
+                                <kindDefDict>
+                                    <li>
+                                        <key>O21_Warforged</key>
+                                        <value>10</value>
+                                    </li>
+                                </kindDefDict>
+                                <requireAll>false</requireAll>
+                            </tracker>
+                            
+                            <texPath>Achievements/ForgottenRealms/TenWarforged</texPath>
+                            <points>15</points>
+                            <tab>O21_FR_AchievementTab</tab>
+                        </AchievementsExpanded.AchievementDef>
+
+                        <!-- Have 10 Illithids -->
+                        <AchievementsExpanded.AchievementDef>
+                            <defName>O21_VAE_TenIllithids</defName>
+                            <label>Japan Prepared Me for This</label>
+                            <description>Have 10 Illithids in your colony.</description>
+                            
+                            <tracker Class="AchievementsExpanded.RaceDefTracker">
+                                <kindDefDict>
+                                    <li>
+                                        <key>O21_Illithid</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_IllithidTribal</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_IllithidConverted</key>
+                                        <value>10</value>
+                                    </li>
+                                </kindDefDict>
+                                <requireAll>false</requireAll>
+                            </tracker>
+                            
+                            <texPath>Achievements/ForgottenRealms/TenIllithids</texPath>
+                            <points>15</points>
+                            <tab>O21_FR_AchievementTab</tab>
+                        </AchievementsExpanded.AchievementDef>
+
+                        <!-- Have 10 Gith -->
+                        <AchievementsExpanded.AchievementDef>
+                            <defName>O21_VAE_TenGith</defName>
+                            <label>Gith it to Me Baby, AHA AHA</label>
+                            <description>Have 10 Gith in your colony.</description>
+                            
+                            <tracker Class="AchievementsExpanded.RaceDefTracker">
+                                <kindDefDict>
+                                    <li>
+                                        <key>O21_Gith</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_GithTribal</key>
+                                        <value>10</value>
+                                    </li>
+                                </kindDefDict>
+                                <requireAll>false</requireAll>
+                            </tracker>
+                            
+                            <texPath>Achievements/ForgottenRealms/TenGith</texPath>
+                            <points>15</points>
+                            <tab>O21_FR_AchievementTab</tab>
+                        </AchievementsExpanded.AchievementDef>
+
+                        <!-- Have 10 Goblins -->
+                        <AchievementsExpanded.AchievementDef>
+                            <defName>O21_VAE_TenGoblins</defName>
+                            <label>They Don't Smell THAT Bad...</label>
+                            <description>Have 10 Goblins in your colony.</description>
+                            
+                            <tracker Class="AchievementsExpanded.RaceDefTracker">
+                                <kindDefDict>
+                                    <li>
+                                        <key>O21_Goblin</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_TribalGoblin</key>
+                                        <value>10</value>
+                                    </li>
+                                </kindDefDict>
+                                <requireAll>false</requireAll>
+                            </tracker>
+                            
+                            <texPath>Achievements/ForgottenRealms/TenGoblins</texPath>
+                            <points>15</points>
+                            <tab>O21_FR_AchievementTab</tab>
+                        </AchievementsExpanded.AchievementDef>
+
+                        <!-- Have 10 Hobgoblins -->
+                        <AchievementsExpanded.AchievementDef>
+                            <defName>O21_VAE_TenHobgoblins</defName>
+                            <label>Hobbling Along</label>
+                            <description>Have 10 Hobgoblins in your colony.</description>
+                            
+                            <tracker Class="AchievementsExpanded.RaceDefTracker">
+                                <kindDefDict>
+                                    <li>
+                                        <key>O21_Hobgoblin</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_TribalHobgoblin</key>
+                                        <value>10</value>
+                                    </li>
+                                </kindDefDict>
+                                <requireAll>false</requireAll>
+                            </tracker>
+                            
+                            <texPath>Achievements/ForgottenRealms/TenHobgoblins</texPath>
+                            <points>15</points>
+                            <tab>O21_FR_AchievementTab</tab>
+                        </AchievementsExpanded.AchievementDef>
+
+                        <!-- Have 10 Tieflings -->
+                        <AchievementsExpanded.AchievementDef>
+                            <defName>O21_VAE_TenTieflings</defName>
+                            <label>Mess With the Devil, Get the Horns!</label>
+                            <description>Have 10 Tieflings in your colony.</description>
+                            
+                            <tracker Class="AchievementsExpanded.RaceDefTracker">
+                                <kindDefDict>
+                                    <li>
+                                        <key>O21_Tiefling</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_TribalTiefling</key>
+                                        <value>10</value>
+                                    </li>
+                                </kindDefDict>
+                                <requireAll>false</requireAll>
+                            </tracker>
+                            
+                            <texPath>Achievements/ForgottenRealms/TenTieflings</texPath>
+                            <points>15</points>
+                            <tab>O21_FR_AchievementTab</tab>
+                        </AchievementsExpanded.AchievementDef>
+
+                        <!-- Have 10 Dwarves -->
+                        <AchievementsExpanded.AchievementDef>
+                            <defName>O21_VAE_TenDwarves</defName>
+                            <label>And They Call it a MINE!</label>
+                            <description>Have 10 Dwarves in your colony.</description>
+                            
+                            <tracker Class="AchievementsExpanded.RaceDefTracker">
+                                <kindDefDict>
+                                    <li>
+                                        <key>O21_Dwarf</key>
+                                        <value>10</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_DwarfTribal</key>
+                                        <value>10</value>
+                                    </li>
+                                </kindDefDict>
+                                <requireAll>false</requireAll>
+                            </tracker>
+                            
+                            <texPath>Achievements/ForgottenRealms/TenDwarves</texPath>
+                            <points>15</points>
+                            <tab>O21_FR_AchievementTab</tab>
+                        </AchievementsExpanded.AchievementDef>
+
+                        <!-- Have One of Each -->
+                        <AchievementsExpanded.AchievementDef>
+                            <defName>O21_VAE_FROneOfEach</defName>
+                            <label>Fantastical Melting Pot</label>
+                            <description>Have one of each race in your colony. (Each Elf subrace is counted separately)</description>
+                            
+                            <tracker Class="AchievementsExpanded.RaceDefTracker">
+                                <kindDefDict>
+                                    <li>
+                                        <key>O21_Dwarf</key>
+                                        <value>1</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_Tiefling</key>
+                                        <value>1</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_SunElfColonist</key>
+                                        <value>1</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_WoodElfColonist</key>
+                                        <value>1</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_MoonElfColonist</key>
+                                        <value>1</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_DarkElfColonist</key>
+                                        <value>1</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_Gith</key>
+                                        <value>1</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_Goblin</key>
+                                        <value>1</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_Hobgoblin</key>
+                                        <value>1</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_HalfOrc</key>
+                                        <value>1</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_Orc</key>
+                                        <value>1</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_Warforged</key>
+                                        <value>1</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_Illithid</key>
+                                        <value>1</value>
+                                    </li>
+                                    <li>
+                                        <key>O21_Kobold</key>
+                                        <value>1</value>
+                                    </li>
+                                </kindDefDict>
+                                <requireAll>true</requireAll>
+                            </tracker>
+                            
+                            <texPath>Achievements/ForgottenRealms/OneOfAll</texPath>
+                            <points>25</points>
+                            <tab>O21_FR_AchievementTab</tab>
+                        </AchievementsExpanded.AchievementDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

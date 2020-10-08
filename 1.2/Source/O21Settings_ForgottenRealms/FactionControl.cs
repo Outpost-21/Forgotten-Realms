@@ -15,7 +15,7 @@ namespace O21Settings_ForgottenRealms
     {
         static FactionControl()
         {
-            ForgottenRealmsSettings settings = ForgottenRealmsMod.mod.settings;
+            ForgottenRealmsSettings settings = ForgottenRealmsMod.settings;
 
             if (!settings.faction_elfDark)
             {
@@ -38,6 +38,11 @@ namespace O21Settings_ForgottenRealms
                 ForgottenFactionsDefOf.O21_WoodElfKingdoms.maxCountAtGameStart = 0;
             }
 
+            if (!settings.faction_dwarf)
+            {
+                ForgottenFactionsDefOf.O21_DwarfTribes.requiredCountAtGameStart = 0;
+                ForgottenFactionsDefOf.O21_DwarfTribes.maxCountAtGameStart = 0;
+            }
             if (!settings.faction_gith)
             {
                 ForgottenFactionsDefOf.O21_GithTribes.requiredCountAtGameStart = 0;

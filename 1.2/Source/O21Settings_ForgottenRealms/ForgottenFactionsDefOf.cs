@@ -23,6 +23,7 @@ namespace O21Settings_ForgottenRealms
         public static FactionDef O21_SunElfKingdoms;
         public static FactionDef O21_WoodElfKingdoms;
 
+        public static FactionDef O21_DwarfTribes;
         public static FactionDef O21_GithTribes;
         public static FactionDef O21_GoblinTribes;
         public static FactionDef O21_HobgoblinTribes;
