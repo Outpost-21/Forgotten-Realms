@@ -20,40 +20,24 @@
                             <description>Have 10 Elves (of any kind) in your colony.</description>
                             
                             <tracker Class="AchievementsExpanded.RaceDefTracker">
-                                <kindDefDict>
+                                <raceDefs>
                                     <li>
-                                        <key>O21_DarkElfColonist</key>
+                                        <key>O21_Alien_DarkElf</key>
                                         <value>10</value>
                                     </li>
                                     <li>
-                                        <key>O21_DarkElfTribal</key>
+                                        <key>O21_Alien_MoonElf</key>
                                         <value>10</value>
                                     </li>
                                     <li>
-                                        <key>O21_MoonElfColonist</key>
+                                        <key>O21_Alien_SunElf</key>
                                         <value>10</value>
                                     </li>
                                     <li>
-                                        <key>O21_MoonElfTribal</key>
+                                        <key>O21_Alien_WoodElf</key>
                                         <value>10</value>
                                     </li>
-                                    <li>
-                                        <key>O21_SunElfColonist</key>
-                                        <value>10</value>
-                                    </li>
-                                    <li>
-                                        <key>O21_SunElfTribal</key>
-                                        <value>10</value>
-                                    </li>
-                                    <li>
-                                        <key>O21_WoodElfColonist</key>
-                                        <value>10</value>
-                                    </li>
-                                    <li>
-                                        <key>O21_WoodElfTribal</key>
-                                        <value>10</value>
-                                    </li>
-                                </kindDefDict>
+                                </raceDefs>
                                 <requireAll>false</requireAll>
                             </tracker>
                             
@@ -69,16 +53,12 @@
                             <description>Have 10 Orcs in your colony.</description>
                             
                             <tracker Class="AchievementsExpanded.RaceDefTracker">
-                                <kindDefDict>
+                                <raceDefs>
                                     <li>
-                                        <key>O21_Orc</key>
+                                        <key>O21_Alien_Orc</key>
                                         <value>10</value>
                                     </li>
-                                    <li>
-                                        <key>O21_OrcTribal</key>
-                                        <value>10</value>
-                                    </li>
-                                </kindDefDict>
+                                </raceDefs>
                                 <requireAll>false</requireAll>
                             </tracker>
                             
@@ -94,16 +74,12 @@
                             <description>Have 10 Kobolds in your colony.</description>
                             
                             <tracker Class="AchievementsExpanded.RaceDefTracker">
-                                <kindDefDict>
+                                <raceDefs>
                                     <li>
-                                        <key>O21_Kobold</key>
+                                        <key>O21_Alien_Kobold</key>
                                         <value>10</value>
                                     </li>
-                                    <li>
-                                        <key>O21_KoboldTribal</key>
-                                        <value>10</value>
-                                    </li>
-                                </kindDefDict>
+                                </raceDefs>
                                 <requireAll>false</requireAll>
                             </tracker>
                             
@@ -119,16 +95,12 @@
                             <description>Have 10 Half-Orcs in your colony.</description>
                             
                             <tracker Class="AchievementsExpanded.RaceDefTracker">
-                                <kindDefDict>
+                                <raceDefs>
                                     <li>
-                                        <key>O21_HalfOrc</key>
+                                        <key>O21_Alien_HalfOrc</key>
                                         <value>10</value>
                                     </li>
-                                    <li>
-                                        <key>O21_HalfOrcTribal</key>
-                                        <value>10</value>
-                                    </li>
-                                </kindDefDict>
+                                </raceDefs>
                                 <requireAll>false</requireAll>
                             </tracker>
                             
@@ -144,12 +116,12 @@
                             <description>Have 10 Warforged in your colony.</description>
                             
                             <tracker Class="AchievementsExpanded.RaceDefTracker">
-                                <kindDefDict>
+                                <raceDefs>
                                     <li>
-                                        <key>O21_Warforged</key>
+                                        <key>O21_Alien_Warforged</key>
                                         <value>10</value>
                                     </li>
-                                </kindDefDict>
+                                </raceDefs>
                                 <requireAll>false</requireAll>
                             </tracker>
                             
@@ -165,20 +137,12 @@
                             <description>Have 10 Illithids in your colony.</description>
                             
                             <tracker Class="AchievementsExpanded.RaceDefTracker">
-                                <kindDefDict>
+                                <raceDefs>
                                     <li>
-                                        <key>O21_Illithid</key>
+                                        <key>O21_Alien_Illithid</key>
                                         <value>10</value>
                                     </li>
-                                    <li>
-                                        <key>O21_IllithidTribal</key>
-                                        <value>10</value>
-                                    </li>
-                                    <li>
-                                        <key>O21_IllithidConverted</key>
-                                        <value>10</value>
-                                    </li>
-                                </kindDefDict>
+                                </raceDefs>
                                 <requireAll>false</requireAll>
                             </tracker>
                             
@@ -194,16 +158,12 @@
                             <description>Have 10 Gith in your colony.</description>
                             
                             <tracker Class="AchievementsExpanded.RaceDefTracker">
-                                <kindDefDict>
+                                <raceDefs>
                                     <li>
-                                        <key>O21_Gith</key>
+                                        <key>O21_Alien_Gith</key>
                                         <value>10</value>
                                     </li>
-                                    <li>
-                                        <key>O21_GithTribal</key>
-                                        <value>10</value>
-                                    </li>
-                                </kindDefDict>
+                                </raceDefs>
                                 <requireAll>false</requireAll>
                             </tracker>
                             
@@ -219,16 +179,12 @@
                             <description>Have 10 Goblins in your colony.</description>
                             
                             <tracker Class="AchievementsExpanded.RaceDefTracker">
-                                <kindDefDict>
+                                <raceDefs>
                                     <li>
-                                        <key>O21_Goblin</key>
+                                        <key>O21_Alien_Goblin</key>
                                         <value>10</value>
                                     </li>
-                                    <li>
-                                        <key>O21_TribalGoblin</key>
-                                        <value>10</value>
-                                    </li>
-                                </kindDefDict>
+                                </raceDefs>
                                 <requireAll>false</requireAll>
                             </tracker>
                             
@@ -244,16 +200,12 @@
                             <description>Have 10 Hobgoblins in your colony.</description>
                             
                             <tracker Class="AchievementsExpanded.RaceDefTracker">
-                                <kindDefDict>
+                                <raceDefs>
                                     <li>
-                                        <key>O21_Hobgoblin</key>
+                                        <key>O21_Alien_Hobgoblin</key>
                                         <value>10</value>
                                     </li>
-                                    <li>
-                                        <key>O21_TribalHobgoblin</key>
-                                        <value>10</value>
-                                    </li>
-                                </kindDefDict>
+                                </raceDefs>
                                 <requireAll>false</requireAll>
                             </tracker>
                             
@@ -269,16 +221,12 @@
                             <description>Have 10 Tieflings in your colony.</description>
                             
                             <tracker Class="AchievementsExpanded.RaceDefTracker">
-                                <kindDefDict>
+                                <raceDefs>
                                     <li>
-                                        <key>O21_Tiefling</key>
+                                        <key>O21_Alien_Tiefling</key>
                                         <value>10</value>
                                     </li>
-                                    <li>
-                                        <key>O21_TribalTiefling</key>
-                                        <value>10</value>
-                                    </li>
-                                </kindDefDict>
+                                </raceDefs>
                                 <requireAll>false</requireAll>
                             </tracker>
                             
@@ -294,16 +242,12 @@
                             <description>Have 10 Dwarves in your colony.</description>
                             
                             <tracker Class="AchievementsExpanded.RaceDefTracker">
-                                <kindDefDict>
+                                <raceDefs>
                                     <li>
-                                        <key>O21_Dwarf</key>
+                                        <key>O21_Alien_Dwarf</key>
                                         <value>10</value>
                                     </li>
-                                    <li>
-                                        <key>O21_DwarfTribal</key>
-                                        <value>10</value>
-                                    </li>
-                                </kindDefDict>
+                                </raceDefs>
                                 <requireAll>false</requireAll>
                             </tracker>
                             
@@ -319,64 +263,64 @@
                             <description>Have one of each race in your colony. (Each Elf subrace is counted separately)</description>
                             
                             <tracker Class="AchievementsExpanded.RaceDefTracker">
-                                <kindDefDict>
+                                <raceDefs>
                                     <li>
-                                        <key>O21_Dwarf</key>
+                                        <key>O21_Alien_Dwarf</key>
                                         <value>1</value>
                                     </li>
                                     <li>
-                                        <key>O21_Tiefling</key>
+                                        <key>O21_Alien_Tiefling</key>
                                         <value>1</value>
                                     </li>
                                     <li>
-                                        <key>O21_SunElfColonist</key>
+                                        <key>O21_Alien_SunElf</key>
                                         <value>1</value>
                                     </li>
                                     <li>
-                                        <key>O21_WoodElfColonist</key>
+                                        <key>O21_Alien_WoodElf</key>
                                         <value>1</value>
                                     </li>
                                     <li>
-                                        <key>O21_MoonElfColonist</key>
+                                        <key>O21_Alien_MoonElf</key>
                                         <value>1</value>
                                     </li>
                                     <li>
-                                        <key>O21_DarkElfColonist</key>
+                                        <key>O21_Alien_DarkElf</key>
                                         <value>1</value>
                                     </li>
                                     <li>
-                                        <key>O21_Gith</key>
+                                        <key>O21_Alien_Gith</key>
                                         <value>1</value>
                                     </li>
                                     <li>
-                                        <key>O21_Goblin</key>
+                                        <key>O21_Alien_Goblin</key>
                                         <value>1</value>
                                     </li>
                                     <li>
-                                        <key>O21_Hobgoblin</key>
+                                        <key>O21_Alien_Hobgoblin</key>
                                         <value>1</value>
                                     </li>
                                     <li>
-                                        <key>O21_HalfOrc</key>
+                                        <key>O21_Alien_HalfOrc</key>
                                         <value>1</value>
                                     </li>
                                     <li>
-                                        <key>O21_Orc</key>
+                                        <key>O21_Alien_Orc</key>
                                         <value>1</value>
                                     </li>
                                     <li>
-                                        <key>O21_Warforged</key>
+                                        <key>O21_Alien_Warforged</key>
                                         <value>1</value>
                                     </li>
                                     <li>
-                                        <key>O21_Illithid</key>
+                                        <key>O21_Alien_Illithid</key>
                                         <value>1</value>
                                     </li>
                                     <li>
-                                        <key>O21_Kobold</key>
+                                        <key>O21_Alien_Kobold</key>
                                         <value>1</value>
                                     </li>
-                                </kindDefDict>
+                                </raceDefs>
                                 <requireAll>true</requireAll>
                             </tracker>
                             

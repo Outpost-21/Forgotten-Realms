@@ -101,6 +101,8 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 		</graphicPaths>
 			<hairSettings>
 				<hasHair>false</hasHair>
+				<getsGreyAt>65</getsGreyAt> 
+				<hairTags />
 			</hairSettings>
 			<relationSettings>
 				<relationChanceModifierChild>0</relationChanceModifierChild>

@@ -20,7 +20,7 @@
                             <description>Kill 100 Dwarves</description>
                             
                             <tracker Class="AchievementsExpanded.KillTracker">
-                                <kindDef>O21_Dwarf</kindDef>
+                                <raceDef>O21_Alien_Dwarf</raceDef>
                                 <count>100</count>
                             </tracker>
                             
@@ -36,7 +36,12 @@
                             <description>Kill 100 Elves (of any kind)</description>
                             
                             <tracker Class="AchievementsExpanded.KillTracker">
-                                <kindDef>O21_Dwarf</kindDef>
+                                <factionDefs>
+									<li>O21_DarkElfKingdoms</li>
+									<li>O21_MoonElfKingdoms</li>
+									<li>O21_SunElfKingdoms</li>
+									<li>O21_WoodElfKingdoms</li>
+								</factionDefs>
                                 <count>100</count>
                             </tracker>
                             
@@ -52,7 +57,7 @@
                             <description>Kill 100 Orcs</description>
                             
                             <tracker Class="AchievementsExpanded.KillTracker">
-                                <kindDef>O21_Orc</kindDef>
+                                <raceDef>O21_Alien_Orc</raceDef>
                                 <count>100</count>
                             </tracker>
                             
@@ -68,7 +73,7 @@
                             <description>Kill 100 Kobolds</description>
                             
                             <tracker Class="AchievementsExpanded.KillTracker">
-                                <kindDef>O21_Kobold</kindDef>
+                                <raceDef>O21_Alien_Kobold</raceDef>
                                 <count>100</count>
                             </tracker>
                             
@@ -84,7 +89,7 @@
                             <description>Kill 100 Half-Orcs</description>
                             
                             <tracker Class="AchievementsExpanded.KillTracker">
-                                <kindDef>O21_HalfOrc</kindDef>
+                                <raceDef>O21_Alien_HalfOrc</raceDef>
                                 <count>100</count>
                             </tracker>
                             
@@ -100,7 +105,7 @@
                             <description>Kill 100 Warforged</description>
                             
                             <tracker Class="AchievementsExpanded.KillTracker">
-                                <kindDef>O21_Warforged</kindDef>
+                                <raceDef>O21_Alien_Warforged</raceDef>
                                 <count>100</count>
                             </tracker>
                             
@@ -116,7 +121,7 @@
                             <description>Kill 100 Illithids</description>
                             
                             <tracker Class="AchievementsExpanded.KillTracker">
-                                <kindDef>O21_Illithid</kindDef>
+                                <raceDef>O21_Alien_Illithid</raceDef>
                                 <count>100</count>
                             </tracker>
                             
@@ -132,7 +137,7 @@
                             <description>Kill 100 Gith</description>
                             
                             <tracker Class="AchievementsExpanded.KillTracker">
-                                <kindDef>O21_Gith</kindDef>
+                                <raceDef>O21_Alien_Gith</raceDef>
                                 <count>100</count>
                             </tracker>
                             
@@ -148,7 +153,7 @@
                             <description>Kill 100 Goblins</description>
                             
                             <tracker Class="AchievementsExpanded.KillTracker">
-                                <kindDef>O21_Goblin</kindDef>
+                                <raceDef>O21_Alien_Goblin</raceDef>
                                 <count>100</count>
                             </tracker>
                             
@@ -164,7 +169,7 @@
                             <description>Kill 100 Hobgoblins</description>
                             
                             <tracker Class="AchievementsExpanded.KillTracker">
-                                <kindDef>O21_Hobgoblin</kindDef>
+                                <raceDef>O21_Alien_Hobgoblin</raceDef>
                                 <count>100</count>
                             </tracker>
                             
@@ -180,7 +185,7 @@
                             <description>Kill 100 Tieflings</description>
                             
                             <tracker Class="AchievementsExpanded.KillTracker">
-                                <kindDef>O21_Tiefling</kindDef>
+                                <raceDef>O21_Alien_Tiefling</raceDef>
                                 <count>100</count>
                             </tracker>
                             

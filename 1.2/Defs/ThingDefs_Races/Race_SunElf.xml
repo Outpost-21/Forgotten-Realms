@@ -7,8 +7,8 @@
             <alienslavekinds>
 				<li>
 					<kindDefs>
-						<li>O21_SunElf_Colonist</li>
-						<li>O21_SunElf_Tribal</li>
+						<li>O21_SunElfColonist</li>
+						<li>O21_SunElfTribal</li>
 					</kindDefs>
 					<chance>20.0</chance>
 				</li>
@@ -16,8 +16,8 @@
             <alienrefugeekinds>
 				<li>
 					<kindDefs>
-						<li>O21_SunElf_Colonist</li>
-						<li>O21_SunElf_Tribal</li>
+						<li>O21_SunElfColonist</li>
+						<li>O21_SunElfTribal</li>
 					</kindDefs>
 					<chance>20.0</chance>
 				</li>
@@ -27,7 +27,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>O21_SunElf_Colonist</li>
+								<li>O21_SunElfColonist</li>
 							</kindDefs>
 							<chance>20.0</chance>
 						</li>
@@ -40,13 +40,13 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>O21_SunElf_Tribal</li>
+								<li>O21_SunElfTribal</li>
 							</kindDefs>
 							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>O21_SunElfPlayerTribal</li> 
+						<li>O21_SunElfPlayerTribe</li> 
 					</factionDefs>
 				</li>
 			</startingColonists>
@@ -55,7 +55,7 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>O21_SunElf_Colonist</li>
+								<li>O21_SunElfColonist</li>
 							</kindDefs>
 							<chance>20.0</chance>
 						</li>
@@ -68,13 +68,13 @@
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
-								<li>O21_SunElf_Tribal</li>
+								<li>O21_SunElfTribal</li>
 							</kindDefs>
 							<chance>20.0</chance>
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>O21_SunElfPlayerTribal</li> 
+						<li>O21_SunElfPlayerTribe</li> 
 					</factionDefs>
 				</li>
             </alienwandererkinds>

@@ -12,6 +12,24 @@
         <apparelTags>
             <li>MedievalBasic</li>
         </apparelTags>
+		<modExtensions>
+			<li Class="O21Toolbox.PawnKindExt.DefModExt_ExtendedPawnKind">
+				<altRaces>
+					<li>
+						<races>
+							<li>O21_Alien_Orc</li>
+						</races>
+						<weight>20</weight>
+					</li>
+					<li>
+						<races>
+							<li>O21_Alien_HalfOrc</li>
+						</races>
+						<weight>1</weight>
+					</li>
+				</altRaces>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
     <!-- Poverty Tier - Peasant -->

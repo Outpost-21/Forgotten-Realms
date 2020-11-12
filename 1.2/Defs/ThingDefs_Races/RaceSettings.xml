@@ -9,10 +9,10 @@
                     <pawnKindEntries>
                         <li>
                             <kindDefs>
-                                <li>O21_DarkElf_Colonist</li>
-                                <li>O21_MoonElf_Colonist</li>
-                                <li>O21_SunElf_Colonist</li>
-                                <li>O21_WoodElf_Colonist</li>
+                                <li>O21_DarkElfColonist</li>
+                                <li>O21_MoonElfColonist</li>
+                                <li>O21_SunElfColonist</li>
+                                <li>O21_WoodElfColonist</li>
                                 <li>O21_Gith</li>
                                 <li>O21_Dwarf</li>
                                 <li>O21_Goblin</li>
@@ -35,10 +35,10 @@
                     <pawnKindEntries>
                         <li>
                             <kindDefs>
-                                <li>O21_DarkElf_Tribal</li>
-                                <li>O21_MoonElf_Tribal</li>
-                                <li>O21_SunElf_Tribal</li>
-                                <li>O21_WoodElf_Tribal</li>
+                                <li>O21_DarkElfTribal</li>
+                                <li>O21_MoonElfTribal</li>
+                                <li>O21_SunElfTribal</li>
+                                <li>O21_WoodElfTribal</li>
                                 <li>O21_GithTribal</li>
                                 <li>O21_DwarfTribal</li>
                                 <li>O21_TribalGoblin</li>
@@ -63,10 +63,10 @@
                     <pawnKindEntries>
                         <li>
                             <kindDefs>
-                                <li>O21_DarkElf_Colonist</li>
-                                <li>O21_MoonElf_Colonist</li>
-                                <li>O21_SunElf_Colonist</li>
-                                <li>O21_WoodElf_Colonist</li>
+                                <li>O21_DarkElfColonist</li>
+                                <li>O21_MoonElfColonist</li>
+                                <li>O21_SunElfColonist</li>
+                                <li>O21_WoodElfColonist</li>
                                 <li>O21_Gith</li>
                                 <li>O21_Dwarf</li>
                                 <li>O21_Goblin</li>
@@ -89,10 +89,10 @@
                     <pawnKindEntries>
                         <li>
                             <kindDefs>
-                                <li>O21_DarkElf_Tribal</li>
-                                <li>O21_MoonElf_Tribal</li>
-                                <li>O21_SunElf_Tribal</li>
-                                <li>O21_WoodElf_Tribal</li>
+                                <li>O21_DarkElfTribal</li>
+                                <li>O21_MoonElfTribal</li>
+                                <li>O21_SunElfTribal</li>
+                                <li>O21_WoodElfTribal</li>
                                 <li>O21_GithTribal</li>
                                 <li>O21_DwarfTribal</li>
                                 <li>O21_TribalGoblin</li>
