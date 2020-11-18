@@ -367,6 +367,16 @@
 			<li>Euthanize</li>
 			<li>Anesthetize</li>
 		</recipes>
+		<comps>
+			<li Class="O21Toolbox.PawnExt.CompProperties_AlienBodyCorrection">
+				<maleBodyTypes>
+					<li>Male</li>
+				</maleBodyTypes>
+				<femaleBodyTypes>
+					<li>Female</li>
+				</femaleBodyTypes>
+			</li>
+		</comps>
 	</AlienRace.ThingDef_AlienRace>
 	
 </Defs>
