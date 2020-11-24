@@ -39,6 +39,10 @@
       <HintPath>..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="O21Toolbox">
+      <HintPath>..\..\..\..\[O21] Toolbox\1.2\Assemblies\O21Toolbox.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
@@ -59,8 +63,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FactionControl.cs" />
-    <Compile Include="ForgottenFactionsDefOf.cs" />
     <Compile Include="ForgottenRealmsMod.cs" />
+    <Compile Include="ForgottenRealmsSettings.cs" />
+    <Compile Include="PatchOperation_SettingActive.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

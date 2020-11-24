@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
 	<BodyDef>
 		<defName>O21_Body_Illithid</defName>
 		<label>illithid</label>

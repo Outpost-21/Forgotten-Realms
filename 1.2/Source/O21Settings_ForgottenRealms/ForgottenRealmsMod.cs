@@ -8,12 +8,16 @@ using UnityEngine;
 using RimWorld;
 using Verse;
 
+using O21Toolbox;
+
 namespace O21Settings_ForgottenRealms
 {
     public class ForgottenRealmsMod : Mod
     {
         public static ForgottenRealmsSettings settings;
         public static ForgottenRealmsMod mod;
+
+        public ForgottenRealmsSettingsPage currentSettingsPage;
 
         public ForgottenRealmsMod(ModContentPack content) : base(content)
         {
@@ -23,24 +27,98 @@ namespace O21Settings_ForgottenRealms
 
         public override void DoSettingsWindowContents(Rect inRect)
         {
+            float secondStageHeight;
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
-            listingStandard.Label("Faction Settings - Changing any of these requires a restart to take effect.");
-            listingStandard.CheckboxLabeled("Dwarves", ref settings.faction_dwarf, "Dwarf Faction");
-            listingStandard.CheckboxLabeled("Dark Elves", ref settings.faction_elfDark, "Dark Elf Faction");
-            listingStandard.CheckboxLabeled("Moon Elves", ref settings.faction_elfMoon, "Moon Elf Faction");
-            listingStandard.CheckboxLabeled("Sun Elves", ref settings.faction_elfSun, "Sun Elf Faction");
-            listingStandard.CheckboxLabeled("Wood Elves", ref settings.faction_elfWood, "Wood Elf Faction");
-            listingStandard.CheckboxLabeled("Gith", ref settings.faction_gith, "Gith Faction");
-            listingStandard.CheckboxLabeled("Goblins", ref settings.faction_goblin, "Goblin Faction");
-            listingStandard.CheckboxLabeled("Hobgoblins", ref settings.faction_hobgoblin, "Hobgoblin Faction");
-            listingStandard.CheckboxLabeled("Illithids", ref settings.faction_illithid, "Illithid Faction");
-            listingStandard.CheckboxLabeled("Kobolds", ref settings.faction_kobold, "Kobold Faction");
-            listingStandard.CheckboxLabeled("Orcs", ref settings.faction_orc, "Orc Faction");
-            listingStandard.CheckboxLabeled("Tieflings", ref settings.faction_tiefling, "Tiefling Faction");
-            listingStandard.CheckboxLabeled("Warforged", ref settings.faction_warforged, "Warforged Faction");
+            listingStandard.ValueLabeled("Settings Page", "Cycle this setting to change page. Changing Races and/or Factions requires a restart to take effect. You should NEVER disable any of these mid-save, it's the same as uninstalling that part of the mod and can have severe consequences, no support will be provided if you do this, and yes I will know.", ref currentSettingsPage);
+            listingStandard.Note("Disabling a race will automatically disable and hide associated faction toggles to prevent issues.");
+            listingStandard.GapLine();
+            listingStandard.Gap(48);
+            secondStageHeight = listingStandard.CurHeight;
+            listingStandard.End();
+
+            listingStandard = new Listing_Standard
+            {
+                ColumnWidth = (inRect.width - 30f) / 2f - 2f
+            };
+            inRect.yMin = secondStageHeight;
+            listingStandard.Begin(inRect);
+
+            if (currentSettingsPage == ForgottenRealmsSettingsPage.Races)
+            {
+                DoRaceSettingsPage(listingStandard, inRect);
+            }
+            if (currentSettingsPage == ForgottenRealmsSettingsPage.Other)
+            {
+                DoGeneralSettingsPage(listingStandard, inRect);
+            }
+
             listingStandard.End();
             base.DoSettingsWindowContents(inRect);
+        }
+
+        public void DoRaceSettingsPage(Listing_Standard listingStandard, Rect inRect)
+        {
+            listingStandard.CheckboxLabeled("Dwarves", ref settings.raceToggle_dwarf, "Enables/Disables Dwarves.");
+            listingStandard.CheckboxLabeled("Dark Elves", ref settings.raceToggle_elfDark, "Enables/Disables Dark Elves");
+            listingStandard.CheckboxLabeled("Moon Elves", ref settings.raceToggle_elfMoon, "Enables/Disables Moon Elves");
+            listingStandard.CheckboxLabeled("Sun Elves", ref settings.raceToggle_elfSun, "Enables/Disables Sun Elves");
+            listingStandard.CheckboxLabeled("Wood Elves", ref settings.raceToggle_elfWood, "Enables/Disables Wood Elves");
+            listingStandard.CheckboxLabeled("Gith", ref settings.raceToggle_gith, "Enables/Disables Gith");
+            listingStandard.CheckboxLabeled("Goblins", ref settings.raceToggle_goblin, "Enables/Disables Goblins");
+            listingStandard.CheckboxLabeled("Half-Orcs", ref settings.raceToggle_halforc, "Enables/Disables Half-Orcs");
+            listingStandard.CheckboxLabeled("Hobgoblins", ref settings.raceToggle_hobgoblin, "Enables/Disables Hobgoblins");
+            listingStandard.CheckboxLabeled("Illithids", ref settings.raceToggle_illithid, "Enables/Disables Illithids");
+            listingStandard.CheckboxLabeled("Kobolds", ref settings.raceToggle_kobold, "Enables/Disables Kobolds");
+            listingStandard.CheckboxLabeled("Orcs", ref settings.raceToggle_orc, "Enables/Disables Orcs");
+            listingStandard.CheckboxLabeled("Tieflings", ref settings.raceToggle_tiefling, "Enables/Disables Tieflings");
+            listingStandard.CheckboxLabeled("Warforged", ref settings.raceToggle_warforged, "Enables/Disables Warforged");
+
+            listingStandard.NewColumn();
+
+            if (settings.raceToggle_dwarf) { listingStandard.CheckboxLabeled("Dwarves Faction", ref settings.factionToggle_dwarf, "Controls spawning of the NPC Dwarf Faction"); }
+            else { settings.factionToggle_dwarf = false; }
+            if (settings.raceToggle_elfDark) { listingStandard.CheckboxLabeled("Dark Elves Faction", ref settings.factionToggle_elfDark, "Controls spawning of the NPC Dark Elf Faction"); }
+            else { settings.factionToggle_elfDark = false; }
+            if (settings.raceToggle_elfMoon) { listingStandard.CheckboxLabeled("Moon Elves Faction", ref settings.factionToggle_elfMoon, "Controls spawning of the NPC Moon Elf Faction"); }
+            else { settings.factionToggle_elfMoon = false; }
+            if (settings.raceToggle_elfSun) { listingStandard.CheckboxLabeled("Sun Elves Faction", ref settings.factionToggle_elfSun, "Controls spawning of the NPC Sun Elf Faction"); }
+            else { settings.factionToggle_elfSun = false; }
+            if (settings.raceToggle_elfWood) { listingStandard.CheckboxLabeled("Wood Elves Faction", ref settings.factionToggle_elfWood, "Controls spawning of the NPC Wood Elf Faction"); }
+            else { settings.factionToggle_elfWood = false; }
+            if (settings.raceToggle_gith) { listingStandard.CheckboxLabeled("Gith Faction", ref settings.factionToggle_gith, "Controls spawning of the NPC Gith Faction"); }
+            else { settings.factionToggle_gith = false; }
+            if (settings.raceToggle_goblin) { listingStandard.CheckboxLabeled("Goblins Faction", ref settings.factionToggle_goblin, "Controls spawning of the NPC Goblin Faction"); }
+            else { settings.factionToggle_goblin = false; }
+            if (settings.raceToggle_halforc) { listingStandard.CheckboxLabeled("Half-Orc Integration", ref settings.factionToggle_halforc, "Controls the spawning of Half-Orcs among human and Orc factions."); }
+            else { settings.factionToggle_halforc = false; }
+            if (settings.raceToggle_hobgoblin) { listingStandard.CheckboxLabeled("Hobgoblins Faction", ref settings.factionToggle_hobgoblin, "Controls spawning of the NPC Hobgoblin Faction"); }
+            else { settings.factionToggle_hobgoblin = false; }
+            if (settings.raceToggle_illithid) { listingStandard.CheckboxLabeled("Illithids Faction", ref settings.factionToggle_illithid, "Controls spawning of the NPC Illithid Faction"); }
+            else { settings.factionToggle_illithid = false; }
+            if (settings.raceToggle_kobold) { listingStandard.CheckboxLabeled("Kobolds Faction", ref settings.factionToggle_kobold, "Controls spawning of the NPC Kobold Faction"); }
+            else { settings.factionToggle_kobold = false; }
+            if (settings.raceToggle_orc) { listingStandard.CheckboxLabeled("Orcs Faction", ref settings.factionToggle_orc, "Controls spawning of the NPC Orc Faction"); }
+            else { settings.factionToggle_orc = false; }
+            if (settings.raceToggle_tiefling) { listingStandard.CheckboxLabeled("Tieflings Faction", ref settings.factionToggle_tiefling, "Controls spawning of the NPC Tiefling Faction"); }
+            else { settings.factionToggle_tiefling = false; }
+            if (settings.raceToggle_warforged) { listingStandard.CheckboxLabeled("Warforged Faction", ref settings.factionToggle_warforged, "Controls spawning of the NPC Warforged Faction"); }
+            else { settings.factionToggle_warforged = false; }
+        }
+
+        public void DoGeneralSettingsPage(Listing_Standard listingStandard, Rect inRect)
+        {
+            listingStandard.CheckboxEnhanced("Race Integration", "If enabled, all races will have a chance of spawning among the vanilla factions.", ref settings.settingToggle_raceIntegration);
+
+            listingStandard.NewColumn();
+
+            listingStandard.Label("Creatures");
+            listingStandard.GapLine();
+            listingStandard.CheckboxLabeled("Bullywugs", ref settings.creatureToggle_Bullywugs, "Spawn from water, in groups. It'll happen as an unnanounced event if the location they choose to emerge from isn't visible to a pawn or turret. Yes they'll be playable, shut up already.");
+            listingStandard.CheckboxLabeled("Darkmantles", ref settings.creatureToggle_Darkmantle, "Darkmantles will spawn from roof collapses (negating the roof collapse if it can as a silver lining) and attempt to trap and suffocate nearby pawns.");
+            listingStandard.CheckboxLabeled("Gelatinous Cubes", ref settings.creatureToggle_gelatinousCube, "You'll only really see these if the game decides to launch a 'Fuck you in particular' event at you. Gelatinous Cubes can only be harmed by fire, and will consume anything else they touch so...have fun with that.");
+            listingStandard.CheckboxLabeled("Rust Monsters", ref settings.creatureToggle_rustMonster, "Rust Monsters are a rare event creature, they will occasionally show up and begin devouring any metal they can find, even if that metal is already part of something like an item or structure.");
+            listingStandard.Note("These are not yet in-game, they are coming soonish though. Currently this is just set up so you can choose to disable them ahead of being added.");
         }
 
         public override string SettingsCategory()
@@ -49,40 +127,9 @@ namespace O21Settings_ForgottenRealms
         }
     }
 
-    public class ForgottenRealmsSettings : ModSettings
+    public enum ForgottenRealmsSettingsPage
     {
-        public bool faction_elfDark = true;
-        public bool faction_elfMoon = true;
-        public bool faction_elfSun = true;
-        public bool faction_elfWood = true;
-
-        public bool faction_dwarf = true;
-        public bool faction_gith = true;
-        public bool faction_goblin = true;
-        public bool faction_hobgoblin = true;
-        public bool faction_illithid = true;
-        public bool faction_kobold = true;
-        public bool faction_orc = true;
-        public bool faction_tiefling = true;
-        public bool faction_warforged = true;
-
-        public override void ExposeData()
-        {
-            base.ExposeData();
-            Scribe_Values.Look(ref faction_elfDark, "faction_elfDark", true);
-            Scribe_Values.Look(ref faction_elfMoon, "faction_elfMoon", true);
-            Scribe_Values.Look(ref faction_elfSun, "faction_elfSun", true);
-            Scribe_Values.Look(ref faction_elfWood, "faction_elfWood", true);
-
-            Scribe_Values.Look(ref faction_dwarf, "faction_dwarf", true);
-            Scribe_Values.Look(ref faction_gith, "faction_gith", true);
-            Scribe_Values.Look(ref faction_goblin, "faction_goblin", true);
-            Scribe_Values.Look(ref faction_hobgoblin, "faction_hobgoblin", true);
-            Scribe_Values.Look(ref faction_illithid, "faction_illithid", true);
-            Scribe_Values.Look(ref faction_kobold, "faction_kobold", true);
-            Scribe_Values.Look(ref faction_orc, "faction_orc", true);
-            Scribe_Values.Look(ref faction_tiefling, "faction_tiefling", true);
-            Scribe_Values.Look(ref faction_warforged, "faction_warforged", true);
-        }
+        Races,
+        Other
     }
 }

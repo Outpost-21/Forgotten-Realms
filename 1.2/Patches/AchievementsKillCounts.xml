@@ -1,202 +1,415 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-    <!-- Adds achievements if Vanilla Achievements Expanded is installed, adding a new tab and relevant achievements that can be obtained with this mod. -->
+	<!-- Adds achievements if Vanilla Achievements Expanded is installed, adding a new tab and relevant achievements that can be obtained with this mod. -->
 
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Vanilla Achievements Expanded</li>
-        </mods>
-        <match Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs</xpath>
-                    <value>
-                        <!-- Kill 100 Dwarves -->
-                        <AchievementsExpanded.AchievementDef>
-                            <defName>O21_VAE_DwarfKills</defName>
-                            <label>Quick! Before They Get Your Knees!</label>
-                            <description>Kill 100 Dwarves</description>
-                            
-                            <tracker Class="AchievementsExpanded.KillTracker">
-                                <raceDef>O21_Alien_Dwarf</raceDef>
-                                <count>100</count>
-                            </tracker>
-                            
-                            <texPath>Achievements/ForgottenRealms/HundredDwarves</texPath>
-                            <points>25</points>
-                            <tab>O21_FR_AchievementTab</tab>
-                        </AchievementsExpanded.AchievementDef>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>factionToggle_elfDark</li>
+						<li>factionToggle_elfMoon</li>
+						<li>factionToggle_elfSun</li>
+						<li>factionToggle_elfWood</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<!-- Kill 100 Elves -->
+									<AchievementsExpanded.AchievementDef>
+										<defName>O21_VAE_ElfKills</defName>
+										<label>Knife the Knife Ears!</label>
+										<description>Kill 100 Elves (of any kind)</description>
 
-                        <!-- Kill 100 Elves -->
-                        <AchievementsExpanded.AchievementDef>
-                            <defName>O21_VAE_ElfKills</defName>
-                            <label>Knife the Knife Ears!</label>
-                            <description>Kill 100 Elves (of any kind)</description>
-                            
-                            <tracker Class="AchievementsExpanded.KillTracker">
-                                <factionDefs>
+										<tracker Class="AchievementsExpanded.KillTracker">
+											<factionDefs>
+											</factionDefs>
+											<count>100</count>
+										</tracker>
+
+										<texPath>Achievements/ForgottenRealms/HundredElves</texPath>
+										<points>25</points>
+										<tab>O21_FR_AchievementTab</tab>
+									</AchievementsExpanded.AchievementDef>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>factionToggle_elfDark</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/AchievementsExpanded.AchievementDef[defName="O21_VAE_ElfKills"]/tracker[@Class="AchievementsExpanded.KillTracker"]/factionDefs</xpath>
+								<value>
 									<li>O21_DarkElfKingdoms</li>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>factionToggle_elfMoon</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/AchievementsExpanded.AchievementDef[defName="O21_VAE_ElfKills"]/tracker[@Class="AchievementsExpanded.KillTracker"]/factionDefs</xpath>
+								<value>
 									<li>O21_MoonElfKingdoms</li>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>factionToggle_elfSun</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/AchievementsExpanded.AchievementDef[defName="O21_VAE_ElfKills"]/tracker[@Class="AchievementsExpanded.KillTracker"]/factionDefs</xpath>
+								<value>
 									<li>O21_SunElfKingdoms</li>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>factionToggle_elfWood</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/AchievementsExpanded.AchievementDef[defName="O21_VAE_ElfKills"]/tracker[@Class="AchievementsExpanded.KillTracker"]/factionDefs</xpath>
+								<value>
 									<li>O21_WoodElfKingdoms</li>
-								</factionDefs>
-                                <count>100</count>
-                            </tracker>
-                            
-                            <texPath>Achievements/ForgottenRealms/HundredElves</texPath>
-                            <points>25</points>
-                            <tab>O21_FR_AchievementTab</tab>
-                        </AchievementsExpanded.AchievementDef>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>raceToggle_dwarf</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<!-- Kill 100 Dwarves -->
+									<AchievementsExpanded.AchievementDef>
+										<defName>O21_VAE_DwarfKills</defName>
+										<label>Quick! Before They Get Your Knees!</label>
+										<description>Kill 100 Dwarves</description>
 
-                        <!-- Kill 100 Orcs -->
-                        <AchievementsExpanded.AchievementDef>
-                            <defName>O21_VAE_OrcKills</defName>
-                            <label>The Bigger They Are...etc</label>
-                            <description>Kill 100 Orcs</description>
-                            
-                            <tracker Class="AchievementsExpanded.KillTracker">
-                                <raceDef>O21_Alien_Orc</raceDef>
-                                <count>100</count>
-                            </tracker>
-                            
-                            <texPath>Achievements/ForgottenRealms/HundredOrcs</texPath>
-                            <points>25</points>
-                            <tab>O21_FR_AchievementTab</tab>
-                        </AchievementsExpanded.AchievementDef>
+										<tracker Class="AchievementsExpanded.KillTracker">
+											<raceDef>O21_Alien_Dwarf</raceDef>
+											<count>100</count>
+										</tracker>
 
-                        <!-- Kill 100 Kobolds -->
-                        <AchievementsExpanded.AchievementDef>
-                            <defName>O21_VAE_KoboldKills</defName>
-                            <label>My Gold, Not Yours! Bad Lizard!</label>
-                            <description>Kill 100 Kobolds</description>
-                            
-                            <tracker Class="AchievementsExpanded.KillTracker">
-                                <raceDef>O21_Alien_Kobold</raceDef>
-                                <count>100</count>
-                            </tracker>
-                            
-                            <texPath>Achievements/ForgottenRealms/HundredKobolds</texPath>
-                            <points>25</points>
-                            <tab>O21_FR_AchievementTab</tab>
-                        </AchievementsExpanded.AchievementDef>
+										<texPath>Achievements/ForgottenRealms/HundredDwarves</texPath>
+										<points>25</points>
+										<tab>O21_FR_AchievementTab</tab>
+									</AchievementsExpanded.AchievementDef>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>raceToggle_orc</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<!-- Kill 100 Orcs -->
+									<AchievementsExpanded.AchievementDef>
+										<defName>O21_VAE_OrcKills</defName>
+										<label>The Bigger They Are...etc</label>
+										<description>Kill 100 Orcs</description>
 
-                        <!-- Kill 100 Half-Orcs -->
-                        <AchievementsExpanded.AchievementDef>
-                            <defName>O21_VAE_HalfOrcKills</defName>
-                            <label>Half Man, Half Orc, All Dead</label>
-                            <description>Kill 100 Half-Orcs</description>
-                            
-                            <tracker Class="AchievementsExpanded.KillTracker">
-                                <raceDef>O21_Alien_HalfOrc</raceDef>
-                                <count>100</count>
-                            </tracker>
-                            
-                            <texPath>Achievements/ForgottenRealms/HundredHalfOrcs</texPath>
-                            <points>25</points>
-                            <tab>O21_FR_AchievementTab</tab>
-                        </AchievementsExpanded.AchievementDef>
+										<tracker Class="AchievementsExpanded.KillTracker">
+											<raceDef>O21_Alien_Orc</raceDef>
+											<count>100</count>
+										</tracker>
 
-                        <!-- Kill 100 Warforged -->
-                        <AchievementsExpanded.AchievementDef>
-                            <defName>O21_VAE_WarforgedKills</defName>
-                            <label>You Definitely Voided Their Warranty</label>
-                            <description>Kill 100 Warforged</description>
-                            
-                            <tracker Class="AchievementsExpanded.KillTracker">
-                                <raceDef>O21_Alien_Warforged</raceDef>
-                                <count>100</count>
-                            </tracker>
-                            
-                            <texPath>Achievements/ForgottenRealms/HundredWarforged</texPath>
-                            <points>25</points>
-                            <tab>O21_FR_AchievementTab</tab>
-                        </AchievementsExpanded.AchievementDef>
+										<texPath>Achievements/ForgottenRealms/HundredOrcs</texPath>
+										<points>25</points>
+										<tab>O21_FR_AchievementTab</tab>
+									</AchievementsExpanded.AchievementDef>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>raceToggle_kobold</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<!-- Kill 100 Kobolds -->
+									<AchievementsExpanded.AchievementDef>
+										<defName>O21_VAE_KoboldKills</defName>
+										<label>My Gold, Not Yours! Bad Lizard!</label>
+										<description>Kill 100 Kobolds</description>
 
-                        <!-- Kill 100 Illithids -->
-                        <AchievementsExpanded.AchievementDef>
-                            <defName>O21_VAE_IllithidKills</defName>
-                            <label>Who's Got The Wasabi?</label>
-                            <description>Kill 100 Illithids</description>
-                            
-                            <tracker Class="AchievementsExpanded.KillTracker">
-                                <raceDef>O21_Alien_Illithid</raceDef>
-                                <count>100</count>
-                            </tracker>
-                            
-                            <texPath>Achievements/ForgottenRealms/HundredIllithids</texPath>
-                            <points>25</points>
-                            <tab>O21_FR_AchievementTab</tab>
-                        </AchievementsExpanded.AchievementDef>
+										<tracker Class="AchievementsExpanded.KillTracker">
+											<raceDef>O21_Alien_Kobold</raceDef>
+											<count>100</count>
+										</tracker>
 
-                        <!-- Kill 100 Gith -->
-                        <AchievementsExpanded.AchievementDef>
-                            <defName>O21_VAE_GithKills</defName>
-                            <label>Never Gonna Gith You Up</label>
-                            <description>Kill 100 Gith</description>
-                            
-                            <tracker Class="AchievementsExpanded.KillTracker">
-                                <raceDef>O21_Alien_Gith</raceDef>
-                                <count>100</count>
-                            </tracker>
-                            
-                            <texPath>Achievements/ForgottenRealms/HundredGith</texPath>
-                            <points>25</points>
-                            <tab>O21_FR_AchievementTab</tab>
-                        </AchievementsExpanded.AchievementDef>
+										<texPath>Achievements/ForgottenRealms/HundredKobolds</texPath>
+										<points>25</points>
+										<tab>O21_FR_AchievementTab</tab>
+									</AchievementsExpanded.AchievementDef>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>raceToggle_halforc</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<!-- Kill 100 Half-Orcs -->
+									<AchievementsExpanded.AchievementDef>
+										<defName>O21_VAE_HalfOrcKills</defName>
+										<label>Half Man, Half Orc, All Dead</label>
+										<description>Kill 100 Half-Orcs</description>
 
-                        <!-- Kill 100 Goblins -->
-                        <AchievementsExpanded.AchievementDef>
-                            <defName>O21_VAE_GoblinKills</defName>
-                            <label>Let's Face It, This Was Pest Control</label>
-                            <description>Kill 100 Goblins</description>
-                            
-                            <tracker Class="AchievementsExpanded.KillTracker">
-                                <raceDef>O21_Alien_Goblin</raceDef>
-                                <count>100</count>
-                            </tracker>
-                            
-                            <texPath>Achievements/ForgottenRealms/HundredGoblins</texPath>
-                            <points>25</points>
-                            <tab>O21_FR_AchievementTab</tab>
-                        </AchievementsExpanded.AchievementDef>
+										<tracker Class="AchievementsExpanded.KillTracker">
+											<raceDef>O21_Alien_HalfOrc</raceDef>
+											<count>100</count>
+										</tracker>
 
-                        <!-- Kill 100 Hobgoblins -->
-                        <AchievementsExpanded.AchievementDef>
-                            <defName>O21_VAE_HobgoblinKills</defName>
-                            <label>Hobbling Along No More</label>
-                            <description>Kill 100 Hobgoblins</description>
-                            
-                            <tracker Class="AchievementsExpanded.KillTracker">
-                                <raceDef>O21_Alien_Hobgoblin</raceDef>
-                                <count>100</count>
-                            </tracker>
-                            
-                            <texPath>Achievements/ForgottenRealms/HundredHobgoblins</texPath>
-                            <points>25</points>
-                            <tab>O21_FR_AchievementTab</tab>
-                        </AchievementsExpanded.AchievementDef>
+										<texPath>Achievements/ForgottenRealms/HundredHalfOrcs</texPath>
+										<points>25</points>
+										<tab>O21_FR_AchievementTab</tab>
+									</AchievementsExpanded.AchievementDef>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>raceToggle_warforged</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<!-- Kill 100 Warforged -->
+									<AchievementsExpanded.AchievementDef>
+										<defName>O21_VAE_WarforgedKills</defName>
+										<label>You Definitely Voided Their Warranty</label>
+										<description>Kill 100 Warforged</description>
 
-                        <!-- Kill 100 Tieflings -->
-                        <AchievementsExpanded.AchievementDef>
-                            <defName>O21_VAE_TieflingKills</defName>
-                            <label>You're Just Sending Them Home Really</label>
-                            <description>Kill 100 Tieflings</description>
-                            
-                            <tracker Class="AchievementsExpanded.KillTracker">
-                                <raceDef>O21_Alien_Tiefling</raceDef>
-                                <count>100</count>
-                            </tracker>
-                            
-                            <texPath>Achievements/ForgottenRealms/HundredTieflings</texPath>
-                            <points>25</points>
-                            <tab>O21_FR_AchievementTab</tab>
-                        </AchievementsExpanded.AchievementDef>
-                    </value>
-                </li>
-            </operations>
-        </match>
-    </Operation>
+										<tracker Class="AchievementsExpanded.KillTracker">
+											<raceDef>O21_Alien_Warforged</raceDef>
+											<count>100</count>
+										</tracker>
+
+										<texPath>Achievements/ForgottenRealms/HundredWarforged</texPath>
+										<points>25</points>
+										<tab>O21_FR_AchievementTab</tab>
+									</AchievementsExpanded.AchievementDef>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>raceToggle_illithid</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<!-- Kill 100 Illithids -->
+									<AchievementsExpanded.AchievementDef>
+										<defName>O21_VAE_IllithidKills</defName>
+										<label>Who's Got The Wasabi?</label>
+										<description>Kill 100 Illithids</description>
+
+										<tracker Class="AchievementsExpanded.KillTracker">
+											<raceDef>O21_Alien_Illithid</raceDef>
+											<count>100</count>
+										</tracker>
+
+										<texPath>Achievements/ForgottenRealms/HundredIllithids</texPath>
+										<points>25</points>
+										<tab>O21_FR_AchievementTab</tab>
+									</AchievementsExpanded.AchievementDef>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>raceToggle_gith</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<!-- Kill 100 Gith -->
+									<AchievementsExpanded.AchievementDef>
+										<defName>O21_VAE_GithKills</defName>
+										<label>Never Gonna Gith You Up</label>
+										<description>Kill 100 Gith</description>
+
+										<tracker Class="AchievementsExpanded.KillTracker">
+											<raceDef>O21_Alien_Gith</raceDef>
+											<count>100</count>
+										</tracker>
+
+										<texPath>Achievements/ForgottenRealms/HundredGith</texPath>
+										<points>25</points>
+										<tab>O21_FR_AchievementTab</tab>
+									</AchievementsExpanded.AchievementDef>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>raceToggle_goblin</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<!-- Kill 100 Goblins -->
+									<AchievementsExpanded.AchievementDef>
+										<defName>O21_VAE_GoblinKills</defName>
+										<label>Let's Face It, This Was Pest Control</label>
+										<description>Kill 100 Goblins</description>
+
+										<tracker Class="AchievementsExpanded.KillTracker">
+											<raceDef>O21_Alien_Goblin</raceDef>
+											<count>100</count>
+										</tracker>
+
+										<texPath>Achievements/ForgottenRealms/HundredGoblins</texPath>
+										<points>25</points>
+										<tab>O21_FR_AchievementTab</tab>
+									</AchievementsExpanded.AchievementDef>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>raceToggle_hobgoblin</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<!-- Kill 100 Hobgoblins -->
+									<AchievementsExpanded.AchievementDef>
+										<defName>O21_VAE_HobgoblinKills</defName>
+										<label>Hobbling Along No More</label>
+										<description>Kill 100 Hobgoblins</description>
+
+										<tracker Class="AchievementsExpanded.KillTracker">
+											<raceDef>O21_Alien_Hobgoblin</raceDef>
+											<count>100</count>
+										</tracker>
+
+										<texPath>Achievements/ForgottenRealms/HundredHobgoblins</texPath>
+										<points>25</points>
+										<tab>O21_FR_AchievementTab</tab>
+									</AchievementsExpanded.AchievementDef>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>raceToggle_tiefling</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs</xpath>
+								<value>
+									<!-- Kill 100 Tieflings -->
+									<AchievementsExpanded.AchievementDef>
+										<defName>O21_VAE_TieflingKills</defName>
+										<label>You're Just Sending Them Home Really</label>
+										<description>Kill 100 Tieflings</description>
+
+										<tracker Class="AchievementsExpanded.KillTracker">
+											<raceDef>O21_Alien_Tiefling</raceDef>
+											<count>100</count>
+										</tracker>
+
+										<texPath>Achievements/ForgottenRealms/HundredTieflings</texPath>
+										<points>25</points>
+										<tab>O21_FR_AchievementTab</tab>
+									</AchievementsExpanded.AchievementDef>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+			</operations>
+		</match>
+	</Operation>
 
 </Patch>

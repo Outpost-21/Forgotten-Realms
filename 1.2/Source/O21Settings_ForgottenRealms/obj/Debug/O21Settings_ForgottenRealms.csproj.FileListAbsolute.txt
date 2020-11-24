@@ -4,3 +4,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-O21-Forgotten-Realm
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-O21-Forgotten-Realms\1.2\Source\O21Settings_ForgottenRealms\obj\Debug\O21Settings_ForgottenRealms.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-O21-Forgotten-Realms\1.2\Source\O21Settings_ForgottenRealms\obj\Debug\O21Settings_ForgottenRealms.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\-O21-Forgotten-Realms\1.2\Assemblies\O21Settings_ForgottenRealms.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[O21] Forgotten Realms\1.2\Assemblies\O21Settings_ForgottenRealms.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[O21] Forgotten Realms\1.2\Source\O21Settings_ForgottenRealms\obj\Debug\O21Settings_ForgottenRealms.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[O21] Forgotten Realms\1.2\Source\O21Settings_ForgottenRealms\obj\Debug\O21Settings_ForgottenRealms.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\[O21] Forgotten Realms\1.2\Source\O21Settings_ForgottenRealms\obj\Debug\O21Settings_ForgottenRealms.dll

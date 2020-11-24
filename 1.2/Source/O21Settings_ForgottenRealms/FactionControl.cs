@@ -17,71 +17,61 @@ namespace O21Settings_ForgottenRealms
         {
             ForgottenRealmsSettings settings = ForgottenRealmsMod.settings;
 
-            if (!settings.faction_elfDark)
+            if (!settings.raceToggle_dwarf)
             {
-                ForgottenFactionsDefOf.O21_DarkElfKingdoms.requiredCountAtGameStart = 0;
-                ForgottenFactionsDefOf.O21_DarkElfKingdoms.maxCountAtGameStart = 0;
+                settings.factionToggle_dwarf = false;
             }
-            if (!settings.faction_elfMoon)
+            if (!settings.raceToggle_elfDark)
             {
-                ForgottenFactionsDefOf.O21_MoonElfKingdoms.requiredCountAtGameStart = 0;
-                ForgottenFactionsDefOf.O21_MoonElfKingdoms.maxCountAtGameStart = 0;
+                settings.factionToggle_elfDark = false;
             }
-            if (!settings.faction_elfSun)
+            if (!settings.raceToggle_elfMoon)
             {
-                ForgottenFactionsDefOf.O21_SunElfKingdoms.requiredCountAtGameStart = 0;
-                ForgottenFactionsDefOf.O21_SunElfKingdoms.maxCountAtGameStart = 0;
+                settings.factionToggle_elfMoon = false;
             }
-            if (!settings.faction_elfWood)
+            if (!settings.raceToggle_elfSun)
             {
-                ForgottenFactionsDefOf.O21_WoodElfKingdoms.requiredCountAtGameStart = 0;
-                ForgottenFactionsDefOf.O21_WoodElfKingdoms.maxCountAtGameStart = 0;
+                settings.factionToggle_elfSun = false;
             }
-
-            if (!settings.faction_dwarf)
+            if (!settings.raceToggle_elfWood)
             {
-                ForgottenFactionsDefOf.O21_DwarfTribes.requiredCountAtGameStart = 0;
-                ForgottenFactionsDefOf.O21_DwarfTribes.maxCountAtGameStart = 0;
+                settings.factionToggle_elfWood = false;
             }
-            if (!settings.faction_gith)
+            if (!settings.raceToggle_gith)
             {
-                ForgottenFactionsDefOf.O21_GithTribes.requiredCountAtGameStart = 0;
-                ForgottenFactionsDefOf.O21_GithTribes.maxCountAtGameStart = 0;
+                settings.factionToggle_gith = false;
             }
-            if (!settings.faction_goblin)
+            if (!settings.raceToggle_goblin)
             {
-                ForgottenFactionsDefOf.O21_GoblinTribes.requiredCountAtGameStart = 0;
-                ForgottenFactionsDefOf.O21_GoblinTribes.maxCountAtGameStart = 0;
+                settings.factionToggle_goblin = false;
             }
-            if (!settings.faction_hobgoblin)
+            if (!settings.raceToggle_halforc)
             {
-                ForgottenFactionsDefOf.O21_HobgoblinTribes.requiredCountAtGameStart = 0;
-                ForgottenFactionsDefOf.O21_HobgoblinTribes.maxCountAtGameStart = 0;
+                settings.factionToggle_halforc = false;
             }
-            if (!settings.faction_illithid)
+            if (!settings.raceToggle_hobgoblin)
             {
-                ForgottenFactionsDefOf.O21_IllithidTribes.requiredCountAtGameStart = 0;
-                ForgottenFactionsDefOf.O21_IllithidTribes.maxCountAtGameStart = 0;
+                settings.factionToggle_hobgoblin = false;
             }
-            if (!settings.faction_kobold)
+            if (!settings.raceToggle_illithid)
             {
-                ForgottenFactionsDefOf.O21_KoboldTribes.requiredCountAtGameStart = 0;
-                ForgottenFactionsDefOf.O21_KoboldTribes.maxCountAtGameStart = 0;
+                settings.factionToggle_illithid = false;
             }
-            if (!settings.faction_orc)
+            if (!settings.raceToggle_kobold)
             {
-                ForgottenFactionsDefOf.O21_OrcTribes.requiredCountAtGameStart = 0;
-                ForgottenFactionsDefOf.O21_OrcTribes.maxCountAtGameStart = 0;
+                settings.factionToggle_kobold = false;
             }
-            if (!settings.faction_tiefling)
+            if (!settings.raceToggle_orc)
             {
-                ForgottenFactionsDefOf.O21_TieflingTribes.requiredCountAtGameStart = 0;
-                ForgottenFactionsDefOf.O21_TieflingTribes.maxCountAtGameStart = 0;
+                settings.factionToggle_orc = false;
             }
-            if (!settings.faction_warforged)
+            if (!settings.raceToggle_tiefling)
             {
-                ForgottenFactionsDefOf.O21_WarforgedTribes.requiredCountAtGameStart = 0;
-                ForgottenFactionsDefOf.O21_WarforgedTribes.maxCountAtGameStart = 0;
+                settings.factionToggle_tiefling = false;
+            }
+            if (!settings.raceToggle_warforged)
+            {
+                settings.factionToggle_warforged = false;
             }
         }
     }
