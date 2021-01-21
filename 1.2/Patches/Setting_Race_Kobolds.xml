@@ -3,81 +3,42 @@
 
     <Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
         <settings>
-            <li>factionToggle_kobold</li>
-        </settings>
-        <inactive Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_KoboldTribes"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_KoboldTribes_Peasant"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_KoboldTribes_Merchant"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_KoboldTribes_Fighter"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_KoboldTribes_Warrior"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_KoboldTribes_Bowman"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_KoboldTribes_Champion"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_KoboldTribes_Chief"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[@Name="O21_KoboldTribePawnBase"]</xpath>
-                </li>
-            </operations>
-        </inactive>
-    </Operation>
-
-    <Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
-        <settings>
             <li>raceToggle_kobold</li>
         </settings>
-        <inactive Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/AlienRace.RaceSettings[defName="O21_Kobold_Settings"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ScenarioDef[defName="O21_CrashlandedKobolds"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ScenarioDef[defName="O21_LostTribeKobold"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_KoboldPlayerColony"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_KoboldPlayerTribe"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_Kobold"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_KoboldTribal"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="O21_Alien_Kobold"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[defName="O21_Leather_Kobold"]</xpath>
-                </li>
-            </operations>
-		</inactive>
 		<active Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+					<source>1.2/OnDemand</source>
+					<folders>
+						<li>Kobolds</li>
+					</folders>
+				</li>
+
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>factionToggle_kobold</li>
+					</settings>
+					<active Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+						<source>1.2/OnDemand</source>
+						<folders>
+							<li>Kobolds_NPC</li>
+						</folders>
+					</active>
+				</li>
+
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>settingToggle_scenarios</li>
+					</settings>
+					<active Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+						<source>1.2/OnDemand</source>
+						<folders>
+							<li>Kobolds_Scenario</li>
+						</folders>
+					</active>
+				</li>
+				
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Royalty</li>

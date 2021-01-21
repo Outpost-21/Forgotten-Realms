@@ -3,81 +3,42 @@
 
     <Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
         <settings>
-            <li>factionToggle_warforged</li>
-        </settings>
-        <inactive Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_WarforgedTribes"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_WarforgedTribes_Peasant"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_WarforgedTribes_Merchant"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_WarforgedTribes_Fighter"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_WarforgedTribes_Warrior"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_WarforgedTribes_Bowman"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_WarforgedTribes_Champion"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_WarforgedTribes_Chief"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[@Name="O21_WarforgedTribePawnBase"]</xpath>
-                </li>
-            </operations>
-        </inactive>
-    </Operation>
-
-    <Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
-        <settings>
             <li>raceToggle_warforged</li>
         </settings>
-        <inactive Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/AlienRace.RaceSettings[defName="O21_Warforged_Settings"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ScenarioDef[defName="O21_CrashlandedWarforgeds"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ScenarioDef[defName="O21_LostTribeWarforged"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_WarforgedPlayerColony"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_WarforgedPlayerTribe"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_Warforged"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_WarforgedTribal"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="O21_Alien_Warforged"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[defName="O21_Leather_Warforged"]</xpath>
-                </li>
-            </operations>
-		</inactive>
 		<active Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+					<source>1.2/OnDemand</source>
+					<folders>
+						<li>Warforged</li>
+					</folders>
+				</li>
+
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>factionToggle_warforged</li>
+					</settings>
+					<active Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+						<source>1.2/OnDemand</source>
+						<folders>
+							<li>Warforged_NPC</li>
+						</folders>
+					</active>
+				</li>
+
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>settingToggle_scenarios</li>
+					</settings>
+					<active Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+						<source>1.2/OnDemand</source>
+						<folders>
+							<li>Warforged_Scenario</li>
+						</folders>
+					</active>
+				</li>
+				
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Royalty</li>

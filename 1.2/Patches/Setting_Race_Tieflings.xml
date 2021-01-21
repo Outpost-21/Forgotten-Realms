@@ -3,82 +3,42 @@
 
     <Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
         <settings>
-            <li>factionToggle_tiefling</li>
-        </settings>
-        <inactive Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_TieflingTribes"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_TieflingTribes_Peasant"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_TieflingTribes_Merchant"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_TieflingTribes_Fighter"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_TieflingTribes_Warrior"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_TieflingTribes_Bowman"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_TieflingTribes_Champion"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_TieflingTribes_Chief"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[@Name="O21_TieflingTribePawnBase"]</xpath>
-                </li>
-            </operations>
-        </inactive>
-    </Operation>
-
-
-    <Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
-        <settings>
             <li>raceToggle_tiefling</li>
         </settings>
-        <inactive Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/AlienRace.RaceSettings[defName="O21_Tiefling_Settings"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ScenarioDef[defName="O21_CrashlandedTieflings"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ScenarioDef[defName="O21_LostTribeTiefling"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_TieflingPlayerColony"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_TieflingPlayerTribe"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_Tiefling"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_TieflingTribal"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="O21_Alien_Tiefling"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[defName="O21_Leather_Tiefling"]</xpath>
-                </li>
-            </operations>
-		</inactive>
 		<active Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+					<source>1.2/OnDemand</source>
+					<folders>
+						<li>Tieflings</li>
+					</folders>
+				</li>
+
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>factionToggle_tiefling</li>
+					</settings>
+					<active Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+						<source>1.2/OnDemand</source>
+						<folders>
+							<li>Tieflings_NPC</li>
+						</folders>
+					</active>
+				</li>
+
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>settingToggle_scenarios</li>
+					</settings>
+					<active Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+						<source>1.2/OnDemand</source>
+						<folders>
+							<li>Tieflings_Scenario</li>
+						</folders>
+					</active>
+				</li>
+				
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Royalty</li>

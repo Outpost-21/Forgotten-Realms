@@ -3,81 +3,42 @@
 
     <Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
         <settings>
-            <li>factionToggle_orc</li>
-        </settings>
-        <inactive Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_OrcTribes"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_OrcTribes_Peasant"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_OrcTribes_Merchant"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_OrcTribes_Fighter"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_OrcTribes_Warrior"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_OrcTribes_Bowman"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_OrcTribes_Champion"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_OrcTribes_Chief"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[@Name="O21_OrcTribePawnBase"]</xpath>
-                </li>
-            </operations>
-        </inactive>
-    </Operation>
-
-    <Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
-        <settings>
             <li>raceToggle_orc</li>
         </settings>
-        <inactive Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/AlienRace.RaceSettings[defName="O21_Orc_Settings"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ScenarioDef[defName="O21_CrashlandedOrc"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ScenarioDef[defName="O21_LostTribeOrc"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_OrcPlayerColony"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_OrcPlayerTribe"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_Orc"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_OrcTribal"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="O21_Alien_Orc"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[defName="O21_Leather_Orc"]</xpath>
-                </li>
-            </operations>
-		</inactive>
 		<active Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+					<source>1.2/OnDemand</source>
+					<folders>
+						<li>Orcs</li>
+					</folders>
+				</li>
+
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>factionToggle_orc</li>
+					</settings>
+					<active Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+						<source>1.2/OnDemand</source>
+						<folders>
+							<li>Orcs_NPC</li>
+						</folders>
+					</active>
+				</li>
+
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>settingToggle_scenarios</li>
+					</settings>
+					<active Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+						<source>1.2/OnDemand</source>
+						<folders>
+							<li>Orcs_Scenario</li>
+						</folders>
+					</active>
+				</li>
+				
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Royalty</li>

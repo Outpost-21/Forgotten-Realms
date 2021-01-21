@@ -3,81 +3,42 @@
 
     <Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
         <settings>
-            <li>factionToggle_goblin</li>
-        </settings>
-        <inactive Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_GoblinTribes"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_GoblinTribes_Peasant"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_GoblinTribes_Merchant"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_GoblinTribes_Fighter"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_GoblinTribes_Warrior"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_GoblinTribes_Bowman"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_GoblinTribes_Champion"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_GoblinTribes_Chief"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[@Name="O21_GoblinTribePawnBase"]</xpath>
-                </li>
-            </operations>
-        </inactive>
-    </Operation>
-
-    <Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
-        <settings>
             <li>raceToggle_goblin</li>
         </settings>
-        <inactive Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/AlienRace.RaceSettings[defName="Goblin_Settings"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ScenarioDef[defName="O21_CrashlandedGoblins"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ScenarioDef[defName="O21_LostTribeGoblin"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_GoblinPlayerColony"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_GoblinPlayerTribe"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_Goblin"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_GoblinTribal"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="O21_Alien_Goblin"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[defName="O21_Leather_Goblin"]</xpath>
-                </li>
-            </operations>
-		</inactive>
 		<active Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+					<source>1.2/OnDemand</source>
+					<folders>
+						<li>Goblins</li>
+					</folders>
+				</li>
+
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>factionToggle_goblin</li>
+					</settings>
+					<active Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+						<source>1.2/OnDemand</source>
+						<folders>
+							<li>Goblins_NPC</li>
+						</folders>
+					</active>
+				</li>
+
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>settingToggle_scenarios</li>
+					</settings>
+					<active Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+						<source>1.2/OnDemand</source>
+						<folders>
+							<li>Goblins_Scenario</li>
+						</folders>
+					</active>
+				</li>
+				
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Royalty</li>

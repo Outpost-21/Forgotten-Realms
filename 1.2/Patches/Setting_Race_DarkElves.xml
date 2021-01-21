@@ -1,80 +1,44 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-    <Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
-        <settings>
-            <li>factionToggle_elfDark</li>
-        </settings>
-        <inactive Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/FactionDef[defName="O21_DarkElfKingdoms"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_ElvenSettlements_Peasant_Dark"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_ElvenSettlements_Merchant_Dark"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_ElvenSettlements_Squire_Dark"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_ElvenSettlements_Footsoldier_Dark"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_ElvenSettlements_Bowman_Dark"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_ElvenSettlements_Knight_Dark"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[defName="O21_ElvenSettlements_Lord_Dark"]</xpath>
-                </li>
-                <li Class="PatchOperationRemove">
-                    <xpath>/Defs/PawnKindDef[@Name="O21_ElvenSettlementPawnBase_Dark"]</xpath>
-                </li>
-            </operations>
-        </inactive>
-    </Operation>
-
 	<Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
 		<settings>
 			<li>raceToggle_elfDark</li>
 		</settings>
-		<inactive Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/AlienRace.RaceSettings[defName="O21_DarkElf_Settings"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ScenarioDef[defName="O21_MedivalDarkElves"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/FactionDef[defName="O21_DarkElfPlayerColony"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/FactionDef[defName="O21_DarkElfPlayerTribe"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/PawnKindDef[defName="O21_DarkElfColonist"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/PawnKindDef[defName="O21_DarkElfTribal"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="O21_Alien_DarkElf"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="O21_Leather_DarkElf"]</xpath>
-				</li>
-			</operations>
-		</inactive>
 		<active Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+					<source>1.2/OnDemand</source>
+					<folders>
+						<li>DarkElves</li>
+					</folders>
+				</li>
+
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>factionToggle_elfDark</li>
+					</settings>
+					<active Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+						<source>1.2/OnDemand</source>
+						<folders>
+							<li>DarkElves_NPC</li>
+						</folders>
+					</active>
+				</li>
+
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>settingToggle_scenarios</li>
+					</settings>
+					<active Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+						<source>1.2/OnDemand</source>
+						<folders>
+							<li>DarkElves_Scenario</li>
+						</folders>
+					</active>
+				</li>
+
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Royalty</li>
@@ -92,6 +56,7 @@
 						</operations>
 					</match>
 				</li>
+
 				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
 					<settings>
 						<li>settingToggle_raceIntegration</li>

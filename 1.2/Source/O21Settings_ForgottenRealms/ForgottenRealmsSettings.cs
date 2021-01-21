@@ -14,6 +14,7 @@ namespace O21Settings_ForgottenRealms
     {
         // Other
         public bool settingToggle_raceIntegration = true;
+        public bool settingToggle_scenarios = true;
 
         // Creatures
         public bool creatureToggle_rustMonster = true;
@@ -76,6 +77,7 @@ namespace O21Settings_ForgottenRealms
             base.ExposeData();
             // Other
             Scribe_Values.Look(ref settingToggle_raceIntegration, "settingToggle_raceIntegration", true);
+            Scribe_Values.Look(ref settingToggle_scenarios, "settingToggle_scenarios", true);
 
             // Creatures
             Scribe_Values.Look(ref creatureToggle_rustMonster, "creatureToggle_rustMonster", true);

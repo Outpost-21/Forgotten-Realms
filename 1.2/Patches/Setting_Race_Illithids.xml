@@ -3,99 +3,42 @@
 
 	<Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
 		<settings>
-			<li>factionToggle_illithid</li>
-		</settings>
-		<inactive Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/FactionDef[defName="O21_IllithidTribes"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/PawnKindDef[defName="O21_IllithidTribes_Peasant"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/PawnKindDef[defName="O21_IllithidTribes_Merchant"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/PawnKindDef[defName="O21_IllithidTribes_Fighter"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/PawnKindDef[defName="O21_IllithidTribes_Warrior"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/PawnKindDef[defName="O21_IllithidTribes_Bowman"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/PawnKindDef[defName="O21_IllithidTribes_Champion"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/PawnKindDef[defName="O21_IllithidTribes_Chief"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/PawnKindDef[@Name="O21_IllithidTribePawnBase"]</xpath>
-				</li>
-			</operations>
-		</inactive>
-	</Operation>
-
-	<Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
-		<settings>
 			<li>raceToggle_illithid</li>
 		</settings>
-		<inactive Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/AlienRace.RaceSettings[defName="O21_Illithid_Settings"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ScenarioDef[defName="O21_MedivalIllithids"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/HediffDef[defName="O21_Hediff_IllithidCeremorphosis"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="O21_Item_IllithidTadpole"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="O21_Item_ElderBrain"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="O21_Building_ElderBrainPool"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/FactionDef[defName="O21_IllithidPlayerColony"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/FactionDef[defName="O21_IllithidPlayerTribe"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/PawnKindDef[defName="O21_Illithid"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/PawnKindDef[defName="O21_IllithidTribal"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/PawnKindDef[defName="O21_IllithidConverted"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="O21_Alien_Illithid"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="O21_Leather_Illithid"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/RecipeDef[defName="O21_ImplantIllithidTadpole"]</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/BodyDef[defName="O21_Body_Illithid"]</xpath>
-				</li>
-			</operations>
-		</inactive>
 		<active Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+					<source>1.2/OnDemand</source>
+					<folders>
+						<li>Illithids</li>
+					</folders>
+				</li>
+
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>factionToggle_illithid</li>
+					</settings>
+					<active Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+						<source>1.2/OnDemand</source>
+						<folders>
+							<li>Illithids_NPC</li>
+						</folders>
+					</active>
+				</li>
+
+				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>settingToggle_scenarios</li>
+					</settings>
+					<active Class="O21Settings_ForgottenRealms.PatchOperation_OnDemand">
+						<source>1.2/OnDemand</source>
+						<folders>
+							<li>Illithids_Scenario</li>
+						</folders>
+					</active>
+				</li>
+				
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Royalty</li>
