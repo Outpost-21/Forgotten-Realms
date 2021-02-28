@@ -73,6 +73,7 @@
     <Compile Include="FactionControl.cs" />
     <Compile Include="ForgottenRealmsMod.cs" />
     <Compile Include="ForgottenRealmsSettings.cs" />
+    <Compile Include="HarmonyPatches.cs" />
     <Compile Include="PatchOperation_SettingActive.cs" />
     <Compile Include="PatchOperation_OnDemand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

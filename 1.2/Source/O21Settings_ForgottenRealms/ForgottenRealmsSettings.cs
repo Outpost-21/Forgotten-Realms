@@ -34,8 +34,10 @@ namespace O21Settings_ForgottenRealms
         public bool raceToggle_halforc = true;
         public bool raceToggle_hobgoblin = true;
         public bool raceToggle_illithid = true;
+        public bool raceToggle_killoren = true;
         public bool raceToggle_kobold = true;
         public bool raceToggle_orc = true;
+        public bool raceToggle_tabaxi = true;
         public bool raceToggle_tiefling = true;
         public bool raceToggle_warforged = true;
 
@@ -51,8 +53,10 @@ namespace O21Settings_ForgottenRealms
         public bool factionToggle_halforc = true;
         public bool factionToggle_hobgoblin = true;
         public bool factionToggle_illithid = true;
+        public bool factionToggle_killoren = true;
         public bool factionToggle_kobold = true;
         public bool factionToggle_orc = true;
+        public bool factionToggle_tabaxi = true;
         public bool factionToggle_tiefling = true;
         public bool factionToggle_warforged = true;
 
@@ -97,11 +101,12 @@ namespace O21Settings_ForgottenRealms
             Scribe_Values.Look(ref raceToggle_halforc, "raceToggle_halforc", true);
             Scribe_Values.Look(ref raceToggle_hobgoblin, "raceToggle_hobgoblin", true);
             Scribe_Values.Look(ref raceToggle_illithid, "raceToggle_illithid", true);
+            Scribe_Values.Look(ref raceToggle_kobold, "raceToggle_killoren", true);
             Scribe_Values.Look(ref raceToggle_kobold, "raceToggle_kobold", true);
             Scribe_Values.Look(ref raceToggle_orc, "raceToggle_orc", true);
+            Scribe_Values.Look(ref raceToggle_tabaxi, "raceToggle_tabaxi", true);
             Scribe_Values.Look(ref raceToggle_tiefling, "raceToggle_tiefling", true);
             Scribe_Values.Look(ref raceToggle_warforged, "raceToggle_warforged", true);
-
             // Factions
             Scribe_Values.Look(ref factionToggle_elfDark, "factionToggle_elfDark", true);
             Scribe_Values.Look(ref factionToggle_elfMoon, "factionToggle_elfMoon", true);
@@ -111,10 +116,13 @@ namespace O21Settings_ForgottenRealms
             Scribe_Values.Look(ref factionToggle_dwarf, "factionToggle_dwarf", true);
             Scribe_Values.Look(ref factionToggle_gith, "factionToggle_gith", true);
             Scribe_Values.Look(ref factionToggle_goblin, "factionToggle_goblin", true);
+            Scribe_Values.Look(ref factionToggle_halforc, "factionToggle_halforc", true);
             Scribe_Values.Look(ref factionToggle_hobgoblin, "factionToggle_hobgoblin", true);
             Scribe_Values.Look(ref factionToggle_illithid, "factionToggle_illithid", true);
+            Scribe_Values.Look(ref factionToggle_kobold, "factionToggle_killoren", true);
             Scribe_Values.Look(ref factionToggle_kobold, "factionToggle_kobold", true);
             Scribe_Values.Look(ref factionToggle_orc, "factionToggle_orc", true);
+            Scribe_Values.Look(ref factionToggle_tabaxi, "factionToggle_tabaxi", true);
             Scribe_Values.Look(ref factionToggle_tiefling, "factionToggle_tiefling", true);
             Scribe_Values.Look(ref factionToggle_warforged, "factionToggle_warforged", true);
 

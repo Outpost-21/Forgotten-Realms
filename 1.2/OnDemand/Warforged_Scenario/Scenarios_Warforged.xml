@@ -3,10 +3,10 @@
 
 	<ScenarioDef>
 		<defName>O21_CrashlandedWarforgeds</defName>
-		<label>Crashlanded Warforgeds</label>
+		<label>Crashlanded Warforged</label>
 		<description>The three of you awake in your cryptosleep sarcophagi to the sound of sirens and ripping metal. You barely get to the escape pods before the ship is torn apart. Some time later, you land on this unknown rimworld.</description>
 		<scenario>
-			<summary>Three crashlanded survivors - the classic RimWorld experience...but with Warforgeds!</summary>
+			<summary>Three crashlanded survivors - the classic RimWorld experience...but with Warforged!</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>O21_WarforgedPlayerColony</factionDef>

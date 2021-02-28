@@ -81,14 +81,14 @@
         </pawnKindSettings>
 	</AlienRace.RaceSettings>
 
-	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="Alien_Bajoran">
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>O21_Alien_Dwarf</defName>
 		<label>Dwarf</label>
 		<description>Dwarves, sometimes called the Stout Folk, were a natural humanoid race common throughout parts of Toril as well as Abeir. Dwarves were a tough, tradition-abiding folk known for their strong martial traditions and beautiful craftsmanship.</description>
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.85</maleGenderProbability>
-				<immuneToAge>false</immuneToAge>
+				<immuneToAge>true</immuneToAge>
 				<humanRecipeImport>true</humanRecipeImport>
 				<forcedRaceTraitEntries />
 				<disallowedTraits>
@@ -165,6 +165,11 @@
 				</cannotReceiveThoughts>
 			</thoughtSettings>
 			<raceRestriction />
+			<compatibility>
+				<isFlesh>True</isFlesh>
+				<isSentient>True</isSentient>
+				<hasBlood>True</hasBlood>
+			</compatibility>
 		</alienRace>
 		<statBases>
             <MarketValue>1750</MarketValue>
@@ -237,7 +242,7 @@
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
-            <lifeExpectancy>80</lifeExpectancy>
+            <lifeExpectancy>350</lifeExpectancy>
 			<leatherDef>O21_Leather_Dwarf</leatherDef>
 			<nameGenerator>O21_NamerPersonDwarfMale</nameGenerator>
 			<nameGeneratorFemale>O21_NamerPersonDwarfFemale</nameGeneratorFemale>
@@ -267,14 +272,14 @@
 			</specialShadowData>
 			<ageGenerationCurve>
 				<points>
-					<li>(14,0)</li>
-					<li>(16,100)</li>
-					<li>(50,100)</li>
-					<li>(60,30)</li>
-					<li>(70,18)</li>
-					<li>(80,10)</li>
-					<li>(90,3)</li>
-					<li>(100,0)</li>
+					<li>(18,0)</li>
+					<li>(30,100)</li>
+					<li>(70,100)</li>
+					<li>(110,30)</li>
+					<li>(150,18)</li>
+					<li>(200,10)</li>
+					<li>(270,3)</li>
+					<li>(350,0)</li>
 				</points>
 			</ageGenerationCurve>
 			<lifeStageAges Inherit="False">
@@ -296,11 +301,11 @@
 				</li>
 				<li>
 					<def>ElderDwarfStage</def>
-					<minAge>80</minAge>
+					<minAge>250</minAge>
 				</li>
 				<li>
 					<def>AncestorDwarfStage</def>
-					<minAge>120</minAge>
+					<minAge>350</minAge>
 				</li>
 			</lifeStageAges>
 		</race>

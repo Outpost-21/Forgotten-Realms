@@ -242,6 +242,11 @@
 					<li>ButcheredHumanlikeCorpseOpinion</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
+			<compatibility>
+				<isFlesh>False</isFlesh>
+				<isSentient>True</isSentient>
+				<hasBlood>False</hasBlood>
+			</compatibility>
 		</alienRace>
 		<statBases>
 			<Mass>90</Mass>
@@ -410,10 +415,10 @@
                 <needFood>False</needFood>
                 <needRest>False</needRest>
                 <needJoy>True</needJoy>
-                <needComfort>False</needComfort>
+                <needComfort>True</needComfort>
                 <needBeauty>True</needBeauty>
                 <needRoomSize>True</needRoomSize>
-                <needOutdoors>False</needOutdoors>
+                <needOutdoors>True</needOutdoors>
                 <affectedByEMP>False</affectedByEMP>
             </li>
 		</modExtensions>

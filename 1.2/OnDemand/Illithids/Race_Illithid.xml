@@ -128,6 +128,11 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 			</thoughtSettings>
 			<raceRestriction>
 			</raceRestriction>
+			<compatibility>
+				<isFlesh>True</isFlesh>
+				<isSentient>True</isSentient>
+				<hasBlood>True</hasBlood>
+			</compatibility>
 		</alienRace>
 		<statBases>
 			<MarketValue>2000</MarketValue>

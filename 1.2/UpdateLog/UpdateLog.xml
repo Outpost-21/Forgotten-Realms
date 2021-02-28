@@ -1,29 +1,16 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <UpdateLog>
-
-	<currentVersion>2.1.0</currentVersion>
-	<updateOn>Startup</updateOn>
-	<update>true</update>
-	<testing>true</testing>
-	<rightIconBar>
-		<li>
-			<name>Outpost 21 Wiki</name>
-			<icon>O21Logo.png</icon>
-			<url>https://outpost-21.fandom.com/</url>
-		</li>
-	</rightIconBar>
-	<description>[anchor]UpperLeft[/anchor]Your version of Forgotten Realms is now on 2.1.0, old saves should still work as they did before but you will need to set up the mod settings for a new game if you wish to have anything other than the defaults. I won't use this update notice too often, just when I think there are changes substantial enough to warrant getting your attention.
+  <currentVersion>2.2.0</currentVersion>
+  <updateOn>GameInit</updateOn>
+  <description>[anchor]UpperLeft[/anchor]Your version of Forgotten Realms is now on 2.2.0!
 	
-The main changes in this update are:
-- You can now toggle races entirely or just the factions as before. (all are enabled by default)
-- You can now toggle scenarios. (disabled by default)
-- You can now toggle race integration, which will allow races to spawn among the vanilla human factions.
-- All races have both a tribal and spacer scenario now.
-- Half-Orcs can spawn as their own faction now. (Icon is the same as Orcs, no I'm not changing that, just be glad there's even a faction.)
-	
-Important Notes:
-- Changes to settings requires a game restart to properly take effect.
-- Never change settings on an existing save, this WILL break the save. Disabled races/factions are completely removed from the game with how the settings now work. 
-- If you wish to continue a save from before this update, you can, the factions you had disabled before will still be disabled on that save, but new games will only look at the new settings. Do not disable any of the new settings till you want to start a new game though.</description>
+What's new?
+- The Killoren race has been added. Along with appropriate toggles to disable them or their faction.
+- The Tabaxi race has been added. Along with their appropriate toggles to disable them or their faction.
+- Illithids have been changed so they only need to feed once a season, however they now only eat humanoid brains, which you can get when butchering any applicable humanoid, much the same as meat.
+- Illithids can now have a surgery performed which extracts their brain, this is how you will obtain an Elder Brain if you don't have one at the start, or if you can't find one or a trader who sells one.
+- Illithid Elder Brain item and structure, as well as the tadpole have had their textures updated.
 
+It's worth noting this now so you can quit without saving if you wish to disable the new races before continuing. The only time I'll make use of this update log is when an update adds things you may want to disable before continuing so they don't add to your save (preventing you from doing so later safely) and this is one of those times.</description>
+  <actionOnUpdate />
 </UpdateLog>

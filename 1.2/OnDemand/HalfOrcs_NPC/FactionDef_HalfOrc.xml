@@ -16,8 +16,8 @@
             <min>-20</min>
             <max>10</max>
         </naturalColonyGoodwill>
-		<pawnSingular>halforc</pawnSingular>
-		<pawnsPlural>halforcs</pawnsPlural>
+		<pawnSingular>half-orc</pawnSingular>
+		<pawnsPlural>half-orcs</pawnsPlural>
 		<leaderTitle>chief</leaderTitle>
 		<listOrderPriority>20</listOrderPriority>
 		<settlementGenerationWeight>0.25</settlementGenerationWeight>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-    <Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
-        <settings>
-            <li>raceToggle_halforc</li>
-        </settings>
+	<Operation Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+		<settings>
+			<li>raceToggle_halforc</li>
+		</settings>
 		<active Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
@@ -38,7 +38,7 @@
 						</folders>
 					</active>
 				</li>
-				
+
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Royalty</li>
@@ -169,11 +169,34 @@
 									</li>
 								</value>
 							</li>
+							<li Class="PatchOperationAddModExtension">
+								<xpath>/Defs/PawnKindDef[@Name="O21_OrcTribePawnBase"]</xpath>
+								<value>
+									<modExtensions>
+										<li Class="O21Toolbox.PawnKindExt.DefModExt_ExtendedPawnKind">
+											<altRaces>
+												<li>
+													<races>
+														<li>O21_Alien_Orc</li>
+													</races>
+													<weight>20</weight>
+												</li>
+												<li>
+													<races>
+														<li>O21_Alien_HalfOrc</li>
+													</races>
+													<weight>1</weight>
+												</li>
+											</altRaces>
+										</li>
+									</modExtensions>
+								</value>
+							</li>
 						</operations>
 					</active>
 				</li>
-            </operations>
-        </active>
-    </Operation>
+			</operations>
+		</active>
+	</Operation>
 
 </Patch>

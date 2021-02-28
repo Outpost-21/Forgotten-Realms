@@ -200,6 +200,11 @@
 			</thoughtSettings>
 			<raceRestriction>
 			</raceRestriction>
+			<compatibility>
+				<isFlesh>True</isFlesh>
+				<isSentient>True</isSentient>
+				<hasBlood>True</hasBlood>
+			</compatibility>
 		</alienRace>
 		<statBases>
 			<MarketValue>2000</MarketValue>

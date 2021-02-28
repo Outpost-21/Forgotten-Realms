@@ -12,98 +12,151 @@
 			<operations>
 				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
 					<settings>
-						<li>factionToggle_elfDark</li>
-						<li>factionToggle_elfMoon</li>
-						<li>factionToggle_elfSun</li>
-						<li>factionToggle_elfWood</li>
+						<li>raceToggle_elfDark</li>
+						<li>raceToggle_elfMoon</li>
+						<li>raceToggle_elfSun</li>
+						<li>raceToggle_elfWood</li>
 					</settings>
 					<active Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs</xpath>
-								<value>
-									<!-- Kill 100 Elves -->
-									<AchievementsExpanded.AchievementDef>
-										<defName>O21_VAE_ElfKills</defName>
-										<label>Knife the Knife Ears!</label>
-										<description>Kill 100 Elves (of any kind)</description>
+							<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+								<settings>
+									<li>factionToggle_elfDark</li>
+									<li>factionToggle_elfMoon</li>
+									<li>factionToggle_elfSun</li>
+									<li>factionToggle_elfWood</li>
+								</settings>
+								<active Class="PatchOperationSequence">
+									<success>Always</success>
+									<operations>
+										<li Class="PatchOperationAdd">
+											<xpath>/Defs</xpath>
+											<value>
+												<!-- Kill 100 Elves -->
+												<AchievementsExpanded.AchievementDef>
+													<defName>O21_VAE_ElfKills</defName>
+													<label>Knife the Knife Ears!</label>
+													<description>Kill 100 Elves (of any kind)</description>
 
-										<tracker Class="AchievementsExpanded.KillTracker">
-											<factionDefs>
-											</factionDefs>
-											<count>100</count>
-										</tracker>
+													<tracker Class="AchievementsExpanded.KillTracker">
+														<factionDefs>
+														</factionDefs>
+														<count>100</count>
+													</tracker>
 
-										<texPath>Achievements/ForgottenRealms/HundredElves</texPath>
-										<points>25</points>
-										<tab>O21_FR_AchievementTab</tab>
-									</AchievementsExpanded.AchievementDef>
-								</value>
+													<texPath>Achievements/ForgottenRealms/HundredElves</texPath>
+													<points>25</points>
+													<tab>O21_FR_AchievementTab</tab>
+												</AchievementsExpanded.AchievementDef>
+											</value>
+										</li>
+									</operations>
+								</active>
 							</li>
 						</operations>
 					</active>
 				</li>
 				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
 					<settings>
-						<li>factionToggle_elfDark</li>
+						<li>raceToggle_elfDark</li>
 					</settings>
 					<active Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/AchievementsExpanded.AchievementDef[defName="O21_VAE_ElfKills"]/tracker[@Class="AchievementsExpanded.KillTracker"]/factionDefs</xpath>
-								<value>
-									<li>O21_DarkElfKingdoms</li>
-								</value>
+							<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+								<settings>
+									<li>factionToggle_elfDark</li>
+								</settings>
+								<active Class="PatchOperationSequence">
+									<success>Always</success>
+									<operations>
+										<li Class="PatchOperationAdd">
+											<xpath>/Defs/AchievementsExpanded.AchievementDef[defName="O21_VAE_ElfKills"]/tracker[@Class="AchievementsExpanded.KillTracker"]/factionDefs</xpath>
+											<value>
+												<li>O21_DarkElfKingdoms</li>
+											</value>
+										</li>
+									</operations>
+								</active>
 							</li>
 						</operations>
 					</active>
 				</li>
 				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
 					<settings>
-						<li>factionToggle_elfMoon</li>
+						<li>raceToggle_elfMoon</li>
 					</settings>
 					<active Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/AchievementsExpanded.AchievementDef[defName="O21_VAE_ElfKills"]/tracker[@Class="AchievementsExpanded.KillTracker"]/factionDefs</xpath>
-								<value>
-									<li>O21_MoonElfKingdoms</li>
-								</value>
+							<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+								<settings>
+									<li>factionToggle_elfMoon</li>
+								</settings>
+								<active Class="PatchOperationSequence">
+									<success>Always</success>
+									<operations>
+										<li Class="PatchOperationAdd">
+											<xpath>/Defs/AchievementsExpanded.AchievementDef[defName="O21_VAE_ElfKills"]/tracker[@Class="AchievementsExpanded.KillTracker"]/factionDefs</xpath>
+											<value>
+												<li>O21_MoonElfKingdoms</li>
+											</value>
+										</li>
+									</operations>
+								</active>
 							</li>
 						</operations>
 					</active>
 				</li>
 				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
 					<settings>
-						<li>factionToggle_elfSun</li>
+						<li>raceToggle_elfSun</li>
 					</settings>
 					<active Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/AchievementsExpanded.AchievementDef[defName="O21_VAE_ElfKills"]/tracker[@Class="AchievementsExpanded.KillTracker"]/factionDefs</xpath>
-								<value>
-									<li>O21_SunElfKingdoms</li>
-								</value>
+							<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+								<settings>
+									<li>factionToggle_elfSun</li>
+								</settings>
+								<active Class="PatchOperationSequence">
+									<success>Always</success>
+									<operations>
+										<li Class="PatchOperationAdd">
+											<xpath>/Defs/AchievementsExpanded.AchievementDef[defName="O21_VAE_ElfKills"]/tracker[@Class="AchievementsExpanded.KillTracker"]/factionDefs</xpath>
+											<value>
+												<li>O21_SunElfKingdoms</li>
+											</value>
+										</li>
+									</operations>
+								</active>
 							</li>
 						</operations>
 					</active>
 				</li>
 				<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
 					<settings>
-						<li>factionToggle_elfWood</li>
+						<li>raceToggle_elfWood</li>
 					</settings>
 					<active Class="PatchOperationSequence">
 						<success>Always</success>
 						<operations>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/AchievementsExpanded.AchievementDef[defName="O21_VAE_ElfKills"]/tracker[@Class="AchievementsExpanded.KillTracker"]/factionDefs</xpath>
-								<value>
-									<li>O21_WoodElfKingdoms</li>
-								</value>
+							<li Class="O21Settings_ForgottenRealms.PatchOperation_SettingActive">
+								<settings>
+									<li>factionToggle_elfWood</li>
+								</settings>
+								<active Class="PatchOperationSequence">
+									<success>Always</success>
+									<operations>
+										<li Class="PatchOperationAdd">
+											<xpath>/Defs/AchievementsExpanded.AchievementDef[defName="O21_VAE_ElfKills"]/tracker[@Class="AchievementsExpanded.KillTracker"]/factionDefs</xpath>
+											<value>
+												<li>O21_WoodElfKingdoms</li>
+											</value>
+										</li>
+									</operations>
+								</active>
 							</li>
 						</operations>
 					</active>

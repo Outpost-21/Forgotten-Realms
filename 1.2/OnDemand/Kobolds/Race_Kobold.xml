@@ -221,6 +221,11 @@
 				<relationChanceModifierSibling>1</relationChanceModifierSibling>
 				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
 			</relationSettings>
+			<compatibility>
+				<isFlesh>True</isFlesh>
+				<isSentient>True</isSentient>
+				<hasBlood>True</hasBlood>
+			</compatibility>
 		</alienRace>
 		<statBases>
 			<Mass>35</Mass>
