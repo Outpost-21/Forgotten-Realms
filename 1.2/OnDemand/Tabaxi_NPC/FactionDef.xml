@@ -6,7 +6,7 @@
         <label>tabaxi settlements</label>
         <description>The collective settlements of Tabaxi in this realm.</description>
         <colorSpectrum>
-            <li>(153, 135, 104)</li>
+            <li>(217, 162, 91)</li>
         </colorSpectrum>
         <startingGoodwill>
             <min>-10</min>

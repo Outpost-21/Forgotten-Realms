@@ -303,7 +303,7 @@
 			<nameGeneratorFemale>O21_NamerPersonOrcFemale</nameGeneratorFemale>
 			<body>Human</body>
 			<meatColor>(184, 204, 237)</meatColor>
-			<baseBodySize>1</baseBodySize>
+			<baseBodySize>1.2</baseBodySize>
 			<baseHealthScale>1.25</baseHealthScale>
 			<foodType>OmnivoreHuman</foodType>
 			<gestationPeriodDays>45</gestationPeriodDays>

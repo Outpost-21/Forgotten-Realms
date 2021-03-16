@@ -5,31 +5,71 @@
 		<defName>O21_Item_IllithidTadpole</defName>
 		<label>illithid tadpole</label>
 		<description>A mature Illithid Tadpole, ready to be implanted into a humanoid.</description>
-    	<thingClass>ThingWithComps</thingClass>
+		<thingClass>ThingWithComps</thingClass>
 		<graphicData>
 			<texPath>Things/Illithid/IllithidTadpole</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>1.0</drawSize>
 		</graphicData>
 		<stackLimit>1</stackLimit>
-    	<tickerType>Normal</tickerType>
+		<tickerType>Normal</tickerType>
 		<tradeability>Sellable</tradeability>
 		<statBases>
 			<MarketValue>0</MarketValue>
 			<Mass>1</Mass>
-			<DeteriorationRate>2.5</DeteriorationRate>
+			<DeteriorationRate>2.0</DeteriorationRate>
 		</statBases>
 		<thingCategories>
 			<li>BodyPartsNatural</li>
 		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Rottable">
-				<daysToRotStart>1</daysToRotStart>
+				<daysToRotStart>2</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
 		</comps>
 	</ThingDef>
-	
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>O21_Illithid_HumanoidBrain</defName>
+		<label>humanoid brain</label>
+		<description>The weird grey matter from between the ears that most Humans seem to not be capable of using.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>Things/Illithid/HumanoidBrain</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<stackLimit>25</stackLimit>
+		<tickerType>Normal</tickerType>
+		<tradeability>Sellable</tradeability>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>120</MarketValue>
+			<Mass>1</Mass>
+			<DeteriorationRate>3.0</DeteriorationRate>
+			<Nutrition>1</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Meat</foodType>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<preferability>MealLavish</preferability>
+			<tasteThought>AteLavishMeal</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>BodyPartsNatural</li>
+		</thingCategories>
+	</ThingDef>
+
 	<ThingDef ParentName="ResourceBase">
 		<defName>O21_Item_ElderBrain</defName>
 		<label>elder brain</label>
@@ -43,22 +83,22 @@
 		<soundDrop>Standard_Drop</soundDrop>
 		<stackLimit>1</stackLimit>
 		<statBases>
-			<MaxHitPoints>30</MaxHitPoints>
+			<MaxHitPoints>100</MaxHitPoints>
 			<MarketValue>10000</MarketValue>
 			<Mass>1</Mass>
-			<Flammability>0.6</Flammability>
+			<Flammability>0.3</Flammability>
 			<DeteriorationRate>2.0</DeteriorationRate>
 		</statBases>
 		<intricate>true</intricate>
 		<thingCategories>
 			<li>Manufactured</li>
 		</thingCategories>
-        <tradeTags>
-            <li>ExoticMisc</li>
-        </tradeTags>
-        <thingSetMakerTags>
-            <li>RewardStandardHighFreq</li>
-        </thingSetMakerTags>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
-	
+
 </Defs>

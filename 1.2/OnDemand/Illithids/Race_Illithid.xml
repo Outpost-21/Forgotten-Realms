@@ -15,11 +15,11 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>O21_IllithidPlayerColony</li> 
+						<li>O21_IllithidPlayerColony</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
-        </pawnKindSettings>
+		</pawnKindSettings>
 	</AlienRace.RaceSettings>
 
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="Alien_Illithid">
@@ -36,11 +36,11 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 					<li>
 						<defName>Gay</defName>
 						<chance>0</chance>
-					</li>         
+					</li>
 					<li>
 						<defName>DislikesMen</defName>
 						<chance>0</chance>
-					</li>            
+					</li>
 					<li>
 						<defName>DislikesWomen</defName>
 						<chance>0</chance>
@@ -48,7 +48,7 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 				</forcedRaceTraitEntries>
 				<disallowedTraits />
 				<chemicalSettings />
-				<factionRelations />	
+				<factionRelations />
 				<notXenophobistTowards />
 				<immuneToXenophobia>false</immuneToXenophobia>
 				<alienPartGenerator>
@@ -59,49 +59,49 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 					<alienbodytypes>
 						<li>Male</li>
 					</alienbodytypes>
-                    <colorChannels>
-                        <li>
-                            <name>skin</name>
-                            <first Class="ColorGenerator_Options">
-                                <options>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGB(123, 130, 199)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGB(123, 157, 199)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGB(146, 123, 199)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGB(169, 123, 199)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGB(185, 113, 189)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>RGB(137, 113, 189)</only>
-                                    </li>
-                                </options>
-                            </first>
-                        </li>
-                    </colorChannels>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGB(123, 130, 199)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGB(123, 157, 199)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGB(146, 123, 199)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGB(169, 123, 199)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGB(185, 113, 189)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGB(137, 113, 189)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
 				</alienPartGenerator>
 			</generalSettings>
-		<graphicPaths>
-			<li>
-				<head>Pawn/IllithidNew/Head/</head>
-			</li>
-		</graphicPaths>
+			<graphicPaths>
+				<li>
+					<head>Pawn/IllithidNew/Head/</head>
+				</li>
+			</graphicPaths>
 			<hairSettings>
 				<hasHair>false</hasHair>
-				<getsGreyAt>65</getsGreyAt> 
+				<getsGreyAt>65</getsGreyAt>
 				<hairTags />
 			</hairSettings>
 			<relationSettings>
@@ -127,6 +127,10 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 				</cannotReceiveThoughts>
 			</thoughtSettings>
 			<raceRestriction>
+				<foodList>
+					<li>O21_Illithid_HumanoidBrain</li>
+				</foodList>
+				<onlyEatRaceRestrictedFood>true</onlyEatRaceRestrictedFood>
 			</raceRestriction>
 			<compatibility>
 				<isFlesh>True</isFlesh>
@@ -143,6 +147,7 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 			<LeatherAmount>25</LeatherAmount>
 			<PsychicSensitivity>1.0</PsychicSensitivity>
 			<MiningSpeed>1.0</MiningSpeed>
+			<HungerRateMultiplier>0.07</HungerRateMultiplier>
 		</statBases>
 		<tools>
 			<li>
@@ -202,7 +207,7 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 			</li>
 		</tools>
 		<race>
-	  		<hasGenders>false</hasGenders>
+			<hasGenders>false</hasGenders>
 			<thinkTreeMain>Humanlike</thinkTreeMain>
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
@@ -211,7 +216,7 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 			<leatherDef>O21_Leather_Illithid</leatherDef>
 			<nameGenerator>O21_NameRulePack_Illithid</nameGenerator>
 			<body>O21_Body_Illithid</body>
-			<bloodDef>O21_Filth_IllithidBlood</bloodDef>	
+			<bloodDef>O21_Filth_IllithidBlood</bloodDef>
 			<meatColor>(184, 204, 237)</meatColor>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>1.0</baseHealthScale>
@@ -264,7 +269,7 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 			</ageGenerationCurve>
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
-                <li>Human</li>
+				<li>Human</li>
 			</hediffGiverSets>
 		</race>
 		<recipes>
@@ -297,6 +302,7 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 			<li>RemoveBodyPart</li>
 			<li>Euthanize</li>
 			<li>Anesthetize</li>
+			<li>O21_ExtractIllithidBrain</li>
 		</recipes>
 		<comps>
 			<!-- li Class="O21Toolbox.Hivemind.CompProperties_HivemindPawn">
@@ -305,5 +311,5 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 			</li -->
 		</comps>
 	</AlienRace.ThingDef_AlienRace>
-	
+
 </Defs>

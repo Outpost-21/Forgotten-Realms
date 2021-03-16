@@ -308,7 +308,7 @@
 			<leatherDef>Leather_Kobold</leatherDef>
       		<nameCategory>HumanStandard</nameCategory>
 			<body>Human</body>
-			<baseBodySize>1</baseBodySize>
+			<baseBodySize>0.6</baseBodySize>
 			<baseHealthScale>0.9</baseHealthScale>
 			<foodType>OmnivoreHuman</foodType>
 			<gestationPeriodDays>45</gestationPeriodDays>

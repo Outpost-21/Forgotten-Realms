@@ -6,7 +6,7 @@
         <label>killoren settlements</label>
         <description>The collective settlements of Killoren in this realm.</description>
         <colorSpectrum>
-            <li>(153, 135, 104)</li>
+            <li>(125, 209, 144)</li>
         </colorSpectrum>
         <startingGoodwill>
             <min>-10</min>

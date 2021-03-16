@@ -159,7 +159,6 @@
 			</relationSettings>
 			<thoughtSettings>
 				<cannotReceiveThoughts>
-					<li>ObservedLayingCorpse</li>
 					<li>EnvironmentDark</li>
 					<li>NeedOutdoors</li>
 				</cannotReceiveThoughts>
@@ -247,7 +246,7 @@
 			<nameGenerator>O21_NamerPersonDwarfMale</nameGenerator>
 			<nameGeneratorFemale>O21_NamerPersonDwarfFemale</nameGeneratorFemale>
             <body>Human</body>
-            <baseBodySize>1</baseBodySize>
+            <baseBodySize>0.8</baseBodySize>
             <baseHealthScale>1</baseHealthScale>
             <foodType>OmnivoreHuman</foodType>
             <gestationPeriodDays>45</gestationPeriodDays>

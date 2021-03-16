@@ -72,6 +72,7 @@
 			<LeatherAmount>25</LeatherAmount>
 			<PsychicSensitivity>1.15</PsychicSensitivity>
 			<MiningSpeed>0.8</MiningSpeed>
+          	<PawnBeauty>2</PawnBeauty>
 		</statBases>
 		<tools>
 			<li>

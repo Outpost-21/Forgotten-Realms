@@ -12,6 +12,8 @@ namespace O21Settings_ForgottenRealms
 {
     public class ForgottenRealmsSettings : ModSettings
     {
+        public string lastLoadedVersion = "0.0.0";
+
         // Other
         public bool settingToggle_raceIntegration = true;
         public bool settingToggle_scenarios = true;
@@ -79,6 +81,7 @@ namespace O21Settings_ForgottenRealms
         public override void ExposeData()
         {
             base.ExposeData();
+            Scribe_Values.Look(ref lastLoadedVersion, "lastLoadedVersion", "0.0.0");
             // Other
             Scribe_Values.Look(ref settingToggle_raceIntegration, "settingToggle_raceIntegration", true);
             Scribe_Values.Look(ref settingToggle_scenarios, "settingToggle_scenarios", true);
@@ -101,7 +104,7 @@ namespace O21Settings_ForgottenRealms
             Scribe_Values.Look(ref raceToggle_halforc, "raceToggle_halforc", true);
             Scribe_Values.Look(ref raceToggle_hobgoblin, "raceToggle_hobgoblin", true);
             Scribe_Values.Look(ref raceToggle_illithid, "raceToggle_illithid", true);
-            Scribe_Values.Look(ref raceToggle_kobold, "raceToggle_killoren", true);
+            Scribe_Values.Look(ref raceToggle_killoren, "raceToggle_killoren", true);
             Scribe_Values.Look(ref raceToggle_kobold, "raceToggle_kobold", true);
             Scribe_Values.Look(ref raceToggle_orc, "raceToggle_orc", true);
             Scribe_Values.Look(ref raceToggle_tabaxi, "raceToggle_tabaxi", true);
@@ -119,7 +122,7 @@ namespace O21Settings_ForgottenRealms
             Scribe_Values.Look(ref factionToggle_halforc, "factionToggle_halforc", true);
             Scribe_Values.Look(ref factionToggle_hobgoblin, "factionToggle_hobgoblin", true);
             Scribe_Values.Look(ref factionToggle_illithid, "factionToggle_illithid", true);
-            Scribe_Values.Look(ref factionToggle_kobold, "factionToggle_killoren", true);
+            Scribe_Values.Look(ref factionToggle_killoren, "factionToggle_killoren", true);
             Scribe_Values.Look(ref factionToggle_kobold, "factionToggle_kobold", true);
             Scribe_Values.Look(ref factionToggle_orc, "factionToggle_orc", true);
             Scribe_Values.Look(ref factionToggle_tabaxi, "factionToggle_tabaxi", true);

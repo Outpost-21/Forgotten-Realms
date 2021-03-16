@@ -84,7 +84,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="Alien_Killoren">
 		<defName>O21_Alien_Killoren</defName>
 		<label>Killoren</label>
-		<description>The killoren were a race of humanoids who had been enslaved by mind flayers for countless generations. Some sages claimed that they were once descended from humans, while others maintained that their original race was in fact unknown. After breaking free from their enslavement, philosophical differences led to a bitter internal conflict, which divided the killoren into two main different races at constant odds with each other: the killorenyanki and the killorenzerai.</description>
+		<description>Killoren were a relatively new and uncommon race of fey. It was unknown whether they were created by a deity or were spontaneously created by nature itself.</description>
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.6</maleGenderProbability>
@@ -221,6 +221,7 @@
 			<ComfyTemperatureMax>40</ComfyTemperatureMax>
 			<LeatherAmount>20</LeatherAmount>
 			<PsychicSensitivity>1.0</PsychicSensitivity>
+			<HungerRateMultiplier>0.4</HungerRateMultiplier>
 		</statBases>
 		<tools>
 			<li>

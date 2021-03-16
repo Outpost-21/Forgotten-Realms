@@ -84,18 +84,14 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="Alien_Tabaxi">
 		<defName>O21_Alien_Tabaxi</defName>
 		<label>Tabaxi</label>
-		<description>The tabaxi were a race of humanoids who had been enslaved by mind flayers for countless generations. Some sages claimed that they were once descended from humans, while others maintained that their original race was in fact unknown. After breaking free from their enslavement, philosophical differences led to a bitter internal conflict, which divided the tabaxi into two main different races at constant odds with each other: the tabaxiyanki and the tabaxizerai.</description>
+		<description>Tabaxi also known as jaguar people or cat-men, were a race of feline humanoids native to the jungles of Maztica.</description>
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.6</maleGenderProbability>
 				<immuneToAge>false</immuneToAge>
 				<humanRecipeImport>true</humanRecipeImport>
 				<forcedRaceTraitEntries />
-				<disallowedTraits>
-					<li>
-                        <defName>Undergrounder</defName>
-                    </li>
-				</disallowedTraits>
+				<disallowedTraits />
 				<chemicalSettings />
 				<factionRelations />	
 				<notXenophobistTowards />
@@ -196,6 +192,7 @@
 			<ComfyTemperatureMax>28</ComfyTemperatureMax>
 			<LeatherAmount>20</LeatherAmount>
 			<PsychicSensitivity>1.0</PsychicSensitivity>
+			<HungerRateMultiplier>0.4</HungerRateMultiplier>
 		</statBases>
 		<tools>
 			<li>
@@ -267,7 +264,7 @@
 			<meatColor>(184, 204, 237)</meatColor>
 			<baseBodySize>1</baseBodySize>
 			<baseHealthScale>0.9</baseHealthScale>
-			<foodType>CarnivoreAnimal</foodType>
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
 			<gestationPeriodDays>45</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>
