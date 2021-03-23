@@ -116,14 +116,35 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 			</relationSettings>
 			<thoughtSettings>
 				<cannotReceiveThoughts>
-					<li>ButcheredHumanlikeCorpse</li>
-					<li>KnowButcheredHumanlikeCorpse</li>
-					<li>AteHumanlikeMeatDirect</li>
-					<li>AteHumanlikeMeatAsIngredient</li>
-					<li>AteInsectMeatDirect</li>
-					<li>AteInsectMeatAsIngredient</li>
+					<li>ObservedLayingCorpse</li>
 					<li>EnvironmentDark</li>
 					<li>NeedOutdoors</li>
+					<li>DeadMansApparel</li>
+					<li>KnowGuestExecuted</li>
+					<li>KnowPrisonerDiedInnocent</li>
+					<li>AteRawFood</li>
+					<li>AteKibble</li>
+					<li>AteCorpse</li>
+					<li>AteHumanlikeMeatDirect</li>
+					<li>AteHumanlikeMeatAsIngredient</li>
+					<li>AteHumanlikeMeatAsIngredientCannibal</li>
+					<li>AteInsectMeatDirect</li>
+					<li>AteInsectMeatAsIngredient</li>
+					<li>AteWithoutTable</li>
+					<li>SleptOnGround</li>
+					<li>KnowPrisonerSold</li>
+					<li>KnowGuestOrganHarvested</li>
+					<li>KnowColonistOrganHarvested</li>
+					<li>SoakingWet</li>
+					<li>KnowButcheredHumanlikeCorpse</li>
+					<li>ButcheredHumanlikeCorpse</li>
+					<li>WitnessedDeathNonAlly</li>
+					<li>ColonistBanished</li>
+					<li>ColonistBanishedToDie</li>
+					<li>PrisonerBanishedToDie</li>
+					<li>SharedBed</li>
+
+					<li>ButcheredHumanlikeCorpseOpinion</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
 			<raceRestriction>
