@@ -242,6 +242,10 @@
 					<li>ButcheredHumanlikeCorpseOpinion</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
+			<raceRestriction>
+				<foodList />
+				<onlyEatRaceRestrictedFood>true</onlyEatRaceRestrictedFood>
+			</raceRestriction>
 			<compatibility>
 				<isFlesh>False</isFlesh>
 				<isSentient>True</isSentient>
@@ -327,7 +331,7 @@
 			<baseBodySize>1</baseBodySize>
 			<needsRest>false</needsRest>
 			<baseHealthScale>1.6</baseHealthScale>
-			<foodType>None</foodType>
+			<foodType>OmnivoreHuman</foodType>
 			<gestationPeriodDays>45</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>
@@ -401,6 +405,11 @@
 			<li>Anesthetize</li>
 		</recipes>
 		<modExtensions>
+			<li Class="O21Toolbox.SimpleNeeds.DefModExt_FoodNeedAdjuster">
+				<newLabel>Illogical Thoughts</newLabel>
+				<disableFoodNeed>true</disableFoodNeed>
+				<malnutritionReplacer>O21_LowEnergy</malnutritionReplacer>
+			</li>
 			<li Class="O21Toolbox.AutoHeal.DefModExtension_AutoHealProps">
 				<healTicks>6000</healTicks>
 				<growthTicks>6000</growthTicks>
@@ -412,13 +421,6 @@
                 <colonyCaresIfDead>True</colonyCaresIfDead>
                 <tweakCorpseRot>True</tweakCorpseRot>
                 <corpseEdible>False</corpseEdible>
-                <needFood>False</needFood>
-                <needRest>False</needRest>
-                <needJoy>True</needJoy>
-                <needComfort>True</needComfort>
-                <needBeauty>True</needBeauty>
-                <needRoomSize>True</needRoomSize>
-                <needOutdoors>True</needOutdoors>
                 <affectedByEMP>False</affectedByEMP>
             </li>
 		</modExtensions>
