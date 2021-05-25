@@ -87,10 +87,10 @@ namespace O21Settings_ForgottenRealms
             if (settings.raceToggle_halforc) { listingStandard.CheckboxLabeled("Half-Orc Faction", ref settings.factionToggle_halforc, "Controls the spawning of the NPC Half-Orc Faction"); }
             if (settings.raceToggle_hobgoblin) { listingStandard.CheckboxLabeled("Hobgoblins Faction", ref settings.factionToggle_hobgoblin, "Controls spawning of the NPC Hobgoblin Faction"); }
             if (settings.raceToggle_illithid) { listingStandard.CheckboxLabeled("Illithids Faction", ref settings.factionToggle_illithid, "Controls spawning of the NPC Illithid Faction"); }
-            if (settings.raceToggle_kobold) { listingStandard.CheckboxLabeled("Killoren Faction", ref settings.factionToggle_killoren, "Controls spawning of the NPC Killoren Faction"); }
+            if (settings.raceToggle_killoren) { listingStandard.CheckboxLabeled("Killoren Faction", ref settings.factionToggle_killoren, "Controls spawning of the NPC Killoren Faction"); }
             if (settings.raceToggle_kobold) { listingStandard.CheckboxLabeled("Kobolds Faction", ref settings.factionToggle_kobold, "Controls spawning of the NPC Kobold Faction"); }
             if (settings.raceToggle_orc) { listingStandard.CheckboxLabeled("Orcs Faction", ref settings.factionToggle_orc, "Controls spawning of the NPC Orc Faction"); }
-            if (settings.raceToggle_orc) { listingStandard.CheckboxLabeled("Tabaxi Faction", ref settings.factionToggle_tabaxi, "Controls spawning of the NPC Tabaxi Faction"); }
+            if (settings.raceToggle_tabaxi) { listingStandard.CheckboxLabeled("Tabaxi Faction", ref settings.factionToggle_tabaxi, "Controls spawning of the NPC Tabaxi Faction"); }
             if (settings.raceToggle_tiefling) { listingStandard.CheckboxLabeled("Tieflings Faction", ref settings.factionToggle_tiefling, "Controls spawning of the NPC Tiefling Faction"); }
             if (settings.raceToggle_warforged) { listingStandard.CheckboxLabeled("Warforged Faction", ref settings.factionToggle_warforged, "Controls spawning of the NPC Warforged Faction"); }
         }
