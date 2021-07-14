@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>O21_FR_ImplantIllithidTadpole</defName>
+		<label>implant illithid tadpole</label>
+		<description>Implant an illithid tadpole into the brain of the victim, causing them to turn into a new illithid.</description>
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<jobString>Implanting illithid tadpole.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>O21_FR_Item_IllithidTadpole</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>O21_FR_Item_IllithidTadpole</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>O21_FR_Hediff_IllithidCeremorphosis</addsHediff>
+		<anesthetize>false</anesthetize>
+		<isViolation>true</isViolation>
+		<surgerySuccessChanceFactor>100</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>O21_FR_ExtractIllithidBrain</defName>
+		<label>extract elder brain</label>
+		<description>Removed the brain of an Illithid to be used as an Elder Brain, the process of course kills the pawn.</description>
+		<workerClass>Recipe_ExecuteByCut</workerClass>
+		<jobString>Removing brain.</jobString>
+		<workAmount>1000</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<targetsBodyPart>false</targetsBodyPart>
+		<anesthetize>false</anesthetize>
+		<isViolation>true</isViolation>
+		<products>
+			<O21_FR_Item_ElderBrain>1</O21_FR_Item_ElderBrain>
+		</products>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<surgerySuccessChanceFactor>100</surgerySuccessChanceFactor>
+		<deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+	</RecipeDef>
+
+</Defs>

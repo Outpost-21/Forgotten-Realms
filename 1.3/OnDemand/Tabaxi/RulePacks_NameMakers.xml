@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>O21_FR_NamerPersonTabaxiMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[TabaxiList2] [TabaxiList3]</li>
+				<li>name->[TabaxiList2] [TabaxiList3]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>TabaxiList2</keyword>
+					<path>Tabaxi_Names/Tabaxi2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TabaxiList3</keyword>
+					<path>Tabaxi_Names/Tabaxi3</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>O21_FR_NamerPersonTabaxiFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[TabaxiList2] [TabaxiList3]</li>
+				<li>name->[TabaxiList2] [TabaxiList3]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>TabaxiList2</keyword>
+					<path>Tabaxi_Names/Tabaxi2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>TabaxiList3</keyword>
+					<path>Tabaxi_Names/Tabaxi3</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

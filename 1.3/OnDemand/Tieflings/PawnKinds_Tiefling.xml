@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="O21_FR_ForgottenBaseColonyPawnKind">
+		<defName>O21_FR_Tiefling</defName>
+		<label>Tiefling</label>
+		<race>O21_FR_Tiefling</race>
+		<defaultFactionType>O21_FR_TieflingPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="O21_FR_ForgottenBaseTribalPawnKind">
+		<defName>O21_FR_TieflingTribal</defName>
+		<label>Tribal Tiefling</label>
+		<race>O21_FR_Tiefling</race>
+		<defaultFactionType>O21_FR_TieflingPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

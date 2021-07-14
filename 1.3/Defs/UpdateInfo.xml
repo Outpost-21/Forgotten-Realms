@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<O21Toolbox.UpdateListings.UpdateDef>
+		<defName>O21_FR_20210704_Update</defName>
+		<date>2021/07/04</date>
+		<banner>UpdateInfo/O21ForgottenRealmsUpdateBanner</banner>
+		<content>Version 3.0.0 UNSTABLE
+This update is considered unstable due to 1.3 currently also being an unstable build, things may change and saves are not expected to be safe till 1.3 is on the Stable branch of the game and the frameworks this does/will rely on are also stable.
+
+- Updated mod to support RimWorld 1.3.
+- Faction options for individual races have been removed, you can access all the races through the vanilla factions. More specific and refined factions will be created in time.
+- Illithid race has been retextured.
+- The 4 Elf subraces are now under a single setting in the options.
+- Dwarves are temporarily disabled until I can set the race to have beard tags by default, since beards are vanilla now there's no need for me to use bodyAddons to handle it.
+
+For More information please see the Outpost 21 Wiki, left-click to open the page, right click to dismiss update.</content>
+		<linkUrl>https://outpost-21.fandom.com/wiki/Forgotten_Realms</linkUrl>
+		<important>False</important>
+	</O21Toolbox.UpdateListings.UpdateDef>
+
+	<!-- <O21Toolbox.UpdateListings.UpdateDef>
+		<defName>O21_FR__Update</defName>
+		<date></date>
+		<banner>UpdateInfo/O21ForgottenRealmsUpdateBanner</banner>
+		<content>Version 3.1.0
+((Planned))
+- New Races added (Aasimar, Alaghi, Bullywug, Chitine, Dragonborn, Elan, Genasi, Gnoll, Goliath, Grung, Halfling, Harssaf, Koalinth, Krinth, Kua-toa, Locathah, Satyr, Shadar-kai, Yuan-ti and Yuan-ti Malison).
+- Illithids have now got three potential abilites, Mind Blast, Charm and Dominate. See the wiki for details on each, as there are differences in how they work if you have Ideology or not.
+- Warforged eyes now glow as they should.
+- Warforged are now craftable (at the new sculpting altar building), using any rock chunks, any metal and the new Soul Shard item which can be found on traders and through quest rewards. They will take the colours of the rock and metal used, along with the colour of the soul shard for their eye colour.
+
+For More information please see the Outpost 21 Wiki, left-click to open the page, right click to dismiss update.</content>
+		<linkUrl>https://outpost-21.fandom.com/wiki/Forgotten_Realms</linkUrl>
+		<important>False</important>
+	</O21Toolbox.UpdateListings.UpdateDef> -->
+
+</Defs>

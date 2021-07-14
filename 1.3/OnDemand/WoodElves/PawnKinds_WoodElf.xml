@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="O21_FR_ForgottenBaseColonyPawnKind">
+		<defName>O21_FR_WoodElf</defName>
+		<label>Wood Elf</label>
+		<race>O21_FR_WoodElf</race>
+		<defaultFactionType>O21_FR_WoodElfPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="O21_FR_ForgottenBaseTribalPawnKind">
+		<defName>O21_FR_WoodElfTribal</defName>
+		<label>Tribal Wood Elf</label>
+		<race>O21_FR_WoodElf</race>
+		<defaultFactionType>O21_FR_WoodElfPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

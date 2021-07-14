@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>O21_FR_NamerPersonOrcMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[Orc1][Orc2][Orc4] [The] [Orc9]</li>
+				<li>name->[Orc1][Orc2][Orc4] [Orc10] [Orc11]</li>
+				<li>name->[Orc1][Orc2][Orc3][Orc2][Orc4] [The] [Orc9]</li>
+				<li>name->[Orc1][Orc2][Orc3][Orc2][Orc4] [Orc10] [Orc11]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Orc1</keyword>
+					<path>Orc_Names/1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc2</keyword>
+					<path>Orc_Names/2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc3</keyword>
+					<path>Orc_Names/3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc4</keyword>
+					<path>Orc_Names/4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc5</keyword>
+					<path>Orc_Names/5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc6</keyword>
+					<path>Orc_Names/6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc7</keyword>
+					<path>Orc_Names/7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc8</keyword>
+					<path>Orc_Names/8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc9</keyword>
+					<path>Orc_Names/9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc10</keyword>
+					<path>Orc_Names/10</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc11</keyword>
+					<path>Orc_Names/11</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>The</keyword>
+					<path>Orc_Names/The</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Space</keyword>
+					<path>Orc_Names/Space</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>O21_FR_NamerPersonOrcFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[Orc5][Orc6][Orc8] [The] [Orc9]</li>
+				<li>name->[Orc5][Orc6][Orc8] [Orc10] [Orc11]</li>
+				<li>name->[Orc5][Orc6][Orc7][Orc6][Orc8] [The] [Orc9]</li>
+				<li>name->[Orc5][Orc6][Orc7][Orc6][Orc8] [Orc10] [Orc11]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Orc1</keyword>
+					<path>Orc_Names/1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc2</keyword>
+					<path>Orc_Names/2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc3</keyword>
+					<path>Orc_Names/3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc4</keyword>
+					<path>Orc_Names/4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc5</keyword>
+					<path>Orc_Names/5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc6</keyword>
+					<path>Orc_Names/6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc7</keyword>
+					<path>Orc_Names/7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc8</keyword>
+					<path>Orc_Names/8</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc9</keyword>
+					<path>Orc_Names/9</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc10</keyword>
+					<path>Orc_Names/10</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Orc11</keyword>
+					<path>Orc_Names/11</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>The</keyword>
+					<path>Orc_Names/The</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Space</keyword>
+					<path>Orc_Names/Space</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

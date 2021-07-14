@@ -203,7 +203,7 @@
 		</alienRace>
 		<statBases>
 			<MarketValue>2000</MarketValue>
-			<MoveSpeed>5.1</MoveSpeed>
+			<MoveSpeed>4.2</MoveSpeed>
 			<Flammability>0.3</Flammability>
 			<ComfyTemperatureMin>8</ComfyTemperatureMin>
 			<ComfyTemperatureMax>28</ComfyTemperatureMax>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="O21_FR_ForgottenColonyBase">
+		<defName>O21_FR_GithPlayerColony</defName>
+		<label>Gith Colony</label>
+		<description>Your own community.</description>
+		<basicMemberKind>O21_FR_Gith</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="O21_FR_ForgottenTribeBase">
+		<defName>O21_FR_GithPlayerTribe</defName>
+		<label>Gith Tribe</label>
+		<description>A small tribe.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>O21_FR_GithTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

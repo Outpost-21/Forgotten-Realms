@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="ForgottenRealms.PatchOperation_SettingActive">
+        <settings>
+            <li>raceToggle_warforged</li>
+        </settings>
+		<active Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="ForgottenRealms.PatchOperation_OnDemand">
+					<source>1.3/OnDemand</source>
+					<folders>
+						<li>Warforged</li>
+					</folders>
+				</li>
+				
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Royalty</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+								<value>
+									<li>O21_FR_WarforgedPlayerColony</li>
+									<li>O21_FR_WarforgedPlayerTribe</li>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+				<li Class="ForgottenRealms.PatchOperation_SettingActive">
+					<settings>
+						<li>settingToggle_raceIntegration</li>
+					</settings>
+					<active Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnKindDef[@Name="PirateBase"]/modExtensions/li[@Class="O21Toolbox.PawnKindExt.DefModExt_ExtendedPawnKind"]/altRaces</xpath>
+								<value>
+									<li>
+										<races>
+											<li>O21_FR_Warforged</li>
+										</races>
+										<weight>2</weight>
+									</li>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnKindDef[@Name="OutlanderBase"]/modExtensions/li[@Class="O21Toolbox.PawnKindExt.DefModExt_ExtendedPawnKind"]/altRaces</xpath>
+								<value>
+									<li>
+										<races>
+											<li>O21_FR_Warforged</li>
+										</races>
+										<weight>2</weight>
+									</li>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnKindDef[@Name="MercenaryBase"]/modExtensions/li[@Class="O21Toolbox.PawnKindExt.DefModExt_ExtendedPawnKind"]/altRaces</xpath>
+								<value>
+									<li>
+										<races>
+											<li>O21_FR_Warforged</li>
+										</races>
+										<weight>2</weight>
+									</li>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/PawnKindDef[@Name="TribalBase"]/modExtensions/li[@Class="O21Toolbox.PawnKindExt.DefModExt_ExtendedPawnKind"]/altRaces</xpath>
+								<value>
+									<li>
+										<races>
+											<li>O21_FR_Warforged</li>
+										</races>
+										<weight>2</weight>
+									</li>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/AlienRace.RaceSettings[defName="O21_FR_SpeciesIntegration"]/startingColonists</xpath>
+								<value>
+									<li>
+										<pawnKindEntries>
+											<li>
+												<kindDefs>
+													<li>O21_FR_Warforged</li>
+												</kindDefs>
+												<chance>1.0</chance>
+											</li>
+										</pawnKindEntries>
+										<factionDefs>
+											<li>PlayerColony</li>
+										</factionDefs>
+									</li>
+									<li>
+										<pawnKindEntries>
+											<li>
+												<kindDefs>
+													<li>O21_FR_WarforgedTribal</li>
+												</kindDefs>
+												<chance>1.0</chance>
+											</li>
+										</pawnKindEntries>
+										<factionDefs>
+											<li>PlayerTribe</li>
+										</factionDefs>
+									</li>
+								</value>
+							</li>
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/AlienRace.RaceSettings[defName="O21_FR_SpeciesIntegration"]/alienwandererkinds</xpath>
+								<value>
+									<li>
+										<pawnKindEntries>
+											<li>
+												<kindDefs>
+													<li>O21_FR_Warforged</li>
+												</kindDefs>
+												<chance>1.0</chance>
+											</li>
+										</pawnKindEntries>
+										<factionDefs>
+											<li>PlayerColony</li>
+										</factionDefs>
+									</li>
+									<li>
+										<pawnKindEntries>
+											<li>
+												<kindDefs>
+													<li>O21_FR_WarforgedTribal</li>
+												</kindDefs>
+												<chance>1.0</chance>
+											</li>
+										</pawnKindEntries>
+										<factionDefs>
+											<li>PlayerTribe</li>
+										</factionDefs>
+									</li>
+								</value>
+							</li>
+						</operations>
+					</active>
+				</li>
+            </operations>
+        </active>
+    </Operation>
+
+</Patch>

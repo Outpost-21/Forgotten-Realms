@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!-- Adds achievements if Vanilla Achievements Expanded is installed, adding a new tab and relevant achievements that can be obtained with this mod. -->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Achievements Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <!-- Achievement Tab -->
+                        <AchievementsExpanded.AchievementTabDef>
+                            <defName>O21_FR_AchievementTab</defName>
+                            <label>Forgotten Realms</label>
+                        </AchievementsExpanded.AchievementTabDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

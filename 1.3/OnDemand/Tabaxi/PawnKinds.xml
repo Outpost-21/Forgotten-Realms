@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="O21_FR_ForgottenBaseColonyPawnKind">
+		<defName>O21_FR_Tabaxi</defName>
+		<label>Tabaxi</label>
+		<race>O21_FR_Tabaxi</race>
+		<defaultFactionType>O21_FR_TabaxiPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="O21_FR_ForgottenBaseTribalPawnKind">
+		<defName>O21_FR_TabaxiTribal</defName>
+		<label>Tribal Tabaxi</label>
+		<race>O21_FR_Tabaxi</race>
+		<defaultFactionType>O21_FR_TabaxiPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

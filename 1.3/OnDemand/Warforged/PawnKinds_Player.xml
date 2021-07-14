@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="O21_FR_ForgottenBaseColonyPawnKind">
+		<defName>O21_FR_Warforged</defName>
+		<label>Warforged</label>
+		<race>O21_FR_Warforged</race>
+		<defaultFactionType>O21_FR_WarforgedPlayerColony</defaultFactionType>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>0</min>
+			<max>0</max>
+		</apparelMoney>
+		<techHediffsChance>0.0</techHediffsChance>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="O21_FR_ForgottenBaseTribalPawnKind">
+		<defName>O21_FR_WarforgedTribal</defName>
+		<label>Tribal Warforged</label>
+		<race>O21_FR_Warforged</race>
+		<defaultFactionType>O21_FR_WarforgedPlayerTribe</defaultFactionType>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>0</min>
+			<max>0</max>
+		</apparelMoney>
+		<techHediffsChance>0.0</techHediffsChance>
+  	</PawnKindDef>
+
+</Defs>

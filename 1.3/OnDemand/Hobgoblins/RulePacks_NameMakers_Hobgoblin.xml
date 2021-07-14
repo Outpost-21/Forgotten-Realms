@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>O21_FR_NamerPersonHobgoblin</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList7]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList6][HobgoblinList7]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList4][HobgoblinList5][HobgoblinList6][HobgoblinList7]</li>
+				
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList7]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList6][HobgoblinList7]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList4][HobgoblinList5][HobgoblinList6][HobgoblinList7]</li>
+				
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList7]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList6][HobgoblinList7]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList4][HobgoblinList5][HobgoblinList6][HobgoblinList7]</li>
+				
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList7] [HobgoblinList8]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList6][HobgoblinList7] [HobgoblinList8]</li>
+				<li>name->[HobgoblinList1][HobgoblinList2][HobgoblinList3][HobgoblinList4][HobgoblinList5][HobgoblinList6][HobgoblinList7] [HobgoblinList8]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList1</keyword>
+					<path>Hobgoblin_Names/Hobgoblin1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList2</keyword>
+					<path>Hobgoblin_Names/Hobgoblin2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList3</keyword>
+					<path>Hobgoblin_Names/Hobgoblin3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList4</keyword>
+					<path>Hobgoblin_Names/Hobgoblin4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList5</keyword>
+					<path>Hobgoblin_Names/Hobgoblin5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList6</keyword>
+					<path>Hobgoblin_Names/Hobgoblin6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList7</keyword>
+					<path>Hobgoblin_Names/Hobgoblin7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>HobgoblinList8</keyword>
+					<path>Hobgoblin_Names/Hobgoblin8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>
