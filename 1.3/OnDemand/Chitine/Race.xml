@@ -106,7 +106,6 @@
 					<alienbodytypes>
 						<li>Male</li>
 						<li>Female</li>
-						<li>Hulk</li>
 						<li>Thin</li>
 					</alienbodytypes>
                     <colorChannels>
@@ -312,7 +311,7 @@
 			<leatherDef>Leather_Human</leatherDef>
       		<nameCategory>HumanStandard</nameCategory>
 			<useMeatFrom>Human</useMeatFrom>
-			<body>Human</body>
+			<body>O21_FR_Chitine</body>
 			<baseBodySize>1.0</baseBodySize>
 			<baseHealthScale>1.2</baseHealthScale>
 			<foodType>OmnivoreHuman</foodType>
@@ -406,12 +405,10 @@
 			<li Class="O21Toolbox.PawnExt.CompProperties_AlienBodyCorrection">
 				<maleBodyTypes>
 					<li>Male</li>
-					<li>Hulk</li>
 					<li>Thin</li>
 				</maleBodyTypes>
 				<femaleBodyTypes>
 					<li>Female</li>
-					<li>Hulk</li>
 					<li>Thin</li>
 				</femaleBodyTypes>
 			</li>

@@ -63,16 +63,15 @@ namespace ForgottenRealms
 
         public void DoRaceSettingsPage(Listing_Standard listingStandard, Rect inRect)
         {
-            //listingStandard.CheckboxLabeled("Aarakocra", ref settings.raceToggle_aarakocra, "Enables/Disables the Aarakocra race.");
             //listingStandard.CheckboxLabeled("Aasimar", ref settings.raceToggle_aasimar, "Enables/Disables the Aasimar race.");
             //listingStandard.CheckboxLabeled("Alaghi", ref settings.raceToggle_alaghi, "Enables/Disables the Alaghi race.");
             //listingStandard.CheckboxLabeled("Bullywug", ref settings.raceToggle_bullywug, "Enables/Disables the Bullywug race.");
-            //listingStandard.CheckboxLabeled("Chitine", ref settings.raceToggle_chitine, "Enables/Disables the Chitine race.");
+            listingStandard.CheckboxLabeled("Chitine", ref settings.raceToggle_chitine, "Enables/Disables the Chitine race.");
             //listingStandard.CheckboxLabeled("Dragonborn", ref settings.raceToggle_dragonborn, "Enables/Disables the Dragonborn race.");
-            listingStandard.CheckboxLabeled("Dwarf", ref settings.raceToggle_dwarf, "Enables/Disables the Dwarf race.");
+            //listingStandard.CheckboxLabeled("Dwarf", ref settings.raceToggle_dwarf, "Enables/Disables the Dwarf race.");
             //listingStandard.CheckboxLabeled("Elan", ref settings.raceToggle_elan, "Enables/Disables the Elan race.");
             listingStandard.CheckboxLabeled("Elves", ref settings.raceToggle_elf, "Enables/Disables the Elven races (Dark Elf, Moon Elf, Sun Elf and Wood Elf are all rolled into this setting).");
-            //listingStandard.CheckboxLabeled("Firbolg", ref settings.raceToggle_firbolg, "Enables/Disables the Firbolg race.");
+            listingStandard.CheckboxLabeled("Firbolg", ref settings.raceToggle_firbolg, "Enables/Disables the Firbolg race.");
             //listingStandard.CheckboxLabeled("Genasi", ref settings.raceToggle_genasi, "Enables/Disables the Genasi races (Several elemental variations of the same race).");
             listingStandard.CheckboxLabeled("Gith", ref settings.raceToggle_gith, "Enables/Disables the Gith race.");
             //listingStandard.CheckboxLabeled("Gnoll", ref settings.raceToggle_gnoll, "Enables/Disables the Gnoll race.");
@@ -80,7 +79,7 @@ namespace ForgottenRealms
             //listingStandard.CheckboxLabeled("Goliath", ref settings.raceToggle_goliath, "Enables/Disables the Goliath race.");
             //listingStandard.CheckboxLabeled("Grung", ref settings.raceToggle_grung, "Enables/Disables the Grung race.");
             listingStandard.CheckboxLabeled("Half-Orcs", ref settings.raceToggle_halforc, "Enables/Disables this Half-Orc race.");
-            //listingStandard.CheckboxLabeled("Halfling", ref settings.raceToggle_halfling, "Enables/Disables the Halfling race.");
+            listingStandard.CheckboxLabeled("Halfling", ref settings.raceToggle_halfling, "Enables/Disables the Halfling race.");
             //listingStandard.CheckboxLabeled("Harssaf", ref settings.raceToggle_harssaf, "Enables/Disables the Harssaf race.");
             listingStandard.CheckboxLabeled("Hobgoblins", ref settings.raceToggle_hobgoblin, "Enables/Disables the Hobgoblin race.");
             listingStandard.CheckboxLabeled("Illithids", ref settings.raceToggle_illithid, "Enables/Disables the Illithid race.");

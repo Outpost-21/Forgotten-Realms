@@ -126,6 +126,17 @@
 				</cannotReceiveThoughts>
 			</thoughtSettings>
 			<raceRestriction />
+			<hairSettings>
+				<hasHair>true</hasHair>
+				<getsGreyAt>3000</getsGreyAt> 
+				<hairTags>
+					<li>Rural</li>
+					<li>Tribal</li>
+					<li>Urban</li>
+					<li>Dwarf</li>
+					<li>BeardDwarf</li>
+				</hairTags>
+			</hairSettings>
 			<compatibility>
 				<isFlesh>True</isFlesh>
 				<isSentient>True</isSentient>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StyleItemCategoryDef>
+		<defName>Dwarf</defName>
+		<label>dwarf</label>
+	</StyleItemCategoryDef>
+
+	<BeardDef>
+		<defName>DwarfStraight</defName>
+		<label>straight</label>
+		<texPath>Pawn/Dwarf/Beard/Beard</texPath>
+		<styleGender>Male</styleGender>
+		<category>Dwarf</category>
+		<styleTags>
+			<li>BeardDwarf</li>
+		</styleTags>
+	</BeardDef>
+
+	<BeardDef>
+		<defName>DwarfPuffed</defName>
+		<label>puffed</label>
+		<texPath>Pawn/Dwarf/Beard/Beard1</texPath>
+		<styleGender>Male</styleGender>
+		<category>Dwarf</category>
+		<styleTags>
+			<li>BeardDwarf</li>
+		</styleTags>
+	</BeardDef>
+
+	<BeardDef>
+		<defName>DwarfThin</defName>
+		<label>thin</label>
+		<texPath>Pawn/Dwarf/Beard/Beard2</texPath>
+		<styleGender>Male</styleGender>
+		<category>Dwarf</category>
+		<styleTags>
+			<li>BeardDwarf</li>
+		</styleTags>
+	</BeardDef>
+
+	<BeardDef>
+		<defName>DwarfSplit</defName>
+		<label>split</label>
+		<texPath>Pawn/Dwarf/Beard/Beard3</texPath>
+		<styleGender>Male</styleGender>
+		<category>Dwarf</category>
+		<styleTags>
+			<li>BeardDwarf</li>
+		</styleTags>
+	</BeardDef>
+
+	<BeardDef>
+		<defName>DwarfKnot</defName>
+		<label>knot</label>
+		<texPath>Pawn/Dwarf/Beard/Beard4</texPath>
+		<styleGender>Male</styleGender>
+		<category>Dwarf</category>
+		<styleTags>
+			<li>BeardDwarf</li>
+		</styleTags>
+	</BeardDef>
+
+</Defs>

@@ -49,7 +49,7 @@ namespace ForgottenRealms
             {
                 if (LoadDefsInto(xml, modContentPack, text))
                 {
-                    Log.Message(modContentPack.Name + " :: Loading " + text, false);
+                    Log.Message(modContentPack.Name + " :: Loading " + text);
                 }
             }
             return true;
@@ -73,7 +73,7 @@ namespace ForgottenRealms
                         source,
                         "/",
                         folder
-                    }), false);
+                    }));
                 }
                 return false;
             }
