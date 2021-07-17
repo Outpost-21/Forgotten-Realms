@@ -84,7 +84,7 @@
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
 		<defName>O21_FR_Halfling</defName>
 		<label>Halfling</label>
-		<description>Dwarves, sometimes called the Stout Folk, were a natural humanoid race common throughout parts of Toril as well as Abeir. Dwarves were a tough, tradition-abiding folk known for their strong martial traditions and beautiful craftsmanship.</description>
+		<description>Also known as Hin, or the "quick folk" amongst themselves, Halflings are small humanoid creatures, very similar in appearance to Humans, but around half their size.</description>
 		<alienRace>
 			<generalSettings>
 				<maleGenderProbability>0.85</maleGenderProbability>
@@ -134,6 +134,8 @@
             <ComfyTemperatureMax>26</ComfyTemperatureMax>
             <LeatherAmount>20</LeatherAmount>
             <RoyalFavorValue>3</RoyalFavorValue>
+			<HungerRateMultiplier>1.15</HungerRateMultiplier>
+			<HuntingStealth>1.2</HuntingStealth>
 		</statBases>
 		<tools>
 			<li>
@@ -202,7 +204,7 @@
       		<nameCategory>HumanStandard</nameCategory>
 			<useMeatFrom>Human</useMeatFrom>
 			<body>Human</body>
-            <baseBodySize>0.7</baseBodySize>
+            <baseBodySize>0.6</baseBodySize>
             <baseHealthScale>0.75</baseHealthScale>
             <foodType>OmnivoreHuman</foodType>
             <gestationPeriodDays>45</gestationPeriodDays>

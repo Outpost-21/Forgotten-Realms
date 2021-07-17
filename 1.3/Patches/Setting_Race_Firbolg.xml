@@ -46,7 +46,7 @@
 										<races>
 											<li>O21_FR_Firbolg</li>
 										</races>
-										<weight>2</weight>
+										<weight>0.01</weight>
 									</li>
 								</value>
 							</li>
@@ -57,7 +57,7 @@
 										<races>
 											<li>O21_FR_Firbolg</li>
 										</races>
-										<weight>2</weight>
+										<weight>0.7</weight>
 									</li>
 								</value>
 							</li>
@@ -68,7 +68,7 @@
 										<races>
 											<li>O21_FR_Firbolg</li>
 										</races>
-										<weight>2</weight>
+										<weight>0.01</weight>
 									</li>
 								</value>
 							</li>
@@ -79,7 +79,7 @@
 										<races>
 											<li>O21_FR_Firbolg</li>
 										</races>
-										<weight>2</weight>
+										<weight>0.7</weight>
 									</li>
 								</value>
 							</li>
@@ -92,7 +92,7 @@
 												<kindDefs>
 													<li>O21_FR_Firbolg</li>
 												</kindDefs>
-												<chance>1.0</chance>
+												<chance>0.5</chance>
 											</li>
 										</pawnKindEntries>
 										<factionDefs>
@@ -105,7 +105,7 @@
 												<kindDefs>
 													<li>O21_FR_FirbolgTribal</li>
 												</kindDefs>
-												<chance>1.0</chance>
+												<chance>0.5</chance>
 											</li>
 										</pawnKindEntries>
 										<factionDefs>
@@ -123,7 +123,7 @@
 												<kindDefs>
 													<li>O21_FR_Firbolg</li>
 												</kindDefs>
-												<chance>1.0</chance>
+												<chance>0.5</chance>
 											</li>
 										</pawnKindEntries>
 										<factionDefs>
@@ -136,7 +136,7 @@
 												<kindDefs>
 													<li>O21_FR_FirbolgTribal</li>
 												</kindDefs>
-												<chance>1.0</chance>
+												<chance>0.5</chance>
 											</li>
 										</pawnKindEntries>
 										<factionDefs>

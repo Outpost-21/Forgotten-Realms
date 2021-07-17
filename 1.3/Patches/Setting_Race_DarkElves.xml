@@ -58,7 +58,7 @@
 										<races>
 											<li>O21_FR_DarkElf</li>
 										</races>
-										<weight>2</weight>
+										<weight>0.1</weight>
 									</li>
 								</value>
 							</li>
@@ -80,7 +80,7 @@
 										<races>
 											<li>O21_FR_DarkElf</li>
 										</races>
-										<weight>2</weight>
+										<weight>0.1</weight>
 									</li>
 								</value>
 							</li>

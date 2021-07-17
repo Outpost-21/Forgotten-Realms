@@ -206,7 +206,13 @@
 				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
 			</relationSettings>
 			<thoughtSettings>
-				<cannotReceiveThoughts />
+				<cannotReceiveThoughts>
+					<li>EnvironmentDark</li>
+					<li>AteRawFood</li>
+					<li>AteWithoutTable</li>
+					<li>SleptOnGround</li>
+					<li>SharedBed</li>
+				</cannotReceiveThoughts>
 			</thoughtSettings>
 			<graphicPaths>
 				<li>
@@ -228,6 +234,10 @@
 			<ComfyTemperatureMin>2</ComfyTemperatureMin>
 			<ComfyTemperatureMax>32</ComfyTemperatureMax>
 			<LeatherAmount>25</LeatherAmount>
+			<MentalBreakThreshold>0.20</MentalBreakThreshold>
+			<GlobalLearningFactor>0.80</GlobalLearningFactor>
+			<AnimalGatherSpeed>1.5</AnimalGatherSpeed>
+			<PlantWorkSpeed>1.5</PlantWorkSpeed>
 		</statBases>
 		<tools>
 			<li>
@@ -235,14 +245,14 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>10.2</power>
+				<power>14.2</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>14</amount>
+							<amount>20</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -252,14 +262,14 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>10.2</power>
+				<power>14.2</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 				<surpriseAttack>
 					<extraMeleeDamages>
 						<li>
 							<def>Stun</def>
-							<amount>14</amount>
+							<amount>20</amount>
 						</li>
 					</extraMeleeDamages>
 				</surpriseAttack>
@@ -269,7 +279,7 @@
 				<capacities>
 					<li>Bite</li>
 				</capacities>
-				<power>10.2</power>
+				<power>12.2</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
 				<chanceFactor>0.07</chanceFactor>
@@ -296,8 +306,8 @@
       		<nameCategory>HumanStandard</nameCategory>
 			<useMeatFrom>Human</useMeatFrom>
 			<body>Human</body>
-			<baseBodySize>1.0</baseBodySize>
-			<baseHealthScale>1.2</baseHealthScale>
+			<baseBodySize>2.0</baseBodySize>
+			<baseHealthScale>1.1</baseHealthScale>
 			<foodType>OmnivoreHuman</foodType>
 			<gestationPeriodDays>45</gestationPeriodDays>
 			<litterSizeCurve>
