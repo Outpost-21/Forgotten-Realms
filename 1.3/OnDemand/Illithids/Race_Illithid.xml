@@ -99,11 +99,20 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 					<head>Pawn/IllithidNew/Head/</head>
 				</li>
 			</graphicPaths>
-			<hairSettings>
-				<hasHair>false</hasHair>
-				<getsGreyAt>65</getsGreyAt>
-				<hairTags />
-			</hairSettings>
+			<styleSettings>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
 			<relationSettings>
 				<relationChanceModifierChild>0</relationChanceModifierChild>
 				<relationChanceModifierExLover>0</relationChanceModifierExLover>

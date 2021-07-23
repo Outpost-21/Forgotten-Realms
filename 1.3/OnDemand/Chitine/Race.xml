@@ -196,14 +196,20 @@
 					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
-			<hairSettings>
-				<hasHair>false</hasHair>
-				<getsGreyAt>100</getsGreyAt> 
-				<hairTags>
-					<li>Urban</li>
-					<li>Tribal</li>
-				</hairTags>
-			</hairSettings>
+			<styleSettings>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
 			<relationSettings>
 				<relationChanceModifierChild>1</relationChanceModifierChild>
 				<relationChanceModifierExLover>1</relationChanceModifierExLover>

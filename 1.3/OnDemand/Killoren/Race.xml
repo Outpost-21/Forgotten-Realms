@@ -181,13 +181,23 @@
 					<head>Pawn/Killoren/Head/</head>
 				</li>
 			</graphicPaths>
-			<hairSettings>
-				<hasHair>true</hasHair>
-				<getsGreyAt>3000</getsGreyAt> 
-				<hairTags>
-					<li>KillorenHair</li>
-				</hairTags>
-			</hairSettings>
+			<styleSettings>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTags>
+							<li>Killoren</li>
+						</styleTags>
+					</value>
+				</li>
+			</styleSettings>
 			<relationSettings>
 				<relationChanceModifierChild>1</relationChanceModifierChild>
 				<relationChanceModifierExLover>1</relationChanceModifierExLover>

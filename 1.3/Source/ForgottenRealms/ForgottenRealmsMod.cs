@@ -68,7 +68,7 @@ namespace ForgottenRealms
             //listingStandard.CheckboxLabeled("Bullywug", ref settings.raceToggle_bullywug, "Enables/Disables the Bullywug race.");
             listingStandard.CheckboxLabeled("Chitine", ref settings.raceToggle_chitine, "Enables/Disables the Chitine race.");
             //listingStandard.CheckboxLabeled("Dragonborn", ref settings.raceToggle_dragonborn, "Enables/Disables the Dragonborn race.");
-            //listingStandard.CheckboxLabeled("Dwarf", ref settings.raceToggle_dwarf, "Enables/Disables the Dwarf race.");
+            listingStandard.CheckboxLabeled("Dwarf", ref settings.raceToggle_dwarf, "Enables/Disables the Dwarf race.");
             //listingStandard.CheckboxLabeled("Elan", ref settings.raceToggle_elan, "Enables/Disables the Elan race.");
             listingStandard.CheckboxLabeled("Elves", ref settings.raceToggle_elf, "Enables/Disables the Elven races (Dark Elf, Moon Elf, Sun Elf and Wood Elf are all rolled into this setting).");
             listingStandard.CheckboxLabeled("Firbolg", ref settings.raceToggle_firbolg, "Enables/Disables the Firbolg race.");

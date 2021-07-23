@@ -4,7 +4,7 @@
 	<AlienRace.RaceSettings>
 		<defName>Gith_Settings</defName>
 		<pawnKindSettings>
-            <alienslavekinds>
+			<alienslavekinds>
 				<li>
 					<kindDefs>
 						<li>O21_FR_Gith</li>
@@ -12,8 +12,8 @@
 					</kindDefs>
 					<chance>20.0</chance>
 				</li>
-            </alienslavekinds>
-            <alienrefugeekinds>
+			</alienslavekinds>
+			<alienrefugeekinds>
 				<li>
 					<kindDefs>
 						<li>O21_FR_Gith</li>
@@ -21,7 +21,7 @@
 					</kindDefs>
 					<chance>20.0</chance>
 				</li>
-            </alienrefugeekinds>
+			</alienrefugeekinds>
 			<startingColonists>
 				<li>
 					<pawnKindEntries>
@@ -33,7 +33,7 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>O21_FR_GithPlayerColony</li> 
+						<li>O21_FR_GithPlayerColony</li>
 					</factionDefs>
 				</li>
 				<li>
@@ -46,12 +46,12 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>O21_FR_GithPlayerTribe</li> 
+						<li>O21_FR_GithPlayerTribe</li>
 					</factionDefs>
 				</li>
 			</startingColonists>
-            <alienwandererkinds>
-                <li>
+			<alienwandererkinds>
+				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
@@ -61,10 +61,10 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>O21_FR_GithPlayerColony</li> 
+						<li>O21_FR_GithPlayerColony</li>
 					</factionDefs>
 				</li>
-                <li>
+				<li>
 					<pawnKindEntries>
 						<li>
 							<kindDefs>
@@ -74,11 +74,11 @@
 						</li>
 					</pawnKindEntries>
 					<factionDefs>
-						<li>O21_FR_GithPlayerTribe</li> 
+						<li>O21_FR_GithPlayerTribe</li>
 					</factionDefs>
 				</li>
-            </alienwandererkinds>
-        </pawnKindSettings>
+			</alienwandererkinds>
+		</pawnKindSettings>
 	</AlienRace.RaceSettings>
 
 	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="Alien_Gith">
@@ -93,11 +93,11 @@
 				<forcedRaceTraitEntries />
 				<disallowedTraits>
 					<li>
-                        <defName>Undergrounder</defName>
-                    </li>
+						<defName>Undergrounder</defName>
+					</li>
 				</disallowedTraits>
 				<chemicalSettings />
-				<factionRelations />	
+				<factionRelations />
 				<notXenophobistTowards />
 				<immuneToXenophobia>false</immuneToXenophobia>
 				<alienPartGenerator>
@@ -115,59 +115,59 @@
 						<li>Male</li>
 						<li>Female</li>
 					</alienbodytypes>
-                    <colorChannels>
-                        <li>
-                            <name>skin</name>
-                            <first Class="ColorGenerator_Options">
-                                <options>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>(188, 212, 116)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>(168, 189, 106)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>(143, 163, 85)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>(166, 196, 77)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>(138, 161, 71)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>(186, 214, 86)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>(184, 201, 85)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>(175, 181, 69)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>(201, 209, 63)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>(173, 173, 73)</only>
-                                    </li>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>(207, 207, 95)</only>
-                                    </li>
-                                </options>
-                            </first>
-                        </li>
-                    </colorChannels>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>(188, 212, 116)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(168, 189, 106)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(143, 163, 85)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(166, 196, 77)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(138, 161, 71)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(186, 214, 86)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(184, 201, 85)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(175, 181, 69)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(201, 209, 63)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(173, 173, 73)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(207, 207, 95)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
 				</alienPartGenerator>
 			</generalSettings>
 			<graphicPaths>
@@ -175,15 +175,19 @@
 					<head>Pawn/Gith/</head>
 				</li>
 			</graphicPaths>
-			<hairSettings>
-				<hasHair>true</hasHair>
-				<getsGreyAt>85</getsGreyAt> 
-				<hairTags>
-					<li>Tribal</li>
-					<li>Rural</li>
-					<li>Urban</li>
-				</hairTags>
-			</hairSettings>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTags>
+							<li>Tribal</li>
+							<li>Rural</li>
+							<li>Urban</li>
+						</styleTags>
+					</value>
+				</li>
+			</styleSettings>
 			<relationSettings>
 				<relationChanceModifierChild>1</relationChanceModifierChild>
 				<relationChanceModifierExLover>1</relationChanceModifierExLover>
@@ -347,7 +351,7 @@
 			</ageGenerationCurve>
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
-                <li>Human</li>
+				<li>Human</li>
 			</hediffGiverSets>
 		</race>
 		<recipes>
@@ -392,5 +396,5 @@
 			</li>
 		</comps>
 	</AlienRace.ThingDef_AlienRace>
-	
+
 </Defs>

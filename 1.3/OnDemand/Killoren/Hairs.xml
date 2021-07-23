@@ -13,7 +13,7 @@
 		<texPath>Pawn/Killoren/Hair/None</texPath>
     	<category>Killoren</category>
 		<styleTags>
-			<li>KillorenHair</li>
+			<li>Killoren</li>
 		</styleTags>
 	</HairDef>
 
@@ -24,7 +24,7 @@
 		<texPath>Pawn/Killoren/Hair/Leaves01</texPath>
     	<category>Killoren</category>
 		<styleTags>
-			<li>KillorenHair</li>
+			<li>Killoren</li>
 		</styleTags>
 	</HairDef>
 
@@ -35,7 +35,7 @@
 		<texPath>Pawn/Killoren/Hair/Leaves02</texPath>
     	<category>Killoren</category>
 		<styleTags>
-			<li>KillorenHair</li>
+			<li>Killoren</li>
 		</styleTags>
 	</HairDef>
 
@@ -46,7 +46,7 @@
 		<texPath>Pawn/Killoren/Hair/Leaves03</texPath>
     	<category>Killoren</category>
 		<styleTags>
-			<li>KillorenHair</li>
+			<li>Killoren</li>
 		</styleTags>
 	</HairDef>
 

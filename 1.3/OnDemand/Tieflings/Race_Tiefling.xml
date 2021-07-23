@@ -248,10 +248,6 @@
 							<alignWithHead>true</alignWithHead>
 							<!-- <offsets>
 								<south>
-									<bodyTypes>
-										<Male>(-0.840, 0.783)</Male>
-										<Female>(-0.840, 0.783)</Female>
-									</bodyTypes>
 									<crownTypes>
 										<Average_Normal>(0.42,-0.22)</Average_Normal>
 										<Average_Wide>(0.42,-0.22)</Average_Wide>
@@ -262,10 +258,6 @@
 									</crownTypes>
 								</south>
 								<north>
-                                    <bodyTypes>
-										<Male>(-0.420, 1.160)</Male>
-										<Female>(-0.420, 1.160)</Female>
-									</bodyTypes>
 									<crownTypes>
 										<Average_Normal>(0.42,-0.22)</Average_Normal>
 										<Average_Wide>(0.42,-0.22)</Average_Wide>
@@ -276,10 +268,6 @@
 									</crownTypes>
 								</north>
 								<east>
-									<bodyTypes>
-										<Male>(-0.850, 0.770)</Male>
-										<Female>(-0.850, 0.770)</Female>
-									</bodyTypes>
 									<crownTypes>
 										<Average_Normal>(0.42, -0.22)</Average_Normal>
 										<Average_Wide>(0.42,-0.22)</Average_Wide>
@@ -294,14 +282,18 @@
 					</bodyAddons>
 				</alienPartGenerator>
 			</generalSettings>
-			<hairSettings>
-				<hasHair>true</hasHair>
-				<getsGreyAt>100</getsGreyAt> 
-				<hairTags>
-					<li>Urban</li>
-					<li>Tribal</li>
-				</hairTags>
-			</hairSettings>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTags>
+							<li>Urban</li>
+							<li>Tribal</li>
+						</styleTags>
+					</value>
+				</li>
+			</styleSettings>
 			<relationSettings>
 				<relationChanceModifierChild>1</relationChanceModifierChild>
 				<relationChanceModifierExLover>1</relationChanceModifierExLover>

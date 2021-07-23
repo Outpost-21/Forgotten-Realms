@@ -13,7 +13,7 @@
 		<texPath>Pawn/Warforged/Hair/None</texPath>
     	<category>Warforged</category>
 		<styleTags>
-			<li>WarforgedHair</li>
+			<li>Warforged</li>
 		</styleTags>
 	</HairDef>
 	
@@ -24,7 +24,7 @@
 		<texPath>Pawn/Warforged/Hair/M1</texPath>
     	<category>Warforged</category>
 		<styleTags>
-			<li>WarforgedHair</li>
+			<li>Warforged</li>
 		</styleTags>
 	</HairDef>
 	
@@ -35,7 +35,7 @@
 		<texPath>Pawn/Warforged/Hair/M2</texPath>
     	<category>Warforged</category>
 		<styleTags>
-			<li>WarforgedHair</li>
+			<li>Warforged</li>
 		</styleTags>
 	</HairDef>
 	
@@ -46,7 +46,7 @@
 		<texPath>Pawn/Warforged/Hair/M3</texPath>
     	<category>Warforged</category>
 		<styleTags>
-			<li>WarforgedHair</li>
+			<li>Warforged</li>
 		</styleTags>
 	</HairDef>
 	
@@ -57,7 +57,7 @@
 		<texPath>Pawn/Warforged/Hair/M4</texPath>
     	<category>Warforged</category>
 		<styleTags>
-			<li>WarforgedHair</li>
+			<li>Warforged</li>
 		</styleTags>
 	</HairDef>
 	
@@ -68,7 +68,7 @@
 		<texPath>Pawn/Warforged/Hair/M5</texPath>
     	<category>Warforged</category>
 		<styleTags>
-			<li>WarforgedHair</li>
+			<li>Warforged</li>
 		</styleTags>
 	</HairDef>
 	
@@ -79,7 +79,7 @@
 		<texPath>Pawn/Warforged/Hair/M6</texPath>
     	<category>Warforged</category>
 		<styleTags>
-			<li>WarforgedHair</li>
+			<li>Warforged</li>
 		</styleTags>
 	</HairDef>
 	
@@ -90,7 +90,7 @@
 		<texPath>Pawn/Warforged/Hair/M7</texPath>
     	<category>Warforged</category>
 		<styleTags>
-			<li>WarforgedHair</li>
+			<li>Warforged</li>
 		</styleTags>
 	</HairDef>
 	
@@ -101,7 +101,7 @@
 		<texPath>Pawn/Warforged/Hair/M8</texPath>
     	<category>Warforged</category>
 		<styleTags>
-			<li>WarforgedHair</li>
+			<li>Warforged</li>
 		</styleTags>
 	</HairDef>
   
