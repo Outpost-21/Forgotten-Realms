@@ -202,9 +202,9 @@
 					<key>HairDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
-						<styleTags>
+						<styleTagsOverride>
 							<li>Warforged</li>
-						</styleTags>
+						</styleTagsOverride>
 					</value>
 				</li>
 			</styleSettings>

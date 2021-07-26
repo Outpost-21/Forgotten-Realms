@@ -192,9 +192,9 @@
 					<key>HairDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
-						<styleTags>
+						<styleTagsOverride>
 							<li>Killoren</li>
-						</styleTags>
+						</styleTagsOverride>
 					</value>
 				</li>
 			</styleSettings>

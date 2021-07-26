@@ -131,9 +131,9 @@
 					<key>BeardDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
-						<styleTags>
+						<styleTagsOverride>
 							<li>Dwarf</li>
-						</styleTags>
+						</styleTagsOverride>
 					</value>
 				</li>
 				<li>
