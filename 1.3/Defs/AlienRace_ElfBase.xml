@@ -245,9 +245,11 @@
 			<li Class="O21Toolbox.PawnExt.CompProperties_AlienBodyCorrection">
 				<maleBodyTypes>
 					<li>Male</li>
+					<li>Thin</li>
 				</maleBodyTypes>
 				<femaleBodyTypes>
 					<li>Female</li>
+					<li>Thin</li>
 				</femaleBodyTypes>
 			</li>
 		</comps>
