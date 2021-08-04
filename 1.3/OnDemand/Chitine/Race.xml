@@ -326,6 +326,7 @@
 			</li>
 		</tools>
 		<race>
+			<fleshType>O21_NormalNoHediffs</fleshType>
 			<thinkTreeMain>Humanlike</thinkTreeMain>
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
 			<intelligence>Humanlike</intelligence>
