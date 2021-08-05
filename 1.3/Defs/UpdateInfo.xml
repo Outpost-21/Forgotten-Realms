@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<O21Toolbox.UpdateListings.UpdateDef>
+	<!-- <O21Toolbox.UpdateListings.UpdateDef>
 		<defName>O21_FR_20210723_Update</defName>
 		<date>2021/07/23</date>
 		<banner>UpdateInfo/O21ForgottenRealmsUpdateBanner</banner>
@@ -11,7 +11,7 @@
 For More information please see the Outpost 21 Wiki, left-click to open the page, right click to dismiss update.</content>
 		<linkUrl>https://outpost-21.fandom.com/wiki/Forgotten_Realms</linkUrl>
 		<important>False</important>
-	</O21Toolbox.UpdateListings.UpdateDef>
+	</O21Toolbox.UpdateListings.UpdateDef> -->
 
 	<O21Toolbox.UpdateListings.UpdateDef>
 		<defName>O21_FR_20210720_Update</defName>
