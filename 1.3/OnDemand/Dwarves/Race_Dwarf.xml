@@ -127,7 +127,7 @@
 			</thoughtSettings>
 			<raceRestriction />
 			<styleSettings>
-				<li>
+				<!-- <li>
 					<key>BeardDef</key>
 					<value>
 						<hasStyle>true</hasStyle>
@@ -135,7 +135,7 @@
 							<li>Dwarf</li>
 						</styleTagsOverride>
 					</value>
-				</li>
+				</li> -->
 				<li>
 					<key>HairDef</key>
 					<value>
