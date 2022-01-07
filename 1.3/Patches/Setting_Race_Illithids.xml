@@ -14,6 +14,12 @@
 						<li>Illithids</li>
 					</folders>
 				</li>
+				<li Class="ForgottenRealms.PatchOperation_OnDemand">
+					<source>1.3/OnDemand</source>
+					<folders>
+						<li>Illithids_NPC</li>
+					</folders>
+				</li>
 				
 				<li Class="PatchOperationFindMod">
 					<mods>

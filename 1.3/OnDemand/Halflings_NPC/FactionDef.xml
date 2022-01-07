@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<FactionDef ParentName="O21_FR_ForgottenSettlementBase">
+        <defName>O21_HalflingTribes</defName>
+        <label>Halfling settlements</label>
+        <description>The collective settlements of Halflings in this realm.</description>
+        <colorSpectrum>
+            <li>(217, 144, 85)</li>
+        </colorSpectrum>
+		<pawnSingular>Halfling</pawnSingular>
+		<pawnsPlural>Halflings</pawnsPlural>
+		<leaderTitle>chief</leaderTitle>
+		<factionIconPath>World/Halfling/HalflingTribeIcon</factionIconPath>
+		<pawnGroupMakers>
+            <li>
+                <!-- Normal fights, ranged with melee mix-ins -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <O21_HalflingTribes_Peasant>20</O21_HalflingTribes_Peasant>
+                    <O21_HalflingTribes_Fighter>40</O21_HalflingTribes_Fighter>
+                    <O21_HalflingTribes_Warrior>30</O21_HalflingTribes_Warrior>
+                    <O21_HalflingTribes_Bowman>30</O21_HalflingTribes_Bowman>
+                    <O21_HalflingTribes_Champion>30</O21_HalflingTribes_Champion>
+                    <O21_HalflingTribes_Chief>10</O21_HalflingTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, ranged only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <O21_HalflingTribes_Bowman>100</O21_HalflingTribes_Bowman>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, melee only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <O21_HalflingTribes_Peasant>15</O21_HalflingTribes_Peasant>
+                    <O21_HalflingTribes_Fighter>40</O21_HalflingTribes_Fighter>
+                    <O21_HalflingTribes_Warrior>40</O21_HalflingTribes_Warrior>
+                    <O21_HalflingTribes_Champion>30</O21_HalflingTribes_Champion>
+                    <O21_HalflingTribes_Chief>5</O21_HalflingTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <O21_HalflingTribes_Fighter>30</O21_HalflingTribes_Fighter>
+                    <O21_HalflingTribes_Warrior>30</O21_HalflingTribes_Warrior>
+                    <O21_HalflingTribes_Bowman>30</O21_HalflingTribes_Bowman>
+                    <O21_HalflingTribes_Champion>20</O21_HalflingTribes_Champion>
+                    <O21_HalflingTribes_Chief>10</O21_HalflingTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <O21_HalflingTribes_Merchant>1</O21_HalflingTribes_Merchant>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2.5</Alpaca>
+                    <Elephant>2</Elephant>
+                </carriers>
+                <guards>
+                    <O21_HalflingTribes_Fighter>30</O21_HalflingTribes_Fighter>
+                    <O21_HalflingTribes_Warrior>30</O21_HalflingTribes_Warrior>
+                    <O21_HalflingTribes_Bowman>30</O21_HalflingTribes_Bowman>
+                    <O21_HalflingTribes_Champion>20</O21_HalflingTribes_Champion>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <O21_HalflingTribes_Peasant>20</O21_HalflingTribes_Peasant>
+                    <O21_HalflingTribes_Fighter>20</O21_HalflingTribes_Fighter>
+                    <O21_HalflingTribes_Warrior>20</O21_HalflingTribes_Warrior>
+                    <O21_HalflingTribes_Bowman>50</O21_HalflingTribes_Bowman>
+                    <O21_HalflingTribes_Champion>30</O21_HalflingTribes_Champion>
+                    <O21_HalflingTribes_Chief>50</O21_HalflingTribes_Chief>
+                </options>
+            </li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+</Defs>

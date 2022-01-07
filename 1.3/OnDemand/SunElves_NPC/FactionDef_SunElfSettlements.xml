@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="O21_ElvenSettlementsBase">
+        <defName>O21_SunElfKingdoms</defName>
+        <label>sun elf settlements</label>
+        <description>The collective settlements of sun elves in this realm.</description>
+        <factionIconPath>World/Elves/SunElfIcon</factionIconPath>
+        <colorSpectrum>
+            <li>RGB(252, 186, 3)</li>
+        </colorSpectrum>
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights, ranged with melee mix-ins -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <O21_ElvenSettlements_Peasant_Sun>20</O21_ElvenSettlements_Peasant_Sun>
+                    <O21_ElvenSettlements_Squire_Sun>40</O21_ElvenSettlements_Squire_Sun>
+                    <O21_ElvenSettlements_Footsoldier_Sun>30</O21_ElvenSettlements_Footsoldier_Sun>
+                    <O21_ElvenSettlements_Bowman_Sun>30</O21_ElvenSettlements_Bowman_Sun>
+                    <O21_ElvenSettlements_Knight_Sun>30</O21_ElvenSettlements_Knight_Sun>
+                    <O21_ElvenSettlements_Lord_Sun>10</O21_ElvenSettlements_Lord_Sun>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, ranged only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <O21_ElvenSettlements_Bowman_Sun>100</O21_ElvenSettlements_Bowman_Sun>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, melee only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <O21_ElvenSettlements_Peasant_Sun>15</O21_ElvenSettlements_Peasant_Sun>
+                    <O21_ElvenSettlements_Squire_Sun>40</O21_ElvenSettlements_Squire_Sun>
+                    <O21_ElvenSettlements_Footsoldier_Sun>40</O21_ElvenSettlements_Footsoldier_Sun>
+                    <O21_ElvenSettlements_Knight_Sun>30</O21_ElvenSettlements_Knight_Sun>
+                    <O21_ElvenSettlements_Lord_Sun>5</O21_ElvenSettlements_Lord_Sun>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <O21_ElvenSettlements_Squire_Sun>30</O21_ElvenSettlements_Squire_Sun>
+                    <O21_ElvenSettlements_Footsoldier_Sun>30</O21_ElvenSettlements_Footsoldier_Sun>
+                    <O21_ElvenSettlements_Bowman_Sun>30</O21_ElvenSettlements_Bowman_Sun>
+                    <O21_ElvenSettlements_Knight_Sun>20</O21_ElvenSettlements_Knight_Sun>
+                    <O21_ElvenSettlements_Lord_Sun>10</O21_ElvenSettlements_Lord_Sun>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <O21_ElvenSettlements_Merchant_Sun>1</O21_ElvenSettlements_Merchant_Sun>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2.5</Alpaca>
+                    <Elephant>2</Elephant>
+                </carriers>
+                <guards>
+                    <O21_ElvenSettlements_Squire_Sun>30</O21_ElvenSettlements_Squire_Sun>
+                    <O21_ElvenSettlements_Footsoldier_Sun>30</O21_ElvenSettlements_Footsoldier_Sun>
+                    <O21_ElvenSettlements_Bowman_Sun>30</O21_ElvenSettlements_Bowman_Sun>
+                    <O21_ElvenSettlements_Knight_Sun>20</O21_ElvenSettlements_Knight_Sun>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <O21_ElvenSettlements_Peasant_Sun>20</O21_ElvenSettlements_Peasant_Sun>
+                    <O21_ElvenSettlements_Squire_Sun>20</O21_ElvenSettlements_Squire_Sun>
+                    <O21_ElvenSettlements_Footsoldier_Sun>20</O21_ElvenSettlements_Footsoldier_Sun>
+                    <O21_ElvenSettlements_Bowman_Sun>50</O21_ElvenSettlements_Bowman_Sun>
+                    <O21_ElvenSettlements_Knight_Sun>30</O21_ElvenSettlements_Knight_Sun>
+                    <O21_ElvenSettlements_Lord_Sun>50</O21_ElvenSettlements_Lord_Sun>
+                </options>
+            </li>
+        </pawnGroupMakers>
+    </FactionDef>
+
+</Defs>
