@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <Operation Class="ForgottenRealms.PatchOperation_SettingActive">
-        <settings>
-            <li>raceToggle_chitine</li>
-        </settings>
+	<Operation Class="ForgottenRealms.PatchOperation_SettingActive">
+		<settings>
+			<li>raceToggle_chitine</li>
+		</settings>
 		<active Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
@@ -20,7 +20,7 @@
 						<li>Chitine_NPC</li>
 					</folders>
 				</li>
-				
+
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Royalty</li>
@@ -38,124 +38,46 @@
 						</operations>
 					</match>
 				</li>
+
 				<li Class="ForgottenRealms.PatchOperation_SettingActive">
 					<settings>
 						<li>settingToggle_raceIntegration</li>
 					</settings>
-					<active Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/PawnKindDef[@Name="PirateBase"]/modExtensions/li[@Class="O21Toolbox.PawnKindExt.DefModExt_ExtendedPawnKind"]/altRaces</xpath>
-								<value>
-									<li>
-										<races>
-											<li>O21_FR_Chitine</li>
-										</races>
-										<weight>2</weight>
-									</li>
-								</value>
-							</li>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/PawnKindDef[@Name="OutlanderBase"]/modExtensions/li[@Class="O21Toolbox.PawnKindExt.DefModExt_ExtendedPawnKind"]/altRaces</xpath>
-								<value>
-									<li>
-										<races>
-											<li>O21_FR_Chitine</li>
-										</races>
-										<weight>0.1</weight>
-									</li>
-								</value>
-							</li>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/PawnKindDef[@Name="MercenaryBase"]/modExtensions/li[@Class="O21Toolbox.PawnKindExt.DefModExt_ExtendedPawnKind"]/altRaces</xpath>
-								<value>
-									<li>
-										<races>
-											<li>O21_FR_Chitine</li>
-										</races>
-										<weight>2</weight>
-									</li>
-								</value>
-							</li>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/PawnKindDef[@Name="TribalBase"]/modExtensions/li[@Class="O21Toolbox.PawnKindExt.DefModExt_ExtendedPawnKind"]/altRaces</xpath>
-								<value>
-									<li>
-										<races>
-											<li>O21_FR_Chitine</li>
-										</races>
-										<weight>0.5</weight>
-									</li>
-								</value>
-							</li>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/AlienRace.RaceSettings[defName="O21_FR_SpeciesIntegration"]/startingColonists</xpath>
-								<value>
-									<li>
-										<pawnKindEntries>
-											<li>
-												<kindDefs>
-													<li>O21_FR_Chitine</li>
-												</kindDefs>
-												<chance>1.0</chance>
-											</li>
-										</pawnKindEntries>
-										<factionDefs>
-											<li>PlayerColony</li>
-										</factionDefs>
-									</li>
-									<li>
-										<pawnKindEntries>
-											<li>
-												<kindDefs>
-													<li>O21_FR_ChitineTribal</li>
-												</kindDefs>
-												<chance>1.0</chance>
-											</li>
-										</pawnKindEntries>
-										<factionDefs>
-											<li>PlayerTribe</li>
-										</factionDefs>
-									</li>
-								</value>
-							</li>
-							<li Class="PatchOperationAdd">
-								<xpath>/Defs/AlienRace.RaceSettings[defName="O21_FR_SpeciesIntegration"]/alienwandererkinds</xpath>
-								<value>
-									<li>
-										<pawnKindEntries>
-											<li>
-												<kindDefs>
-													<li>O21_FR_Chitine</li>
-												</kindDefs>
-												<chance>1.0</chance>
-											</li>
-										</pawnKindEntries>
-										<factionDefs>
-											<li>PlayerColony</li>
-										</factionDefs>
-									</li>
-									<li>
-										<pawnKindEntries>
-											<li>
-												<kindDefs>
-													<li>O21_FR_ChitineTribal</li>
-												</kindDefs>
-												<chance>1.0</chance>
-											</li>
-										</pawnKindEntries>
-										<factionDefs>
-											<li>PlayerTribe</li>
-										</factionDefs>
-									</li>
-								</value>
-							</li>
-						</operations>
+					<active Class="PatchOperationAdd">
+						<xpath>/Defs</xpath>
+						<value>
+							<TabulaRasa.RaceSpawningDef>
+								<defName>ForgottenRealms_RaceSpawning_Chitine</defName>
+								<races>
+									<li>O21_FR_Chitine</li>
+								</races>
+								<factions>
+									<!-- Vanilla Factions -->
+									<li>Ancients</li>
+									<li>AncientsHostile</li>
+									<li>OutlanderCivil</li>
+									<li>OutlanderRough</li>
+									<li>TribeCivil</li>
+									<li>TribeRough</li>
+									<li>TribeSavage</li>
+									<li>Pirate</li>
+									<!-- Royalty -->
+									<li MayRequire="Ludeon.RimWorld.Royalty">Empire</li>
+									<li MayRequire="Ludeon.RimWorld.Royalty">OutlanderRefugee</li>
+									<!-- Ideology -->
+									<li MayRequire="Ludeon.RimWorld.Ideology">Beggars</li>
+									<li MayRequire="Ludeon.RimWorld.Ideology">TribeCannibal</li>
+									<li MayRequire="Ludeon.RimWorld.Ideology">NudistTribe</li>
+									<li MayRequire="Ludeon.RimWorld.Ideology">CannibalPirate</li>
+									<li MayRequire="Ludeon.RimWorld.Ideology">Pilgrims</li>
+								</factions>
+								<weight>80</weight>
+							</TabulaRasa.RaceSpawningDef>
+						</value>
 					</active>
 				</li>
-            </operations>
-        </active>
-    </Operation>
+			</operations>
+		</active>
+	</Operation>
 
 </Patch>

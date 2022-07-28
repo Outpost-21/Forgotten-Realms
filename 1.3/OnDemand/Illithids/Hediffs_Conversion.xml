@@ -5,7 +5,7 @@
 		<defName>O21_FR_Hediff_IllithidCeremorphosis</defName>
 		<label>illithid ceremorphosis</label>
 		<description>This pawn is currently having its brain replaced with an illithid tadpole, very soon this pawn will turn into an illithid and there's no way to prevent this from happening.</description>
-    	<hediffClass>O21Toolbox.PawnConversion.Hediff_BasicConvert</hediffClass>
+    	<hediffClass>TabulaRasa.Hediff_BasicConversion</hediffClass>
 		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
 		<makesSickThought>false</makesSickThought>
 		<tendable>false</tendable>
@@ -16,7 +16,7 @@
 			</li>
 		</comps>
 		<modExtensions>
-			<li Class="O21Toolbox.PawnConversion.DefModExt_BasicConvert">
+			<li Class="TabulaRasa.DefModExt_BasicConversion">
 				<defaultPawnKind>O21_FR_IllithidConverted</defaultPawnKind>
                 <killPawn>False</killPawn>
                 <forceDropEquipment>True</forceDropEquipment>

@@ -148,6 +148,9 @@
 			<TradePriceImprovement>1.2</TradePriceImprovement>
 		</statBases>
 		<race>
+			<hediffGiverSets>
+				<li>O21_FR_SunElf</li>
+			</hediffGiverSets>
 		</race>
 	</AlienRace.ThingDef_AlienRace>
 	

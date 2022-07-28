@@ -12,6 +12,8 @@ namespace ForgottenRealms
 {
     public class ForgottenRealmsSettings : ModSettings
     {
+        public bool verboseLogging = false;
+
         // Other
         public bool settingToggle_raceIntegration = true;
         public bool settingToggle_scenarios = true;

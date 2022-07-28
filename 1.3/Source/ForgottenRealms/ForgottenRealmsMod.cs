@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
+using System.IO;
 
 using UnityEngine;
 using RimWorld;
 using Verse;
 
-using O21Toolbox;
+using HarmonyLib;
+using TabulaRasa;
 
 namespace ForgottenRealms
 {
@@ -19,11 +22,23 @@ namespace ForgottenRealms
 
         public ForgottenRealmsSettingsPage currentSettingsPage;
 
+        internal static string VersionDir => Path.Combine(ModLister.GetActiveModWithIdentifier("neronix17.fr.compilation").RootDir.FullName, "Version.txt");
+        public static string CurrentVersion { get; private set; }
+
         public ForgottenRealmsMod(ModContentPack content) : base(content)
         {
             settings = GetSettings<ForgottenRealmsSettings>();
             mod = this;
-            Log.Message("O21 :: Forgotten Realms Initialised :: 3.2.0 [Final]");
+
+            Version version = Assembly.GetExecutingAssembly().GetName().Version;
+            CurrentVersion = $"{version.Major}.{version.Minor}.{version.Build}";
+
+            LogUtil.LogMessage($"{CurrentVersion} ::");
+
+            File.WriteAllText(VersionDir, CurrentVersion);
+
+            Harmony ForgottenHarmony = new Harmony("com.neronix17.forgottenrealms.mod");
+            ForgottenHarmony.PatchAll();
         }
 
         public override string SettingsCategory()

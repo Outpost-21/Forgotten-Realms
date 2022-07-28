@@ -4,7 +4,7 @@
 	<HediffGiverSetDef>
 		<defName>O21_FR_Warforged</defName>
 		<hediffGivers>
-			<li Class="O21Toolbox.HediffGiver_Racial">
+			<li Class="TabulaRasa.HediffGiver_Racial">
 				<hediff>O21_FR_Warforged</hediff>
 			</li>
 		</hediffGivers>
@@ -13,8 +13,24 @@
 	<HediffDef>
 		<defName>O21_FR_Warforged</defName>
 		<hediffClass>HediffWithComps</hediffClass>
-		<label>warforged</label>
-		<description>Warforged passively heal over time, to the extent they will even reform body parts.</description>
+		<label>Race: Warforged</label>
+		<description><![CDATA[<i>Warforged are a sentient mechanical construct designed specifically for war, but many choose their own path.</i>
+			
+<b>Natural Armor</b>
+- Blunt 40%
+- Sharp 35%
+- Heat 15%
+
+<b>Stats</b>
+- 0% Psychic Sensitivity
+- 0% Toxic Sensitivity
+- 160% Overall Health
+- 120% Work Speed
+
+<b>Extra Info</b>
+- Requires no sleep
+- Requires no food
+- Automatically repairs any wound.]]></description>
 		<defaultLabelColor>(0.6,0.85,0.91)</defaultLabelColor>
 		<isBad>false</isBad>
 		<scenarioCanAdd>false</scenarioCanAdd>
@@ -24,8 +40,13 @@
 				<capMods />
 			</li>
 		</stages>
+		<disablesNeeds>
+			<li>Food</li>
+			<li>Rest</li>
+		</disablesNeeds>
 		<comps>
-			<li Class="O21Toolbox.AutoHeal.CompProperties_AutoHeal">
+			<li Class="TabulaRasa.HediffCompProperties_TooltipDescription" />
+			<li Class="TabulaRasa.HediffCompProperties_AutoHeal">
 				<healTicks>3000</healTicks>
                 <cureTicks>500</cureTicks>
 				<regrowParts>true</regrowParts>
@@ -45,9 +66,9 @@
 	
 	<HediffDef>
 		<defName>O21_FR_Warforged_ProtoBodypart</defName>
-		<label>regrowing</label>
-		<description>This body part is regrowing, it will cause quite a bit of pain until it's done doing so.</description>
-		<hediffClass>O21Toolbox.AutoHeal.Hediff_GrowingPart</hediffClass>
+		<label>reconstructing</label>
+		<description>This body part is reconstructing, it will cause quite a bit of pain until it's done doing so.</description>
+		<hediffClass>TabulaRasa.Hediff_GrowingPart</hediffClass>
 		<defaultLabelColor>(0.59, 0.92, 0.69)</defaultLabelColor>
 		<isBad>false</isBad>
 		<addedPartProps>
@@ -75,13 +96,16 @@
 		</stages>
 		<comps>
 			<li Class="HediffCompProperties_Immunizable">
-				<!-- Decides how fast the body part heals/grows -->
-				<!-- 0.07 is roughly a Quadrum (15 days) -->
-				<severityPerDayNotImmune>0.14</severityPerDayNotImmune> 
+				<!-- 
+					Decides how fast the body part heals/grows
+					- 0.07 is roughly a Quadrum (15 days)
+					- Higher number is faster
+				 -->
+				<severityPerDayNotImmune>0.25</severityPerDayNotImmune> 
 			</li>
 		</comps>
 		<modExtensions>
-			<li Class="O21Toolbox.AutoHeal.DefModExtension_AutoHealProps">
+			<li Class="TabulaRasa.DefModExt_AutoHealProps">
 				<autoHealHediff>O21_FR_Warforged</autoHealHediff>
 				<growthText>Reassembly: </growthText>
 				<curedBodyPart>O21_FR_Warforged_CuredBodypart</curedBodyPart>
@@ -91,9 +115,9 @@
 	
 	<HediffDef>
 		<defName>O21_FR_Warforged_CuredBodypart</defName>
-		<label>cured bodypart</label>
+		<label>completed part</label>
 		<description>You should never actually see this info.</description>
-		<hediffClass>O21Toolbox.Utility.RemovableHediff</hediffClass>
+		<hediffClass>TabulaRasa.Hediff_Removable</hediffClass>
 		<defaultLabelColor>(1.0, 1.0, 1.0)</defaultLabelColor>
 		<isBad>false</isBad>
 		<initialSeverity>0.0</initialSeverity>

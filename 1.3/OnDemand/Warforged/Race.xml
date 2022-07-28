@@ -221,35 +221,257 @@
 			<thoughtSettings>
 				<cannotReceiveThoughtsAtAll>false</cannotReceiveThoughtsAtAll>
 				<cannotReceiveThoughts>
+					<li>NeedFood</li>
 					<li>Naked</li>
-					<li>ObservedLayingCorpse</li>
-					<li>EnvironmentDark</li>
-					<li>NeedOutdoors</li>
-					<li>DeadMansApparel</li>
-					<li>KnowGuestExecuted</li>
-					<li>KnowPrisonerDiedInnocent</li>
-					<li>AteRawFood</li>
-					<li>AteKibble</li>
-					<li>AteCorpse</li>
-					<li>AteHumanlikeMeatDirect</li>
-					<li>AteHumanlikeMeatAsIngredient</li>
-					<li>AteHumanlikeMeatAsIngredientCannibal</li>
-					<li>AteInsectMeatDirect</li>
-					<li>AteWithoutTable</li>
+					<li>SharedBed</li>
+					<li>AttendedWedding</li>
+					<li>AttendedParty</li>
+					<li>SleepDisturbed</li>
 					<li>SleptOnGround</li>
 					<li>KnowPrisonerSold</li>
 					<li>KnowGuestOrganHarvested</li>
 					<li>KnowColonistOrganHarvested</li>
-					<li>SoakingWet</li>
-					<li>KnowButcheredHumanlikeCorpse</li>
+					<li>WasImprisoned</li>
+					<li>KnowBuriedInSarcophagus</li>
 					<li>ButcheredHumanlikeCorpse</li>
+					<li>KnowButcheredHumanlikeCorpse</li>
+					<li>ObservedLayingCorpse</li>
+					<li>ObservedLayingRottingCorpse</li>
+					<li>WitnessedDeathAlly</li>
 					<li>WitnessedDeathNonAlly</li>
 					<li>ColonistBanished</li>
 					<li>ColonistBanishedToDie</li>
 					<li>PrisonerBanishedToDie</li>
-					<li>SharedBed</li>
+					<li>BondedAnimalBanished</li>
+					<li>SleptInBedroom</li>
+					<li>SleptInBarracks</li>
+					<li>InsultedMood</li>
+					<li>KindWordsMood</li>
+					<li>ArtifactMoodBoost</li>
+					<li>EnvironmentDark</li>
+					<li>ApparelDamaged</li>
+					<li>DeadMansApparel</li>
+					<li>HumanLeatherApparelSad</li>
+					<li>KnowGuestExecuted</li>
+					<li>KnowColonistExecuted</li>
+					<li>KnowPrisonerDiedInnocent</li>
+					<li>KnowColonistDied</li>
+					<li>PawnWithGoodOpinionDied</li>
+					<li>ProsthophileNoProsthetic</li>
+					<li>AteWithoutTable</li>
+					
+					<li>Inebriated</li>
+					<li>Hungover</li>
+					<li>AlcoholWithdrawal</li>
+					<li>AmbrosiaHigh</li>
+					<li>AmbrosiaWithdrawal</li>
+					<li>GoJuiceHigh</li>
+					<li>GoJuiceWithdrawal</li>
+					<li>FlakeHigh</li>
+					<li>PsychiteTeaHigh</li>
+					<li>YayoHigh</li>
+					<li>PsychiteWithdrawal</li>
+					<li>SmokeleafHigh</li>
+					<li>SmokeleafWithdrawal</li>
+					<li>WakeUpWithdrawal</li>
+					<li>AteNutrientPasteMeal</li>
+					<li>AnestheticHigh</li>
+					<li>AteLavishMeal</li>
+					<li>AteFineMeal</li>
+					<li>AteRawFood</li>
+					<li>AteKibble</li>
+					<li>AteCorpse</li>
+					<li>AteHumanlikeMeatDirect</li>
+					<li>AteHumanlikeMeatDirectCannibal</li>
+					<li>AteHumanlikeMeatAsIngredient</li>
+					<li>AteHumanlikeMeatAsIngredientCannibal</li>
+					<li>AteInsectMeatDirect</li>
+					<li>AteInsectMeatAsIngredient</li>
+					<li>AteRottenFood</li>
+					<li>AteInImpressiveDiningRoom</li>
+					<li>EnvironmentDark</li>
+					<li>ApparelDamaged</li>
+					<li>WrongApparelGender</li>
+					<li>DeadMansApparel</li>
+					<li>Sick</li>
+					<li>NeedFood</li>
+					<li>DrugDesireFascination</li>
+					<li>DrugDesireFascinationSatisfied</li>
+					<li>DrugDesireInterest</li>
+					<li>DrugDesireInterestSatisfied</li>
+					<li>Pain</li>
+					<li>Naked</li>
+					<li>ColonistLeftUnburied</li>
+					<li>ProsthophileNoProsthetic</li>
+					<li>ProsthophileHappy</li>
+					<li>ProsthophobeUnhappy</li>
 
-					<li>ButcheredHumanlikeCorpseOpinion</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoBuildingMissing</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoBuildingDisrespected</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">LookChangeDesired</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">MasochistWearingCollar</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">MasochistWearingBodyStrap</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">WearingColor_Favorite</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">WearingColor_Ideo</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">PsychicArchotechEmanator_Major</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">PsychicArchotechEmanator_Grand</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">PsychicArchotechEmanator_Core</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">FailedConvertIdeoAttemptResentment</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">RelicAtRitual</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">TrialExonerated</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">TrialFailed</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">TrialConvicted</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleParty</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">BoringParty</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">FunParty</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleFuneral</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">UnforgettableParty</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">LacklusterFuneral</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GoodFuneral</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HeartwarmingFuneral</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleFestival</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">BoringFestival</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">FunFestival</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">UnforgettableFestival</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleSacrifice</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">BoringSacrifice</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SatisfyingSacrifice</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SpectacularSacrifice</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleSkyLanterns</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">UnimpressiveSkyLanterns</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">BeautifulSkyLanterns</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">UnforgettableSkyLanterns</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleScarification</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">BoringScarification</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SatisfyingScarification</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SpectacularScarification</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleBlinding</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">BoringBlinding</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SatisfyingBlinding</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SpectacularBlinding</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">EffectiveConversion</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">MasterfulConversion</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleDuel</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">BoringDuel</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GoodDuel</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">UnforgettableDuel</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AwkwardExecution</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SatisfyingExecution</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SpectacularExecution</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">WillDiminished</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">FailedConvertAbilityInitiator</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">FailedConvertAbilityRecipient</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Counselled</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">CounselFailed</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Counselled_MoodBoost</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">TendedByMedicalSpecialist</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SleptInRoomWithSlave</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">ConnectedTreeDied</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">RelicsCollected</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">BiosculpterPleasure</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">DryadDied</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleLost</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleEmpty</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleApparelRequirementNotMet</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentStandard</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentDisapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentHorrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentAbhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">ParticipatedInRaid_Respected</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">ParticipatedInRaid_Required</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">RecentConquest_Respected</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">RecentConquest_Required</li>
+
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteVeneratedAnimalMeat</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">TameVeneratedAnimalDied</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">InstalledProsthetic_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">InstalledProsthetic_Know_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">InstalledProsthetic_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">InstalledProsthetic_Know_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HasProsthetic_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HasProsthetic_Abhorrent_Social</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HasProsthetic_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HasProsthetic_Disapproved_Social</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HasNoProsthetic_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HasNoProsthetic_Disapproved_Social</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HasProsthetic_Approved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IngestedDrug_Horrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IngestedRecreationalDrug_Horrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IngestedHardDrug_Horrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IngestedDrug_Know_Horrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IngestedRecreationalDrug_Know_Horrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IngestedHardDrug_Know_Horrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">Pain_Idealized</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SleptUsingSleepAccelerator</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">NeedNeuralSupercharge</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AgeReversalDemanded</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AgeReversalReceived</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">BioSculpterDespised</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GauranlenConnectionDesired</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoBuildingMissing</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">ConnectedTreeDied</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">BiosculpterPleasure</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">LookChangeDesired</li>
+
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Know_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Horrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Know_Horrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteMeat_Know_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteNonMeat_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteNonMeat_Know_Abhorrent</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteNonMeat_Horrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteNonMeat_Know_Horrible</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteNonMeat_Disapproved</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AteNonMeat_Know_Disapproved</li>
+
+					<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartCovered_Disapproved_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartCovered_Disapproved_Female</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartCovered_Disapproved_Memory</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartCovered_Disapproved_Social_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartCovered_Disapproved_Social_Female</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartButGroinCovered_Disapproved_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartButGroinCovered_Disapproved_Female</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartButGroinCovered_Disapproved_Memory</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartButGroinCovered_Disapproved_Social_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">AnyBodyPartButGroinCovered_Disapproved_Social_Female</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Female</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Social_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinUncovered_Disapproved_Social_Female</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Female</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Social_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinOrChestUncovered_Disapproved_Social_Female</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestOrHairUncovered_Disapproved_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestOrHairUncovered_Disapproved_Female</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Female</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestHairOrFaceUncovered_Disapproved_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestHairOrFaceUncovered_Disapproved_Female</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestHairOrFaceUncovered_Disapproved_Social_Male</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestHairOrFaceUncovered_Disapproved_Social_Female</li>
+					
+					<li MayRequire="Ludeon.RimWorld.Royalty">DecreeUnmet</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicEntropyOverloaded</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">AnimaScream</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Joyfuzz</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicLove</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">DecreeMet</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">DecreeFailed</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">Disinherited</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">NeuroquakeEcho</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">ReignedInThroneroom</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">TerribleBestowingCeremony</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">UnimpressiveBestowingCeremony</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">HonorableBestowingCeremony</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">GrandioseBestowingCeremony</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">OtherTravelerArrested</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">OtherTravelerSurgicallyViolated</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">AteFoodInappropriateForTitle</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">OtherTravelerDied</li>
 				</cannotReceiveThoughts>
 			</thoughtSettings>
 			<raceRestriction>
@@ -411,18 +633,59 @@
 			<li>Anesthetize</li>
 		</recipes>
 		<modExtensions>
-			<li Class="O21Toolbox.SimpleNeeds.DefModExt_FoodNeedAdjuster">
-				<newLabel>Illogical Thoughts</newLabel>
-				<disableFoodNeed>true</disableFoodNeed>
-				<malnutritionReplacer>O21_LowEnergy</malnutritionReplacer>
+			<li Class="TabulaRasa.DefModExt_ArtificialPawn">
+				<noSkillLoss>false</noSkillLoss>
+				<canSocialize>true</canSocialize>
+				<deathMatters>true</deathMatters>
+				<corpseRots>false</corpseRots>
+				<corpseEdible>false</corpseEdible>
+				<affectedByEMP>false</affectedByEMP>
 			</li>
-			<li Class="O21Toolbox.Needs.DefModExt_ArtificialPawn">
-				<noSkillLoss>False</noSkillLoss>
-				<canSocialize>True</canSocialize>
-				<colonyCaresIfDead>True</colonyCaresIfDead>
-				<tweakCorpseRot>True</tweakCorpseRot>
-				<corpseEdible>False</corpseEdible>
-				<affectedByEMP>False</affectedByEMP>
+			<li Class="TabulaRasa.DefModExt_DiseaseImmunity">
+				<hediffs>
+					<li>WoundInfection</li>
+					<li>BadBack</li>
+					<li>Frail</li>
+					<li>Cataract</li>
+					<li>HearingLoss</li>
+					<li>Blindness</li>
+					<li>Dementia</li>
+					<li>Alzheimers</li>
+					<li>Asthma</li>
+					<li>HeartArteryBlockage</li>
+					<li>Carcinoma</li>
+					<li>GutWorms</li>
+					<li>MuscleParasites</li>
+					<li>FibrousMechanites</li>
+					<li>SensoryMechanites</li>
+					<li>Flu</li>
+					<li>Plague</li>
+					<li>Malaria</li>
+					<li>SleepingSickness</li>
+					<li>TraumaSavant</li>
+					<li>ChemicalDamageModerate</li>
+					<li>ChemicalDamageSevere</li>
+					<li>Cirrhosis</li>
+					<li>ResurrectionPsychosis</li>
+					<li>Scaria</li>
+					<li>WaterInEyes</li>
+					<li>Malnutrition</li>
+					
+					<!-- Addictions -->
+					<li>AlcoholTolerance</li>
+					<li>AlcoholAddiction</li>
+					<li>AmbrosiaTolerance</li>
+					<li>AmbrosiaAddiction</li>
+					<li>GoJuiceTolerance</li>
+					<li>GoJuiceAddiction</li>
+					<li>LuciferiumAddiction</li>
+					<li>PsychiteTolerance</li>
+					<li>PsychiteAddiction</li>
+					<li>SmokeleafTolerance</li>
+					<li>SmokeleafAddiction</li>
+					<li>WakeUpTolerance</li>
+					<li>WakeUpAddiction</li>
+				</hediffs>
 			</li>
 		</modExtensions>
 	</AlienRace.ThingDef_AlienRace>

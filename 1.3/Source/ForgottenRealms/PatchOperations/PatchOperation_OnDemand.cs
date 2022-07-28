@@ -44,12 +44,11 @@ namespace ForgottenRealms
                     select m.PackageId).ToList();
             }
             ModContentPack modContentPack = ForgottenRealmsMod.mod.Content;
-            //ModContentPack modContentPack = LoadedModManager.RunningMods.First((ModContentPack mcp) => mcp.Patches.Any((PatchOperation p) => p == this));
             foreach (string text in folders)
             {
-                if (LoadDefsInto(xml, modContentPack, text))
+                if (LoadDefsInto(xml, modContentPack, text) && ForgottenRealmsMod.settings.verboseLogging)
                 {
-                    Log.Message(modContentPack.Name + " :: Loading " + text);
+                    LogUtil.LogMessage(modContentPack.Name + " :: Loading " + text);
                 }
             }
             return true;

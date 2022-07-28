@@ -1,52 +1,23 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using UnityEngine;
-using RimWorld;
 using Verse;
-using Verse.AI;
-
 using HarmonyLib;
-
 using AlienRace;
 
 namespace ForgottenRealms
 {
-    [StaticConstructorOnStartup]
-    public static class HarmonyPatches
-    {
-        static HarmonyPatches()
-        {
-            Harmony ForgottenHarmony = new Harmony("com.neronix17.forgottenrealms.mod");
-
-            ForgottenHarmony.PatchAll();
-        }
-    }
-
-    [HarmonyPatch(typeof(MentalBreakWorker), "BreakCanOccur")]
-    public static class Patch_CanBeResearchedAt_Postfix
-    {
-        [HarmonyPrefix]
-        public static bool Prefix(MentalBreakWorker __instance, bool __result, Pawn pawn)
-        {
-            if (pawn.def.defName == "O21_FR_Warforged")
-            {
-                __result = false;
-                return false;
-            }
-            return true;
-        }
-    }
 
     [HarmonyPatch(typeof(Thing), "ButcherProducts")]
-    static class Thing_ButcherProducts
+    public static class Patch_Thing_ButcherProducts
     {
 
         [HarmonyPostfix]
-        static void Postfix(Thing __instance, ref IEnumerable<Thing> __result, float efficiency)
+        public static void Postfix(Thing __instance, ref IEnumerable<Thing> __result, float efficiency)
         {
             if (ForgottenRealmsMod.settings.raceToggle_illithid)
             {
@@ -66,7 +37,7 @@ namespace ForgottenRealms
             }
         }
 
-        private static IEnumerable<Thing> GenerateExtraProducts(IEnumerable<Thing> things, Pawn pawn, float efficiency)
+        public static IEnumerable<Thing> GenerateExtraProducts(IEnumerable<Thing> things, Pawn pawn, float efficiency)
         {
             if (!things.EnumerableNullOrEmpty())
             {

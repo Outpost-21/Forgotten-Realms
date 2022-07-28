@@ -142,7 +142,7 @@
             <ComfyTemperatureMax>26</ComfyTemperatureMax>
             <LeatherAmount>20</LeatherAmount>
             <RoyalFavorValue>3</RoyalFavorValue>
-			<HungerRateMultiplier>1.15</HungerRateMultiplier>
+			<HungerRateMultiplier>0.85</HungerRateMultiplier>
 			<HuntingStealth>1.2</HuntingStealth>
 		</statBases>
 		<tools>
@@ -273,6 +273,7 @@
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
                 <li>Human</li>
+				<li>O21_FR_Halfling</li>
 			</hediffGiverSets>
 		</race>
 		<recipes>
@@ -307,7 +308,7 @@
 			<li>Anesthetize</li>
 		</recipes>
 		<comps>
-			<li Class="O21Toolbox.PawnExt.CompProperties_AlienBodyCorrection">
+			<li Class="TabulaRasa.CompProperties_AlienBodyCorrection">
 				<maleBodyTypes>
 					<li>Male</li>
 					<li>Thin</li>

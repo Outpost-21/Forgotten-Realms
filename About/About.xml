@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>[O21] Forgotten Realms</name>
+	<name>Forgotten Realms</name>
 	<author>Neronix17</author>
 	<packageId>neronix17.fr.compilation</packageId>
 	<url></url>
@@ -23,7 +23,7 @@
 		</li>
 		<li>
 			<packageId>neronix17.toolbox</packageId>
-			<displayName>[O21] Toolbox</displayName>
+			<displayName>Tabula Rasa</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1660622094</steamWorkshopUrl>
 		</li>
 	</modDependencies>

@@ -357,6 +357,7 @@
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
                 <li>Human</li>
+				<li>O21_FR_Killoren</li>
 			</hediffGiverSets>
 		</race>
 		<recipes>

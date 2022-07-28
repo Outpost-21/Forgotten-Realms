@@ -346,6 +346,7 @@
 			<hediffGiverSets>
 				<li>OrganicStandard</li>
 				<li>Human</li>
+				<li>O21_FR_Goblin</li>
 			</hediffGiverSets>
 		</race>
 		<recipes>
@@ -380,7 +381,7 @@
 			<li>Anesthetize</li>
 		</recipes>
 		<comps>
-			<li Class="O21Toolbox.PawnExt.CompProperties_AlienBodyCorrection">
+			<li Class="TabulaRasa.CompProperties_AlienBodyCorrection">
 				<maleBodyTypes>
 					<li>Male</li>
 				</maleBodyTypes>

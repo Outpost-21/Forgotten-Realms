@@ -288,6 +288,9 @@
 					<minAge>18</minAge>
 				</li>
 			</lifeStageAges>
+			<hediffGiverSets>
+				<li>O21_FR_Dwarf</li>
+			</hediffGiverSets>
 		</race>
 	</AlienRace.ThingDef_AlienRace>
 

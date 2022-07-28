@@ -175,6 +175,9 @@
 			</thoughtSettings>
 		</alienRace>
 		<race>
+			<hediffGiverSets>
+				<li>O21_FR_MoonElf</li>
+			</hediffGiverSets>
 		</race>
 	</AlienRace.ThingDef_AlienRace>
 	

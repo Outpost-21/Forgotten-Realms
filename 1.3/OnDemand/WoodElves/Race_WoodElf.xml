@@ -182,6 +182,9 @@
 		<statBases>
 		</statBases>
 		<race>
+			<hediffGiverSets>
+				<li>O21_FR_WoodElf</li>
+			</hediffGiverSets>
 		</race>
 	</AlienRace.ThingDef_AlienRace>
 	

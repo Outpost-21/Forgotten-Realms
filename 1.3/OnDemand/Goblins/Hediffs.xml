@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<HediffGiverSetDef>
+		<defName>O21_FR_Goblin</defName>
+		<hediffGivers>
+			<li Class="TabulaRasa.HediffGiver_Racial">
+				<hediff>O21_FR_Goblin</hediff>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+
+	<HediffDef>
+		<defName>O21_FR_Goblin</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Race: Goblin</label>
+		<description><![CDATA[<i>Submissive goblinoids that spread faster than rabbits.</i>
+
+<b>Stats</b>
+- 95% Overall Health
+- 80% Body Size
+- 120% Global Work Speed
+- Increased Movement Speed
+
+<b>Extra Info</b>
+- Naturally Undergrounder
+- Naturally Cannibal
+- Naturally Psychopath]]></description>
+		<defaultLabelColor>(85, 230, 167)</defaultLabelColor>
+		<isBad>false</isBad>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<capMods />
+			</li>
+		</stages>
+		<comps>
+			<li Class="TabulaRasa.HediffCompProperties_TooltipDescription" />
+		</comps>
+	</HediffDef>
+
+</Defs>

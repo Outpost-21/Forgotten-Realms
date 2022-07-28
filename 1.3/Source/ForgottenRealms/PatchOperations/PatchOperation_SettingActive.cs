@@ -13,6 +13,12 @@ namespace ForgottenRealms
 {
     public class PatchOperation_SettingActive : PatchOperation
     {
+        public List<string> settings;
+
+        public PatchOperation active;
+
+        public PatchOperation inactive;
+
         public override bool ApplyWorker(XmlDocument xml)
         {
             bool flag = false;
@@ -38,11 +44,5 @@ namespace ForgottenRealms
             }
             return true;
         }
-
-        private List<string> settings;
-
-        private PatchOperation active;
-
-        private PatchOperation inactive;
     }
 }

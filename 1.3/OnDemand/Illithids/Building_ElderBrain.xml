@@ -5,7 +5,7 @@
 		<defName>O21_FR_Building_ElderBrainPool</defName>
 		<label>elder brain pool</label>
 		<description>The Elder Brain pool stores and produces Illithid tadpoles, as well as the Elder Brain itself, which will passively progress research with no interaction necessary.</description>
-    	<thingClass>O21Toolbox.ThingProducer.Building_ThingProducer</thingClass>
+    	<thingClass>TabulaRasa.Building_ThingProducer</thingClass>
 		<graphicData>
 			<texPath>Things/Illithid/ElderBrainPool</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -43,14 +43,14 @@
 		</stuffCategories>
 		<costStuffCount>180</costStuffCount>
 		<comps>
-			<li Class="O21Toolbox.Research.CompProperties_AutoResearch">
+			<li Class="TabulaRasa.CompProperties_AutoResearch">
 				<requiresPower>false</requiresPower>
 				<researchSpeedFactor>1.2</researchSpeedFactor>
 				<pawnKind>O21_FR_Illithid</pawnKind>
 			</li>
 		</comps>
 		<modExtensions>
-			<li Class="O21Toolbox.ThingProducer.DefModExt_ThingProducer">
+			<li Class="TabulaRasa.DefModExt_ThingProducer">
 				<thingDef>O21_FR_Item_IllithidTadpole</thingDef>
 				<productionTime>6000</productionTime>
 				<maxThings>8</maxThings>
