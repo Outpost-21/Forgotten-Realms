@@ -1,16 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- <TabulaRasa.UpdateDef>
-		<defName>O21_FR_20220728_Update</defName>
-		<date>2022/07/28</date>
+	<TabulaRasa.UpdateDef>
+		<defName>O21_FR_20220803_Update</defName>
+		<date>2022/08/03</date>
 		<banner>UpdateInfo/O21ForgottenRealmsUpdateBanner</banner>
-		<content>Updated to be compliant with new Tabula Rasa codebase.
-Additionally raised spawn rates of all races since I don't use the mod anymore and don't give a fuck if they outspawn humans in human factions.
+		<content>1.3.8244
+- Adjusted spawn rates to be higher so they spawn a lot more commonly among vanilla factions if that setting is enabled.
+- Added support for Nal's Facial Animation. (Thanks to Mafelusz2 for speeding that up)
+- Added racial hediffs to note the differences of each race from standard humans.
+- Disabled verbose logging.
+- Minor bugfixes.
 
 For More information please see the Outpost 21 Wiki, left-click to open the page, right click to dismiss update.</content>
 		<linkUrl>https://outpost-21.fandom.com/wiki/Forgotten_Realms</linkUrl>
 		<important>False</important>
-	</TabulaRasa.UpdateDef> -->
+	</TabulaRasa.UpdateDef>
 
 </Defs>

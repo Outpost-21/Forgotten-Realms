@@ -389,7 +389,71 @@
 					<li>Female</li>
 				</femaleBodyTypes>
 			</li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.DrawFaceGraphicsComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.HeadControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EyeballControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.LidControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.BrowControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.MouthControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.SkinControllerComp</compClass></li>
+			<!-- <li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EmotionControllerComp</compClass></li> -->
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
 		</comps>
 	</AlienRace.ThingDef_AlienRace>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_GoblinFaceDef_A</defName>
+		<texPath>Pawn/Goblin/Head_Blank/01</texPath>
+		<raceName>O21_FR_Goblin</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_GoblinFaceDef_B</defName>
+		<texPath>Pawn/Goblin/Head_Blank/02</texPath>
+		<raceName>O21_FR_Goblin</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_GoblinFaceDef_C</defName>
+		<texPath>Pawn/Goblin/Head_Blank/03</texPath>
+		<raceName>O21_FR_Goblin</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_GoblinFaceDef_D</defName>
+		<texPath>Pawn/Goblin/Head_Blank/04</texPath>
+		<raceName>O21_FR_Goblin</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_GoblinFaceDef_E</defName>
+		<texPath>Pawn/Goblin/Head_Blank/05</texPath>
+		<raceName>O21_FR_Goblin</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_GoblinFaceDef_F</defName>
+		<texPath>Pawn/Goblin/Head_Blank/06</texPath>
+		<raceName>O21_FR_Goblin</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_GoblinFaceDef_G</defName>
+		<texPath>Pawn/Goblin/Head_Blank/07</texPath>
+		<raceName>O21_FR_Goblin</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+	<FacialAnimation.FaceAdjustmentDef MayRequire="Nals.FacialAnimation">
+		<defName>GoblinFaceSizeAndPositionDef</defName>
+		<RaceName>O21_FR_Goblin</RaceName>
+		<Size>(1.2,1.2)</Size>
+	</FacialAnimation.FaceAdjustmentDef>
 
 </Defs>

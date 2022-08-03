@@ -418,7 +418,43 @@
 					<li>Female</li>
 				</femaleBodyTypes>
 			</li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.DrawFaceGraphicsComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.HeadControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EyeballControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.LidControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.BrowControllerComp</compClass></li>
+			<!-- <li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.MouthControllerComp</compClass></li> -->
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.SkinControllerComp</compClass></li>
+			<!-- <li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EmotionControllerComp</compClass></li> -->
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
 		</comps>
 	</AlienRace.ThingDef_AlienRace>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_KoboldFaceDef_A</defName>
+		<texPath>Pawn/Kobold/Head_Blank/1</texPath>
+		<raceName>O21_FR_Kobold</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_KoboldFaceDef_B</defName>
+		<texPath>Pawn/Kobold/Head_Blank/2</texPath>
+		<raceName>O21_FR_Kobold</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_KoboldFaceDef_C</defName>
+		<texPath>Pawn/Kobold/Head_Blank/3</texPath>
+		<raceName>O21_FR_Kobold</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+	<FacialAnimation.FaceAdjustmentDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_KoboldFaceAdjustmentDef</defName>
+		<RaceName>O21_FR_Kobold</RaceName>
+		<Size>(1.2,1.2)</Size>
+	</FacialAnimation.FaceAdjustmentDef>
 	
 </Defs>

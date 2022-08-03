@@ -344,7 +344,23 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 				<hivemindTag>Illithid</hivemindTag>
 				<connectedHediff>O21_FR_IllithidHivemind</connectedHediff>
 			</li -->
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.DrawFaceGraphicsComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.HeadControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EyeballControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.LidControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.BrowControllerComp</compClass></li>
+			<!-- <li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.MouthControllerComp</compClass></li> -->
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.SkinControllerComp</compClass></li>
+			<!-- <li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EmotionControllerComp</compClass></li> -->
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
 		</comps>
 	</AlienRace.ThingDef_AlienRace>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_IllithidFaceDef</defName>
+		<texPath>Pawn/Illithid/Head_Blank/Normal</texPath>
+		<raceName>O21_FR_Illithid</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
 
 </Defs>

@@ -412,7 +412,29 @@
 					<li>Hulk</li>
 				</femaleBodyTypes>
 			</li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.DrawFaceGraphicsComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.HeadControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EyeballControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.LidControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.BrowControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.MouthControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.SkinControllerComp</compClass></li>
+			<!-- <li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EmotionControllerComp</compClass></li> -->
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
 		</comps>
 	</AlienRace.ThingDef_AlienRace>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_FirbolgFaceDef</defName>
+		<texPath>Pawn/Firbolg/Head_Blank/Normal</texPath>
+		<raceName>O21_FR_Firbolg</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+	<FacialAnimation.FaceAdjustmentDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_FirbolgFaceAdjustmentDef</defName>
+		<RaceName>O21_FR_Firbolg</RaceName>
+		<Size>(1.7,1.7)</Size>
+	</FacialAnimation.FaceAdjustmentDef>
 	
 </Defs>

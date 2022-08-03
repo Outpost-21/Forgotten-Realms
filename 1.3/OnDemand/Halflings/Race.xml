@@ -318,7 +318,22 @@
 					<li>Thin</li>
 				</femaleBodyTypes>
 			</li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.DrawFaceGraphicsComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.HeadControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EyeballControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.LidControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.BrowControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.MouthControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.SkinControllerComp</compClass></li>
+			<!-- <li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EmotionControllerComp</compClass></li> -->
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
 		</comps>
 	</AlienRace.ThingDef_AlienRace>
+	
+	<FacialAnimation.FaceAdjustmentDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_HalflingFaceAdjustmentDef</defName>
+		<RaceName>O21_FR_Halfling</RaceName>
+		<Size>(1.2,1.2)</Size>
+	</FacialAnimation.FaceAdjustmentDef>
 	
 </Defs>

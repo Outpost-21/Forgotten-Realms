@@ -292,6 +292,23 @@
 				<li>O21_FR_Dwarf</li>
 			</hediffGiverSets>
 		</race>
+		<comps>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.DrawFaceGraphicsComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.HeadControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EyeballControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.LidControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.BrowControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.MouthControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.SkinControllerComp</compClass></li>
+			<!-- <li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EmotionControllerComp</compClass></li> -->
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
+		</comps>
 	</AlienRace.ThingDef_AlienRace>
+	
+	<FacialAnimation.FaceAdjustmentDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_DwarfFaceAdjustmentDef</defName>
+		<RaceName>O21_FR_Dwarf</RaceName>
+		<Size>(1.3,1.3)</Size>    
+	</FacialAnimation.FaceAdjustmentDef>
 
 </Defs>

@@ -395,7 +395,58 @@
 					<li>Female</li>
 				</femaleBodyTypes>
 			</li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.DrawFaceGraphicsComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.HeadControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EyeballControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.LidControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.BrowControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.MouthControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.SkinControllerComp</compClass></li>
+			<!-- <li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EmotionControllerComp</compClass></li> -->
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
 		</comps>
 	</AlienRace.ThingDef_AlienRace>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_GithFaceDef_Clear</defName>
+		<texPath>Pawn/Gith/Head_Blank/Clear</texPath>
+		<raceName>O21_FR_Gith</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_GithFaceDef_SpottedA</defName>
+		<texPath>Pawn/Gith/Head_Blank/Spotted01</texPath>
+		<raceName>O21_FR_Gith</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_GithFaceDef_SpottedB</defName>
+		<texPath>Pawn/Gith/Head_Blank/Spotted02</texPath>
+		<raceName>O21_FR_Gith</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_GithFaceDef_SpottedC</defName>
+		<texPath>Pawn/Gith/Head_Blank/Spotted03</texPath>
+		<raceName>O21_FR_Gith</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_GithFaceDef_SpottedD</defName>
+		<texPath>Pawn/Gith/Head_Blank/Spotted04</texPath>
+		<raceName>O21_FR_Gith</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>O21_FR_GithFaceDef_SpottedE</defName>
+		<texPath>Pawn/Gith/Head_Blank/Spotted05</texPath>
+		<raceName>O21_FR_Gith</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
 
 </Defs>
