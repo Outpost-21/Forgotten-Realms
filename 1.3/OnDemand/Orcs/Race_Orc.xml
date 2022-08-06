@@ -92,15 +92,8 @@
 				<humanRecipeImport>true</humanRecipeImport>
 				<forcedRaceTraitEntries />
 				<disallowedTraits>
-					<li>
-                        <defName>Nudist</defName>
-                    </li>
-					<li>
-                        <defName>Cannibal</defName>
-                    </li>
-					<li>
-                        <defName>Undergrounder</defName>
-                    </li>
+					<li><defName>Undergrounder</defName></li>
+					<li><defName>Cannibal</defName></li>
 				</disallowedTraits>
 				<chemicalSettings />
 				<factionRelations />	

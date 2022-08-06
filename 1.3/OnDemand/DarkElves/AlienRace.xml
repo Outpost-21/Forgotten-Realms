@@ -88,9 +88,9 @@
 		<alienRace>
 			<generalSettings>
 				<disallowedTraits>
-					<li>
-                        <defName>Undergrounder</defName>
-                    </li>
+					<li><defName>Beauty</defName></li>
+					<li><defName>Undergrounder</defName></li>
+					<li><defName>Psychopath</defName></li>
 				</disallowedTraits>
 				<alienPartGenerator>
                     <colorChannels>

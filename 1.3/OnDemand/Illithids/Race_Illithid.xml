@@ -32,21 +32,17 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 			<generalSettings>
 				<immuneToAge>false</immuneToAge>
 				<humanRecipeImport>true</humanRecipeImport>
-				<forcedRaceTraitEntries>
-					<li>
-						<defName>Gay</defName>
-						<chance>0</chance>
-					</li>
-					<li>
-						<defName>DislikesMen</defName>
-						<chance>0</chance>
-					</li>
-					<li>
-						<defName>DislikesWomen</defName>
-						<chance>0</chance>
-					</li>
-				</forcedRaceTraitEntries>
-				<disallowedTraits />
+				<forcedRaceTraitEntries />
+				<disallowedTraits>
+					<li><defName>Gay</defName></li>
+					<li><defName>Bisexual</defName></li>
+					<li><defName>Asexual</defName></li>
+					<li><defName>DislikesMen</defName></li>
+					<li><defName>DislikesWomen</defName></li>
+					<li><defName>Undergrounder</defName></li>
+					<li><defName>Cannibal</defName></li>
+					<li><defName>Psychopath</defName></li>
+				</disallowedTraits>
 				<chemicalSettings />
 				<factionRelations />
 				<notXenophobistTowards />

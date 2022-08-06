@@ -7,7 +7,7 @@
 		<settlementGenerationWeight>0.25</settlementGenerationWeight>
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>99</configurationListOrderPriority>
-		<startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+		<startingCountAtWorldCreation>0</startingCountAtWorldCreation>
 		<factionNameMaker>O21_FR_NamerFactionForgotten</factionNameMaker>
 		<settlementNameMaker>O21_FR_NamerSettlementForgotten</settlementNameMaker>
 		<canMakeRandomly>true</canMakeRandomly>

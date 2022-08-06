@@ -66,51 +66,21 @@
 				<humanRecipeImport>true</humanRecipeImport>
 				<immuneToXenophobia>false</immuneToXenophobia>
 				<disallowedTraits>
-					<li>
-						<defName>DrugDesire</defName>
-					</li>
-					<li>
-						<defName>NaturalMood</defName>
-					</li>
-					<li>
-						<defName>PsychicSensitivity</defName>
-					</li>
-					<li>
-						<defName>Cannibal</defName>
-					</li>
-					<li>
-						<defName>Transhumanist</defName>
-					</li>
-					<li>
-						<defName>BodyPurist</defName>
-					</li>
-					<li>
-						<defName>Greedy</defName>
-					</li>
-					<li>
-						<defName>Jealous</defName>
-					</li>
-					<li>
-						<defName>Nudist</defName>
-					</li>
-					<li>
-						<defName>CreepyBreathing</defName>
-					</li>
-					<li>
-						<defName>Pyromaniac</defName>
-					</li>
-					<li>
-						<defName>Wimp</defName>
-					</li>
-					<li>
-						<defName>Gourmand</defName>
-					</li>
-					<li>
-						<defName>Undergrounder</defName>
-					</li>
-					<li>
-						<defName>NightOwl</defName>
-					</li>
+					<li><defName>DrugDesire</defName></li>
+					<li><defName>NaturalMood</defName></li>
+					<li><defName>PsychicSensitivity</defName></li>
+					<li><defName>Cannibal</defName></li>
+					<li><defName>Transhumanist</defName></li>
+					<li><defName>BodyPurist</defName></li>
+					<li><defName>Greedy</defName></li>
+					<li><defName>Jealous</defName></li>
+					<li><defName>Nudist</defName></li>
+					<li><defName>CreepyBreathing</defName></li>
+					<li><defName>Pyromaniac</defName></li>
+					<li><defName>Wimp</defName></li>
+					<li><defName>Gourmand</defName></li>
+					<li><defName>Undergrounder</defName></li>
+					<li><defName>NightOwl</defName></li>
 				</disallowedTraits>
 				<alienPartGenerator>
 					<useGenderedHeads>false</useGenderedHeads>

@@ -66,18 +66,9 @@
 				<humanRecipeImport>true</humanRecipeImport>
 				<forcedRaceTraitEntries />
 				<disallowedTraits>
-					<li>
-						<defName>Undergrounder</defName>
-					</li>
-					<li>
-						<defName>PsychicSensitivity</defName>
-					</li>
-					<li>
-						<defName>Nudist</defName>
-					</li>
-					<li>
-						<defName>Cannibal</defName>
-					</li>
+					<li><defName>PsychicSensitivity</defName></li>
+					<li><defName>Undergrounder</defName></li>
+					<li><defName>Psychopath</defName></li>
 				</disallowedTraits>
 				<chemicalSettings />
 				<factionRelations />

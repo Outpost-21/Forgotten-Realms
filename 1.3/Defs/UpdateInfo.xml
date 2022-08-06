@@ -9,11 +9,12 @@
 - Adjusted spawn rates to be higher so they spawn a lot more commonly among vanilla factions if that setting is enabled.
 - Added support for Nal's Facial Animation. (Thanks to Mafelusz2 for speeding that up)
 - Added racial hediffs to note the differences of each race from standard humans.
+- Race factions are now disabled by default in the faction selection screen on world generation.
 - Disabled verbose logging.
-- Minor bugfixes.
+- Minor bug fixes and stat adjustments.
 
-For More information please see the Outpost 21 Wiki, left-click to open the page, right click to dismiss update.</content>
-		<linkUrl>https://outpost-21.fandom.com/wiki/Forgotten_Realms</linkUrl>
+Right click to dismiss update.</content>
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2184183669</linkUrl>
 		<important>False</important>
 	</TabulaRasa.UpdateDef>
 

@@ -87,6 +87,11 @@
 		<description>Wood elves, also known as copper elves, or Or-tel-quessir were the most populous of the elven races. Wood elves saw themselves as guardians of the Tel-quessir forest homes that were largely abandoned after the Crown Wars and before the Retreat, but unlike most elves they did not view themselves as a people apart from the rest of Faerûn.</description>
 		<alienRace>
 			<generalSettings>
+				<disallowedTraits>
+					<li><defName>Beauty</defName></li>
+					<li><defName>Brawler</defName></li>
+					<li><defName>Pyromaniac</defName></li>
+				</disallowedTraits>
 				<alienPartGenerator>
                     <colorChannels>
                         <li>
