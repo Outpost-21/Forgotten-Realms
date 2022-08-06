@@ -94,9 +94,8 @@
 					</li>
             	</forcedRaceTraitEntries>
 				<disallowedTraits>
-					<li>
-                        <defName>Brawler</defName>
-                    </li>
+					<li><defName>Beauty</defName></li>
+					<li><defName>Brawler</defName></li>
 				</disallowedTraits>
 				<alienPartGenerator>
                     <colorChannels>
