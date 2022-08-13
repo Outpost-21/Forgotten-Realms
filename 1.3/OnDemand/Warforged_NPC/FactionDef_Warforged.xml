@@ -4,7 +4,7 @@
 	<FactionDef ParentName="O21_FR_ForgottenSettlementBase">
         <defName>O21_WarforgedTribes</defName>
         <label>warforged settlements</label>
-        <description>The collective settlements of Wargorged in this realm.</description>
+        <description>The collective settlements of Warforged in this realm.</description>
         <colorSpectrum>
             <li>(200, 215, 219)</li>
         </colorSpectrum>
