@@ -40,10 +40,10 @@
 				<capMods />
 			</li>
 		</stages>
-		<disablesNeeds>
+		<!-- <disablesNeeds>
 			<li>Food</li>
 			<li>Rest</li>
-		</disablesNeeds>
+		</disablesNeeds> -->
 		<comps>
 			<li Class="TabulaRasa.HediffCompProperties_TooltipDescription" />
 			<li Class="TabulaRasa.HediffCompProperties_AutoHeal">

@@ -194,8 +194,6 @@
 					<li>NeedFood</li>
 					<li>Naked</li>
 					<li>SharedBed</li>
-					<li>AttendedWedding</li>
-					<li>AttendedParty</li>
 					<li>SleepDisturbed</li>
 					<li>SleptOnGround</li>
 					<li>KnowPrisonerSold</li>
@@ -215,8 +213,6 @@
 					<li>BondedAnimalBanished</li>
 					<li>SleptInBedroom</li>
 					<li>SleptInBarracks</li>
-					<li>InsultedMood</li>
-					<li>KindWordsMood</li>
 					<li>ArtifactMoodBoost</li>
 					<li>EnvironmentDark</li>
 					<li>ApparelDamaged</li>
@@ -278,7 +274,6 @@
 
 					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoBuildingMissing</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoBuildingDisrespected</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">LookChangeDesired</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">MasochistWearingCollar</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">MasochistWearingBodyStrap</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">WearingColor_Favorite</li>
@@ -291,54 +286,13 @@
 					<li MayRequire="Ludeon.RimWorld.Ideology">TrialExonerated</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">TrialFailed</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">TrialConvicted</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleParty</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">BoringParty</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">FunParty</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleFuneral</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">UnforgettableParty</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">LacklusterFuneral</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">GoodFuneral</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">HeartwarmingFuneral</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleFestival</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">BoringFestival</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">FunFestival</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">UnforgettableFestival</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleSacrifice</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">BoringSacrifice</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">SatisfyingSacrifice</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">SpectacularSacrifice</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleSkyLanterns</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">UnimpressiveSkyLanterns</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">BeautifulSkyLanterns</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">UnforgettableSkyLanterns</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleScarification</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">BoringScarification</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">SatisfyingScarification</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">SpectacularScarification</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleBlinding</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">BoringBlinding</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">SatisfyingBlinding</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">SpectacularBlinding</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">EffectiveConversion</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">MasterfulConversion</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">TerribleDuel</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">BoringDuel</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">GoodDuel</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">UnforgettableDuel</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">AwkwardExecution</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">SatisfyingExecution</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">SpectacularExecution</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">WillDiminished</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">FailedConvertAbilityInitiator</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">FailedConvertAbilityRecipient</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">Counselled</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">CounselFailed</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">Counselled_MoodBoost</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">TendedByMedicalSpecialist</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">SleptInRoomWithSlave</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">ConnectedTreeDied</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">RelicsCollected</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">BiosculpterPleasure</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">DryadDied</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleLost</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleEmpty</li>
@@ -347,10 +301,6 @@
 					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentDisapproved</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentHorrible</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentAbhorrent</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">ParticipatedInRaid_Respected</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">ParticipatedInRaid_Required</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">RecentConquest_Respected</li>
-					<li MayRequire="Ludeon.RimWorld.Ideology">RecentConquest_Required</li>
 
 					<li MayRequire="Ludeon.RimWorld.Ideology">AteVeneratedAnimalMeat</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">TameVeneratedAnimalDied</li>
@@ -424,20 +374,12 @@
 					<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestHairOrFaceUncovered_Disapproved_Social_Male</li>
 					<li MayRequire="Ludeon.RimWorld.Ideology">GroinChestHairOrFaceUncovered_Disapproved_Social_Female</li>
 					
-					<li MayRequire="Ludeon.RimWorld.Royalty">DecreeUnmet</li>
 					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicEntropyOverloaded</li>
 					<li MayRequire="Ludeon.RimWorld.Royalty">AnimaScream</li>
 					<li MayRequire="Ludeon.RimWorld.Royalty">Joyfuzz</li>
 					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicLove</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">DecreeMet</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">DecreeFailed</li>
 					<li MayRequire="Ludeon.RimWorld.Royalty">Disinherited</li>
 					<li MayRequire="Ludeon.RimWorld.Royalty">NeuroquakeEcho</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">ReignedInThroneroom</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">TerribleBestowingCeremony</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">UnimpressiveBestowingCeremony</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">HonorableBestowingCeremony</li>
-					<li MayRequire="Ludeon.RimWorld.Royalty">GrandioseBestowingCeremony</li>
 					<li MayRequire="Ludeon.RimWorld.Royalty">OtherTravelerArrested</li>
 					<li MayRequire="Ludeon.RimWorld.Royalty">OtherTravelerSurgicallyViolated</li>
 					<li MayRequire="Ludeon.RimWorld.Royalty">AteFoodInappropriateForTitle</li>
@@ -532,7 +474,7 @@
 			<baseBodySize>1</baseBodySize>
 			<needsRest>false</needsRest>
 			<baseHealthScale>1.6</baseHealthScale>
-			<foodType>OmnivoreHuman</foodType>
+			<foodType>None</foodType>
 			<gestationPeriodDays>45</gestationPeriodDays>
 			<litterSizeCurve>
 				<points>
