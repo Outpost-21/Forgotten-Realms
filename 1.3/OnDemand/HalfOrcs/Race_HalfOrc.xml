@@ -282,7 +282,7 @@
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
 			<lifeExpectancy>80</lifeExpectancy>
-			<leatherDef>O21_AlienLeather_Thin</leatherDef>
+			<leatherDef>Leather_Human</leatherDef>
 			<nameGenerator>O21_FR_NamerPersonHalfOrcMale</nameGenerator>
 			<nameGeneratorFemale>O21_FR_NamerPersonHalfOrcFemale</nameGeneratorFemale>
 			<useMeatFrom>Human</useMeatFrom>

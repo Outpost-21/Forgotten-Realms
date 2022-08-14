@@ -239,7 +239,7 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
 			<lifeExpectancy>80</lifeExpectancy>
-			<leatherDef>O21_AlienLeather_Thick</leatherDef>
+			<leatherDef>Leather_Human</leatherDef>
 			<nameGenerator>O21_FR_NameRulePack_Illithid</nameGenerator>
 			<useMeatFrom>Human</useMeatFrom>
 			<body>Human</body>

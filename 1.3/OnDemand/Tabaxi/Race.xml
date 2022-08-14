@@ -262,7 +262,7 @@
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
 			<lifeExpectancy>80</lifeExpectancy>
-			<leatherDef>O21_AlienLeather_Furry</leatherDef>
+			<leatherDef>Leather_Heavy</leatherDef>
 			<nameGenerator>O21_FR_NamerPersonTabaxiMale</nameGenerator>
 			<nameGeneratorFemale>O21_FR_NamerPersonTabaxiFemale</nameGeneratorFemale>
 			<useMeatFrom>Human</useMeatFrom>

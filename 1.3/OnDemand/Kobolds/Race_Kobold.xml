@@ -306,7 +306,7 @@
 			<intelligence>Humanlike</intelligence>
 			<makesFootprints>true</makesFootprints>
 			<lifeExpectancy>80</lifeExpectancy>
-			<leatherDef>O21_AlienLeather_Scaled</leatherDef>
+			<leatherDef>Leather_Lizard</leatherDef>
       		<nameCategory>HumanStandard</nameCategory>
 			<useMeatFrom>Human</useMeatFrom>
 			<body>Human</body>
