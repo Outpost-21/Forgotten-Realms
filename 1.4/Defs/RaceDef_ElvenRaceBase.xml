@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.ThingDef_AlienRace ParentName="FRealms_HumanoidRaceBase" Name="FRealms_ElfBase" Abstract="True">
+		<defName>FRealms_ElfBase</defName>
+		<label>Elf</label>
+		<description>Elves, much like their living ancestors, the eladrin, who were also commonly called elves, were a long-lived race of the Tel-quessir found most commonly in forests, shrublands, and other wildernesses. From time to time the elves organized strong nations, though with far less frequency than eladrin, in some cases adopting even a nomadic lifestyle. Almost all elves worshiped the gods of the Seldarine, and the elves were generally, though not always, good in nature.</description>
+		<alienRace>
+			<generalSettings>
+				<immuneToAge>True</immuneToAge>
+				<alienPartGenerator>
+					<aliencrowntypes>
+						<li>Head_Normal</li>
+					</aliencrowntypes>
+					<alienbodytypes>
+						<li>Thin</li>
+						<li>Male</li>
+						<li>Female</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</alienbodytypes>
+					<customDrawSize>(0.95, 1.1)</customDrawSize>
+					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+					<headOffset>(0.0, 0.05)</headOffset>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<li>
+					<head>Pawn/Elf/</head>
+				</li>
+			</graphicPaths>
+			<styleSettings>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTags>
+							<li>Urban</li>
+							<li>Tribal</li>
+						</styleTags>
+					</value>
+				</li>
+			</styleSettings>
+		</alienRace>
+		<statBases>
+			<MoveSpeed>5.2</MoveSpeed>
+			<Flammability>0.3</Flammability>
+			<ComfyTemperatureMin>8</ComfyTemperatureMin>
+			<ComfyTemperatureMax>28</ComfyTemperatureMax>
+			<LeatherAmount>25</LeatherAmount>
+			<PsychicSensitivity>1.15</PsychicSensitivity>
+			<MiningSpeed>0.8</MiningSpeed>
+			<PawnBeauty>2</PawnBeauty>
+		</statBases>
+		<race>
+			<lifeExpectancy>900</lifeExpectancy>
+			<nameGenerator>FRealms_NamerPersonElfMale</nameGenerator>
+			<nameGeneratorFemale>FRealms_NamerPersonElfFemale</nameGeneratorFemale>
+			<baseHealthScale>0.9</baseHealthScale>
+			<ageGenerationCurve Inherit="False">
+				<points>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.5,118)</li> <!-- Exclude 12.5-13 years to avoid spawning pawns who are very close to becoming adults -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(12.51,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.001,122)</li> <!-- End exclude -->
+					<li MayRequire="Ludeon.RimWorld.Biotech">(13.999,130)</li>
+					<li>(14,0)</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">(14.001,130)</li>
+					<li>(18,100)</li>
+					<li>(150,100)</li>
+					<li>(200,30)</li>
+					<li>(350,18)</li>
+					<li>(500,10)</li>
+					<li>(800,3)</li>
+					<li>(950,0)</li>
+				</points>
+			</ageGenerationCurve>
+		</race>
+		<comps>
+			<li Class="TabulaRasa.CompProperties_AlienBodyCorrection">
+				<maleBodyTypes>
+					<li>Male</li>
+					<li>Thin</li>
+				</maleBodyTypes>
+				<femaleBodyTypes>
+					<li>Female</li>
+					<li>Thin</li>
+				</femaleBodyTypes>
+			</li>
+		</comps>
+	</AlienRace.ThingDef_AlienRace>
+
+</Defs>
