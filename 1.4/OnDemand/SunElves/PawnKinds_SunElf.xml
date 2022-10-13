@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="FRealms_ForgottenBaseColonyPawnKind">
+		<defName>FRealms_SunElf</defName>
+		<label>Sun Elf</label>
+		<race>FRealms_SunElf</race>
+		<defaultFactionType>FRealms_SunElfPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="FRealms_ForgottenBaseTribalPawnKind">
+		<defName>FRealms_SunElfTribal</defName>
+		<label>Tribal Sun Elf</label>
+		<race>FRealms_SunElf</race>
+		<defaultFactionType>FRealms_SunElfPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

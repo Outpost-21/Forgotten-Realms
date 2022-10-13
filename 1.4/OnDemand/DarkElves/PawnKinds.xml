@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="FRealms_ForgottenBaseColonyPawnKind">
+		<defName>FRealms_DarkElf</defName>
+		<label>Dark Elf</label>
+		<race>FRealms_DarkElf</race>
+		<defaultFactionType>FRealms_DarkElfPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="FRealms_ForgottenBaseTribalPawnKind">
+		<defName>FRealms_DarkElfTribal</defName>
+		<label>Tribal Dark Elf</label>
+		<race>FRealms_DarkElf</race>
+		<defaultFactionType>FRealms_DarkElfPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

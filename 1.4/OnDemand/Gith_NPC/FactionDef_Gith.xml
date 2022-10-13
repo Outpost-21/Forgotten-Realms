@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<FactionDef ParentName="FRealms_ForgottenSettlementBase">
+        <defName>FRealms_GithTribes</defName>
+        <label>gith settlements</label>
+        <description>The collective settlements of Gith in this realm.</description>
+        <colorSpectrum>
+            <li>(153, 135, 104)</li>
+        </colorSpectrum>
+		<pawnSingular>gith</pawnSingular>
+		<pawnsPlural>gith</pawnsPlural>
+		<leaderTitle>chief</leaderTitle>
+		<factionIconPath>World/Gith/GithTribeIcon</factionIconPath>
+		<pawnGroupMakers>
+            <li>
+                <!-- Normal fights, ranged with melee mix-ins -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <FRealms_GithTribes_Peasant>20</FRealms_GithTribes_Peasant>
+                    <FRealms_GithTribes_Fighter>40</FRealms_GithTribes_Fighter>
+                    <FRealms_GithTribes_Warrior>30</FRealms_GithTribes_Warrior>
+                    <FRealms_GithTribes_Bowman>30</FRealms_GithTribes_Bowman>
+                    <FRealms_GithTribes_Champion>30</FRealms_GithTribes_Champion>
+                    <FRealms_GithTribes_Chief>10</FRealms_GithTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, ranged only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <FRealms_GithTribes_Bowman>100</FRealms_GithTribes_Bowman>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, melee only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <FRealms_GithTribes_Peasant>15</FRealms_GithTribes_Peasant>
+                    <FRealms_GithTribes_Fighter>40</FRealms_GithTribes_Fighter>
+                    <FRealms_GithTribes_Warrior>40</FRealms_GithTribes_Warrior>
+                    <FRealms_GithTribes_Champion>30</FRealms_GithTribes_Champion>
+                    <FRealms_GithTribes_Chief>5</FRealms_GithTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <FRealms_GithTribes_Fighter>30</FRealms_GithTribes_Fighter>
+                    <FRealms_GithTribes_Warrior>30</FRealms_GithTribes_Warrior>
+                    <FRealms_GithTribes_Bowman>30</FRealms_GithTribes_Bowman>
+                    <FRealms_GithTribes_Champion>20</FRealms_GithTribes_Champion>
+                    <FRealms_GithTribes_Chief>10</FRealms_GithTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <FRealms_GithTribes_Merchant>1</FRealms_GithTribes_Merchant>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2.5</Alpaca>
+                    <Elephant>2</Elephant>
+                </carriers>
+                <guards>
+                    <FRealms_GithTribes_Fighter>30</FRealms_GithTribes_Fighter>
+                    <FRealms_GithTribes_Warrior>30</FRealms_GithTribes_Warrior>
+                    <FRealms_GithTribes_Bowman>30</FRealms_GithTribes_Bowman>
+                    <FRealms_GithTribes_Champion>20</FRealms_GithTribes_Champion>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <FRealms_GithTribes_Peasant>20</FRealms_GithTribes_Peasant>
+                    <FRealms_GithTribes_Fighter>20</FRealms_GithTribes_Fighter>
+                    <FRealms_GithTribes_Warrior>20</FRealms_GithTribes_Warrior>
+                    <FRealms_GithTribes_Bowman>50</FRealms_GithTribes_Bowman>
+                    <FRealms_GithTribes_Champion>30</FRealms_GithTribes_Champion>
+                    <FRealms_GithTribes_Chief>50</FRealms_GithTribes_Chief>
+                </options>
+            </li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+</Defs>

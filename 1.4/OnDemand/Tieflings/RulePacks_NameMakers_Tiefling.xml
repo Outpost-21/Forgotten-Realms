@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>FRealms_NamerPersonTieflingFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[Tiefling4][Tiefling5]</li>
+				<li>name->[Tiefling4][Tiefling5]</li>
+				<li>name->[Tiefling4][Tiefling5]</li>
+				<li>name->[Tiefling4][Tiefling5]</li>
+				<li>name->[Tiefling4][Tiefling5]</li>
+				<li>name->[Tiefling4][Tiefling5]</li>
+				<li>name->[Tiefling4][Tiefling5]</li>
+				<li>name->[Tiefling3]</li>
+				<li>name->[Tiefling3]</li>
+				<li>name->[Tiefling3]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Tiefling1</keyword>
+					<path>Tiefling_Names/1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Tiefling2</keyword>
+					<path>Tiefling_Names/2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Tiefling3</keyword>
+					<path>Tiefling_Names/3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Tiefling4</keyword>
+					<path>Tiefling_Names/4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Tiefling5</keyword>
+					<path>Tiefling_Names/5</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>FRealms_NamerPersonTieflingMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[Tiefling1][Tiefling2]</li>
+				<li>name->[Tiefling1][Tiefling2]</li>
+				<li>name->[Tiefling1][Tiefling2]</li>
+				<li>name->[Tiefling1][Tiefling2]</li>
+				<li>name->[Tiefling1][Tiefling2]</li>
+				<li>name->[Tiefling1][Tiefling2]</li>
+				<li>name->[Tiefling1][Tiefling2]</li>
+				<li>name->[Tiefling3]</li>
+				<li>name->[Tiefling3]</li>
+				<li>name->[Tiefling3]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>Tiefling1</keyword>
+					<path>Tiefling_Names/1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Tiefling2</keyword>
+					<path>Tiefling_Names/2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Tiefling3</keyword>
+					<path>Tiefling_Names/3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Tiefling4</keyword>
+					<path>Tiefling_Names/4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>Tiefling5</keyword>
+					<path>Tiefling_Names/5</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

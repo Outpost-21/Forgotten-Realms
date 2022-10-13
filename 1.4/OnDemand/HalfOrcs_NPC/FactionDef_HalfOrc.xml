@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<FactionDef ParentName="FRealms_ForgottenSettlementBase">
+        <defName>FRealms_HalfOrcTribes</defName>
+        <label>half-orc settlements</label>
+        <description>The collective settlements of HalfOrcs in this realm.</description>
+        <colorSpectrum>
+            <li>(153, 135, 104)</li>
+        </colorSpectrum>
+		<pawnSingular>half-orc</pawnSingular>
+		<pawnsPlural>half-orcs</pawnsPlural>
+		<leaderTitle>chief</leaderTitle>
+		<factionIconPath>World/Orc/OrcTribeIcon</factionIconPath>
+		<pawnGroupMakers>
+            <li>
+                <!-- Normal fights, ranged with melee mix-ins -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <FRealms_HalfOrcTribes_Peasant>20</FRealms_HalfOrcTribes_Peasant>
+                    <FRealms_HalfOrcTribes_Fighter>40</FRealms_HalfOrcTribes_Fighter>
+                    <FRealms_HalfOrcTribes_Warrior>30</FRealms_HalfOrcTribes_Warrior>
+                    <FRealms_HalfOrcTribes_Bowman>30</FRealms_HalfOrcTribes_Bowman>
+                    <FRealms_HalfOrcTribes_Champion>30</FRealms_HalfOrcTribes_Champion>
+                    <FRealms_HalfOrcTribes_Chief>10</FRealms_HalfOrcTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, ranged only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <FRealms_HalfOrcTribes_Bowman>100</FRealms_HalfOrcTribes_Bowman>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, melee only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <FRealms_HalfOrcTribes_Peasant>15</FRealms_HalfOrcTribes_Peasant>
+                    <FRealms_HalfOrcTribes_Fighter>40</FRealms_HalfOrcTribes_Fighter>
+                    <FRealms_HalfOrcTribes_Warrior>40</FRealms_HalfOrcTribes_Warrior>
+                    <FRealms_HalfOrcTribes_Champion>30</FRealms_HalfOrcTribes_Champion>
+                    <FRealms_HalfOrcTribes_Chief>5</FRealms_HalfOrcTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <FRealms_HalfOrcTribes_Fighter>30</FRealms_HalfOrcTribes_Fighter>
+                    <FRealms_HalfOrcTribes_Warrior>30</FRealms_HalfOrcTribes_Warrior>
+                    <FRealms_HalfOrcTribes_Bowman>30</FRealms_HalfOrcTribes_Bowman>
+                    <FRealms_HalfOrcTribes_Champion>20</FRealms_HalfOrcTribes_Champion>
+                    <FRealms_HalfOrcTribes_Chief>10</FRealms_HalfOrcTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <FRealms_HalfOrcTribes_Merchant>1</FRealms_HalfOrcTribes_Merchant>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2.5</Alpaca>
+                    <Elephant>2</Elephant>
+                </carriers>
+                <guards>
+                    <FRealms_HalfOrcTribes_Fighter>30</FRealms_HalfOrcTribes_Fighter>
+                    <FRealms_HalfOrcTribes_Warrior>30</FRealms_HalfOrcTribes_Warrior>
+                    <FRealms_HalfOrcTribes_Bowman>30</FRealms_HalfOrcTribes_Bowman>
+                    <FRealms_HalfOrcTribes_Champion>20</FRealms_HalfOrcTribes_Champion>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <FRealms_HalfOrcTribes_Peasant>20</FRealms_HalfOrcTribes_Peasant>
+                    <FRealms_HalfOrcTribes_Fighter>20</FRealms_HalfOrcTribes_Fighter>
+                    <FRealms_HalfOrcTribes_Warrior>20</FRealms_HalfOrcTribes_Warrior>
+                    <FRealms_HalfOrcTribes_Bowman>50</FRealms_HalfOrcTribes_Bowman>
+                    <FRealms_HalfOrcTribes_Champion>30</FRealms_HalfOrcTribes_Champion>
+                    <FRealms_HalfOrcTribes_Chief>50</FRealms_HalfOrcTribes_Chief>
+                </options>
+            </li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+</Defs>

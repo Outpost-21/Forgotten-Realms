@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="FRealms_ForgottenBaseColonyPawnKind">
+		<defName>FRealms_MoonElf</defName>
+		<label>Moon Elf</label>
+		<race>FRealms_MoonElf</race>
+		<defaultFactionType>FRealms_MoonElfPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="FRealms_ForgottenBaseTribalPawnKind">
+		<defName>FRealms_MoonElfTribal</defName>
+		<label>Tribal Moon Elf</label>
+		<race>FRealms_MoonElf</race>
+		<defaultFactionType>FRealms_MoonElfPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

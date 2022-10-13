@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="FRealms_ForgottenBaseColonyPawnKind">
+		<defName>FRealms_Chitine</defName>
+		<label>Chitine</label>
+		<race>FRealms_Chitine</race>
+		<defaultFactionType>FRealms_ChitinePlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="FRealms_ForgottenBaseTribalPawnKind">
+		<defName>FRealms_ChitineTribal</defName>
+		<label>Tribal Chitine</label>
+		<race>FRealms_Chitine</race>
+		<defaultFactionType>FRealms_ChitinePlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

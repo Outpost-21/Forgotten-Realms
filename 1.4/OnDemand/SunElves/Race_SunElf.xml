@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>FRealms_SunElf_Settings</defName>
+		<pawnKindSettings>
+            <alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>FRealms_SunElf</li>
+						<li>FRealms_SunElfTribal</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienslavekinds>
+            <alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>FRealms_SunElf</li>
+						<li>FRealms_SunElfTribal</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienrefugeekinds>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>FRealms_SunElf</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>FRealms_SunElfPlayerColony</li> 
+					</factionDefs>
+				</li>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>FRealms_SunElfTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>FRealms_SunElfPlayerTribe</li> 
+					</factionDefs>
+				</li>
+			</startingColonists>
+            <alienwandererkinds>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>FRealms_SunElf</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>FRealms_SunElfPlayerColony</li> 
+					</factionDefs>
+				</li>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>FRealms_SunElfTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>FRealms_SunElfPlayerTribe</li> 
+					</factionDefs>
+				</li>
+            </alienwandererkinds>
+        </pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+	<AlienRace.ThingDef_AlienRace ParentName="FRealms_ElfBase">
+		<defName>FRealms_SunElf</defName>
+		<label>Sun Elf</label>
+		<description>The sun elves, also sometimes known as gold elves, sometimes as high elves due to their stereotypically elitist ways, and Ar-tel-quessir in their own language were a subrace of high elves historically rare in Faerûn due to the Retreat, in which the majority abandoned the continent for Evermeet, although during the Era of Upheaval they began returning to the mainland. Haughty and arrogant, sun elves typically felt themselves superior to most other races, including other Tel-quessir.</description>
+		<alienRace>
+			<generalSettings>
+				<disallowedTraits>
+					<li><defName>Beauty</defName></li>
+					<li><defName>Undergrounder</defName></li>
+				</disallowedTraits>
+				<alienPartGenerator>
+                    <colorChannels>
+                        <li>
+                            <name>skin</name>
+                            <first Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>15</weight>
+                                        <only>(222, 176, 130)</only>
+                                    </li>
+                                    <li>
+                                        <weight>20</weight>
+                                        <only>(216, 164, 111)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(212, 152, 91)</only>
+                                    </li>
+                                    <li>
+                                        <weight>5</weight>
+                                        <only>(206, 139, 71)</only>
+                                    </li>
+                                </options>
+                            </first>
+                        </li>
+                        <li>
+                            <name>hair</name>
+                            <first Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(64, 64, 64)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(186, 141, 93)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(217, 198, 137)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(191, 126, 96)</only>
+                                    </li>
+                                </options>
+                            </first>
+                        </li>
+                    </colorChannels>
+					<customDrawSize>(0.95, 1.1)</customDrawSize>
+					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+					<headOffset>(0.0, 0.05)</headOffset>
+				</alienPartGenerator>
+			</generalSettings>
+		</alienRace>
+		<statBases>
+			<GlobalLearningFactor>1.2</GlobalLearningFactor>
+			<NegotiationAbility>1.2</NegotiationAbility>
+			<TradePriceImprovement>1.2</TradePriceImprovement>
+		</statBases>
+		<race>
+			<hediffGiverSets>
+				<li>FRealms_SunElf</li>
+			</hediffGiverSets>
+		</race>
+		<comps>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.DrawFaceGraphicsComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.HeadControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EyeballControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.LidControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.BrowControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.MouthControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.SkinControllerComp</compClass></li>
+			<!-- <li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EmotionControllerComp</compClass></li> -->
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
+		</comps>
+	</AlienRace.ThingDef_AlienRace>
+
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>FRealms_SunElfFaceDef</defName>
+		<texPath>Pawn/Elves/Head_Blank/Normal</texPath>
+		<raceName>FRealms_SunElf</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+</Defs>

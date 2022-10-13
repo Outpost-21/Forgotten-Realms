@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="FRealms_ForgottenColonyBase">
+		<defName>FRealms_KoboldPlayerColony</defName>
+		<label>Kobold Colony</label>
+		<description>Your own community.</description>
+		<basicMemberKind>FRealms_Kobold</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="FRealms_ForgottenTribeBase">
+		<defName>FRealms_KoboldPlayerTribe</defName>
+		<label>Kobold Tribe</label>
+		<description>A small tribe.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>FRealms_KoboldTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

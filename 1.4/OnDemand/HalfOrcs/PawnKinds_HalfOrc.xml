@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="FRealms_ForgottenBaseColonyPawnKind">
+		<defName>FRealms_HalfOrc</defName>
+		<label>Half-Orc</label>
+		<race>FRealms_HalfOrc</race>
+		<defaultFactionType>FRealms_HalfOrcPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="FRealms_ForgottenBaseTribalPawnKind">
+		<defName>FRealms_HalfOrcTribal</defName>
+		<label>Tribal Half-Orc</label>
+		<race>FRealms_HalfOrc</race>
+		<defaultFactionType>FRealms_HalfOrcPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

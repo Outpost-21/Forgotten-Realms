@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="FRealms_ForgottenBaseColonyPawnKind">
+		<defName>FRealms_Tiefling</defName>
+		<label>Tiefling</label>
+		<race>FRealms_Tiefling</race>
+		<defaultFactionType>FRealms_TieflingPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="FRealms_ForgottenBaseTribalPawnKind">
+		<defName>FRealms_TieflingTribal</defName>
+		<label>Tribal Tiefling</label>
+		<race>FRealms_Tiefling</race>
+		<defaultFactionType>FRealms_TieflingPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

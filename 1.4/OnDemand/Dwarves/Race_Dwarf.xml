@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>FRealms_Dwarf_Settings</defName>
+		<pawnKindSettings>
+			<alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>FRealms_Dwarf</li>
+						<li>FRealms_DwarfTribal</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+			</alienslavekinds>
+			<alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>FRealms_Dwarf</li>
+						<li>FRealms_DwarfTribal</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+			</alienrefugeekinds>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>FRealms_Dwarf</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>FRealms_DwarfPlayerColony</li>
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>FRealms_DwarfTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>FRealms_DwarfPlayerTribe</li>
+					</factionDefs>
+				</li>
+			</startingColonists>
+			<alienwandererkinds>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>FRealms_Dwarf</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>FRealms_DwarfPlayerColony</li>
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>FRealms_DwarfTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>FRealms_DwarfPlayerTribe</li>
+					</factionDefs>
+				</li>
+			</alienwandererkinds>
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>FRealms_Dwarf</defName>
+		<label>Dwarf</label>
+		<description>Dwarves, sometimes called the Stout Folk, were a natural humanoid race common throughout parts of Toril as well as Abeir. Dwarves were a tough, tradition-abiding folk known for their strong martial traditions and beautiful craftsmanship.</description>
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>0.85</maleGenderProbability>
+				<immuneToAge>true</immuneToAge>
+				<humanRecipeImport>true</humanRecipeImport>
+				<forcedRaceTraitEntries />
+				<disallowedTraits>
+					<li><defName>Undergrounder</defName></li>
+				</disallowedTraits>
+				<chemicalSettings />
+				<factionRelations />
+				<notXenophobistTowards />
+				<immuneToXenophobia>false</immuneToXenophobia>
+				<alienPartGenerator>
+					<alienbodytypes>
+						<li>Male</li>
+					</alienbodytypes>
+					<customDrawSize>(0.95, 0.85)</customDrawSize>
+					<customHeadDrawSize>(0.85, 0.75)</customHeadDrawSize>
+					<headOffset>(0.0, -0.06)</headOffset>
+				</alienPartGenerator>
+			</generalSettings>
+			<relationSettings>
+				<relationChanceModifierChild>1</relationChanceModifierChild>
+				<relationChanceModifierExLover>1</relationChanceModifierExLover>
+				<relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+				<relationChanceModifierFiance>1</relationChanceModifierFiance>
+				<relationChanceModifierLover>1</relationChanceModifierLover>
+				<relationChanceModifierParent>1</relationChanceModifierParent>
+				<relationChanceModifierSibling>1</relationChanceModifierSibling>
+				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+			</relationSettings>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>EnvironmentDark</li>
+					<li>NeedOutdoors</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+			<raceRestriction />
+			<styleSettings>
+				<!-- <li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Dwarf</li>
+						</styleTagsOverride>
+					</value>
+				</li> -->
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTags>
+							<li>Rural</li>
+							<li>Urban</li>
+						</styleTags>
+					</value>
+				</li>
+			</styleSettings>
+			<compatibility>
+				<isFlesh>True</isFlesh>
+				<isSentient>True</isSentient>
+				<hasBlood>True</hasBlood>
+			</compatibility>
+		</alienRace>
+		<statBases>
+			<MarketValue>1750</MarketValue>
+			<MoveSpeed>4.2</MoveSpeed>
+			<ComfyTemperatureMin>16</ComfyTemperatureMin>
+			<ComfyTemperatureMax>26</ComfyTemperatureMax>
+			<LeatherAmount>35</LeatherAmount>
+			<RoyalFavorValue>3</RoyalFavorValue>
+			<MiningSpeed>2.0</MiningSpeed>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<fleshType>FRealms_NormalNoHediffs</fleshType>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>350</lifeExpectancy>
+			<leatherDef>Leather_Human</leatherDef>
+			<nameGenerator>FRealms_NamerPersonDwarfMale</nameGenerator>
+			<nameGeneratorFemale>FRealms_NamerPersonDwarfFemale</nameGeneratorFemale>
+			<useMeatFrom>Human</useMeatFrom>
+			<body>Human</body>
+			<baseBodySize>0.8</baseBodySize>
+			<baseHealthScale>1</baseHealthScale>
+			<foodType>OmnivoreHuman</foodType>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<meatMarketValue>0.8</meatMarketValue>
+			<manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li>(18,0)</li>
+					<li>(30,100)</li>
+					<li>(70,100)</li>
+					<li>(110,30)</li>
+					<li>(150,18)</li>
+					<li>(200,10)</li>
+					<li>(270,3)</li>
+					<li>(350,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<lifeStageAges Inherit="False">
+				<li>
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>HumanlikeToddler</def>
+					<minAge>1.2</minAge>
+				</li>
+				<li>
+					<def>HumanlikeChild</def>
+					<minAge>4</minAge>
+				</li>
+				<li>
+					<def>HumanlikeTeenager</def>
+					<minAge>13</minAge>
+				</li>
+				<li>
+					<def>HumanlikeAdult</def>
+					<minAge>18</minAge>
+				</li>
+			</lifeStageAges>
+			<hediffGiverSets>
+				<li>FRealms_Dwarf</li>
+			</hediffGiverSets>
+		</race>
+		<comps>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.DrawFaceGraphicsComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.HeadControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EyeballControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.LidControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.BrowControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.MouthControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.SkinControllerComp</compClass></li>
+			<!-- <li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EmotionControllerComp</compClass></li> -->
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
+		</comps>
+	</AlienRace.ThingDef_AlienRace>
+	
+	<FacialAnimation.FaceAdjustmentDef MayRequire="Nals.FacialAnimation">
+		<defName>FRealms_DwarfFaceAdjustmentDef</defName>
+		<RaceName>FRealms_Dwarf</RaceName>
+		<Size>(1.3,1.3)</Size>    
+	</FacialAnimation.FaceAdjustmentDef>
+
+</Defs>

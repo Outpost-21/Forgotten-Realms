@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="FRealms_ForgottenBaseColonyPawnKind">
+		<defName>FRealms_Dwarf</defName>
+		<label>Dwarf</label>
+		<race>FRealms_Dwarf</race>
+		<defaultFactionType>FRealms_DwarfPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="FRealms_ForgottenBaseTribalPawnKind">
+		<defName>FRealms_DwarfTribal</defName>
+		<label>Tribal Dwarf</label>
+		<race>FRealms_Dwarf</race>
+		<defaultFactionType>FRealms_DwarfPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

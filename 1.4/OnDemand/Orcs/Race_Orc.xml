@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>Orc_Settings</defName>
+		<pawnKindSettings>
+            <alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>FRealms_Orc</li>
+						<li>FRealms_OrcTribal</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienslavekinds>
+            <alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>FRealms_Orc</li>
+						<li>FRealms_OrcTribal</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienrefugeekinds>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>FRealms_Orc</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>FRealms_OrcPlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>FRealms_OrcTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>FRealms_OrcPlayerTribe</li> 
+					</factionDefs>
+				</li>
+			</startingColonists>
+            <alienwandererkinds>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>FRealms_Orc</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>FRealms_OrcPlayerColony</li> 
+					</factionDefs>
+				</li>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>FRealms_OrcTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>FRealms_OrcPlayerTribe</li> 
+					</factionDefs>
+				</li>
+            </alienwandererkinds>
+        </pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="Alien_Orc">
+		<defName>FRealms_Orc</defName>
+		<label>Orc</label>
+		<description>Orcs were a race of humanoids that had been a threat to the civilized cultures of Toril, particularly Faerûn, for as long as any could remember. This changed somewhat in the years preceding and immediately after the Spellplague, when a horde of mountain orcs under the command of King Obould Many-Arrows unified into a single kingdom, one that was remarkably civilized.</description>
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>0.95</maleGenderProbability>
+				<immuneToAge>false</immuneToAge>
+				<humanRecipeImport>true</humanRecipeImport>
+				<forcedRaceTraitEntries />
+				<disallowedTraits>
+					<li><defName>Undergrounder</defName></li>
+					<li><defName>Cannibal</defName></li>
+				</disallowedTraits>
+				<chemicalSettings />
+				<factionRelations />	
+				<notXenophobistTowards />
+				<immuneToXenophobia>false</immuneToXenophobia>
+				<alienPartGenerator>
+					<useGenderedHeads>false</useGenderedHeads>
+					<aliencrowntypes>
+						<li>Head</li>
+					</aliencrowntypes>
+					<alienbodytypes>
+						<li>Hulk</li>
+					</alienbodytypes>
+                    <colorChannels>
+                        <li>
+                            <name>skin</name>
+                            <first Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(185, 199, 189)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(159, 171, 162)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(176, 194, 181)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(198, 207, 201)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(151, 156, 152)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(159, 171, 161)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(152, 163, 142)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(109, 115, 103)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(95, 105, 85)</only>
+                                    </li>
+                                </options>
+                            </first>
+                        </li>
+                    </colorChannels>
+					<customDrawSize>(1.12, 1.12)</customDrawSize>
+					<customHeadDrawSize>(1.12, 1.12)</customHeadDrawSize>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<li>
+					<head>Pawn/Orc/</head>
+				</li>
+			</graphicPaths>
+			<styleSettings>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTags>
+							<li>Tribal</li>
+						</styleTags>
+					</value>
+				</li>
+			</styleSettings>
+			<relationSettings>
+				<relationChanceModifierChild>1</relationChanceModifierChild>
+				<relationChanceModifierExLover>1</relationChanceModifierExLover>
+				<relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+				<relationChanceModifierFiance>1</relationChanceModifierFiance>
+				<relationChanceModifierLover>1</relationChanceModifierLover>
+				<relationChanceModifierParent>1</relationChanceModifierParent>
+				<relationChanceModifierSibling>1</relationChanceModifierSibling>
+				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+			</relationSettings>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>ObservedLayingCorpse</li>
+					<li>EnvironmentDark</li>
+					<li>NeedOutdoors</li>
+					<li>DeadMansApparel</li>
+					<li>KnowGuestExecuted</li>
+					<li>KnowPrisonerDiedInnocent</li>
+					<li>AteRawFood</li>
+					<li>AteKibble</li>
+					<li>AteCorpse</li>
+					<li>AteHumanlikeMeatDirect</li>
+					<li>AteHumanlikeMeatAsIngredient</li>
+					<li>AteHumanlikeMeatAsIngredientCannibal</li>
+					<li>AteInsectMeatDirect</li>
+					<li>AteInsectMeatAsIngredient</li>
+					<li>AteWithoutTable</li>
+					<li>SleptOnGround</li>
+					<li>KnowPrisonerSold</li>
+					<li>KnowGuestOrganHarvested</li>
+					<li>KnowColonistOrganHarvested</li>
+					<li>SoakingWet</li>
+					<li>KnowButcheredHumanlikeCorpse</li>
+					<li>ButcheredHumanlikeCorpse</li>
+					<li>WitnessedDeathNonAlly</li>
+					<li>ColonistBanished</li>
+					<li>ColonistBanishedToDie</li>
+					<li>PrisonerBanishedToDie</li>
+					<li>SharedBed</li>
+
+					<li>ButcheredHumanlikeCorpseOpinion</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+			<raceRestriction>
+			</raceRestriction>
+			<compatibility>
+				<isFlesh>True</isFlesh>
+				<isSentient>True</isSentient>
+				<hasBlood>True</hasBlood>
+			</compatibility>
+		</alienRace>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<MoveSpeed>4.0</MoveSpeed>
+			<Flammability>0.3</Flammability>
+			<ComfyTemperatureMin>4</ComfyTemperatureMin>
+			<ComfyTemperatureMax>32</ComfyTemperatureMax>
+			<LeatherAmount>20</LeatherAmount>
+			<MiningSpeed>1.3</MiningSpeed>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>80</lifeExpectancy>
+			<leatherDef>Leather_Human</leatherDef>
+			<nameGenerator>FRealms_NamerPersonOrcMale</nameGenerator>
+			<nameGeneratorFemale>FRealms_NamerPersonOrcFemale</nameGeneratorFemale>
+			<useMeatFrom>Human</useMeatFrom>
+			<body>Human</body>
+			<baseBodySize>1.2</baseBodySize>
+			<baseHealthScale>1.25</baseHealthScale>
+			<foodType>OmnivoreHuman</foodType>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>HumanlikeToddler</def>
+					<minAge>1.2</minAge>
+				</li>
+				<li>
+					<def>HumanlikeChild</def>
+					<minAge>4</minAge>
+				</li>
+				<li>
+					<def>HumanlikeTeenager</def>
+					<minAge>13</minAge>
+				</li>
+				<li>
+					<def>HumanlikeAdult</def>
+					<minAge>18</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li>(14,0)</li>
+					<li>(16,100)</li>
+					<li>(50,100)</li>
+					<li>(60,30)</li>
+					<li>(70,18)</li>
+					<li>(80,10)</li>
+					<li>(90,3)</li>
+					<li>(100,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+                <li>Human</li>
+				<li>FRealms_Orc</li>
+			</hediffGiverSets>
+		</race>
+		<recipes>
+			<li>InstallArchotechEye</li>
+			<li>InstallArchotechArm</li>
+			<li>InstallArchotechLeg</li>
+			<li>InstallPowerClaw</li>
+			<li>InstallBionicEye</li>
+			<li>InstallBionicArm</li>
+			<li>InstallBionicLeg</li>
+			<li>InstallBionicSpine</li>
+			<li>InstallBionicHeart</li>
+			<li>InstallBionicStomach</li>
+			<li>InstallBionicEar</li>
+			<li>InstallSimpleProstheticArm</li>
+			<li>InstallSimpleProstheticLeg</li>
+			<li>InstallSimpleProstheticHeart</li>
+			<li>InstallCochlearImplant</li>
+			<li>InstallPegLeg</li>
+			<li>InstallWoodenFoot</li>
+			<li>InstallDenture</li>
+			<li>InstallJoywire</li>
+			<li>InstallPainstopper</li>
+			<li>InstallNaturalHeart</li>
+			<li>InstallNaturalLung</li>
+			<li>InstallNaturalKidney</li>
+			<li>InstallNaturalLiver</li>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+		</recipes>
+		<comps>
+			<li Class="TabulaRasa.CompProperties_AlienBodyCorrection">
+				<maleBodyTypes>
+					<li>Hulk</li>
+				</maleBodyTypes>
+				<femaleBodyTypes>
+					<li>Hulk</li>
+				</femaleBodyTypes>
+			</li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.DrawFaceGraphicsComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.HeadControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EyeballControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.LidControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.BrowControllerComp</compClass></li>
+			<!-- <li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.MouthControllerComp</compClass></li> -->
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.SkinControllerComp</compClass></li>
+			<!-- <li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EmotionControllerComp</compClass></li> -->
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
+		</comps>
+	</AlienRace.ThingDef_AlienRace>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>FRealms_OrcFaceDef</defName>
+		<texPath>Pawn/Orc/Head_Blank/Normal</texPath>
+		<raceName>FRealms_Orc</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+</Defs>

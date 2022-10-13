@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<FactionDef ParentName="FRealms_ForgottenSettlementBase">
+        <defName>FRealms_WarforgedTribes</defName>
+        <label>warforged settlements</label>
+        <description>The collective settlements of Warforged in this realm.</description>
+        <colorSpectrum>
+            <li>(200, 215, 219)</li>
+        </colorSpectrum>
+		<pawnsPlural>warforged</pawnsPlural>
+		<leaderTitle>chief</leaderTitle>
+		<factionIconPath>World/Warforged/WarforgedColonyIcon</factionIconPath>
+		<pawnGroupMakers>
+            <li>
+                <!-- Normal fights, ranged with melee mix-ins -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <FRealms_WarforgedTribes_Peasant>20</FRealms_WarforgedTribes_Peasant>
+                    <FRealms_WarforgedTribes_Fighter>40</FRealms_WarforgedTribes_Fighter>
+                    <FRealms_WarforgedTribes_Warrior>30</FRealms_WarforgedTribes_Warrior>
+                    <FRealms_WarforgedTribes_Bowman>30</FRealms_WarforgedTribes_Bowman>
+                    <FRealms_WarforgedTribes_Champion>30</FRealms_WarforgedTribes_Champion>
+                    <FRealms_WarforgedTribes_Chief>10</FRealms_WarforgedTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, ranged only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <FRealms_WarforgedTribes_Bowman>100</FRealms_WarforgedTribes_Bowman>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, melee only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <FRealms_WarforgedTribes_Peasant>15</FRealms_WarforgedTribes_Peasant>
+                    <FRealms_WarforgedTribes_Fighter>40</FRealms_WarforgedTribes_Fighter>
+                    <FRealms_WarforgedTribes_Warrior>40</FRealms_WarforgedTribes_Warrior>
+                    <FRealms_WarforgedTribes_Champion>30</FRealms_WarforgedTribes_Champion>
+                    <FRealms_WarforgedTribes_Chief>5</FRealms_WarforgedTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <FRealms_WarforgedTribes_Fighter>30</FRealms_WarforgedTribes_Fighter>
+                    <FRealms_WarforgedTribes_Warrior>30</FRealms_WarforgedTribes_Warrior>
+                    <FRealms_WarforgedTribes_Bowman>30</FRealms_WarforgedTribes_Bowman>
+                    <FRealms_WarforgedTribes_Champion>20</FRealms_WarforgedTribes_Champion>
+                    <FRealms_WarforgedTribes_Chief>10</FRealms_WarforgedTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <FRealms_WarforgedTribes_Merchant>1</FRealms_WarforgedTribes_Merchant>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2.5</Alpaca>
+                    <Elephant>2</Elephant>
+                </carriers>
+                <guards>
+                    <FRealms_WarforgedTribes_Fighter>30</FRealms_WarforgedTribes_Fighter>
+                    <FRealms_WarforgedTribes_Warrior>30</FRealms_WarforgedTribes_Warrior>
+                    <FRealms_WarforgedTribes_Bowman>30</FRealms_WarforgedTribes_Bowman>
+                    <FRealms_WarforgedTribes_Champion>20</FRealms_WarforgedTribes_Champion>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <FRealms_WarforgedTribes_Peasant>20</FRealms_WarforgedTribes_Peasant>
+                    <FRealms_WarforgedTribes_Fighter>20</FRealms_WarforgedTribes_Fighter>
+                    <FRealms_WarforgedTribes_Warrior>20</FRealms_WarforgedTribes_Warrior>
+                    <FRealms_WarforgedTribes_Bowman>50</FRealms_WarforgedTribes_Bowman>
+                    <FRealms_WarforgedTribes_Champion>30</FRealms_WarforgedTribes_Champion>
+                    <FRealms_WarforgedTribes_Chief>50</FRealms_WarforgedTribes_Chief>
+                </options>
+            </li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+</Defs>

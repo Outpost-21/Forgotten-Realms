@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  	<PawnKindDef ParentName="FRealms_NPCTribePawnBase" Name="FRealms_ElvenSettlementPawnBase" Abstract="True">
+        <maxGenerationAge>700</maxGenerationAge>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+  	</PawnKindDef>
+
+</Defs>

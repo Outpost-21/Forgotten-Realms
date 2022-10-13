@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="FRealms_ForgottenColonyBase">
+		<defName>FRealms_FirbolgPlayerColony</defName>
+		<label>Firbolg Colony</label>
+		<description>Your own community.</description>
+		<basicMemberKind>FRealms_Firbolg</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="FRealms_ForgottenTribeBase">
+		<defName>FRealms_FirbolgPlayerTribe</defName>
+		<label>Firbolg Tribe</label>
+		<description>A small tribe.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>FRealms_FirbolgTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="FRealms_ForgottenBaseColonyPawnKind">
+		<defName>FRealms_Goblin</defName>
+		<label>Goblin</label>
+		<race>FRealms_Goblin</race>
+		<defaultFactionType>FRealms_GoblinPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="FRealms_ForgottenBaseTribalPawnKind">
+		<defName>FRealms_GoblinTribal</defName>
+		<label>Tribal Goblin</label>
+		<race>FRealms_Goblin</race>
+		<defaultFactionType>FRealms_GoblinPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

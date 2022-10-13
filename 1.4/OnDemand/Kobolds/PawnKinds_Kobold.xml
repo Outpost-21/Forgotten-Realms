@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="FRealms_ForgottenBaseColonyPawnKind">
+		<defName>FRealms_Kobold</defName>
+		<label>Kobold</label>
+		<race>FRealms_Kobold</race>
+		<defaultFactionType>FRealms_KoboldPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="FRealms_ForgottenBaseTribalPawnKind">
+		<defName>FRealms_KoboldTribal</defName>
+		<label>Tribal Kobold</label>
+		<race>FRealms_Kobold</race>
+		<defaultFactionType>FRealms_KoboldPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

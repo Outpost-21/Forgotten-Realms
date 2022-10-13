@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<StyleItemCategoryDef>
+		<defName>Killoren</defName>
+		<label>killoren</label>
+	</StyleItemCategoryDef>
+
+	<HairDef>
+		<defName>FRealms_KillorenBlank</defName>
+		<label>Killoren Blank</label>
+		<hairGender>Any</hairGender>
+		<texPath>Pawn/Killoren/Hair/None</texPath>
+    	<category>Killoren</category>
+		<styleTags>
+			<li>Killoren</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>FRealms_KillorenLeaves01</defName>
+		<label>KLeaves 01</label>
+		<hairGender>Any</hairGender>
+		<texPath>Pawn/Killoren/Hair/Leaves01</texPath>
+    	<category>Killoren</category>
+		<styleTags>
+			<li>Killoren</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>FRealms_KillorenLeaves02</defName>
+		<label>KLeaves 02</label>
+		<hairGender>Any</hairGender>
+		<texPath>Pawn/Killoren/Hair/Leaves02</texPath>
+    	<category>Killoren</category>
+		<styleTags>
+			<li>Killoren</li>
+		</styleTags>
+	</HairDef>
+
+	<HairDef>
+		<defName>FRealms_KillorenLeaves03</defName>
+		<label>KLeaves 03</label>
+		<hairGender>Any</hairGender>
+		<texPath>Pawn/Killoren/Hair/Leaves03</texPath>
+    	<category>Killoren</category>
+		<styleTags>
+			<li>Killoren</li>
+		</styleTags>
+	</HairDef>
+
+</Defs>
