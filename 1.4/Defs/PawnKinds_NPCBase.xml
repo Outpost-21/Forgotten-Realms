@@ -286,7 +286,6 @@
 
 	<PawnKindDef ParentName="FRealms_NPCTribePawnBase" Name="FRealms_NPCTribePawnBase_Leader" Abstract="True">
 		<combatPower>140</combatPower>
-		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
 		<minGenerationAge>30</minGenerationAge>
 		<maxGenerationAge>999</maxGenerationAge>
 		<itemQuality>Excellent</itemQuality>

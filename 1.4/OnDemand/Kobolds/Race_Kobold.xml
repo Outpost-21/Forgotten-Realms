@@ -94,16 +94,17 @@
 				</disallowedTraits>
 				<alienPartGenerator>
 					<useGenderedHeads>false</useGenderedHeads>
-					<aliencrowntypes>
-						<li>Kobold_NoHorns</li>
-						<li>Kobold_TwoHorns</li>
-						<li>Kobold_FourHorns</li>
-					</aliencrowntypes>
-					<alienbodytypes>
+					<headTypes>
+						<li>FRealms_KoboldNoHorns</li>
+						<li>FRealms_KoboldTwoHorns</li>
+						<li>FRealms_KoboldFourHorns</li>
+					</headTypes>
+					<bodyTypes>
 						<li>Male</li>
 						<li>Female</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-					</alienbodytypes>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
                     <colorChannels>
                         <li>
                             <name>skin</name>

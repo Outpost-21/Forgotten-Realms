@@ -9,13 +9,13 @@
 			<success>Always</success>
 			<operations>
 				<li Class="ForgottenRealms.PatchOperation_OnDemand">
-					<source>1.3/OnDemand</source>
+					<source>1.4/OnDemand</source>
 					<folders>
 						<li>Gith</li>
 					</folders>
 				</li>
 				<li Class="ForgottenRealms.PatchOperation_OnDemand">
-					<source>1.3/OnDemand</source>
+					<source>1.4/OnDemand</source>
 					<folders>
 						<li>Gith_NPC</li>
 					</folders>

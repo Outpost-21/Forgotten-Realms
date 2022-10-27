@@ -94,11 +94,12 @@
 				<alienPartGenerator>
 					<useGenderedHeads>false</useGenderedHeads>
 					<aliencrowntypes>
-						<li>Head</li>
+						<li>FRealms_OrcNormal</li>
 					</aliencrowntypes>
 					<alienbodytypes>
 						<li>Hulk</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 					</alienbodytypes>
                     <colorChannels>
                         <li>

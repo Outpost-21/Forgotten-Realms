@@ -3,7 +3,6 @@
 
 	<PawnKindDef Name="FRealms_ForgottenBaseColonyPawnKind" Abstract="True">
 		<combatPower>40</combatPower>
-		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
 		<isFighter>false</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
@@ -31,7 +30,6 @@
 
   	<PawnKindDef Name="FRealms_ForgottenBaseTribalPawnKind" Abstract="True">
 		<combatPower>40</combatPower>
-		<baseRecruitDifficulty>0.50</baseRecruitDifficulty>
 		<isFighter>false</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>false</forceNormalGearQuality>

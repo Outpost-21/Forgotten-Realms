@@ -100,7 +100,8 @@
 					</aliencrowntypes>
 					<alienbodytypes>
 						<li>Thin</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 					</alienbodytypes>
                     <colorChannels>
                         <li>

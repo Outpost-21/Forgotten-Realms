@@ -86,15 +86,16 @@
 		<alienRace>
 			<generalSettings>
 				<alienPartGenerator>
-					<aliencrowntypes>
-						<li>Normal</li>
-					</aliencrowntypes>
-					<alienbodytypes>
-						<li>Male</li>
+					<headTypes>
+						<li>FRealms_FirbolgNormal</li>
+					</headTypes>
+					<bodytypes>
 						<li>Female</li>
+						<li>Male</li>
 						<li>Hulk</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-					</alienbodytypes>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodytypes>
 					<customDrawSize>(1.15, 1.15)</customDrawSize>
 					<customHeadDrawSize>(1.15, 1.15)</customHeadDrawSize>
 					<headOffset>(0.0, 0.08)</headOffset>

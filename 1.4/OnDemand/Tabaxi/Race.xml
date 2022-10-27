@@ -89,15 +89,16 @@
 			<generalSettings>
 				<alienPartGenerator>
 					<useGenderedHeads>false</useGenderedHeads>
-					<aliencrowntypes>
-						<li>Short</li>
-					</aliencrowntypes>
-					<alienbodytypes>
+					<headTypes>
+						<li>FRealms_TabaxiNormal</li>
+					</headTypes>
+					<bodyTypes>
 						<li>Thin</li>
 						<li>Male</li>
 						<li>Female</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-					</alienbodytypes>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
                     <colorChannels>
                         <li>
                             <name>skin</name>

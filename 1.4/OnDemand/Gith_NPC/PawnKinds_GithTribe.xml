@@ -178,7 +178,6 @@
         <defName>FRealms_GithTribes_Chief</defName>
         <label>gith chief</label>
         <combatPower>140</combatPower>
-        <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
         <minGenerationAge>30</minGenerationAge>
         <maxGenerationAge>999</maxGenerationAge>
         <itemQuality>Excellent</itemQuality>

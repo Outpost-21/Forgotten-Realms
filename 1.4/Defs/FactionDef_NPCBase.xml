@@ -13,7 +13,6 @@
 		<canMakeRandomly>true</canMakeRandomly>
 		<canStageAttacks>true</canStageAttacks>
 		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
-		<geneticVariance>0.1</geneticVariance>
 		<allowedCultures>
 			<li>Corunan</li>
 		</allowedCultures>

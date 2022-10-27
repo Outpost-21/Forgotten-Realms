@@ -89,6 +89,8 @@
 						<li>Thin</li>
 						<li>Male</li>
 						<li>Female</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 					</alienbodytypes>
 					<colorChannels>
 						<li>

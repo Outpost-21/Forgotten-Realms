@@ -61,7 +61,6 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
 		</disallowedPrecepts>
-		<geneticVariance>1</geneticVariance>
 		<forageabilityFactor>1.7</forageabilityFactor>
 		<startingResearchTags>
 			<li>TribalStart</li>

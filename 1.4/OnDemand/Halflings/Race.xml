@@ -92,7 +92,8 @@
 						<li>Male</li>
 						<li>Female</li>
 						<li>Thin</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 					</alienbodytypes>
 					<customDrawSize>(0.75, 0.75)</customDrawSize>
 					<customHeadDrawSize>(0.75, 0.75)</customHeadDrawSize>

@@ -92,15 +92,16 @@
 				</disallowedTraits>
 				<alienPartGenerator>
 					<useGenderedHeads>false</useGenderedHeads>
-					<aliencrowntypes>
-						<li>Normal</li>
-					</aliencrowntypes>
-					<alienbodytypes>
-						<li>Male</li>
+					<headTypes>
+						<li>FRealms_ChitineNormal</li>
+					</headTypes>
+					<bodytypes>
 						<li>Female</li>
+						<li>Male</li>
 						<li>Thin</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-					</alienbodytypes>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodytypes>
                     <colorChannels>
                         <li>
                             <name>skin</name>

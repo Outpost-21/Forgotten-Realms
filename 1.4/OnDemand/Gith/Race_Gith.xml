@@ -92,20 +92,21 @@
 				</disallowedTraits>
 				<alienPartGenerator>
 					<useGenderedHeads>false</useGenderedHeads>
-					<aliencrowntypes>
-						<li>Clear</li>
-						<li>Spotted01</li>
-						<li>Spotted02</li>
-						<li>Spotted03</li>
-						<li>Spotted04</li>
-						<li>Spotted05</li>
-					</aliencrowntypes>
-					<alienbodytypes>
+					<headTypes>
+						<li>FRealms_GithNormal</li>
+						<li>FRealms_GithSpotted01</li>
+						<li>FRealms_GithSpotted02</li>
+						<li>FRealms_GithSpotted03</li>
+						<li>FRealms_GithSpotted04</li>
+						<li>FRealms_GithSpotted05</li>
+					</headTypes>
+					<bodyTypes>
 						<li>Thin</li>
 						<li>Male</li>
 						<li>Female</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-					</alienbodytypes>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
 					<colorChannels>
 						<li>
 							<name>skin</name>

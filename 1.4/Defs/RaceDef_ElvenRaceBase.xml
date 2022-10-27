@@ -9,15 +9,17 @@
 			<generalSettings>
 				<immuneToAge>True</immuneToAge>
 				<alienPartGenerator>
-					<aliencrowntypes>
-						<li>Head_Normal</li>
-					</aliencrowntypes>
-					<alienbodytypes>
-						<li>Thin</li>
-						<li>Male</li>
+					<headTypes>
+						<li>Male_AverageNormal</li>
+						<li>Female_AverageNormal</li>
+					</headTypes>
+					<bodytypes>
 						<li>Female</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-					</alienbodytypes>
+						<li>Male</li>
+						<li>Thin</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodytypes>
 					<customDrawSize>(0.95, 1.1)</customDrawSize>
 					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
 					<headOffset>(0.0, 0.05)</headOffset>

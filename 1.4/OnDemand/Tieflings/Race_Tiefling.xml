@@ -89,19 +89,20 @@
 					<li><defName>Undergrounder</defName></li>
 				</disallowedTraits>
 				<alienPartGenerator>
-					<aliencrowntypes>
-						<li>Average_Normal</li>
-						<li>Average_Pointy</li>
-						<li>Average_Wide</li>
-						<li>Narrow_Normal</li>
-						<li>Narrow_Pointy</li>
-						<li>Narrow_Wide</li>
-					</aliencrowntypes>
-					<alienbodytypes>
+					<headTypes>
+						<li>Male_AverageNormal</li>
+						<li>Male_AveragePointy</li>
+						<li>Male_AverageWide</li>
+						<li>Female_AverageNormal</li>
+						<li>Female_AveragePointy</li>
+						<li>Female_AverageWide</li>
+					</headTypes>
+					<bodyTypes>
 						<li>Male</li>
 						<li>Female</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-					</alienbodytypes>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
                     <colorChannels>
                         <li>
                             <name>skin</name>

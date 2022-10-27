@@ -82,13 +82,14 @@
 				</disallowedTraits>
 				<alienPartGenerator>
 					<useGenderedHeads>false</useGenderedHeads>
-					<aliencrowntypes>
-						<li>Normal</li>
-					</aliencrowntypes>
-					<alienbodytypes>
+					<headTypes>
+						<li>FRealms_WarforgedNormal</li>
+					</headTypes>
+					<bodyTypes>
 						<li>Male</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-					</alienbodytypes>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
 					<colorChannels>
 						<li>
 							<name>skin</name>

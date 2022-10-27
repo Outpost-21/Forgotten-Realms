@@ -47,7 +47,8 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 					</aliencrowntypes>
 					<alienbodytypes>
 						<li>Male</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
 					</alienbodytypes>
 					<colorChannels>
 						<li>

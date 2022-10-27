@@ -93,10 +93,11 @@
 					<li><defName>Undergrounder</defName></li>
 				</disallowedTraits>
 				<alienPartGenerator>
-					<alienbodytypes>
+					<bodytypes>
 						<li>Male</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-					</alienbodytypes>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodytypes>
 					<customDrawSize>(0.95, 0.85)</customDrawSize>
 					<customHeadDrawSize>(0.85, 0.75)</customHeadDrawSize>
 					<headOffset>(0.0, -0.06)</headOffset>
