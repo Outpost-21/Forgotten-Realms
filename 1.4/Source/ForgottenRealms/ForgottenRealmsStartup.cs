@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 using TabulaRasa;
-using AlienRace;
 
 namespace ForgottenRealms
 {
@@ -21,14 +20,14 @@ namespace ForgottenRealms
 
         public static void FixOnDemandDefs(string prefix, ModContentPack mcp)
         {
-            // AlienRace
-            foreach (ThingDef_AlienRace def in DefDatabase<ThingDef_AlienRace>.AllDefs)
-            {
-                if (def.defName.StartsWith(prefix) && def.fileName.NullOrEmpty())
-                {
-                    FixMissingMCPData(def, mcp);
-                }
-            }
+            // Races
+            //foreach (ThingDef_AlienRace def in DefDatabase<ThingDef_AlienRace>.AllDefs)
+            //{
+            //    if (def.defName.StartsWith(prefix) && def.fileName.NullOrEmpty())
+            //    {
+            //        FixMissingMCPData(def, mcp);
+            //    }
+            //}
             // Things
             foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs)
             {

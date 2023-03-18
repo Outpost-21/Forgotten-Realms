@@ -93,7 +93,6 @@
 					<li><defName>Psychopath</defName></li>
 				</disallowedTraits>
 				<alienPartGenerator>
-					<useGenderedHeads>false</useGenderedHeads>
 					<headTypes>
 						<li>FRealms_KoboldNoHorns</li>
 						<li>FRealms_KoboldTwoHorns</li>

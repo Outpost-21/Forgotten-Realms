@@ -91,7 +91,6 @@
 					<li><defName>Undergrounder</defName></li>
 				</disallowedTraits>
 				<alienPartGenerator>
-					<useGenderedHeads>false</useGenderedHeads>
 					<headTypes>
 						<li>FRealms_GithNormal</li>
 						<li>FRealms_GithSpotted01</li>

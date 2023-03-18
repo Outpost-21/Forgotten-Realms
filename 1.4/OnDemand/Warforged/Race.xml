@@ -81,7 +81,6 @@
 					<li><defName>NightOwl</defName></li>
 				</disallowedTraits>
 				<alienPartGenerator>
-					<useGenderedHeads>false</useGenderedHeads>
 					<headTypes>
 						<li>FRealms_WarforgedNormal</li>
 					</headTypes>

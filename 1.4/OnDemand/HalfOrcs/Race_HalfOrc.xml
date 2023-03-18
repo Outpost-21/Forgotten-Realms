@@ -92,16 +92,15 @@
 					<li><defName>Cannibal</defName></li>
 				</disallowedTraits>
 				<alienPartGenerator>
-					<useGenderedHeads>true</useGenderedHeads>
-					<aliencrowntypes>
+					<headTypes>
 						<li>Head</li>
-					</aliencrowntypes>
-					<alienbodytypes>
+					</headTypes>
+					<bodyTypes>
 						<li>Male</li>
 						<li>Female</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
   						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-					</alienbodytypes>
+					</bodyTypes>
                     <colorChannels>
                         <li>
                             <name>skin</name>

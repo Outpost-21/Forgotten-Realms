@@ -94,15 +94,14 @@
 					<li><defName>Asexual</defName></li>
 				</disallowedTraits>
 				<alienPartGenerator>
-					<useGenderedHeads>false</useGenderedHeads>
-					<aliencrowntypes>
+					<headTypes>
 						<li>Head</li>
-					</aliencrowntypes>
-					<alienbodytypes>
+					</headTypes>
+					<bodyTypes>
 						<li>Thin</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
   						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-					</alienbodytypes>
+					</bodyTypes>
                     <colorChannels>
                         <li>
                             <name>skin</name>

@@ -41,15 +41,14 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 					<li><defName>Psychopath</defName></li>
 				</disallowedTraits>
 				<alienPartGenerator>
-					<useGenderedHeads>false</useGenderedHeads>
-					<aliencrowntypes>
+					<headTypes>
 						<li>Head01</li>
-					</aliencrowntypes>
-					<alienbodytypes>
+					</headTypes>
+					<bodyTypes>
 						<li>Male</li>
 						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
   						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-					</alienbodytypes>
+					</bodyTypes>
 					<colorChannels>
 						<li>
 							<name>skin</name>
@@ -161,6 +160,9 @@ Their hands had long, reddish fingers and lacked the index finger, and their fee
 			<ComfyTemperatureMax>28</ComfyTemperatureMax>
 			<LeatherAmount>25</LeatherAmount>
 			<HungerRateMultiplier>0.07</HungerRateMultiplier>
+			<PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">80</PsychicEntropyMax>
+			<PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">12</PsychicEntropyRecoveryRate>
+			<PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.3</PsychicEntropyGain>
 		</statBases>
 		<race>
 			<hasGenders>false</hasGenders>

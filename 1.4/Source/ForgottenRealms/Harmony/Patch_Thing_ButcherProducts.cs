@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 using HarmonyLib;
-using AlienRace;
 
 namespace ForgottenRealms
 {
@@ -24,14 +23,10 @@ namespace ForgottenRealms
                 Pawn pawn = __instance as Pawn;
                 if (pawn != null && pawn.def.race.Humanlike && pawn.def.defName != "FRealms_Illithid" && pawn.RaceProps.body == BodyDefOf.Human && pawn.Corpse.GetRotStage() == RotStage.Fresh)
                 {
-                    ThingDef_AlienRace raceDef = (ThingDef_AlienRace)pawn.def ?? null;
-                    if (raceDef != null && raceDef.alienRace.compatibility.HasBlood && raceDef.alienRace.compatibility.IsFlesh && raceDef.alienRace.compatibility.IsSentient)
+                    BodyPartRecord brain = pawn?.health?.hediffSet?.GetNotMissingParts()?.Where(x => x.def.defName == "Brain")?.FirstOrDefault();
+                    if (brain != null)
                     {
-                        BodyPartRecord brain = pawn?.health?.hediffSet?.GetNotMissingParts()?.Where(x => x.def.defName == "Brain")?.FirstOrDefault();
-                        if (brain != null)
-                        {
-                            __result = GenerateExtraProducts(__result, pawn, efficiency);
-                        }
+                        __result = GenerateExtraProducts(__result, pawn, efficiency);
                     }
                 }
             }

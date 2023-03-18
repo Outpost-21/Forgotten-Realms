@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<AlienRace.ThingDef_AlienRace ParentName="BasePawn" Name="FRealms_HumanoidRaceBase" Abstract="True">
-		<alienRace>
-			<generalSettings>
-				<maleGenderProbability>0.5</maleGenderProbability>
-				<humanRecipeImport>true</humanRecipeImport>
-			</generalSettings>
-			<relationSettings>
-				<relationChanceModifierChild>1</relationChanceModifierChild>
-				<relationChanceModifierExLover>1</relationChanceModifierExLover>
-				<relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
-				<relationChanceModifierFiance>1</relationChanceModifierFiance>
-				<relationChanceModifierLover>1</relationChanceModifierLover>
-				<relationChanceModifierParent>1</relationChanceModifierParent>
-				<relationChanceModifierSibling>1</relationChanceModifierSibling>
-				<relationChanceModifierSpouse>1</relationChanceModifierSpouse>
-			</relationSettings>
-			<compatibility>
-				<isFlesh>True</isFlesh>
-				<isSentient>True</isSentient>
-				<hasBlood>True</hasBlood>
-			</compatibility>
-		</alienRace>
+	<Asimov.PawnDef ParentName="BasePawn" Name="FRealms_HumanoidRaceBase" Abstract="True">
+		<pawnSettings>
+			<!-- General -->
+			<useHumanRecipes>true</useHumanRecipes>
+		</pawnSettings>
 		<statBases>
 			<MarketValue>1750</MarketValue>
 			<MoveSpeed>4.6</MoveSpeed>
@@ -192,6 +175,9 @@
 				<li>Human</li>
 			</hediffGiverSets>
 		</race>
-	</AlienRace.ThingDef_AlienRace>
+		<comps>
+			<li Class="Asimov.CompProperties_PawnData"></li>
+		</comps>
+	</Asimov.PawnDef>
 
 </Defs>

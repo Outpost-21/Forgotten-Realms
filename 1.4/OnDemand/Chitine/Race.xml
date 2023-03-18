@@ -1,238 +1,108 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<AlienRace.RaceSettings>
-		<defName>Chitine_Settings</defName>
-		<pawnKindSettings>
-            <alienslavekinds>
-				<li>
-					<kindDefs>
-						<li>FRealms_Chitine</li>
-					</kindDefs>
-					<chance>20.0</chance>
-				</li>
-            </alienslavekinds>
-            <alienrefugeekinds>
-				<li>
-					<kindDefs>
-						<li>FRealms_Chitine</li>
-					</kindDefs>
-					<chance>20.0</chance>
-				</li>
-            </alienrefugeekinds>
-			<startingColonists>
-				<li>
-					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>FRealms_Chitine</li>
-							</kindDefs>
-							<chance>20.0</chance>
-						</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>FRealms_ChitinePlayerColony</li> 
-					</factionDefs>
-				</li>
-				<li>
-					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>FRealms_ChitineTribal</li>
-							</kindDefs>
-							<chance>20.0</chance>
-						</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>FRealms_ChitinePlayerTribe</li> 
-					</factionDefs>
-				</li>
-			</startingColonists>
-            <alienwandererkinds>
-                <li>
-					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>FRealms_Chitine</li>
-							</kindDefs>
-							<chance>20.0</chance>
-						</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>FRealms_ChitinePlayerColony</li>
-					</factionDefs>
-				</li>
-				<li>
-					<pawnKindEntries>
-						<li>
-							<kindDefs>
-								<li>FRealms_ChitineTribal</li>
-							</kindDefs>
-							<chance>20.0</chance>
-						</li>
-					</pawnKindEntries>
-					<factionDefs>
-						<li>FRealms_ChitinePlayerTribe</li> 
-					</factionDefs>
-				</li>
-            </alienwandererkinds>
-        </pawnKindSettings>
-	</AlienRace.RaceSettings>
-
-	<AlienRace.ThingDef_AlienRace ParentName="FRealms_HumanoidRaceBase">
+	<Asimov.PawnDef ParentName="FRealms_HumanoidRaceBase">
 		<defName>FRealms_Chitine</defName>
 		<label>Chitine</label>
 		<description>A race of humanoids that resemble spiders and are typically found in the Underdark.</description>
-		<alienRace>
-			<generalSettings>
-				<disallowedTraits>
-					<li>
-                        <defName>Undergrounder</defName>
-                    </li>
-				</disallowedTraits>
-				<alienPartGenerator>
-					<useGenderedHeads>false</useGenderedHeads>
-					<headTypes>
-						<li>FRealms_ChitineNormal</li>
-					</headTypes>
-					<bodytypes>
-						<li>Female</li>
-						<li>Male</li>
-						<li>Thin</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
-  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-					</bodytypes>
-                    <colorChannels>
-                        <li>
-                            <name>skin</name>
-                            <first Class="ColorGenerator_Options">
-                                <options>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>(87, 87, 87)</only>
-                                    </li>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>(110, 110, 110)</only>
-                                    </li>
-                                    <li>
-                                        <weight>3</weight>
-                                        <only>(200, 200, 200)</only>
-                                    </li>
-                                </options>
-                            </first>
-                        </li>
-                        <li>
-                            <name>hair</name>
-                            <first Class="ColorGenerator_Options">
-                                <options>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>(64, 64, 64)</only>
-                                    </li>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>(87, 87, 87)</only>
-                                    </li>
-                                    <li>
-                                        <weight>20</weight>
-                                        <only>(117, 117, 117)</only>
-                                    </li>
-                                    <li>
-                                        <weight>3</weight>
-                                        <only>(255, 255, 255)</only>
-                                    </li>
-                                </options>
-                            </first>
-                        </li>
-                        <li>
-                            <name>eyes</name>
-                            <first Class="ColorGenerator_Options">
-                                <options>
-                                    <li>
-                                        <weight>10</weight>
-                                        <only>(255, 255, 255)</only>
-                                    </li>
-                                </options>
-                            </first>
-                        </li>
-                    </colorChannels>
-					<bodyAddons>
+		<pawnSettings>
+			<!-- Body -->
+			<headTypeWhitelist>
+				<li>FRealms_ChitineNormal</li>
+			</headTypeWhitelist>
+			<bodyTypeWhitelist>
+				<li>Male</li>
+				<li>Thin</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+				  <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+			</bodyTypeWhitelist>
+			<bodyTypeWhitelistFemale>
+				<li>Female</li>
+				<li>Thin</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+				  <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+			</bodyTypeWhitelistFemale>
+			<!-- Styles -->
+			<allowHair>false</allowHair>
+			<allowBeards>false</allowBeards>
+			<allowTattoos>false</allowTattoos>
+			<!-- Traits -->
+			<traitBlacklist>
+				<li>Undergrounder</li>
+			</traitBlacklist>
+			<!-- Thoughts -->
+			<thoughtBlacklist>
+				<li>ObservedLayingCorpse</li>
+				<li>EnvironmentDark</li>
+				<li>NeedOutdoors</li>
+				<li>DeadMansApparel</li>
+				<li>KnowGuestExecuted</li>
+				<li>KnowPrisonerDiedInnocent</li>
+				<li>AteRawFood</li>
+				<li>AteWithoutTable</li>
+				<li>KnowPrisonerSold</li>
+				<li>KnowGuestOrganHarvested</li>
+				<li>KnowColonistOrganHarvested</li>
+				<li>KnowButcheredHumanlikeCorpse</li>
+				<li>ButcheredHumanlikeCorpse</li>
+				<li>WitnessedDeathNonAlly</li>
+				<li>ColonistBanished</li>
+				<li>ColonistBanishedToDie</li>
+				<li>PrisonerBanishedToDie</li>
+				<li>ButcheredHumanlikeCorpseOpinion</li>
+			</thoughtBlacklist>
+		</pawnSettings>
+		<customGraphics>
+			<shaderType>CutoutComplex</shaderType>
+			<skinColorPairs>
+				<li>
+					<colorOne>(87, 87, 87)</colorOne>
+					<weight>20</weight>
+				</li>
+				<li>
+					<colorOne>(110, 110, 110)</colorOne>
+					<weight>20</weight>
+				</li>
+				<li>
+					<colorOne>(200, 200, 200)</colorOne>
+					<weight>3</weight>
+				</li>
+			</skinColorPairs>
+			<hairColorPairs>
+				<li>
+					<colorOne>(64, 64, 64)</colorOne>
+					<weight>20</weight>
+				</li>
+				<li>
+					<colorOne>(87, 87, 87)</colorOne>
+					<weight>20</weight>
+				</li>
+				<li>
+					<colorOne>(117, 117, 117)</colorOne>
+					<weight>20</weight>
+				</li>
+				<li>
+					<colorOne>(255, 255, 255)</colorOne>
+					<weight>3</weight>
+				</li>
+			</hairColorPairs>
+			<bodyAddons>
+				<li>
+					<texPath>Pawn/Chitine/Eyes/Eyes</texPath>
+					<bodyPart>Head</bodyPart>
+					<drawInBed>true</drawInBed>
+					<shaderType>TransparentPostLight</shaderType>
+					<colorPairs>
 						<li>
-							<path>Pawn/Chitine/Eyes/Eyes</path>
-							<bodyPart>Head</bodyPart>
-							<inFrontOfBody>true</inFrontOfBody>
-							<drawnInBed>true</drawnInBed>
-							<drawSize>1.0</drawSize>
-							<shaderType>TransparentPostLight</shaderType>
-                            <colorChannel>eyes</colorChannel>
-							<defaultOffset>Head</defaultOffset>
-							<offsets>
-								<south>
-									<layerOffset>-0.275</layerOffset>
-									<crownTypes>
-										<Normal>(0.0,-0.14791)</Normal>
-									</crownTypes>
-								</south>
-								<north>
-									<crownTypes>
-										<Normal>(0.0,-0.14791)</Normal>
-									</crownTypes>
-								</north>
-								<east>
-									<layerOffset>-0.275</layerOffset>
-									<crownTypes>
-										<Normal>(-0.0192926,-0.1672026)</Normal>
-									</crownTypes>
-								</east>
-							</offsets>			
+							<colorOne>(255, 255, 255)</colorOne>
+							<weight>100</weight>
 						</li>
-					</bodyAddons>
-				</alienPartGenerator>
-			</generalSettings>
-			<styleSettings>
-				<li>
-					<key>BeardDef</key>
-					<value>
-						<hasStyle>false</hasStyle>
-					</value>
+					</colorPairs>
+					<drawLocation>HeadMiddle</drawLocation>
+					<drawLayer>PostSkin</drawLayer>
 				</li>
-				<li>
-					<key>HairDef</key>
-					<value>
-						<hasStyle>false</hasStyle>
-					</value>
-				</li>
-			</styleSettings>
-			<thoughtSettings>
-				<cannotReceiveThoughts>
-					<li>ObservedLayingCorpse</li>
-					<li>EnvironmentDark</li>
-					<li>NeedOutdoors</li>
-					<li>DeadMansApparel</li>
-					<li>KnowGuestExecuted</li>
-					<li>KnowPrisonerDiedInnocent</li>
-					<li>AteRawFood</li>
-					<li>AteWithoutTable</li>
-					<li>KnowPrisonerSold</li>
-					<li>KnowGuestOrganHarvested</li>
-					<li>KnowColonistOrganHarvested</li>
-					<li>KnowButcheredHumanlikeCorpse</li>
-					<li>ButcheredHumanlikeCorpse</li>
-					<li>WitnessedDeathNonAlly</li>
-					<li>ColonistBanished</li>
-					<li>ColonistBanishedToDie</li>
-					<li>PrisonerBanishedToDie</li>
-
-					<li>ButcheredHumanlikeCorpseOpinion</li>
-				</cannotReceiveThoughts>
-			</thoughtSettings>
-			<graphicPaths>
-				<li>
-					<head>Pawn/Chitine/Head/</head>
-				</li>
-			</graphicPaths>
-		</alienRace>
+			</bodyAddons>
+		</customGraphics>
 		<statBases>
 			<MoveSpeed>4.6</MoveSpeed>
 			<Flammability>0.2</Flammability>
@@ -245,37 +115,13 @@
             <SocialImpact>0.8</SocialImpact>
 		</statBases>
 		<race>
-			<fleshType>FRealms_NormalNoHediffs</fleshType>
+			<fleshType>TabulaRasa_NormalNoHediffs</fleshType>
 			<body>FRealms_Chitine</body>
 			<baseHealthScale>1.2</baseHealthScale>
 			<hediffGiverSets>
 				<li>FRealms_Chitine</li>
 			</hediffGiverSets>
 		</race>
-		<comps>
-			<li Class="TabulaRasa.CompProperties_AlienBodyCorrection">
-				<maleBodyTypes>
-					<li>Male</li>
-					<li>Thin</li>
-				</maleBodyTypes>
-				<femaleBodyTypes>
-					<li>Female</li>
-					<li>Thin</li>
-				</femaleBodyTypes>
-			</li>
-			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.DrawFaceGraphicsComp</compClass></li>
-			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.HeadControllerComp</compClass></li>
-			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.MouthControllerComp</compClass></li>
-			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.SkinControllerComp</compClass></li>
-			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
-		</comps>
-	</AlienRace.ThingDef_AlienRace>
-	
-	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
-		<defName>FRealms_ChitineFaceDef</defName>
-		<texPath>Pawn/Chitine/Head_Blank/Normal</texPath>
-		<raceName>FRealms_Chitine</raceName>
-		<shader>Map/CutoutComplex</shader>
-	</FacialAnimation.HeadTypeDef>
+	</Asimov.PawnDef>
 	
 </Defs>

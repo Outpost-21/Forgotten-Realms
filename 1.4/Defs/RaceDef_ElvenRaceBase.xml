@@ -1,54 +1,38 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<AlienRace.ThingDef_AlienRace ParentName="FRealms_HumanoidRaceBase" Name="FRealms_ElfBase" Abstract="True">
+	<Asimov.PawnDef ParentName="FRealms_HumanoidRaceBase" Name="FRealms_ElfBase" Abstract="True">
 		<defName>FRealms_ElfBase</defName>
 		<label>Elf</label>
 		<description>Elves, much like their living ancestors, the eladrin, who were also commonly called elves, were a long-lived race of the Tel-quessir found most commonly in forests, shrublands, and other wildernesses. From time to time the elves organized strong nations, though with far less frequency than eladrin, in some cases adopting even a nomadic lifestyle. Almost all elves worshiped the gods of the Seldarine, and the elves were generally, though not always, good in nature.</description>
-		<alienRace>
-			<generalSettings>
-				<immuneToAge>True</immuneToAge>
-				<alienPartGenerator>
-					<headTypes>
-						<li>Male_AverageNormal</li>
-						<li>Female_AverageNormal</li>
-					</headTypes>
-					<bodytypes>
-						<li>Female</li>
-						<li>Male</li>
-						<li>Thin</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
-  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-					</bodytypes>
-					<customDrawSize>(0.95, 1.1)</customDrawSize>
-					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
-					<headOffset>(0.0, 0.05)</headOffset>
-				</alienPartGenerator>
-			</generalSettings>
-			<graphicPaths>
-				<li>
-					<head>Pawn/Elf/</head>
-				</li>
-			</graphicPaths>
-			<styleSettings>
-				<li>
-					<key>BeardDef</key>
-					<value>
-						<hasStyle>false</hasStyle>
-					</value>
-				</li>
-				<li>
-					<key>HairDef</key>
-					<value>
-						<hasStyle>true</hasStyle>
-						<styleTags>
-							<li>Urban</li>
-							<li>Tribal</li>
-						</styleTags>
-					</value>
-				</li>
-			</styleSettings>
-		</alienRace>
+		<pawnSettings>
+			<!-- General -->
+			<immuneToAge>True</immuneToAge>
+			<!-- Body -->
+			<headTypeWhitelist>
+				<li>Male_AverageNormal</li>
+				<li>Female_AverageNormal</li>
+			</headTypeWhitelist>
+			<bodyTypeWhitelist>
+				<li>Male</li>
+				<li>Thin</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+				  <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+			</bodyTypeWhitelist>
+			<bodyTypeWhitelistFemale>
+				<li>Female</li>
+				<li>Thin</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+				  <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+			</bodyTypeWhitelistFemale>
+			<headSize>(1.0, 1.0)</headSize>
+			<headOffset>(0.0, 0.05)</headOffset>
+			<bodySize>(0.95, 1.1)</bodySize>
+			<!-- Styles -->
+			<allowHair>true</allowHair>
+			<allowBeards>false</allowBeards>
+			<allowTattoos>true</allowTattoos>
+		</pawnSettings>
 		<statBases>
 			<MoveSpeed>5.2</MoveSpeed>
 			<Flammability>0.3</Flammability>
@@ -86,18 +70,6 @@
 				</points>
 			</ageGenerationCurve>
 		</race>
-		<comps>
-			<li Class="TabulaRasa.CompProperties_AlienBodyCorrection">
-				<maleBodyTypes>
-					<li>Male</li>
-					<li>Thin</li>
-				</maleBodyTypes>
-				<femaleBodyTypes>
-					<li>Female</li>
-					<li>Thin</li>
-				</femaleBodyTypes>
-			</li>
-		</comps>
-	</AlienRace.ThingDef_AlienRace>
+	</Asimov.PawnDef>
 
 </Defs>

@@ -2,17 +2,14 @@
 <Defs>
 
 	<TabulaRasa.UpdateDef>
-		<defName>FRealms_20220806_Update</defName>
-		<date>2022/08/06</date>
+		<defName>FRealms_20230308_Update</defName>
+		<date>2022/03/08</date>
 		<banner>UpdateInfo/O21ForgottenRealmsUpdateBanner</banner>
-		<content>1.3.8244
-- Adjusted spawn rates to be higher so they spawn a lot more commonly among vanilla factions if that setting is enabled.
-- Added support for [NL] Facial Animation, thanks to Mafelusz2 for speeding that up.
-- Added racial hediffs to note the differences of each race from standard humans.
-- Disabled verbose logging.
-- Minor bug fixes and adjustments.
+		<content>1.4.8467
+- Updated to support 1.4.
+- Factions are no longer toggled in settings, there's a section of starting a new game dedicated to faction setup, use it instead.
 
-Note: [NL] Facial Animation was only tested alongside the Vanilla Textures Expanded retexture for it, as that is the only reason I was willing to add support at all.
+I no longer use this, and haven't for some time, nor Humanoid Alien Races for that matter. So if there's any issues, I won't know unless you tell me in the comments of the mods Steam page.
 
 Right click to dismiss update.</content>
 		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2184183669</linkUrl>

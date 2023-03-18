@@ -75,8 +75,7 @@
 				<notXenophobistTowards />
 				<immuneToXenophobia>false</immuneToXenophobia>
 				<alienPartGenerator>
-					<useGenderedHeads>false</useGenderedHeads>
-					<aliencrowntypes>
+					<headTypes>
 						<li>Head01</li>
 						<li>Head02</li>
 						<li>Head03_LR</li>
@@ -84,7 +83,7 @@
 						<li>Head03_LH</li>
 						<li>Head03_RC</li>
 						<li>Head03_RH</li>
-					</aliencrowntypes>
+					</headTypes>
 					<alienbodytypes>
 						<li>Thin</li>
 						<li>Male</li>

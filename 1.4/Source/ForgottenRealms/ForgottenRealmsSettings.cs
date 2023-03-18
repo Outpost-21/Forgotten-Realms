@@ -14,10 +14,6 @@ namespace ForgottenRealms
     {
         public bool verboseLogging = false;
 
-        // Other
-        public bool settingToggle_raceIntegration = true;
-        public bool settingToggle_scenarios = true;
-
         // Races
         public bool raceToggle_chitine = true;
         public bool raceToggle_dwarf = true;
