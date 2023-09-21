@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="Forgotten_ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Orc</defName>
+		<label>Orc</label>
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Forgotten_Orc>999</Forgotten_Orc>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<defaultFactionType>Forgotten_OrcPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="Forgotten_ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_OrcTribal</defName>
+		<label>Tribal Orc</label>
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Forgotten_Orc>999</Forgotten_Orc>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<defaultFactionType>Forgotten_OrcPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

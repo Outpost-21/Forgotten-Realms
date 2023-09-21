@@ -1,19 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<TabulaRasa.UpdateDef>
-		<defName>FRealms_20230308_Update</defName>
-		<date>2022/03/08</date>
-		<banner>UpdateInfo/O21ForgottenRealmsUpdateBanner</banner>
-		<content>1.4.8467
-- Updated to support 1.4.
-- Factions are no longer toggled in settings, there's a section of starting a new game dedicated to faction setup, use it instead.
-
-I no longer use this, and haven't for some time, nor Humanoid Alien Races for that matter. So if there's any issues, I won't know unless you tell me in the comments of the mods Steam page.
-
-Right click to dismiss update.</content>
-		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2184183669</linkUrl>
-		<important>False</important>
-	</TabulaRasa.UpdateDef>
+	<!-- <TabulaRasa.UpdateDef>
+		<defName>ForgottenRealms_31092023</defName>
+		<date>2023/09/31</date>
+		<banner>ForgottenRealms/UpdateInfo/Updatebanner</banner>
+		<contentList>
+			<li>
+				<header>Added Xenotypes</header>
+				<text>- Dragonborn
+- Gnome
+- </text>
+				<image>ForgottenRealms/UpdateImages/NewRaces</image>
+			</li>
+		</contentList>
+		<links>
+			<li>
+				<linkLabel>Steam Workshop</linkLabel>
+				<linkUrl></linkUrl>
+				<linkTex>TabulaRasa/UI/Steam</linkTex>
+			</li>
+		</links>
+	</TabulaRasa.UpdateDef> -->
 
 </Defs>

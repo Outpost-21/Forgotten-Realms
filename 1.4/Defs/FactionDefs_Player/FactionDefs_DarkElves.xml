@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="Forgotten_ForgottenColonyBase">
+		<defName>Forgotten_DarkElfPlayerColony</defName>
+		<label>Dark Elf Colony</label>
+		<description>Your own community.</description>
+		<basicMemberKind>Forgotten_DarkElf</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="Forgotten_ForgottenTribeBase">
+		<defName>Forgotten_DarkElfPlayerTribe</defName>
+		<label>Dark Elf Tribe</label>
+		<description>A small tribe.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>Forgotten_DarkElfTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

@@ -21,7 +21,7 @@ namespace ForgottenRealms
             if (ForgottenRealmsMod.settings.raceToggle_illithid)
             {
                 Pawn pawn = __instance as Pawn;
-                if (pawn != null && pawn.def.race.Humanlike && pawn.def.defName != "FRealms_Illithid" && pawn.RaceProps.body == BodyDefOf.Human && pawn.Corpse.GetRotStage() == RotStage.Fresh)
+                if (pawn != null && pawn.def.race.Humanlike && pawn.def.defName != "Forgotten_Illithid" && pawn.RaceProps.body == BodyDefOf.Human && pawn.Corpse.GetRotStage() == RotStage.Fresh)
                 {
                     BodyPartRecord brain = pawn?.health?.hediffSet?.GetNotMissingParts()?.Where(x => x.def.defName == "Brain")?.FirstOrDefault();
                     if (brain != null)
@@ -42,7 +42,7 @@ namespace ForgottenRealms
                 }
             }
 
-            Thing brain = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("FRealms_Illithid_HumanoidBrain"), null);
+            Thing brain = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("Forgotten_Illithid_HumanoidBrain"), null);
             brain.stackCount = 1;
             yield return brain;
         }

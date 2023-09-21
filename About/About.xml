@@ -2,19 +2,17 @@
 <ModMetaData>
 	<name>Forgotten Realms</name>
 	<author>Neronix17</author>
-	<packageId>neronix17.fr.compilation</packageId>
+	<packageId>Neronix17.ForgottenRealms</packageId>
 	<url></url>
 	<supportedVersions>
-		<li>1.2</li>
-		<li>1.3</li>
 		<li>1.4</li>
 	</supportedVersions>
-	<description>Forgotten Realms inspired races.</description>
+	<description>Forgotten Realms inspired races, implemented as Biotech Xenotypes.</description>
 	<modDependencies>
 		<li>
-			<packageId>erdelf.HumanoidAlienRaces</packageId>
-			<displayName>Humanoid Alien Races 2.0</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Rimworld - Biotech</displayName>
+			<steamWorkshopUrl>https://store.steampowered.com/app/1826140/RimWorld__Biotech/</steamWorkshopUrl>
 		</li>
 		<li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
@@ -29,9 +27,8 @@
 		</li>
 	</modDependencies>
 	<loadAfter>
-		<li>erdelf.HumanoidAlienRaces</li>
+		<li>Ludeon.RimWorld.Biotech</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>neronix17.toolbox</li>
-		<!-- <li>Nals.FacialAnimation</li> -->
 	</loadAfter>
 </ModMetaData>

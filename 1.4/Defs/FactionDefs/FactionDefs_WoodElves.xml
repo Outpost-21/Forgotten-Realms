@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <FactionDef ParentName="Forgotten_ElvenSettlementsBase">
+        <defName>Forgotten_WoodElfKingdoms</defName>
+        <label>Wood elf settlements</label>
+        <description>The collective settlements of Wood elves in this realm.</description>
+        <factionIconPath>World/Elves/WoodElfIcon</factionIconPath>
+        <colorSpectrum>
+            <li>RGB(185, 227, 175)</li>
+        </colorSpectrum>
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights, ranged with melee mix-ins -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <Forgotten_ElvenSettlements_Peasant_Wood>20</Forgotten_ElvenSettlements_Peasant_Wood>
+                    <Forgotten_ElvenSettlements_Squire_Wood>40</Forgotten_ElvenSettlements_Squire_Wood>
+                    <Forgotten_ElvenSettlements_Footsoldier_Wood>30</Forgotten_ElvenSettlements_Footsoldier_Wood>
+                    <Forgotten_ElvenSettlements_Bowman_Wood>30</Forgotten_ElvenSettlements_Bowman_Wood>
+                    <Forgotten_ElvenSettlements_Knight_Wood>30</Forgotten_ElvenSettlements_Knight_Wood>
+                    <Forgotten_ElvenSettlements_Lord_Wood>10</Forgotten_ElvenSettlements_Lord_Wood>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, ranged only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <Forgotten_ElvenSettlements_Bowman_Wood>100</Forgotten_ElvenSettlements_Bowman_Wood>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, melee only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <Forgotten_ElvenSettlements_Peasant_Wood>15</Forgotten_ElvenSettlements_Peasant_Wood>
+                    <Forgotten_ElvenSettlements_Squire_Wood>40</Forgotten_ElvenSettlements_Squire_Wood>
+                    <Forgotten_ElvenSettlements_Footsoldier_Wood>40</Forgotten_ElvenSettlements_Footsoldier_Wood>
+                    <Forgotten_ElvenSettlements_Knight_Wood>30</Forgotten_ElvenSettlements_Knight_Wood>
+                    <Forgotten_ElvenSettlements_Lord_Wood>5</Forgotten_ElvenSettlements_Lord_Wood>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <Forgotten_ElvenSettlements_Squire_Wood>30</Forgotten_ElvenSettlements_Squire_Wood>
+                    <Forgotten_ElvenSettlements_Footsoldier_Wood>30</Forgotten_ElvenSettlements_Footsoldier_Wood>
+                    <Forgotten_ElvenSettlements_Bowman_Wood>30</Forgotten_ElvenSettlements_Bowman_Wood>
+                    <Forgotten_ElvenSettlements_Knight_Wood>20</Forgotten_ElvenSettlements_Knight_Wood>
+                    <Forgotten_ElvenSettlements_Lord_Wood>10</Forgotten_ElvenSettlements_Lord_Wood>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <Forgotten_ElvenSettlements_Merchant_Wood>1</Forgotten_ElvenSettlements_Merchant_Wood>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2.5</Alpaca>
+                    <Elephant>2</Elephant>
+                </carriers>
+                <guards>
+                    <Forgotten_ElvenSettlements_Squire_Wood>30</Forgotten_ElvenSettlements_Squire_Wood>
+                    <Forgotten_ElvenSettlements_Footsoldier_Wood>30</Forgotten_ElvenSettlements_Footsoldier_Wood>
+                    <Forgotten_ElvenSettlements_Bowman_Wood>30</Forgotten_ElvenSettlements_Bowman_Wood>
+                    <Forgotten_ElvenSettlements_Knight_Wood>20</Forgotten_ElvenSettlements_Knight_Wood>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <Forgotten_ElvenSettlements_Peasant_Wood>20</Forgotten_ElvenSettlements_Peasant_Wood>
+                    <Forgotten_ElvenSettlements_Squire_Wood>20</Forgotten_ElvenSettlements_Squire_Wood>
+                    <Forgotten_ElvenSettlements_Footsoldier_Wood>20</Forgotten_ElvenSettlements_Footsoldier_Wood>
+                    <Forgotten_ElvenSettlements_Bowman_Wood>50</Forgotten_ElvenSettlements_Bowman_Wood>
+                    <Forgotten_ElvenSettlements_Knight_Wood>30</Forgotten_ElvenSettlements_Knight_Wood>
+                    <Forgotten_ElvenSettlements_Lord_Wood>50</Forgotten_ElvenSettlements_Lord_Wood>
+                </options>
+            </li>
+        </pawnGroupMakers>
+    </FactionDef>
+
+</Defs>

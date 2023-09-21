@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>Forgotten_Illithid_Settings</defName>
+		<pawnKindSettings>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Forgotten_Illithid</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>Forgotten_IllithidPlayerColony</li>
+					</factionDefs>
+				</li>
+			</startingColonists>
+		</pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+	<AlienRace.ThingDef_AlienRace ParentName="Forgotten_HumanoidRaceBase">
+		<defName>Forgotten_Illithid</defName>
+		<label>Illithid</label>
+		<description>Illithids or "Mind Flayers" were humanoid in appearance but with an octopus-like, ridged head with four tentacles surrounding a lamprey-like mouth. They were warm-blooded amphibians, whose blood had a silvery-white color.
+
+Their hands had long, reddish fingers and lacked the index finger, and their feet were two-toed and webbed. Illithid eyes were extremely sensitive to bright light, and they considered it painful, a characteristic that some githyanki scholars attributed to the fact that their alien anatomy focused light in a strange way. Their vision was also more sensitive to the recognition of geometric patterns than that of other humanoids.</description>
+		<alienRace>
+			<generalSettings>
+				<disallowedTraits>
+					<li><defName>Gay</defName></li>
+					<li><defName>Bisexual</defName></li>
+					<li><defName>Asexual</defName></li>
+					<li><defName>DislikesMen</defName></li>
+					<li><defName>DislikesWomen</defName></li>
+					<li><defName>Undergrounder</defName></li>
+					<li><defName>Cannibal</defName></li>
+					<li><defName>Psychopath</defName></li>
+				</disallowedTraits>
+				<alienPartGenerator>
+					<headTypes>
+						<li>Head01</li>
+					</headTypes>
+					<bodyTypes>
+						<li>Male</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>RGB(123, 130, 199)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGB(123, 157, 199)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGB(146, 123, 199)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGB(169, 123, 199)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGB(185, 113, 189)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGB(137, 113, 189)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<li>
+					<head>Pawn/IllithidNew/Head/</head>
+				</li>
+			</graphicPaths>
+			<styleSettings>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<relationSettings Inherit="False">
+				<relationChanceModifierChild>0</relationChanceModifierChild>
+				<relationChanceModifierExLover>0</relationChanceModifierExLover>
+				<relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+				<relationChanceModifierFiance>0</relationChanceModifierFiance>
+				<relationChanceModifierLover>0</relationChanceModifierLover>
+				<relationChanceModifierParent>0</relationChanceModifierParent>
+				<relationChanceModifierSibling>0</relationChanceModifierSibling>
+				<relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+			</relationSettings>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>ObservedLayingCorpse</li>
+					<li>EnvironmentDark</li>
+					<li>NeedOutdoors</li>
+					<li>DeadMansApparel</li>
+					<li>KnowGuestExecuted</li>
+					<li>KnowPrisonerDiedInnocent</li>
+					<li>AteRawFood</li>
+					<li>AteKibble</li>
+					<li>AteCorpse</li>
+					<li>AteHumanlikeMeatDirect</li>
+					<li>AteHumanlikeMeatAsIngredient</li>
+					<li>AteHumanlikeMeatAsIngredientCannibal</li>
+					<li>AteInsectMeatDirect</li>
+					<li>AteInsectMeatAsIngredient</li>
+					<li>AteWithoutTable</li>
+					<li>SleptOnGround</li>
+					<li>KnowPrisonerSold</li>
+					<li>KnowGuestOrganHarvested</li>
+					<li>KnowColonistOrganHarvested</li>
+					<li>SoakingWet</li>
+					<li>KnowButcheredHumanlikeCorpse</li>
+					<li>ButcheredHumanlikeCorpse</li>
+					<li>WitnessedDeathNonAlly</li>
+					<li>ColonistBanished</li>
+					<li>ColonistBanishedToDie</li>
+					<li>PrisonerBanishedToDie</li>
+					<li>SharedBed</li>
+
+					<li>ButcheredHumanlikeCorpseOpinion</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+			<raceRestriction>
+				<foodList>
+					<li>Forgotten_Illithid_HumanoidBrain</li>
+				</foodList>
+				<onlyEatRaceRestrictedFood>true</onlyEatRaceRestrictedFood>
+			</raceRestriction>
+		</alienRace>
+		<statBases>
+			<MoveSpeed>4.8</MoveSpeed>
+			<Flammability>0.3</Flammability>
+			<ComfyTemperatureMin>8</ComfyTemperatureMin>
+			<ComfyTemperatureMax>28</ComfyTemperatureMax>
+			<LeatherAmount>25</LeatherAmount>
+			<HungerRateMultiplier>0.07</HungerRateMultiplier>
+			<PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">80</PsychicEntropyMax>
+			<PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">12</PsychicEntropyRecoveryRate>
+			<PsychicEntropyGain MayRequire="Ludeon.RimWorld.Royalty">0.3</PsychicEntropyGain>
+		</statBases>
+		<race>
+			<hasGenders>false</hasGenders>
+			<nameGenerator>Forgotten_NameRulePack_Illithid</nameGenerator>
+			<bloodDef>Forgotten_Filth_IllithidBlood</bloodDef>
+			<hediffGiverSets>
+				<li>Forgotten_Illithid</li>
+			</hediffGiverSets>
+		</race>
+		<recipes>
+			<li>Forgotten_ExtractIllithidBrain</li>
+		</recipes>
+		<comps>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.DrawFaceGraphicsComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.HeadControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EyeballControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.LidControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.BrowControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.SkinControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
+		</comps>
+	</AlienRace.ThingDef_AlienRace>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>Forgotten_IllithidFaceDef</defName>
+		<texPath>Pawn/Illithid/Head_Blank/Normal</texPath>
+		<raceName>Forgotten_Illithid</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+
+</Defs>

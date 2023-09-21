@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="Forgotten_ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Gith</defName>
+		<label>Gith</label>
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Forgotten_Gith>999</Forgotten_Gith>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<defaultFactionType>Forgotten_GithPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="Forgotten_ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_GithTribal</defName>
+		<label>Tribal Gith</label>
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Forgotten_Gith>999</Forgotten_Gith>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<defaultFactionType>Forgotten_GithPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+		<defName>Tabaxi_Settings</defName>
+		<pawnKindSettings>
+            <alienslavekinds>
+				<li>
+					<kindDefs>
+						<li>Forgotten_Tabaxi</li>
+						<li>Forgotten_TabaxiTribal</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienslavekinds>
+            <alienrefugeekinds>
+				<li>
+					<kindDefs>
+						<li>Forgotten_Tabaxi</li>
+						<li>Forgotten_TabaxiTribal</li>
+					</kindDefs>
+					<chance>20.0</chance>
+				</li>
+            </alienrefugeekinds>
+			<startingColonists>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Forgotten_Tabaxi</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>Forgotten_TabaxiPlayerColony</li> 
+					</factionDefs>
+				</li>
+				<li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Forgotten_TabaxiTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>Forgotten_TabaxiPlayerTribe</li> 
+					</factionDefs>
+				</li>
+			</startingColonists>
+            <alienwandererkinds>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Forgotten_Tabaxi</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>Forgotten_TabaxiPlayerColony</li> 
+					</factionDefs>
+				</li>
+                <li>
+					<pawnKindEntries>
+						<li>
+							<kindDefs>
+								<li>Forgotten_TabaxiTribal</li>
+							</kindDefs>
+							<chance>20.0</chance>
+						</li>
+					</pawnKindEntries>
+					<factionDefs>
+						<li>Forgotten_TabaxiPlayerTribe</li> 
+					</factionDefs>
+				</li>
+            </alienwandererkinds>
+        </pawnKindSettings>
+	</AlienRace.RaceSettings>
+
+	<AlienRace.ThingDef_AlienRace ParentName="Forgotten_HumanoidRaceBase">
+		<defName>Forgotten_Tabaxi</defName>
+		<label>Tabaxi</label>
+		<description>Tabaxi also known as jaguar people or cat-men, were a race of feline humanoids native to the jungles of Maztica.</description>
+		<alienRace>
+			<generalSettings>
+				<alienPartGenerator>
+					<headTypes>
+						<li>Forgotten_TabaxiNormal</li>
+					</headTypes>
+					<bodyTypes>
+						<li>Thin</li>
+						<li>Male</li>
+						<li>Female</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+  						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
+                    <colorChannels>
+                        <li>
+                            <name>skin</name>
+                            <first Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(152, 155, 158)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(89, 90, 92)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(217, 219, 222)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(217, 176, 126)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(214, 210, 171)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(125, 102, 84)</only>
+                                    </li>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(153, 126, 104)</only>
+                                    </li>
+                                </options>
+                            </first>
+                        </li>
+                    </colorChannels>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+				<li>
+					<head>Pawn/Tabaxi/Head/</head>
+				</li>
+			</graphicPaths>
+			<styleSettings>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>AteRawFood</li>
+					<li>AteWithoutTable</li>
+					<li>SleptOnGround</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+		</alienRace>
+		<statBases>
+			<MoveSpeed>5.5</MoveSpeed>
+			<Flammability>0.3</Flammability>
+			<ComfyTemperatureMin>8</ComfyTemperatureMin>
+			<ComfyTemperatureMax>28</ComfyTemperatureMax>
+			<LeatherAmount>20</LeatherAmount>
+			<HungerRateMultiplier>0.4</HungerRateMultiplier>
+		</statBases>
+		<race>
+			<leatherDef>Leather_Heavy</leatherDef>
+			<nameGenerator>Forgotten_NamerPersonTabaxiMale</nameGenerator>
+			<nameGeneratorFemale>Forgotten_NamerPersonTabaxiFemale</nameGeneratorFemale>
+			<baseHealthScale>0.9</baseHealthScale>
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<hediffGiverSets>
+				<li>Forgotten_Tabaxi</li>
+			</hediffGiverSets>
+		</race>
+		<comps>
+			<li Class="TabulaRasa.CompProperties_AlienBodyCorrection">
+				<maleBodyTypes>
+					<li>Male</li>
+				</maleBodyTypes>
+				<femaleBodyTypes>
+					<li>Female</li>
+				</femaleBodyTypes>
+			</li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.DrawFaceGraphicsComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.HeadControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.EyeballControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.LidControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.BrowControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.SkinControllerComp</compClass></li>
+			<li MayRequire="Nals.FacialAnimation"><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li>
+		</comps>
+	</AlienRace.ThingDef_AlienRace>
+	
+	<FacialAnimation.HeadTypeDef MayRequire="Nals.FacialAnimation">
+		<defName>Forgotten_TabaxiFaceDef</defName>
+		<texPath>Pawn/Tabaxi/Head_Blank/Normal</texPath>
+		<raceName>Forgotten_Tabaxi</raceName>
+		<shader>Map/CutoutComplex</shader>
+	</FacialAnimation.HeadTypeDef>
+	
+</Defs>

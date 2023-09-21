@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<FactionDef ParentName="Forgotten_ForgottenSettlementBase">
+        <defName>Forgotten_KillorenTribes</defName>
+        <label>killoren settlements</label>
+        <description>The collective settlements of Killoren in this realm.</description>
+        <colorSpectrum>
+            <li>(125, 209, 144)</li>
+        </colorSpectrum>
+		<pawnSingular>killoren</pawnSingular>
+		<pawnsPlural>killoren</pawnsPlural>
+		<leaderTitle>chief</leaderTitle>
+		<factionIconPath>World/Killoren/KillorenTribeIcon</factionIconPath>
+		<pawnGroupMakers>
+            <li>
+                <!-- Normal fights, ranged with melee mix-ins -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <Forgotten_KillorenTribes_Peasant>20</Forgotten_KillorenTribes_Peasant>
+                    <Forgotten_KillorenTribes_Fighter>40</Forgotten_KillorenTribes_Fighter>
+                    <Forgotten_KillorenTribes_Warrior>30</Forgotten_KillorenTribes_Warrior>
+                    <Forgotten_KillorenTribes_Bowman>30</Forgotten_KillorenTribes_Bowman>
+                    <Forgotten_KillorenTribes_Champion>30</Forgotten_KillorenTribes_Champion>
+                    <Forgotten_KillorenTribes_Chief>10</Forgotten_KillorenTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, ranged only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <Forgotten_KillorenTribes_Bowman>100</Forgotten_KillorenTribes_Bowman>
+                </options>
+            </li>
+            <li>
+                <!-- Normal fights, melee only -->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <Forgotten_KillorenTribes_Peasant>15</Forgotten_KillorenTribes_Peasant>
+                    <Forgotten_KillorenTribes_Fighter>40</Forgotten_KillorenTribes_Fighter>
+                    <Forgotten_KillorenTribes_Warrior>40</Forgotten_KillorenTribes_Warrior>
+                    <Forgotten_KillorenTribes_Champion>30</Forgotten_KillorenTribes_Champion>
+                    <Forgotten_KillorenTribes_Chief>5</Forgotten_KillorenTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <!-- Peaceful -->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <Forgotten_KillorenTribes_Fighter>30</Forgotten_KillorenTribes_Fighter>
+                    <Forgotten_KillorenTribes_Warrior>30</Forgotten_KillorenTribes_Warrior>
+                    <Forgotten_KillorenTribes_Bowman>30</Forgotten_KillorenTribes_Bowman>
+                    <Forgotten_KillorenTribes_Champion>20</Forgotten_KillorenTribes_Champion>
+                    <Forgotten_KillorenTribes_Chief>10</Forgotten_KillorenTribes_Chief>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <Forgotten_KillorenTribes_Merchant>1</Forgotten_KillorenTribes_Merchant>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2.5</Alpaca>
+                    <Elephant>2</Elephant>
+                </carriers>
+                <guards>
+                    <Forgotten_KillorenTribes_Fighter>30</Forgotten_KillorenTribes_Fighter>
+                    <Forgotten_KillorenTribes_Warrior>30</Forgotten_KillorenTribes_Warrior>
+                    <Forgotten_KillorenTribes_Bowman>30</Forgotten_KillorenTribes_Bowman>
+                    <Forgotten_KillorenTribes_Champion>20</Forgotten_KillorenTribes_Champion>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <Forgotten_KillorenTribes_Peasant>20</Forgotten_KillorenTribes_Peasant>
+                    <Forgotten_KillorenTribes_Fighter>20</Forgotten_KillorenTribes_Fighter>
+                    <Forgotten_KillorenTribes_Warrior>20</Forgotten_KillorenTribes_Warrior>
+                    <Forgotten_KillorenTribes_Bowman>50</Forgotten_KillorenTribes_Bowman>
+                    <Forgotten_KillorenTribes_Champion>30</Forgotten_KillorenTribes_Champion>
+                    <Forgotten_KillorenTribes_Chief>50</Forgotten_KillorenTribes_Chief>
+                </options>
+            </li>
+		</pawnGroupMakers>
+	</FactionDef>
+
+</Defs>

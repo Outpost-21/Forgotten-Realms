@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="Forgotten_ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Chitine</defName>
+		<label>Chitine</label>
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Forgotten_Chitine>999</Forgotten_Chitine>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<defaultFactionType>Forgotten_ChitinePlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="Forgotten_ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_ChitineTribal</defName>
+		<label>Tribal Chitine</label>
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Forgotten_Chitine>999</Forgotten_Chitine>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<defaultFactionType>Forgotten_ChitinePlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="Forgotten_ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Halfling</defName>
+		<label>Halfling</label>
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Forgotten_Halfling>999</Forgotten_Halfling>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<defaultFactionType>Forgotten_HalflingPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="Forgotten_ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_HalflingTribal</defName>
+		<label>Tribal Halfling</label>
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Forgotten_Halfling>999</Forgotten_Halfling>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<defaultFactionType>Forgotten_HalflingPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="Forgotten_ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_MoonElf</defName>
+		<label>Moon Elf</label>
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Forgotten_MoonElf>999</Forgotten_MoonElf>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<defaultFactionType>Forgotten_MoonElfPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="Forgotten_ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_MoonElfTribal</defName>
+		<label>Tribal Moon Elf</label>
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Forgotten_MoonElf>999</Forgotten_MoonElf>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<defaultFactionType>Forgotten_MoonElfPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

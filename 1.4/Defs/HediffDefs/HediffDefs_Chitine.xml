@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<HediffGiverSetDef>
+		<defName>Forgotten_Chitine</defName>
+		<hediffGivers>
+			<li Class="TabulaRasa.HediffGiver_Racial">
+				<hediff>Forgotten_Chitine</hediff>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+
+	<HediffDef>
+		<defName>Forgotten_Chitine</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Race: Chitine</label>
+		<description><![CDATA[<i>Spider like folk typically found in the Underdark.</i>
+
+<b>Stats</b>
+- 120% Overall Health
+- 80% Social Impact
+- 80% Negotiation Ability
+- 80% Learning Factor
+- Lower Mental Break Threshold
+
+<b>Extra Info</b>
+- Naturally Undergrounder]]></description>
+		<defaultLabelColor>(85, 230, 167)</defaultLabelColor>
+		<isBad>false</isBad>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<capMods />
+			</li>
+		</stages>
+		<comps>
+			<li Class="TabulaRasa.HediffCompProperties_TooltipDescription" />
+		</comps>
+	</HediffDef>
+
+</Defs>

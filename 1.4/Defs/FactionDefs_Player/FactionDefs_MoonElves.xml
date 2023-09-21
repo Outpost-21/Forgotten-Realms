@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="Forgotten_ForgottenColonyBase">
+		<defName>Forgotten_MoonElfPlayerColony</defName>
+		<label>Moon Elf Colony</label>
+		<description>Your own community.</description>
+		<basicMemberKind>Forgotten_MoonElf</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="Forgotten_ForgottenTribeBase">
+		<defName>Forgotten_MoonElfPlayerTribe</defName>
+		<label>Moon Elf Tribe</label>
+		<description>A small tribe.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>Forgotten_MoonElfTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

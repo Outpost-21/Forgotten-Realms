@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+   <FactionDef Name="Forgotten_ElvenSettlementsBase" ParentName="Forgotten_ForgottenSettlementBase" Abstract="True">
+      <pawnSingular>elf</pawnSingular>
+      <pawnsPlural>elves</pawnsPlural>
+      <leaderTitle>lord</leaderTitle>
+   </FactionDef>
+   
+</Defs>

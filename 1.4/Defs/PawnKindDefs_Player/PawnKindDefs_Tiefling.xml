@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="Forgotten_ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Tiefling</defName>
+		<label>Tiefling</label>
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Forgotten_AsmodeusTiefling>333</Forgotten_AsmodeusTiefling>
+				<Forgotten_MephistophelesTiefling>333</Forgotten_MephistophelesTiefling>
+				<Forgotten_ZarielTiefling>333</Forgotten_ZarielTiefling>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<defaultFactionType>Forgotten_TieflingPlayerColony</defaultFactionType>
+	</PawnKindDef>
+
+  	<PawnKindDef ParentName="Forgotten_ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_TieflingTribal</defName>
+		<label>Tribal Tiefling</label>
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Forgotten_AsmodeusTiefling>333</Forgotten_AsmodeusTiefling>
+				<Forgotten_MephistophelesTiefling>333</Forgotten_MephistophelesTiefling>
+				<Forgotten_ZarielTiefling>333</Forgotten_ZarielTiefling>
+			</xenotypeChances>
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<defaultFactionType>Forgotten_TieflingPlayerTribe</defaultFactionType>
+  	</PawnKindDef>
+
+</Defs>

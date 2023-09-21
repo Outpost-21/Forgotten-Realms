@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>Forgotten_Item_IllithidTadpole</defName>
+		<label>illithid tadpole</label>
+		<description>A mature Illithid Tadpole, ready to be implanted into a humanoid.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>ForgottenRealms/Items/IllithidTadpole</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<stackLimit>1</stackLimit>
+		<tickerType>Normal</tickerType>
+		<tradeability>Sellable</tradeability>
+		<statBases>
+			<MarketValue>0</MarketValue>
+			<Mass>1</Mass>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>BodyPartsNatural</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>2</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="OrganicProductBase">
+		<defName>Forgotten_Illithid_HumanoidBrain</defName>
+		<label>humanoid brain</label>
+		<description>The weird grey matter from between the ears that most Humans seem to not be capable of using.</description>
+		<thingClass>ThingWithComps</thingClass>
+		<graphicData>
+			<texPath>ForgottenRealms/Items/HumanoidBrain</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<stackLimit>25</stackLimit>
+		<tickerType>Normal</tickerType>
+		<tradeability>Sellable</tradeability>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>120</MarketValue>
+			<Mass>1</Mass>
+			<DeteriorationRate>3.0</DeteriorationRate>
+			<Nutrition>1</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Meat</foodType>
+			<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+			<preferability>MealLavish</preferability>
+			<tasteThought>AteLavishMeal</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>30</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>BodyPartsNatural</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Forgotten_Item_ElderBrain</defName>
+		<label>elder brain</label>
+		<description>An elder brain was the final stage of the Illithid life cycle. The elder brain lived in a brine-filled pool in the center of a Illithid city, where it guided its community by filling them with dark dreams of Illithid domination.</description>
+		<graphicData>
+			<texPath>ForgottenRealms/Items/ElderBrainJar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<tradeability>Sellable</tradeability>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>1</stackLimit>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>3000</MarketValue>
+			<Mass>1</Mass>
+			<Flammability>0.3</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

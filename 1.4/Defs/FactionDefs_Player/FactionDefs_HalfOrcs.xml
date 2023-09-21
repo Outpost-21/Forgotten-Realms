@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="Forgotten_ForgottenColonyBase">
+		<defName>Forgotten_HalfOrcPlayerColony</defName>
+		<label>Half-Orc Colony</label>
+		<description>Your own community.</description>
+		<basicMemberKind>Forgotten_HalfOrc</basicMemberKind>
+		<pawnsPlural>colonists</pawnsPlural>
+	</FactionDef>
+  
+	<FactionDef ParentName="Forgotten_ForgottenTribeBase">
+		<defName>Forgotten_HalfOrcPlayerTribe</defName>
+		<label>Half-Orc Tribe</label>
+		<description>A small tribe.</description>
+		<pawnSingular>tribesman</pawnSingular>
+		<pawnsPlural>tribespeople</pawnsPlural>
+		<basicMemberKind>Forgotten_HalfOrcTribal</basicMemberKind>
+	</FactionDef>
+
+</Defs>

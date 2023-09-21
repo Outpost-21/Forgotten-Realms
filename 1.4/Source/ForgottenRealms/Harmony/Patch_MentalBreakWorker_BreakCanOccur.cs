@@ -19,7 +19,7 @@ namespace ForgottenRealms
         [HarmonyPrefix]
         public static bool Prefix(MentalBreakWorker __instance, bool __result, Pawn pawn)
         {
-            if (pawn.def.defName == "FRealms_Warforged")
+            if (pawn.def.defName == "Forgotten_Warforged")
             {
                 __result = false;
                 return false;

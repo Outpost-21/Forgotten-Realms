@@ -15,7 +15,7 @@ namespace ForgottenRealms
     {
         static ForgottenRealmsStartup()
         {
-            OnDemandUtil.FixOnDemandDefs("FRealms_", ForgottenRealmsMod.mod.Content);
+            OnDemandUtil.FixOnDemandDefs("Forgotten_", ForgottenRealmsMod.mod.Content);
         }
 
         public static void FixOnDemandDefs(string prefix, ModContentPack mcp)
