@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="OrganicProductBase">
-		<defName>Forgotten_Item_IllithidTadpole</defName>
+		<defName>Forgotten_IllithidTadpole</defName>
 		<label>illithid tadpole</label>
 		<description>A mature Illithid Tadpole, ready to be implanted into a humanoid.</description>
 		<thingClass>ThingWithComps</thingClass>
@@ -27,11 +27,25 @@
 				<daysToRotStart>2</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 			</li>
+			<li Class="CompProperties_Usable">
+				<useJob>UseItem</useJob>
+				<useLabel>Implant Tadpole</useLabel>
+				<useDuration>0</useDuration>
+			</li>
+			<li Class="CompProperties_Targetable">
+				<compClass>TabulaRasa.CompTargetable_NotXenotype</compClass>
+			</li>
+			<li Class="TabulaRasa.CompProperties_TargetEffectApplyHediff" />
 		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_Xenotype">
+				<xenotype>Forgotten_Illithid</xenotype>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="OrganicProductBase">
-		<defName>Forgotten_Illithid_HumanoidBrain</defName>
+		<defName>Forgotten_HumanoidBrain</defName>
 		<label>humanoid brain</label>
 		<description>The weird grey matter from between the ears that most Humans seem to not be capable of using.</description>
 		<thingClass>ThingWithComps</thingClass>
@@ -71,7 +85,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
-		<defName>Forgotten_Item_ElderBrain</defName>
+		<defName>Forgotten_ElderBrain</defName>
 		<label>elder brain</label>
 		<description>An elder brain was the final stage of the Illithid life cycle. The elder brain lived in a brine-filled pool in the center of a Illithid city, where it guided its community by filling them with dark dreams of Illithid domination.</description>
 		<graphicData>

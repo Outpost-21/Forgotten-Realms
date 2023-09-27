@@ -2,24 +2,23 @@
 <Defs>
 
 	<PawnKindDef Name="Forgotten_ForgottenBaseColonyPawnKind" Abstract="True">
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
 		<combatPower>40</combatPower>
 		<isFighter>false</isFighter>
+		<defaultFactionType>PlayerColony</defaultFactionType>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
 		<apparelTags>
 			<li>IndustrialBasic</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-		<apparelMoney>
-			<min>100</min>
-			<max>600</max>
-		</apparelMoney>
+		<apparelMoney>100~600</apparelMoney>
 		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
 		<techHediffsChance>0.03</techHediffsChance>
-		<techHediffsMoney>
-			<min>50</min>
-			<max>800</max>
-		</techHediffsMoney>
+		<techHediffsMoney>50~800</techHediffsMoney>
 		<techHediffsTags>
 			<li>Poor</li>
 			<li>Simple</li>
@@ -29,8 +28,13 @@
 	</PawnKindDef>
 
   	<PawnKindDef Name="Forgotten_ForgottenBaseTribalPawnKind" Abstract="True">
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
 		<combatPower>40</combatPower>
 		<isFighter>false</isFighter>
+		<defaultFactionType>PlayerTribe</defaultFactionType>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>false</forceNormalGearQuality>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
@@ -38,15 +42,9 @@
 			<li>Neolithic</li>
 			<li>Medieval</li>
 		</apparelTags>
-		<apparelMoney>
-			<min>100</min>
-			<max>600</max>
-		</apparelMoney>
+		<apparelMoney>100~600</apparelMoney>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
-		<techHediffsMoney>
-			<min>50</min>
-			<max>50</max>
-		</techHediffsMoney>
+		<techHediffsMoney>50~50</techHediffsMoney>
 		<techHediffsTags>
 			<li>Poor</li>
 		</techHediffsTags>

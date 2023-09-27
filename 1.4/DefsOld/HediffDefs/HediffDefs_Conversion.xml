@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>Forgotten_Hediff_IllithidCeremorphosis</defName>
+		<label>illithid ceremorphosis</label>
+		<description>This pawn is currently having its brain replaced with an illithid tadpole, very soon this pawn will turn into an illithid and there's no way to prevent this from happening.</description>
+    	<hediffClass>TabulaRasa.Hediff_BasicConversion</hediffClass>
+		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<tendable>false</tendable>
+    	<initialSeverity>0.1</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>10.0</severityPerDay>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_BasicConversion">
+				<defaultPawnKind>Forgotten_IllithidConverted</defaultPawnKind>
+                <killPawn>False</killPawn>
+                <forceDropEquipment>True</forceDropEquipment>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+</Defs>

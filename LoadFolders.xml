@@ -3,6 +3,5 @@
 	<v1.4>
 		<li>/</li>
 		<li>1.4</li>
-		<li IfModNotActive="Neronix17.Outland.Genetics">1.4/Mods/NoOutlandGenetics</li>
 	</v1.4>
 </loadFolders>

@@ -18,6 +18,7 @@
 		<nameMaker>Forgotten_NamerPersonDwarfMale</nameMaker>
 		<nameMakerFemale>Forgotten_NamerPersonDwarfFemale</nameMakerFemale>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<!-- TODO: dwarf beard gene -->
 		<genes>
 			<li>Body_Standard</li>
 			<li>Outland_BodyScale_Squat</li>
@@ -71,9 +72,38 @@
 		<iconPath>ForgottenRealms/WorldIcons/FirbolgTribeIcon</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
+		<!-- TODO: pink nose gene, kind eyes gene -->
 		<genes>
+			<li>Aggression_DeadCalm</li>
 			<li>Outland_BodyScale_Large</li>
-			<li>Outland_Ears_FlatPointed</li>
+			<li>Outland_Nose_BigNose</li>
+			<li>Outland_Ears_Flufftop</li>
+			<li>KindInstinct</li>
+			<li>Outland_Skin_Dusk</li>
+			<li>Outland_Skin_BlueSky</li>
+			<li>Outland_Skin_BlueIce</li>
+			<li>Outland_HairColor_DarkRed</li>
+			<li>Outland_HairColor_PastelOrange</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Forgotten_Goliath</defName>
+		<label>goliath</label>
+		<description>Goliaths are a nomadic race of humanoids native to the mountainous regions of Toril.</description>
+		<descriptionShort>Goliaths are a nomadic race of humanoids native to the mountainous regions of Toril.</descriptionShort>
+		<iconPath>ForgottenRealms/WorldIcons/GoliathTribeIcon</iconPath>
+		<combatPowerFactor>1.0</combatPowerFactor>
+		<inheritable>true</inheritable>
+		<!-- TODO: goliath names & skin pattern gene -->
+		<genes>
+			<li>Aggression_Aggressive</li>
+			<li>Robust</li>
+			<li>Skin_LightGray</li>
+			<li>Skin_SheerWhite</li>
+			<li>Outland_BodyScale_Massive</li>
+			<li>Brow_Heavy</li>
+			<li>Unstoppable</li>
 		</genes>
 	</XenotypeDef>
 
@@ -88,6 +118,7 @@
 		<nameMaker>Forgotten_NamerPersonGithMale</nameMaker>
 		<nameMakerFemale>Forgotten_NamerPersonGithFemale</nameMakerFemale>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<!-- TODO: Skin pattern gene -->
 		<genes>
 			<li>Beard_NoBeardOnly</li>
 			<li>Outland_SvelteHead</li>
@@ -95,6 +126,8 @@
 			<li>Ears_Pointed</li>
 			<li>Skin_Green</li>
 			<li>Hair_DarkBrown</li>
+			<li>ElongatedFingers</li>
+			<li>Aggression_Aggressive</li>
 		</genes>
 	</XenotypeDef>
 
@@ -112,6 +145,7 @@
 		<genes>
 			<li>Outland_Teeth_TusksSmall</li>
 			<li>Skin_Green</li>
+			<li>MeleeDamage_Strong</li>
 		</genes>
 	</XenotypeDef>
 
@@ -133,6 +167,7 @@
 			<li>Outland_Skin_PurpleMuted</li>
 			<li>Outland_Skin_PurpleSubtle</li>
 			<li>Outland_Skin_Indigo</li>
+			<li>ElongatedFingers</li>
 		</genes>
 	</XenotypeDef>
 
@@ -197,6 +232,9 @@
 			<li>Jaw_Heavy</li>
 			<li>Outland_Teeth_TusksLarge</li>
 			<li>Outland_BodyScale_Large</li>
+			<li>Aggression_Aggressive</li>
+			<li>Brow_Heavy</li>
+			<li>KillThirst</li>
 		</genes>
 	</XenotypeDef>
 
@@ -433,6 +471,29 @@
 			<li>Outland_Nose_Goblinoid</li>
 			<li>Outland_GreaterGoblinoidHead</li>
 			<li>Outland_Ears_FlatPointed</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Forgotten_Bugbear</defName>
+		<label>bugbear</label>
+		<description>Bugbears are a massive humanoid race distantly related to, but larger and stronger than, goblins and hobgoblins.</description>
+		<descriptionShort>Bugbears are a massive humanoid race distantly related to, but larger and stronger than, goblins and hobgoblins.</descriptionShort>
+		<iconPath>ForgottenRealms/WorldIcons/BugbearTribeIcon</iconPath>
+		<combatPowerFactor>1.0</combatPowerFactor>
+		<inheritable>true</inheritable>
+		<!-- TODO: Bugbear naming -->
+		<nameMaker>Forgotten_NamerPersonHobgoblin</nameMaker>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<!-- TODO: Bugbear genes - hairy skin, bushy brow, scruffy beards -->
+		<genes>
+			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_Skin_LightBrown</li>
+			<li>Outland_Ears_Goblinoid</li>
+			<li>Outland_Nose_Goblinoid</li>
+			<li>Outland_GreaterGoblinoidHead</li>
+			<li>Outland_Ears_FlatPointed</li>
+			<li>Outland_BodyScale_Small</li>
 		</genes>
 	</XenotypeDef>
 

@@ -2,38 +2,6 @@
 <Defs>
 
 	<RecipeDef ParentName="SurgeryFlesh">
-		<defName>Forgotten_ImplantIllithidTadpole</defName>
-		<label>implant illithid tadpole</label>
-		<description>Implant an illithid tadpole into the brain of the victim, causing them to turn into a new illithid.</description>
-		<workerClass>Recipe_InstallImplant</workerClass>
-		<jobString>Implanting illithid tadpole.</jobString>
-		<workAmount>1000</workAmount>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Forgotten_Item_IllithidTadpole</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Forgotten_Item_IllithidTadpole</li>
-			</thingDefs>
-		</fixedIngredientFilter>
-		<appliedOnFixedBodyParts>
-			<li>Brain</li>
-		</appliedOnFixedBodyParts>
-		<addsHediff>Forgotten_Hediff_IllithidCeremorphosis</addsHediff>
-		<anesthetize>false</anesthetize>
-		<isViolation>true</isViolation>
-		<surgerySuccessChanceFactor>100</surgerySuccessChanceFactor>
-		<deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
-	</RecipeDef>
-
-	<RecipeDef ParentName="SurgeryFlesh">
 		<defName>Forgotten_ExtractIllithidBrain</defName>
 		<label>extract elder brain</label>
 		<description>Removed the brain of an Illithid to be used as an Elder Brain, the process of course kills the pawn.</description>
@@ -45,7 +13,7 @@
 		<anesthetize>false</anesthetize>
 		<isViolation>true</isViolation>
 		<products>
-			<Forgotten_Item_ElderBrain>1</Forgotten_Item_ElderBrain>
+			<Forgotten_ElderBrain>1</Forgotten_ElderBrain>
 		</products>
 		<appliedOnFixedBodyParts>
 			<li>Brain</li>

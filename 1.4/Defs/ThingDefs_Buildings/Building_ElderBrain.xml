@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingDef ParentName="BuildingBase">
-		<defName>Forgotten_Building_ElderBrainPool</defName>
+		<defName>Forgotten_ElderBrainPool</defName>
 		<label>elder brain pool</label>
 		<description>The Elder Brain pool stores and produces Illithid tadpoles, as well as the Elder Brain itself, which will passively progress research with no interaction necessary.</description>
     	<thingClass>TabulaRasa.Building_ThingProducer</thingClass>
@@ -34,7 +34,7 @@
 			<Flammability>1.0</Flammability>
 		</statBases>
 		<costList>
-			<Forgotten_Item_ElderBrain>1</Forgotten_Item_ElderBrain>
+			<Forgotten_ElderBrain>1</Forgotten_ElderBrain>
 		</costList>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -46,12 +46,12 @@
 			<li Class="TabulaRasa.CompProperties_AutoResearch">
 				<requiresPower>false</requiresPower>
 				<researchSpeedFactor>1.2</researchSpeedFactor>
-				<pawnKind>Forgotten_Illithid</pawnKind>
+				<xenotype>Forgotten_Illithid</xenotype>
 			</li>
 		</comps>
 		<modExtensions>
 			<li Class="TabulaRasa.DefModExt_ThingProducer">
-				<thingDef>Forgotten_Item_IllithidTadpole</thingDef>
+				<thingDef>Forgotten_IllithidTadpole</thingDef>
 				<productionTime>6000</productionTime>
 				<maxThings>8</maxThings>
 				<retrievalString>Extract Tadpole</retrievalString>

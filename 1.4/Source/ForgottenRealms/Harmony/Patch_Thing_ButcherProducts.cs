@@ -18,16 +18,13 @@ namespace ForgottenRealms
         [HarmonyPostfix]
         public static void Postfix(Thing __instance, ref IEnumerable<Thing> __result, float efficiency)
         {
-            if (ForgottenRealmsMod.settings.raceToggle_illithid)
+            Pawn pawn = __instance as Pawn;
+            if (pawn != null && pawn.RaceProps.IsFlesh && !(pawn?.genes?.xenotype == ForgottenRealmsDefOf.Forgotten_Illithid) && pawn?.Corpse?.GetRotStage() == RotStage.Fresh)
             {
-                Pawn pawn = __instance as Pawn;
-                if (pawn != null && pawn.def.race.Humanlike && pawn.def.defName != "Forgotten_Illithid" && pawn.RaceProps.body == BodyDefOf.Human && pawn.Corpse.GetRotStage() == RotStage.Fresh)
+                BodyPartRecord brain = pawn?.health?.hediffSet?.GetBrain();
+                if (brain != null)
                 {
-                    BodyPartRecord brain = pawn?.health?.hediffSet?.GetNotMissingParts()?.Where(x => x.def.defName == "Brain")?.FirstOrDefault();
-                    if (brain != null)
-                    {
-                        __result = GenerateExtraProducts(__result, pawn, efficiency);
-                    }
+                    __result = GenerateExtraProducts(__result, pawn, efficiency);
                 }
             }
         }
@@ -42,7 +39,7 @@ namespace ForgottenRealms
                 }
             }
 
-            Thing brain = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("Forgotten_Illithid_HumanoidBrain"), null);
+            Thing brain = ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("Forgotten_HumanoidBrain"), null);
             brain.stackCount = 1;
             yield return brain;
         }

@@ -87,14 +87,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ForgottenRealmsDefOf.cs" />
     <Compile Include="ForgottenRealmsMod.cs" />
     <Compile Include="ForgottenRealmsSettings.cs" />
-    <Compile Include="ForgottenRealmsStartup.cs" />
-    <Compile Include="Harmony\Patch_MentalBreakWorker_BreakCanOccur.cs" />
     <Compile Include="Harmony\Patch_Thing_ButcherProducts.cs" />
     <Compile Include="Utility\LogUtil.cs" />
-    <Compile Include="PatchOperations\PatchOperation_OnDemand.cs" />
-    <Compile Include="PatchOperations\PatchOperation_SettingActive.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
