@@ -2,6 +2,81 @@
 <Defs>
 
 	<!-- 
+		++ Dwarf
+		+ Duergar
+		++ Halfling
+		Gnome (Rock)
+		Gnome (Deep)
+		Gnome (Forest)
+		+ Chitine
+		++ Firbolg
+		+ Goliath
+		+ Gith
+		++ Half-Orc
+		Half-Elf (Avariel)
+		Half-Elf (Dark)
+		Half-Elf (High)
+		Half-Elf (Moon)
+		Half-Elf (Sea)
+		Half-Elf (Shadar-kai)
+		Half-Elf (Snow)
+		Half-Elf (Sun)
+		Half-Elf (Wild)
+		Half-Elf (Wood)
+		+ Illithid
+		+ Killoren
+		+ Kobold
+		++ Orc
+		++ Tabaxi
+		+ Tiefling (Asmodeus)
+		+ Tiefling (Mephistopheles)
+		+ Tiefling (Zariel)
+		Elf (Avariel)
+		+ Elf (Dark)
+		Elf (High)
+		+ Elf (Moon)
+		Elf (Sea)
+		Elf (Shadar-kai)
+		Elf (Snow)
+		+ Elf (Sun)
+		Elf (Wild)
+		+ Elf (Wood)
+		++ Goblin
+		++ Hobgoblin
+		++ Bugbear
+		Dragonborn (Black)
+		Dragonborn (Blue)
+		Dragonborn (Brass)
+		Dragonborn (Bronze)
+		Dragonborn (Copper)
+		Dragonborn (Gold)
+		Dragonborn (Green)
+		Dragonborn (Red)
+		Dragonborn (Silver)
+		Dragonborn (White)
+		Thri-kreen
+		++ Satyr
+		Warforged (Only with Asimov)
+
+		Saurial
+		Sarrukh
+		Lizardfolk
+		Minotaur
+		Gnolls
+		Aasimar
+		Genasi (Air)
+		Genasi (Earth)
+		Genasi (Fire)
+		Genasi (Water)
+		Triton
+		Aarakocra
+		Alaghi
+		Loxo
+		Kuo-Toa
+		Harssaf
+	-->
+
+	<!-- 
 		===============================================
 		================== Near Human =================
 		=============================================== 
@@ -12,7 +87,7 @@
 		<label>dwarf</label>
 		<description>Dwarves, sometimes called the Stout Folk, were a natural humanoid race common throughout parts of Toril as well as Abeir. Dwarves were a tough, tradition-abiding folk known for their strong martial traditions and beautiful craftsmanship.</description>
 		<descriptionShort>Dwarves, sometimes called the Stout Folk, were a natural humanoid race common throughout parts of Toril as well as Abeir.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/DwarfTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Dwarf</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonDwarfMale</nameMaker>
@@ -26,11 +101,37 @@
 	</XenotypeDef>
 
 	<XenotypeDef>
+		<defName>Forgotten_Duergar</defName>
+		<label>duergar</label>
+		<description>TODO</description>
+		<descriptionShort>TODO</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Dwarf</iconPath>
+		<combatPowerFactor>1.0</combatPowerFactor>
+		<inheritable>true</inheritable>
+		<nameMaker>Forgotten_NamerPersonDwarfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonDwarfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<!-- TODO: dwarf beard gene -->
+		<genes>
+			<li>Body_Standard</li>
+			<li>Outland_BodyScale_Squat</li>
+			<li>Skin_SlateGray</li>
+			<li>Skin_InkBlack</li>
+			<li>Outland_Skin_BlueSubtle</li>
+			<li>Hair_MidBlack</li>
+			<li>Hair_DarkBlack</li>
+			<li>Hair_InkBlack</li>
+			<li>Hair_SnowWhite</li>
+			<li>Hair_Gray</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
 		<defName>Forgotten_Halfling</defName>
 		<label>halfling</label>
 		<description>Also known as Hin, or the "quick folk" amongst themselves, Halflings are small humanoid creatures, very similar in appearance to Humans, but around half their size.</description>
 		<descriptionShort>Also known as Hin, or the "quick folk" amongst themselves, Halflings are small humanoid creatures, very similar in appearance to Humans, but around half their size.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/HalflingTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Halfling</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
 		<genes>
@@ -49,7 +150,7 @@
 		<label>chitine</label>
 		<description>A race of humanoids that resemble spiders and are typically found in the Underdark.</description>
 		<descriptionShort>A race of humanoids that resemble spiders and are typically found in the Underdark.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/ChitineTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Chitine</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
 		<genes>
@@ -65,14 +166,35 @@
 	</XenotypeDef>
 
 	<XenotypeDef>
+		<defName>Forgotten_Satyr</defName>
+		<label>satyr</label>
+		<description>Satyrs, also known as fauns or the Free Folk, are fey creatures that delight in singing, dancing, feasting, and debauchery.</description>
+		<descriptionShort>Satyrs, also known as fauns or the Free Folk, are fey creatures that delight in singing, dancing, feasting, and debauchery.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Satyr</iconPath>
+		<combatPowerFactor>1.0</combatPowerFactor>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>Outland_HoovedFeet</li>
+			<li>Outland_BumFluff</li>
+			<li>Outland_Headbone_Raffe</li>
+			<li>Outland_Headbone_LongProng</li>
+			<li>Outland_Headbone_Heart</li>
+			<li>Outland_Headbone_Fawn</li>
+			<li>Hair_DarkReddish</li>
+			<li>Hair_ReddishBrown</li>
+			<li>Hair_DarkBrown</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
 		<defName>Forgotten_Firbolg</defName>
 		<label>firbolg</label>
 		<description>A race of reclusive giant-kin, usually they prefer to avoid contact with other sentient races making them a very rare sight.</description>
 		<descriptionShort>A race of reclusive giant-kin, usually they prefer to avoid contact with other sentient races making them a very rare sight.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/FirbolgTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Firbolg</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
-		<!-- TODO: pink nose gene, kind eyes gene -->
+		<!-- TODO: kind eyes gene (makes others like them) -->
 		<genes>
 			<li>Aggression_DeadCalm</li>
 			<li>Outland_BodyScale_Large</li>
@@ -92,7 +214,7 @@
 		<label>goliath</label>
 		<description>Goliaths are a nomadic race of humanoids native to the mountainous regions of Toril.</description>
 		<descriptionShort>Goliaths are a nomadic race of humanoids native to the mountainous regions of Toril.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/GoliathTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Goliath</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
 		<!-- TODO: goliath names & skin pattern gene -->
@@ -112,13 +234,13 @@
 		<label>gith</label>
 		<description>The gith were a race of humanoids who had been enslaved by mind flayers for countless generations. Some sages claimed that they were once descended from humans, while others maintained that their original race was in fact unknown. After breaking free from their enslavement, philosophical differences led to a bitter internal conflict, which divided the gith into two main different races at constant odds with each other: the githyanki and the githzerai.</description>
 		<descriptionShort>The gith were a race of humanoids who had been enslaved by mind flayers for countless generations.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/GithTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Gith</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonGithMale</nameMaker>
 		<nameMakerFemale>Forgotten_NamerPersonGithFemale</nameMakerFemale>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
-		<!-- TODO: Skin pattern gene -->
+		<!-- TODO: Skin pattern gene, misty step ability -->
 		<genes>
 			<li>Beard_NoBeardOnly</li>
 			<li>Outland_SvelteHead</li>
@@ -128,6 +250,9 @@
 			<li>Hair_DarkBrown</li>
 			<li>ElongatedFingers</li>
 			<li>Aggression_Aggressive</li>
+			<li>Outland_EyeVisual_Recessed</li>
+			<li>Outland_Nose_NoseSlits</li>
+			<li>Outland_Ears_Serrated</li>
 		</genes>
 	</XenotypeDef>
 
@@ -136,7 +261,7 @@
 		<label>half-orc</label>
 		<description>Half-orcs were humanoids born of both human and orc ancestry by a multitude of means. Having the combined physical power of their orcish ancestors with the agility of their humans ones, half-orcs were formidable individuals. Though they were often shunned in both human and orcish society for different reasons, half-orcs have proven themselves from time to time as worthy heroes and dangerous villains. Their existence implied an interesting backstory that most would not like to dwell on.</description>
 		<descriptionShort>Half-orcs were humanoids born of both human and orc ancestry by a multitude of means.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/OrcTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Orc</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonHalfOrcMale</nameMaker>
@@ -154,7 +279,7 @@
 		<label>illithid</label>
 		<description>Illithids or "Mind Flayers" were humanoid in appearance but with an octopus-like, ridged head with four tentacles surrounding a lamprey-like mouth. They were warm-blooded amphibians, whose blood had a silvery-white color.\n\nTheir hands had long, reddish fingers and lacked the index finger, and their feet were two-toed and webbed. Illithid eyes were extremely sensitive to bright light, and they considered it painful, a characteristic that some githyanki scholars attributed to the fact that their alien anatomy focused light in a strange way. Their vision was also more sensitive to the recognition of geometric patterns than that of other humanoids.</description>
 		<descriptionShort>Illithids or "Mind Flayers" were humanoid in appearance but with an octopus-like, ridged head with four tentacles surrounding a lamprey-like mouth. They were warm-blooded amphibians, whose blood had a silvery-white color.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/IllithidTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Illithid</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NameRulePack_Illithid</nameMaker>
@@ -176,7 +301,7 @@
 		<label>killoren</label>
 		<description>Killoren were a relatively new and uncommon race of fey. It was unknown whether they were created by a deity or were spontaneously created by nature itself.</description>
 		<descriptionShort>Killoren were a relatively new and uncommon race of fey.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/KillorenTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Killoren</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonKilloren</nameMaker>
@@ -199,7 +324,7 @@
 		<label>kobold</label>
 		<description>Aggressive, xenophobic, yet industrious small humanoid creatures, kobolds are noted for their skill at building traps and preparing ambushes.</description>
 		<descriptionShort>Aggressive, xenophobic, yet industrious small humanoid creatures, kobolds are noted for their skill at building traps and preparing ambushes.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/KoboldTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Kobold</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
 		<genes>
@@ -220,7 +345,7 @@
 		<label>orc</label>
 		<description>Orcs were a race of humanoids that had been a threat to the civilized cultures of Toril, particularly Faerûn, for as long as any could remember. This changed somewhat in the years preceding and immediately after the Spellplague, when a horde of mountain orcs under the command of King Obould Many-Arrows unified into a single kingdom, one that was remarkably civilized.</description>
 		<descriptionShort>Orcs were a race of humanoids that had been a threat to the civilized cultures of Toril, particularly Faerûn, for as long as any could remember.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/OrcTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Orc</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonOrcMale</nameMaker>
@@ -243,7 +368,7 @@
 		<label>tabaxi</label>
 		<description>Tabaxi also known as jaguar people or cat-men, were a race of feline humanoids native to the jungles of Maztica.</description>
 		<descriptionShort>Tabaxi also known as jaguar people or cat-men, were a race of feline humanoids native to the jungles of Maztica.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/TabaxiTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tabaxi</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonTabaxiMale</nameMaker>
@@ -253,9 +378,6 @@
 			<li>Hair_BaldOnly</li>
 			<li>Beard_NoBeardOnly</li>
 			<li>Outland_Ears_Flick</li>
-			<li>Outland_Ears_Foxie</li>
-			<li>Outland_Ears_Nyoom</li>
-			<li>Outland_Ears_Swish</li>
 			<li>Outland_Ears_Woosh</li>
 			<li>Outland_HairColor_PastelOrange</li>
 			<li>Outland_HairColor_DarkRed</li>
@@ -307,7 +429,7 @@
 	<XenotypeDef ParentName="Forgotten_TieflingXenotypeBase">
 		<defName>Forgotten_AsmodeusTiefling</defName>
 		<label>asmodeus tiefling</label>
-		<iconPath>ForgottenRealms/WorldIcons/TieflingTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
 		<genes>
 			<li>Skin_DeepRed</li>
 			<li>Outland_Skin_Scarlet</li>
@@ -321,7 +443,7 @@
 	<XenotypeDef ParentName="Forgotten_TieflingXenotypeBase">
 		<defName>Forgotten_MephistophelesTiefling</defName>
 		<label>mephistopheles tiefling</label>
-		<iconPath>ForgottenRealms/WorldIcons/TieflingTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
 		<genes>
 			<li>Outland_HairColor_PastelBlue</li>
 			<li>Outland_HairColor_SkyBlue</li>
@@ -334,7 +456,7 @@
 	<XenotypeDef ParentName="Forgotten_TieflingXenotypeBase">
 		<defName>Forgotten_ZarielTiefling</defName>
 		<label>zariel tiefling</label>
-		<iconPath>ForgottenRealms/WorldIcons/TieflingTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
 		<genes>
 			<li>Outland_HairColor_DarkRed</li>
 			<li>Outland_HairColor_PastelOrange</li>
@@ -372,7 +494,7 @@
 		<label>drow</label>
 		<description>Drow, also known as dark elves, deep elves, night elves, or sometimes "The Ones Who Went Below" on the surface, were a dark-skinned sub-race of elves that predominantly lived in the Underdark. They were hated and feared due to their cruelty, though some non-evil and an even smaller number of good drow existed.</description>
 		<descriptionShort>Drow, also known as dark elves, deep elves, night elves, or sometimes "The Ones Who Went Below" on the surface, were a dark-skinned sub-race of elves that predominantly lived in the Underdark.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/DarkElfIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_DarkElfIcon</iconPath>
 		<genes>
 			<li>Skin_SlateGray</li>
 			<li>Skin_InkBlack</li>
@@ -390,7 +512,7 @@
 		<label>moon elf</label>
 		<description>Moon elves, also known as Teu-tel-quessir in the elven language or as silver elves, were the most common of all the elven subraces. More tolerant of humans than other elves, moon elves were the ancestors of most half-elves.</description>
 		<descriptionShort>Moon elves, also known as Teu-tel-quessir in the elven language or as silver elves, were the most common of all the elven subraces.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/MoonElfIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_MoonElfIcon</iconPath>
 		<genes>
 			<li>Outland_Skin_BlueSky</li>
 			<li>Outland_Skin_BlueIce</li>
@@ -404,7 +526,7 @@
 		<label>sun elf</label>
 		<description>The sun elves, also sometimes known as gold elves, sometimes as high elves due to their stereotypically elitist ways, and Ar-tel-quessir in their own language were a subrace of high elves historically rare in Faerûn due to the Retreat, in which the majority abandoned the continent for Evermeet, although during the Era of Upheaval they began returning to the mainland. Haughty and arrogant, sun elves typically felt themselves superior to most other races, including other Tel-quessir.</description>
 		<descriptionShort>The sun elves, also sometimes known as gold elves, sometimes as high elves due to their stereotypically elitist ways, and Ar-tel-quessir in their own language were a subrace of high elves historically rare in Faerûn.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/SunElfIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_SunElfIcon</iconPath>
 		<genes>
 			<li>Skin_PaleYellow</li>
 			<li>Outland_HairColor_PastelOrange</li>
@@ -417,7 +539,7 @@
 		<label>wood elf</label>
 		<description>Wood elves, also known as copper elves, or Or-tel-quessir were the most populous of the elven races. Wood elves saw themselves as guardians of the Tel-quessir forest homes that were largely abandoned after the Crown Wars and before the Retreat, but unlike most elves they did not view themselves as a people apart from the rest of Faerûn.</description>
 		<descriptionShort>Wood elves, also known as copper elves, or Or-tel-quessir were the most populous of the elven races.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/WoodElfIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_WoodElfIcon</iconPath>
 		<genes>
 			<li>Outland_Skin_GreenMarsh</li>
 			<li>Outland_Skin_LightBrown</li>
@@ -438,7 +560,7 @@
 		<label>goblin</label>
 		<description>Goblins were a race of small and numerous goblinoids common throughout Toril, often living in underground caverns near the surface known as lairs. The race was often, though not always, dominated by other goblinoids, most commonly hobgoblins. Goblins may have, in fact, been initially created by this related race to serve as scouts and infiltrators.</description>
 		<descriptionShort>Goblins were a race of small and numerous goblinoids common throughout Toril, often living in underground caverns near the surface known as lairs.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/GoblinTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Goblin</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonGoblin</nameMaker>
@@ -458,7 +580,7 @@
 		<label>hobgoblin</label>
 		<description>Hobgoblins are a larger, stronger, smarter, and more menacing form of goblinoids than goblins, but not as powerful as bugbears. It is believed they may have created the latter two races.</description>
 		<descriptionShort>Hobgoblins are a larger, stronger, smarter, and more menacing form of goblinoids than goblins, but not as powerful as bugbears.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/HobgoblinTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Hobgoblin</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonHobgoblin</nameMaker>
@@ -467,7 +589,6 @@
 			<li>Outland_Skin_Auburn</li>
 			<li>Outland_Skin_Burgundy</li>
 			<li>Skin_DeepRed</li>
-			<li>Outland_Ears_Goblinoid</li>
 			<li>Outland_Nose_Goblinoid</li>
 			<li>Outland_GreaterGoblinoidHead</li>
 			<li>Outland_Ears_FlatPointed</li>
@@ -479,21 +600,24 @@
 		<label>bugbear</label>
 		<description>Bugbears are a massive humanoid race distantly related to, but larger and stronger than, goblins and hobgoblins.</description>
 		<descriptionShort>Bugbears are a massive humanoid race distantly related to, but larger and stronger than, goblins and hobgoblins.</descriptionShort>
-		<iconPath>ForgottenRealms/WorldIcons/BugbearTribeIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Bugbear</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
 		<!-- TODO: Bugbear naming -->
 		<nameMaker>Forgotten_NamerPersonHobgoblin</nameMaker>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
-		<!-- TODO: Bugbear genes - hairy skin, bushy brow, scruffy beards -->
+		<!-- TODO: Bugbear genes - bushy brow -->
 		<genes>
+			<li>Body_Hulk</li>
+			<li>Furskin</li>
+			<li>Hair_BaldOnly</li>
+			<li>Hair_BrightRed</li>
+			<li>Hair_DarkReddish</li>
 			<li>Outland_HairColor_PastelOrange</li>
-			<li>Outland_Skin_LightBrown</li>
-			<li>Outland_Ears_Goblinoid</li>
+			<li>Outland_HairColor_DarkRed</li>
+			<li>Outland_Ears_Flufftop</li>
 			<li>Outland_Nose_Goblinoid</li>
-			<li>Outland_GreaterGoblinoidHead</li>
-			<li>Outland_Ears_FlatPointed</li>
-			<li>Outland_BodyScale_Small</li>
+			<li>Outland_BodyScale_Large</li>
 		</genes>
 	</XenotypeDef>
 

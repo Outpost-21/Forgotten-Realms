@@ -1,0 +1,129 @@
+{
+	"files": [
+		{
+			"path": "1.4/Defs/GeneDefs/XenotypeDefs_ForgottenRealms.xml",
+			"bookmarks": [
+				{
+					"line": 85,
+					"column": 20,
+					"label": "Xenotype: Dwarf"
+				},
+				{
+					"line": 103,
+					"column": 0,
+					"label": "Xenotype: Duergar"
+				},
+				{
+					"line": 129,
+					"column": 26,
+					"label": "Xenotype: Halfling"
+				},
+				{
+					"line": 148,
+					"column": 23,
+					"label": "Xenotype: Chitine"
+				},
+				{
+					"line": 168,
+					"column": 22,
+					"label": "Xenotype: Satyr"
+				},
+				{
+					"line": 189,
+					"column": 24,
+					"label": "Xenotype: Firbolg"
+				},
+				{
+					"line": 212,
+					"column": 25,
+					"label": "Xenotype: Goliath"
+				},
+				{
+					"line": 232,
+					"column": 22,
+					"label": "Xenotype: Gith"
+				},
+				{
+					"line": 259,
+					"column": 23,
+					"label": "Xenotype: Half-Orc"
+				},
+				{
+					"line": 277,
+					"column": 17,
+					"label": "Xenotype: Illithid"
+				},
+				{
+					"line": 299,
+					"column": 25,
+					"label": "Xenotype: Killoren"
+				},
+				{
+					"line": 322,
+					"column": 26,
+					"label": "Xenotype: Kobold"
+				},
+				{
+					"line": 343,
+					"column": 0,
+					"label": "Xenotype: Orc"
+				},
+				{
+					"line": 366,
+					"column": 0,
+					"label": "Xenotype: Tabaxi"
+				},
+				{
+					"line": 429,
+					"column": 0,
+					"label": "Xenotype: Tiefling (Asmodeus)"
+				},
+				{
+					"line": 443,
+					"column": 0,
+					"label": "Xenotype: Tiefling (Mephistopheles)"
+				},
+				{
+					"line": 456,
+					"column": 0,
+					"label": "Xenotype: Tiefling (Zariel)"
+				},
+				{
+					"line": 492,
+					"column": 0,
+					"label": "Xenotype: Dark Elf / Drow"
+				},
+				{
+					"line": 510,
+					"column": 0,
+					"label": "Xenotype: Moon Elf"
+				},
+				{
+					"line": 524,
+					"column": 0,
+					"label": "Xenotype: Sun Elf"
+				},
+				{
+					"line": 537,
+					"column": 0,
+					"label": "Xenotype: Wood Elf"
+				},
+				{
+					"line": 558,
+					"column": 0,
+					"label": "Xenotype: Goblin"
+				},
+				{
+					"line": 578,
+					"column": 0,
+					"label": "Xenotype: Hobgoblin"
+				},
+				{
+					"line": 598,
+					"column": 0,
+					"label": "Xenotype: Bugbear"
+				}
+			]
+		}
+	]
+}
