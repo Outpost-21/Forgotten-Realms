@@ -93,8 +93,8 @@
 		<nameMaker>Forgotten_NamerPersonDwarfMale</nameMaker>
 		<nameMakerFemale>Forgotten_NamerPersonDwarfFemale</nameMakerFemale>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
-		<!-- TODO: dwarf beard gene -->
 		<genes>
+			<li>Beard_BushyOnly</li>
 			<li>Body_Standard</li>
 			<li>Outland_BodyScale_Squat</li>
 		</genes>
@@ -111,8 +111,8 @@
 		<nameMaker>Forgotten_NamerPersonDwarfMale</nameMaker>
 		<nameMakerFemale>Forgotten_NamerPersonDwarfFemale</nameMakerFemale>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
-		<!-- TODO: dwarf beard gene -->
 		<genes>
+			<li>Beard_BushyOnly</li>
 			<li>Body_Standard</li>
 			<li>Outland_BodyScale_Squat</li>
 			<li>Skin_SlateGray</li>
