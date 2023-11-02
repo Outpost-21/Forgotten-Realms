@@ -2,48 +2,44 @@
 <Defs>
 
 	<!-- 
-		++ Dwarf
-		+ Duergar
+		== Implemented ==
+		++ Arctic Dwarf
+		++ Gold Dwarf
+		++ Shield Dwarf
+		++ Duergar
+		++ Wild Dwarf
 		++ Halfling
-		Gnome (Rock)
-		Gnome (Deep)
-		Gnome (Forest)
+		++ Gnome (Rock)
+		++ Gnome (Deep)
+		++ Gnome (Forest)
 		+ Chitine
-		++ Firbolg
+		+ Firbolg
 		+ Goliath
 		+ Gith
-		++ Half-Orc
-		Half-Elf (Avariel)
-		Half-Elf (Dark)
-		Half-Elf (High)
-		Half-Elf (Moon)
-		Half-Elf (Sea)
-		Half-Elf (Shadar-kai)
-		Half-Elf (Snow)
-		Half-Elf (Sun)
-		Half-Elf (Wild)
-		Half-Elf (Wood)
+		+ Half-Orc
 		+ Illithid
 		+ Killoren
 		+ Kobold
-		++ Orc
-		++ Tabaxi
-		+ Tiefling (Asmodeus)
-		+ Tiefling (Mephistopheles)
-		+ Tiefling (Zariel)
-		Elf (Avariel)
-		+ Elf (Dark)
-		Elf (High)
+		+ Orc
+		+ Tabaxi
+		++ Infernal Tiefling
+		+ Elf (High)
+		+ Drow
 		+ Elf (Moon)
-		Elf (Sea)
-		Elf (Shadar-kai)
-		Elf (Snow)
+		+ Elf (Snow)
 		+ Elf (Sun)
-		Elf (Wild)
+		+ Elf (Wild)
 		+ Elf (Wood)
-		++ Goblin
-		++ Hobgoblin
-		++ Bugbear
+		+ Goblin
+		+ Hobgoblin
+		+ Bugbear
+		+ Satyr
+
+		== To-Do ==
+		Elf (Avariel)
+		Half-Elf (Avariel)
+		Elf (Shadar-kai)
+		Half-Elf (Shadar-kai)
 		Dragonborn (Black)
 		Dragonborn (Blue)
 		Dragonborn (Brass)
@@ -54,10 +50,6 @@
 		Dragonborn (Red)
 		Dragonborn (Silver)
 		Dragonborn (White)
-		Thri-kreen
-		++ Satyr
-		Warforged (Only with Asimov)
-
 		Saurial
 		Sarrukh
 		Lizardfolk
@@ -74,85 +66,474 @@
 		Loxo
 		Kuo-Toa
 		Harssaf
+		Thri-kreen
+		Cthonic Tiefling
+		Abyssal Tiefling
+
+		Warforged (Only with Asimov, so no point till that's out)
+
+		Elf (Sea) (No real point until underwater biomes with Rimnautica are available)
+		Half-Elf (Sea) (No real point until underwater biomes with Rimnautica are available)
+		
+		>> Half-Elf races may not be worth doing, come back to for future update maybe
+		Half-Elf (High)
+		Half-Elf (Drow)
+		Half-Elf (Moon)
+		Half-Elf (Snow)
+		Half-Elf (Sun)
+		Half-Elf (Wild)
+		Half-Elf (Wood)
+
+		Abilities, leave for an update, can have them retroactively applied.
+
 	-->
 
-	<!-- 
-		===============================================
-		================== Near Human =================
-		=============================================== 
-	-->
-
-	<XenotypeDef>
-		<defName>Forgotten_Dwarf</defName>
-		<label>dwarf</label>
-		<description>Dwarves, sometimes called the Stout Folk, were a natural humanoid race common throughout parts of Toril as well as Abeir. Dwarves were a tough, tradition-abiding folk known for their strong martial traditions and beautiful craftsmanship.</description>
-		<descriptionShort>Dwarves, sometimes called the Stout Folk, were a natural humanoid race common throughout parts of Toril as well as Abeir.</descriptionShort>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Dwarf</iconPath>
+	<XenotypeDef Name="ForgottenXenoBase" Abstract="true">
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
+		<genes />
+	</XenotypeDef>
+
+	<PawnKindDef Name="ForgottenBaseColonyPawnKind" Abstract="True">
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<combatPower>40</combatPower>
+		<isFighter>false</isFighter>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>100~600</apparelMoney>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef Name="ForgottenBaseTribalPawnKind" Abstract="True">
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<combatPower>40</combatPower>
+		<isFighter>false</isFighter>
+		<defaultFactionType>PlayerTribe</defaultFactionType>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelTags>
+			<li>Neolithic</li>
+			<li>Medieval</li>
+		</apparelTags>
+		<apparelMoney>100~600</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- ==================== Arctic Dwarf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_ArcticDwarf</defName>
+		<label>arctic dwarf</label>
+		<description>Arctic dwarves, also known as Inugaakalikurit, were a race of dwarves located in the isolated reaches of the Great Glacier in Faerûn's northernmost reaches. Arctic dwarves had a different origin from most other dwarves in Faerûn and were significantly different physiologically and culturally from other members of the Stout Folk, so much that they might be considered their own race.</description>
+		<descriptionShort>Arctic dwarves, also known as Inugaakalikurit, were a race of dwarves located in the isolated reaches of the Great Glacier in Faerûn's northernmost reaches.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Dwarf</iconPath>
 		<nameMaker>Forgotten_NamerPersonDwarfMale</nameMaker>
 		<nameMakerFemale>Forgotten_NamerPersonDwarfFemale</nameMakerFemale>
-		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
+			<li>DarkVision</li>
 			<li>Beard_BushyOnly</li>
 			<li>Body_Standard</li>
-			<li>Outland_BodyScale_Squat</li>
+			<li>Hair_SnowWhite</li>
+			<li>Skin_SheerWhite</li>
+			<li>Outland_Skin_BlueIce</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>MaxTemp_SmallDecrease</li>
+			<li>Outland_BodyScale_Tiny</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_ExtremeMetabolism</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef>
-		<defName>Forgotten_Duergar</defName>
-		<label>duergar</label>
-		<description>TODO</description>
-		<descriptionShort>TODO</descriptionShort>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_ArcticDwarf</defName>
+		<label>arctic dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ArcticDwarf>999</Forgotten_ArcticDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_ArcticDwarfTribal</defName>
+		<label>tribal arctic dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ArcticDwarf>999</Forgotten_ArcticDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Gold Dwarf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_GoldDwarf</defName>
+		<label>gold dwarf</label>
+		<description>Gold dwarves, also known as hill dwarves, were the aloof, confident and sometimes proud subrace of dwarves that predominantly came from the Great Rift. They were known to be particularly stalwart warriors and shrewd traders. Gold dwarves were often trained specifically to battle the horrendous aberrations that were known to come from the Underdark.</description>
+		<descriptionShort>Gold dwarves, also known as hill dwarves, were the aloof, confident and sometimes proud subrace of dwarves that predominantly came from the Great Rift.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Dwarf</iconPath>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonDwarfMale</nameMaker>
 		<nameMakerFemale>Forgotten_NamerPersonDwarfFemale</nameMakerFemale>
-		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
+			<li>DarkVision</li>
+			<li>Beard_BushyOnly</li>
+			<li>Body_Standard</li>
+			<li>Outland_Skin_LightBrown</li>
+			<li>Outland_Skin_BrownWood</li>
+			<li>Outland_Skin_UmberBurnt</li>
+			<li>Outland_BodyScale_Squat</li>
+			<li>Hair_DarkBlack</li>
+			<li>Hair_InkBlack</li>
+			<li>Hair_MidBlack</li>
+			<li>Hair_DarkBrown</li>
+			<li>Hair_DarkReddish</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_HighMetabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_GoldDwarf</defName>
+		<label>gold dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_GoldDwarf>999</Forgotten_GoldDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_GoldDwarfTribal</defName>
+		<label>tribal gold dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_GoldDwarf>999</Forgotten_GoldDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Shield Dwarf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_ShieldDwarf</defName>
+		<label>shield dwarf</label>
+		<description>Shield dwarves, also known as mountain dwarves, were among the most common of the dwarven peoples. Once the rulers of mighty kingdoms across Faerûn, the shield dwarves had since fallen by the wayside after centuries of warfare with their goblinoid enemies.</description>
+		<descriptionShort>Shield dwarves, also known as mountain dwarves, were among the most common of the dwarven peoples.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Dwarf</iconPath>
+		<nameMaker>Forgotten_NamerPersonDwarfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonDwarfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>DarkVision</li>
 			<li>Beard_BushyOnly</li>
 			<li>Body_Standard</li>
 			<li>Outland_BodyScale_Squat</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_HighMetabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_ShieldDwarf</defName>
+		<label>shield dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ShieldDwarf>999</Forgotten_ShieldDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_ShieldDwarfTribal</defName>
+		<label>tribal shield dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ShieldDwarf>999</Forgotten_ShieldDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Duergar ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_Duergar</defName>
+		<label>duergar</label>
+		<description>Duergar, also known as gray dwarves, or underdwarves were a subterranean subrace of dwarves. They carved out an existence in the Underdark, often near volcanoes. Their kinship to other dwarven subraces could be compared to that of the drow to surface elves.</description>
+		<descriptionShort>Duergar, also known as gray dwarves, or underdwarves were a subterranean subrace of dwarves.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Dwarf</iconPath>
+		<genes>
+			<li>DarkVision</li>
+			<li>Beard_BushyOnly</li>
+			<li>Body_Standard</li>
+			<li>Outland_BodyScale_Squat</li>
+			<li>Outland_DarklightAffinity</li>
+			<li>Outland_BaldMale</li>
+			<li>Outland_Skin_BlueSubtle</li>
 			<li>Skin_SlateGray</li>
 			<li>Skin_InkBlack</li>
-			<li>Outland_Skin_BlueSubtle</li>
 			<li>Hair_MidBlack</li>
 			<li>Hair_DarkBlack</li>
 			<li>Hair_InkBlack</li>
 			<li>Hair_SnowWhite</li>
 			<li>Hair_Gray</li>
+			<li>Outland_YouthfulAgeing</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Duergar</defName>
+		<label>duergar</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Duergar>999</Forgotten_Duergar>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DuergarTribal</defName>
+		<label>tribal duergar</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Duergar>999</Forgotten_Duergar>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Wild Dwarf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_WildDwarf</defName>
+		<label>wild dwarf</label>
+		<description>Wild dwarves, also known as jungle dwarves, greenbeards, or dur Authalar ("the People") in their own language, were primitive dwarves who inhabited the Jungles of Chult, the Mhair and Black Jungles, as well as the more temperate Winterglen on Gwynneth.</description>
+		<descriptionShort>Wild dwarves, also known as jungle dwarves, greenbeards, or dur Authalar ("the People") in their own language, were primitive dwarves who inhabited the Jungles of Chult, the Mhair and Black Jungles, as well as the more temperate Winterglen on Gwynneth.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Dwarf</iconPath>
+		<nameMaker>Forgotten_NamerPersonDwarfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonDwarfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>DarkVision</li>
+			<li>Beard_BushyOnly</li>
+			<li>Body_Standard</li>
+			<li>Outland_BodyScale_Squat</li>
+			<li>MaxTemp_LargeIncrease</li>
+			<li>Immunity_Strong</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_Pos4Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_WildDwarf</defName>
+		<label>wild dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_WildDwarf>999</Forgotten_WildDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_WildDwarfTribal</defName>
+		<label>tribal wild dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_WildDwarf>999</Forgotten_WildDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Halfling ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Halfling</defName>
 		<label>halfling</label>
 		<description>Also known as Hin, or the "quick folk" amongst themselves, Halflings are small humanoid creatures, very similar in appearance to Humans, but around half their size.</description>
 		<descriptionShort>Also known as Hin, or the "quick folk" amongst themselves, Halflings are small humanoid creatures, very similar in appearance to Humans, but around half their size.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Halfling</iconPath>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
 		<genes>
 			<li>Outland_BodyScale_Tiny</li>
 		</genes>
 	</XenotypeDef>
 
-	<!-- 
-		===============================================
-		==================== Misc. ====================
-		=============================================== 
-	-->
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Halfling</defName>
+		<label>halfling</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Halfling>999</Forgotten_Halfling>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
 
-	<XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_HalflingTribal</defName>
+		<label>Tribal Halfling</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Halfling>999</Forgotten_Halfling>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Deep Gnome ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_DeepGnome</defName>
+		<label>deep gnome</label>
+		<description>Deep gnomes, called svirfneblin in their own language, were a gnome subrace that lived in the Underdark. While their surface cousins were known for their boundless optimism and cheerful mischief, the svirfneblin were serious and suspicious creatures. They survived in the Underdark by maintaining wariness of others and working hard to keep their underground society secret.</description>
+		<descriptionShort>Deep gnomes, called svirfneblin in their own language, were a gnome subrace that lived in the Underdark. While their surface cousins were known for their boundless optimism and cheerful mischief, the svirfneblin were serious and suspicious creatures.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Gnome</iconPath>
+		<genes>
+			<li>Outland_BodyScale_Tiny</li>
+			<li>Outland_Skin_BlueSubtle</li>
+			<li>Skin_SlateGray</li>
+			<li>Skin_InkBlack</li>
+			<li>Hair_MidBlack</li>
+			<li>Hair_DarkBlack</li>
+			<li>Hair_InkBlack</li>
+			<li>Hair_SnowWhite</li>
+			<li>Hair_Gray</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_Pos1Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_DeepGnome</defName>
+		<label>deep gnome</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DeepGnome>999</Forgotten_DeepGnome>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DeepGnomeTribal</defName>
+		<label>tribal deep gnome</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DeepGnome>999</Forgotten_DeepGnome>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Forest Gnome ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_ForestGnome</defName>
+		<label>forest gnome</label>
+		<description>Forest gnomes were among the least commonly seen gnomes on Toril, far shyer than even their deep gnome cousins. Small and reclusive, forest gnomes were so unknown to most non-gnomes that they had repeatedly been "discovered" by wandering outsiders who happened into their villages.</description>
+		<descriptionShort>Forest gnomes were among the least commonly seen gnomes on Toril, far shyer than even their deep gnome cousins.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Gnome</iconPath>
+		<genes>
+			<li>Outland_BodyScale_Tiny</li>
+			<li>Outland_Skin_GreenMarsh</li>
+			<li>Outland_Skin_LightBrown</li>
+			<li>Hair_BrightRed</li>
+			<li>Outland_HairColor_DarkRed</li>
+			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_Pos1Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_ForestGnome</defName>
+		<label>forest gnome</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ForestGnome>999</Forgotten_ForestGnome>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_ForestGnomeTribal</defName>
+		<label>tribal forest gnome</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ForestGnome>999</Forgotten_ForestGnome>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Rock Gnome ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_RockGnome</defName>
+		<label>rock gnome</label>
+		<description>Rock gnomes were a curious, childlike race very much unlike their cousins, the svirfneblin (or deep gnomes) and the forest gnomes. When most people thought of gnomes, they were thinking of the rock gnome. Rock gnomes embodied the characteristics of their creator and patron deity, Garl Glittergold, choosing to spend their long lives by filling each day with as much fun and enjoyment as possible.</description>
+		<descriptionShort>Rock gnomes were a curious, childlike race very much unlike their cousins, the svirfneblin (or deep gnomes) and the forest gnomes.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Gnome</iconPath>
+		<genes>
+			<li>Outland_BodyScale_Tiny</li>
+			<li>AptitudeStrong_Intellectual</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Mood_Optimist</li>
+			<li>Outland_ExtremeMetabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_RockGnome</defName>
+		<label>rock gnome</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_RockGnome>999</Forgotten_RockGnome>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_RockGnomeTribal</defName>
+		<label>tribal rock gnome</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_RockGnome>999</Forgotten_RockGnome>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Chitine ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Chitine</defName>
 		<label>chitine</label>
 		<description>A race of humanoids that resemble spiders and are typically found in the Underdark.</description>
 		<descriptionShort>A race of humanoids that resemble spiders and are typically found in the Underdark.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Chitine</iconPath>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
 		<genes>
 			<li>Hair_BaldOnly</li>
 			<li>Beard_NoBeardOnly</li>
@@ -161,18 +542,42 @@
 			<li>Outland_ArachnidHead</li>
 			<li>Outland_ArachnidEyes_White</li>
 			<li>Outland_Ears_FlatPointed</li>
+			<li>Outland_Hands_Talons</li>
+			<li>Outland_Teeth_Fangs</li>
 			<li>DarkVision</li>
+			<li>Aggression_Aggressive</li>
+			<li>Outland_Pos1Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Chitine</defName>
+		<label>chitine</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Chitine>999</Forgotten_Chitine>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_ChitineTribal</defName>
+		<label>tribal chitine</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Chitine>999</Forgotten_Chitine>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Satyr ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Satyr</defName>
 		<label>satyr</label>
 		<description>Satyrs, also known as fauns or the Free Folk, are fey creatures that delight in singing, dancing, feasting, and debauchery.</description>
 		<descriptionShort>Satyrs, also known as fauns or the Free Folk, are fey creatures that delight in singing, dancing, feasting, and debauchery.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Satyr</iconPath>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
 		<genes>
 			<li>Outland_HoovedFeet</li>
 			<li>Outland_BumFluff</li>
@@ -183,130 +588,280 @@
 			<li>Hair_DarkReddish</li>
 			<li>Hair_ReddishBrown</li>
 			<li>Hair_DarkBrown</li>
+			<li>Outland_FeyAgeing</li>
+			<li>NakedSpeed</li>
+			<li>Mood_Optimist</li>
+			<li>Outland_Pos4Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Satyr</defName>
+		<label>satyr</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Satyr>999</Forgotten_Satyr>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_SatyrTribal</defName>
+		<label>tribal satyr</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Satyr>999</Forgotten_Satyr>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Firbolg ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Firbolg</defName>
 		<label>firbolg</label>
 		<description>A race of reclusive giant-kin, usually they prefer to avoid contact with other sentient races making them a very rare sight.</description>
 		<descriptionShort>A race of reclusive giant-kin, usually they prefer to avoid contact with other sentient races making them a very rare sight.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Firbolg</iconPath>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
-		<!-- TODO: kind eyes gene (makes others like them) -->
 		<genes>
 			<li>Aggression_DeadCalm</li>
 			<li>Outland_BodyScale_Large</li>
 			<li>Outland_Nose_BigNose</li>
 			<li>Outland_Ears_Flufftop</li>
 			<li>KindInstinct</li>
+			<li>Outland_KindEyes</li>
 			<li>Outland_Skin_Dusk</li>
 			<li>Outland_Skin_BlueSky</li>
 			<li>Outland_Skin_BlueIce</li>
 			<li>Outland_HairColor_DarkRed</li>
 			<li>Outland_HairColor_PastelOrange</li>
+			<li>Mood_Sanguine</li>
+			<li>Outland_Pos4Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Firbolg</defName>
+		<label>firbolg</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Firbolg>999</Forgotten_Firbolg>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_FirbolgTribal</defName>
+		<label>tribal firbolg</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Firbolg>999</Forgotten_Firbolg>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Goliath ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Goliath</defName>
 		<label>goliath</label>
 		<description>Goliaths are a nomadic race of humanoids native to the mountainous regions of Toril.</description>
 		<descriptionShort>Goliaths are a nomadic race of humanoids native to the mountainous regions of Toril.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Goliath</iconPath>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
-		<!-- TODO: goliath names & skin pattern gene -->
 		<genes>
 			<li>Aggression_Aggressive</li>
 			<li>Robust</li>
 			<li>Skin_LightGray</li>
 			<li>Skin_SheerWhite</li>
 			<li>Outland_BodyScale_Massive</li>
-			<li>Brow_Heavy</li>
 			<li>Unstoppable</li>
+			<li>Outland_DestinyMarks</li>
+			<li>Outland_BaldMale</li>
+			<li>Outland_ThickSkin</li>
+			<li>Outland_ExtremeMetabolism</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Goliath</defName>
+		<label>goliath</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Goliath>999</Forgotten_Goliath>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_GoliathTribal</defName>
+		<label>tribal goliath</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Goliath>999</Forgotten_Goliath>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Gith ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Gith</defName>
 		<label>gith</label>
 		<description>The gith were a race of humanoids who had been enslaved by mind flayers for countless generations. Some sages claimed that they were once descended from humans, while others maintained that their original race was in fact unknown. After breaking free from their enslavement, philosophical differences led to a bitter internal conflict, which divided the gith into two main different races at constant odds with each other: the githyanki and the githzerai.</description>
 		<descriptionShort>The gith were a race of humanoids who had been enslaved by mind flayers for countless generations.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Gith</iconPath>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonGithMale</nameMaker>
 		<nameMakerFemale>Forgotten_NamerPersonGithFemale</nameMakerFemale>
-		<chanceToUseNameMaker>1</chanceToUseNameMaker>
-		<!-- TODO: Skin pattern gene, misty step ability -->
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<!-- TODO: misty step ability -->
 		<genes>
 			<li>Beard_NoBeardOnly</li>
 			<li>Outland_SvelteHead</li>
 			<li>Body_Thin</li>
-			<li>Ears_Pointed</li>
 			<li>Skin_Green</li>
 			<li>Hair_DarkBrown</li>
 			<li>ElongatedFingers</li>
+			<li>Outland_Teeth_Fangs</li>
 			<li>Aggression_Aggressive</li>
 			<li>Outland_EyeVisual_Recessed</li>
 			<li>Outland_Nose_NoseSlits</li>
 			<li>Outland_Ears_Serrated</li>
+			<li>Outland_AcceleratedMaturation</li>
+			<li>Outland_EggLayer</li>
 		</genes>
+		<modExtensions>
+			<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+				<xenoEggTexturePath>Outland/Items/XenoEgg_Githyanki</xenoEggTexturePath>
+			</li>
+		</modExtensions>
 	</XenotypeDef>
 
-	<XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Gith</defName>
+		<label>gith</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Gith>999</Forgotten_Gith>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_GithTribal</defName>
+		<label>tribal gith</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Gith>999</Forgotten_Gith>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Half-Orc ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_HalfOrc</defName>
 		<label>half-orc</label>
 		<description>Half-orcs were humanoids born of both human and orc ancestry by a multitude of means. Having the combined physical power of their orcish ancestors with the agility of their humans ones, half-orcs were formidable individuals. Though they were often shunned in both human and orcish society for different reasons, half-orcs have proven themselves from time to time as worthy heroes and dangerous villains. Their existence implied an interesting backstory that most would not like to dwell on.</description>
 		<descriptionShort>Half-orcs were humanoids born of both human and orc ancestry by a multitude of means.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Orc</iconPath>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonHalfOrcMale</nameMaker>
 		<nameMakerFemale>Forgotten_NamerPersonHalfOrcFemale</nameMakerFemale>
-		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
 			<li>Outland_Teeth_TusksSmall</li>
+			<li>Hair_InkBlack</li>
+			<li>Hair_MidBlack</li>
 			<li>Skin_Green</li>
 			<li>MeleeDamage_Strong</li>
+			<li>Outland_ThickSkin</li>
+			<li>Outland_ExtremeMetabolism</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_HalfOrc</defName>
+		<label>half-orc</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_HalfOrc>999</Forgotten_HalfOrc>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_HalfOrcTribal</defName>
+		<label>tribal half-orc</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_HalfOrc>999</Forgotten_HalfOrc>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Illithid ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Illithid</defName>
 		<label>illithid</label>
 		<description>Illithids or "Mind Flayers" were humanoid in appearance but with an octopus-like, ridged head with four tentacles surrounding a lamprey-like mouth. They were warm-blooded amphibians, whose blood had a silvery-white color.\n\nTheir hands had long, reddish fingers and lacked the index finger, and their feet were two-toed and webbed. Illithid eyes were extremely sensitive to bright light, and they considered it painful, a characteristic that some githyanki scholars attributed to the fact that their alien anatomy focused light in a strange way. Their vision was also more sensitive to the recognition of geometric patterns than that of other humanoids.</description>
 		<descriptionShort>Illithids or "Mind Flayers" were humanoid in appearance but with an octopus-like, ridged head with four tentacles surrounding a lamprey-like mouth. They were warm-blooded amphibians, whose blood had a silvery-white color.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Illithid</iconPath>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NameRulePack_Illithid</nameMaker>
-		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
 			<li>Hair_BaldOnly</li>
 			<li>Beard_NoBeardOnly</li>
-			<li>Outland_Blood_Black</li>
+			<li>Outland_Blood_White</li>
 			<li>Outland_CephalomorphHead</li>
 			<li>Outland_Skin_PurpleMuted</li>
 			<li>Outland_Skin_PurpleSubtle</li>
 			<li>Outland_Skin_Indigo</li>
 			<li>ElongatedFingers</li>
+			<li>Sterile</li>
+			<li>PsychicAbility_Extreme</li>
+			<li>Outland_Pos5Metabolism</li>
 		</genes>
+		<modExtensions>
+			<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+				<xenoEggTexturePath>Outland/Items/XenoEgg_Cephalomorph</xenoEggTexturePath>
+			</li>
+		</modExtensions>
 	</XenotypeDef>
 
-	<XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Illithid</defName>
+		<label>illithid</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Illithid>999</Forgotten_Illithid>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_IllithidTribal</defName>
+		<label>tribal illithid</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Illithid>999</Forgotten_Illithid>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Killoren ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Killoren</defName>
 		<label>killoren</label>
-		<description>Killoren were a relatively new and uncommon race of fey. It was unknown whether they were created by a deity or were spontaneously created by nature itself.</description>
+		<description>Killoren were a relatively recent and uncommon race of fey. It was unknown whether they were created by a deity or were spontaneously created by nature itself.</description>
 		<descriptionShort>Killoren were a relatively new and uncommon race of fey.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Killoren</iconPath>
 		<combatPowerFactor>1.0</combatPowerFactor>
 		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonKilloren</nameMaker>
-		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
+			<li>Hair_Grayless</li>
 			<li>Outland_Headbone_Leafy</li>
 			<li>Beard_NoBeardOnly</li>
 			<li>Outland_Skin_BrownWood</li>
@@ -316,17 +871,39 @@
 			<li>Outland_HairColor_Lime</li>
 			<li>Outland_HairColor_Seafoam</li>
 			<li>Outland_HairColor_PastelGreen</li>
+			<li>Outland_FeyAgeing</li>
+			<li>Outland_ExtremeMetabolism</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Killoren</defName>
+		<label>killoren</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Killoren>999</Forgotten_Killoren>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_KillorenTribal</defName>
+		<label>tribal killoren</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Killoren>999</Forgotten_Killoren>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Kobold ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Kobold</defName>
 		<label>kobold</label>
 		<description>Aggressive, xenophobic, yet industrious small humanoid creatures, kobolds are noted for their skill at building traps and preparing ambushes.</description>
 		<descriptionShort>Aggressive, xenophobic, yet industrious small humanoid creatures, kobolds are noted for their skill at building traps and preparing ambushes.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Kobold</iconPath>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
 		<genes>
 			<li>Hair_BaldOnly</li>
 			<li>Beard_NoBeardOnly</li>
@@ -336,45 +913,97 @@
 			<li>Skin_DeepRed</li>
 			<li>Outland_Headbone_Ram</li>
 			<li>Outland_Headbone_LongProng</li>
+			<li>Outland_Tail_Leathery</li>
 			<li>Outland_BodyScale_Small</li>
+			<li>Outland_EggLayer</li>
+			<li>Outland_AcceleratedPregnancy</li>
+			<li>Outland_Teeth_Fangs</li>
+			<li>Outland_AcceleratedAgeing</li>
+			<li>Outland_Neg1Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Kobold</defName>
+		<label>kobold</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Kobold>999</Forgotten_Kobold>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_KoboldTribal</defName>
+		<label>tribal kobold</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Kobold>999</Forgotten_Kobold>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Orc ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Orc</defName>
 		<label>orc</label>
 		<description>Orcs were a race of humanoids that had been a threat to the civilized cultures of Toril, particularly Faerûn, for as long as any could remember. This changed somewhat in the years preceding and immediately after the Spellplague, when a horde of mountain orcs under the command of King Obould Many-Arrows unified into a single kingdom, one that was remarkably civilized.</description>
 		<descriptionShort>Orcs were a race of humanoids that had been a threat to the civilized cultures of Toril, particularly Faerûn, for as long as any could remember.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Orc</iconPath>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonOrcMale</nameMaker>
 		<nameMakerFemale>Forgotten_NamerPersonOrcFemale</nameMakerFemale>
-		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
 			<li>Body_Hulk</li>
 			<li>Skin_Green</li>
 			<li>Jaw_Heavy</li>
 			<li>Outland_Teeth_TusksLarge</li>
 			<li>Outland_BodyScale_Large</li>
+			<li>Hair_InkBlack</li>
+			<li>Hair_MidBlack</li>
 			<li>Aggression_Aggressive</li>
+			<li>Outland_ThickSkin</li>
 			<li>Brow_Heavy</li>
-			<li>KillThirst</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Outland_Pos1Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Orc</defName>
+		<label>orc</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Orc>999</Forgotten_Orc>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_OrcTribal</defName>
+		<label>tribal orc</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Orc>999</Forgotten_Orc>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Tabaxi ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Tabaxi</defName>
 		<label>tabaxi</label>
 		<description>Tabaxi also known as jaguar people or cat-men, were a race of feline humanoids native to the jungles of Maztica.</description>
 		<descriptionShort>Tabaxi also known as jaguar people or cat-men, were a race of feline humanoids native to the jungles of Maztica.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tabaxi</iconPath>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonTabaxiMale</nameMaker>
 		<nameMakerFemale>Forgotten_NamerPersonTabaxiFemale</nameMakerFemale>
-		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
+			<li>Hair_Grayless</li>
+			<li>DarkVision</li>
 			<li>Hair_BaldOnly</li>
 			<li>Beard_NoBeardOnly</li>
 			<li>Outland_Ears_Flick</li>
@@ -387,32 +1016,69 @@
 			<li>Hair_SnowWhite</li>
 			<li>Outland_FelineFur</li>
 			<li>Tail_Smooth</li>
+			<li>MoveSpeed_VeryQuick</li>
+			<li>Delicate</li>
+			<li>Outland_Pos4Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
-	<!-- 
-		===================================================
-		==================== Tieflings ====================
-		===================================================
-	-->
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Tabaxi</defName>
+		<label>tabaxi</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Tabaxi>999</Forgotten_Tabaxi>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
 
-	<XenotypeDef Name="Forgotten_TieflingXenotypeBase" Abstract="True">
-		<description>Tieflings were human-based planetouched, native outsiders that were infused with the touch of the fiendish planes, most often through descent from fiends—demons, Yugoloths, devils, evil deities, and others who had bred with humans. Tieflings were known for their cunning and personal allure, which made them excellent deceivers as well as inspiring leaders when prejudices were laid aside.</description>
-		<descriptionShort>Tieflings were human-based planetouched, native outsiders that were infused with the touch of the fiendish planes, most often through descent from fiends—demons, Yugoloths, devils, evil deities, and others who had bred with humans.</descriptionShort>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_TabaxiTribal</defName>
+		<label>tribal tabaxi</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Tabaxi>999</Forgotten_Tabaxi>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Infernal Tiefling ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_InfernalTiefling</defName>
+		<label>infernal tiefling</label>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<description>Tieflings are planetouched humans, infernal tieflings being those who were touched by The Nine Hells, also known as Baator.</description>
+		<descriptionShort>Tieflings are planetouched humans, infernal tieflings being those who were touched by The Nine Hells, also known as Baator.</descriptionShort>
 		<nameMaker>Forgotten_NamerPersonTieflingMale</nameMaker>
 		<nameMakerFemale>Forgotten_NamerPersonTieflingFemale</nameMakerFemale>
-		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
-			<li>FireResistant</li>
 			<li>DarkVision</li>
-			<!-- <li>Outland_RidgedSkin</li> -->
+			<li>FireResistant</li>
 			<li>Outland_Tail_Imp</li>
+			<li>Outland_RidgedSkin</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Skin_DeepRed</li>
+			<li>Skin_Purple</li>
+			<li>Skin_Blue</li>
+			<li>Outland_Skin_Dusk</li>
+			<li>Outland_Skin_Scarlet</li>
+			<li>Outland_Skin_OrangePastel</li>
+			<li>Hair_BrightRed</li>
+			<li>Hair_DarkReddish</li>
 			<li>Hair_DarkBlack</li>
 			<li>Hair_InkBlack</li>
-			<li>Hair_DarkBrown</li>
-			<li>Outland_Headbone_Bean</li>
+			<li>Outland_HairColor_DarkRed</li>
+			<li>Outland_HairColor_PastelBlue</li>
+			<li>Outland_HairColor_SkyBlue</li>
+			<li>Outland_HairColor_PastelOrange</li>
+			<li>Eyes_Red</li>
+			<li>Outland_Eye_LightBlue</li>
+			<li>Outland_Eye_Orange</li>
 			<li>Outland_Headbone_Bull</li>
 			<li>Outland_Headbone_Crystal</li>
 			<li>Outland_Headbone_Flame</li>
@@ -422,80 +1088,101 @@
 			<li>Outland_Headbone_Rough</li>
 			<li>Outland_Headbone_Thorn</li>
 			<li>Outland_Headbone_Forward</li>
-			<li>Outland_Headbone_Straw</li>
 		</genes>
+		<modExtensions>
+			<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+				<xenoEggTexturePath>Outland/Items/XenoEgg_Impid</xenoEggTexturePath>
+			</li>
+		</modExtensions>
 	</XenotypeDef>
 
-	<XenotypeDef ParentName="Forgotten_TieflingXenotypeBase">
-		<defName>Forgotten_AsmodeusTiefling</defName>
-		<label>asmodeus tiefling</label>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
-		<genes>
-			<li>Skin_DeepRed</li>
-			<li>Outland_Skin_Scarlet</li>
-			<li>Outland_Eye_Orange</li>
-			<li>Hair_BrightRed</li>
-			<li>Hair_DarkReddish</li>
-			<li>Outland_HairColor_DarkRed</li>
-		</genes>
-	</XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_InfernalTiefling</defName>
+		<label>infernal tiefling</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_InfernalTiefling>999</Forgotten_InfernalTiefling>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
 
-	<XenotypeDef ParentName="Forgotten_TieflingXenotypeBase">
-		<defName>Forgotten_MephistophelesTiefling</defName>
-		<label>mephistopheles tiefling</label>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
-		<genes>
-			<li>Outland_HairColor_PastelBlue</li>
-			<li>Outland_HairColor_SkyBlue</li>
-			<li>Outland_Skin_Dusk</li>
-			<li>Outland_Eye_LightBlue</li>
-			<li MayRequire="Neronix17.Outland.Core">Outland_ArcaneAffinity_SmallIncrease</li>
-		</genes>
-	</XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_InfernalTieflingTribal</defName>
+		<label>tribal infernal tiefling</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_InfernalTiefling>999</Forgotten_InfernalTiefling>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
 
-	<XenotypeDef ParentName="Forgotten_TieflingXenotypeBase">
-		<defName>Forgotten_ZarielTiefling</defName>
-		<label>zariel tiefling</label>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
-		<genes>
-			<li>Outland_HairColor_DarkRed</li>
-			<li>Outland_HairColor_PastelOrange</li>
-			<li>Outland_Skin_OrangePastel</li>
-			<li>Outland_Eye_Orange</li>
-		</genes>
-	</XenotypeDef>
+	<!-- ==================== High Elf ==================== -->
 
-	<!-- 
-		===============================================
-		==================== Elves ====================
-		=============================================== 
-	-->
-
-	<XenotypeDef Name="Forgotten_ElfXenotypeBase" Abstract="True">
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
-		<nameMaker>Forgotten_NamerPersonDwarfMale</nameMaker>
-		<nameMakerFemale>Forgotten_NamerPersonDwarfFemale</nameMakerFemale>
-		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_HighElf</defName>
+		<label>high elf</label>
+		<description>High elves, also sometimes known as eladrin, were graceful warriors and wizards who originated from the realm of Faerie, also known as the Feywild. They lived in the forests of the world. They were magical in nature and shared an interest in the arcane arts. From an early age they also learned to defend themselves, particularly with swords.</description>
+		<descriptionShort>High elves, also sometimes known as eladrin, were graceful warriors and wizards who originated from the realm of Faerie, also known as the Feywild.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Elf</iconPath>
+		<nameMaker>Forgotten_NamerPersonElfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonElfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
 			<li>Body_Thin</li>
 			<li>Body_Standard</li>
 			<li>Beard_NoBeardOnly</li>
 			<li>Outland_SvelteHead</li>
 			<li>Ears_Pointed</li>
-			<li>Outland_BodyScale_Tall</li>
+			<li>Outland_BodyScale_Small</li>
+			<li>Delicate</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_Pos4Metabolism</li>
 			<li>DarkVision</li>
-			<li MayRequire="Neronix17.Outland.Core">Outland_ArcaneAffinity_SmallIncrease</li>
+			<li>Outland_FeyAgeing</li>
+			<li>LowSleep</li>
+			<li>Beauty_Pretty</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef ParentName="Forgotten_ElfXenotypeBase">
-		<defName>Forgotten_DarkElf</defName>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_HighElf</defName>
+		<label>high elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_HighElf>999</Forgotten_HighElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_HighElfTribal</defName>
+		<label>tribal high elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_HighElf>999</Forgotten_HighElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Drow ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_Drow</defName>
 		<label>drow</label>
 		<description>Drow, also known as dark elves, deep elves, night elves, or sometimes "The Ones Who Went Below" on the surface, were a dark-skinned sub-race of elves that predominantly lived in the Underdark. They were hated and feared due to their cruelty, though some non-evil and an even smaller number of good drow existed.</description>
 		<descriptionShort>Drow, also known as dark elves, deep elves, night elves, or sometimes "The Ones Who Went Below" on the surface, were a dark-skinned sub-race of elves that predominantly lived in the Underdark.</descriptionShort>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_DarkElfIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Elf</iconPath>
+		<nameMaker>Forgotten_NamerPersonElfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonElfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Outland_SvelteHead</li>
+			<li>Ears_Pointed</li>
+			<li>Outland_BodyScale_Small</li>
 			<li>Skin_SlateGray</li>
 			<li>Skin_InkBlack</li>
 			<li>Outland_Skin_BlueSubtle</li>
@@ -504,121 +1191,434 @@
 			<li>Hair_InkBlack</li>
 			<li>Hair_SnowWhite</li>
 			<li>Hair_Gray</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_Pos5Metabolism</li>
+			<li>Outland_FeyAgeing</li>
+			<li>LowSleep</li>
+			<li>Beauty_Pretty</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef ParentName="Forgotten_ElfXenotypeBase">
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Drow</defName>
+		<label>drow</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Drow>999</Forgotten_Drow>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DrowTribal</defName>
+		<label>tribal drow</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Drow>999</Forgotten_Drow>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Moon Elf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_MoonElf</defName>
 		<label>moon elf</label>
 		<description>Moon elves, also known as Teu-tel-quessir in the elven language or as silver elves, were the most common of all the elven subraces. More tolerant of humans than other elves, moon elves were the ancestors of most half-elves.</description>
 		<descriptionShort>Moon elves, also known as Teu-tel-quessir in the elven language or as silver elves, were the most common of all the elven subraces.</descriptionShort>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_MoonElfIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Elf</iconPath>
+		<nameMaker>Forgotten_NamerPersonElfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonElfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Outland_SvelteHead</li>
+			<li>Ears_Pointed</li>
+			<li>Outland_BodyScale_Small</li>
 			<li>Outland_Skin_BlueSky</li>
 			<li>Outland_Skin_BlueIce</li>
 			<li>Outland_HairColor_PastelBlue</li>
 			<li>Outland_HairColor_SkyBlue</li>
+			<li>Outland_FeyAgeing</li>
+			<li>LowSleep</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_Pos5Metabolism</li>
+			<li>Beauty_Pretty</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef ParentName="Forgotten_ElfXenotypeBase">
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_MoonElf</defName>
+		<label>moon elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_MoonElf>999</Forgotten_MoonElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_MoonElfTribal</defName>
+		<label>tribal moon elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_MoonElf>999</Forgotten_MoonElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Sun Elf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_SunElf</defName>
 		<label>sun elf</label>
 		<description>The sun elves, also sometimes known as gold elves, sometimes as high elves due to their stereotypically elitist ways, and Ar-tel-quessir in their own language were a subrace of high elves historically rare in Faerûn due to the Retreat, in which the majority abandoned the continent for Evermeet, although during the Era of Upheaval they began returning to the mainland. Haughty and arrogant, sun elves typically felt themselves superior to most other races, including other Tel-quessir.</description>
 		<descriptionShort>The sun elves, also sometimes known as gold elves, sometimes as high elves due to their stereotypically elitist ways, and Ar-tel-quessir in their own language were a subrace of high elves historically rare in Faerûn.</descriptionShort>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_SunElfIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Elf</iconPath>
+		<nameMaker>Forgotten_NamerPersonElfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonElfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Outland_SvelteHead</li>
+			<li>Ears_Pointed</li>
+			<li>Outland_BodyScale_Small</li>
+			<li>Beard_NoBeardOnly</li>
 			<li>Skin_PaleYellow</li>
 			<li>Outland_HairColor_PastelOrange</li>
 			<li>Outland_HairColor_Yellow</li>
+			<li>Outland_FeyAgeing</li>
+			<li>LowSleep</li>
+			<li>Beauty_Pretty</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_Pos5Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef ParentName="Forgotten_ElfXenotypeBase">
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_SunElf</defName>
+		<label>sun elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_SunElf>999</Forgotten_SunElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_SunElfTribal</defName>
+		<label>tribal sun elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_SunElf>999</Forgotten_SunElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Wood Elf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_WoodElf</defName>
 		<label>wood elf</label>
 		<description>Wood elves, also known as copper elves, or Or-tel-quessir were the most populous of the elven races. Wood elves saw themselves as guardians of the Tel-quessir forest homes that were largely abandoned after the Crown Wars and before the Retreat, but unlike most elves they did not view themselves as a people apart from the rest of Faerûn.</description>
 		<descriptionShort>Wood elves, also known as copper elves, or Or-tel-quessir were the most populous of the elven races.</descriptionShort>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_WoodElfIcon</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Elf</iconPath>
+		<nameMaker>Forgotten_NamerPersonElfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonElfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Outland_SvelteHead</li>
+			<li>Ears_Pointed</li>
+			<li>Outland_BodyScale_Small</li>
 			<li>Outland_Skin_GreenMarsh</li>
 			<li>Outland_Skin_LightBrown</li>
 			<li>Hair_BrightRed</li>
 			<li>Outland_HairColor_DarkRed</li>
 			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_FeyAgeing</li>
+			<li>LowSleep</li>
+			<li>Beauty_Pretty</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_Pos5Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
-	<!-- 
-		===============================================
-		==================== Goblinoid ================
-		=============================================== 
-	-->
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_WoodElf</defName>
+		<label>wood elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_WoodElf>999</Forgotten_WoodElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
 
-	<XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_WoodElfTribal</defName>
+		<label>tribal wood elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_WoodElf>999</Forgotten_WoodElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Wild Elf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_WildElf</defName>
+		<label>wild elf</label>
+		<description>Wood elves, also known as copper elves, or Or-tel-quessir were the most populous of the elven races. Wood elves saw themselves as guardians of the Tel-quessir forest homes that were largely abandoned after the Crown Wars and before the Retreat, but unlike most elves they did not view themselves as a people apart from the rest of Faerûn.</description>
+		<descriptionShort>Wood elves, also known as copper elves, or Or-tel-quessir were the most populous of the elven races.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Elf</iconPath>
+		<nameMaker>Forgotten_NamerPersonElfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonElfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Outland_SvelteHead</li>
+			<li>Ears_Pointed</li>
+			<li>DarkVision</li>
+			<li>Outland_Skin_GreenMarsh</li>
+			<li>Outland_Skin_LightBrown</li>
+			<li>Hair_BrightRed</li>
+			<li>Outland_HairColor_DarkRed</li>
+			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_BodyScale_Tiny</li>
+			<li>Outland_FeyAgeing</li>
+			<li>LowSleep</li>
+			<li>Beauty_Pretty</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_Pos6Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_WildElf</defName>
+		<label>wild elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_WildElf>999</Forgotten_WildElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_WildElfTribal</defName>
+		<label>tribal wild elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_WildElf>999</Forgotten_WildElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Snow Elf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_SnowElf</defName>
+		<label>snow elf</label>
+		<description>Snow elves were rare, reclusive elves who lived in icy, mountainous regions far from other civilization.</description>
+		<descriptionShort>Snow elves were rare, reclusive elves who lived in icy, mountainous regions far from other civilization.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Elf</iconPath>
+		<nameMaker>Forgotten_NamerPersonElfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonElfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>Skin_SheerWhite</li>
+			<li>Outland_Skin_BlueIce</li>
+			<li>Hair_SnowWhite</li>
+			<li>Outland_HairColor_PastelBlue</li>
+			<li>Outland_HairColor_SkyBlue</li>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Outland_SvelteHead</li>
+			<li>Ears_Pointed</li>
+			<li>Outland_BodyScale_Large</li>
+			<li>DarkVision</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>MaxTemp_SmallDecrease</li>
+			<li>Outland_FeyAgeing</li>
+			<li>LowSleep</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_Pos6Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_SnowElf</defName>
+		<label>snow elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_SnowElf>999</Forgotten_SnowElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_SnowElfTribal</defName>
+		<label>tribal snow elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_SnowElf>999</Forgotten_SnowElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Goblin ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Goblin</defName>
 		<label>goblin</label>
 		<description>Goblins were a race of small and numerous goblinoids common throughout Toril, often living in underground caverns near the surface known as lairs. The race was often, though not always, dominated by other goblinoids, most commonly hobgoblins. Goblins may have, in fact, been initially created by this related race to serve as scouts and infiltrators.</description>
 		<descriptionShort>Goblins were a race of small and numerous goblinoids common throughout Toril, often living in underground caverns near the surface known as lairs.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Goblin</iconPath>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonGoblin</nameMaker>
-		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
+			<li>DarkVision</li>
 			<li>Outland_Ears_BigEars</li>
 			<li>Skin_Green</li>
+			<li>Outland_Skin_Auburn</li>
+			<li>Outland_Skin_Mustard</li>
 			<li>Outland_BodyScale_Small</li>
 			<li>Outland_Nose_Goblinoid</li>
 			<li>Outland_LesserGoblinoidHead</li>
 			<li>Outland_Eye_Orange</li>
+			<li>Outland_AcceleratedAgeing</li>
+			<li>Outland_Neg2Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Goblin</defName>
+		<label>goblin</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Goblin>999</Forgotten_Goblin>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_GoblinTribal</defName>
+		<label>tribal goblin</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Goblin>999</Forgotten_Goblin>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Hobgoblin ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Hobgoblin</defName>
 		<label>hobgoblin</label>
 		<description>Hobgoblins are a larger, stronger, smarter, and more menacing form of goblinoids than goblins, but not as powerful as bugbears. It is believed they may have created the latter two races.</description>
 		<descriptionShort>Hobgoblins are a larger, stronger, smarter, and more menacing form of goblinoids than goblins, but not as powerful as bugbears.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Hobgoblin</iconPath>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
 		<nameMaker>Forgotten_NamerPersonHobgoblin</nameMaker>
-		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
+			<li>DarkVision</li>
 			<li>Outland_Skin_Auburn</li>
 			<li>Outland_Skin_Burgundy</li>
 			<li>Skin_DeepRed</li>
 			<li>Outland_Nose_Goblinoid</li>
 			<li>Outland_GreaterGoblinoidHead</li>
 			<li>Outland_Ears_FlatPointed</li>
+			<li>Outland_Pos1Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef>
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Hobgoblin</defName>
+		<label>hobgoblin</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Hobgoblin>999</Forgotten_Hobgoblin>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_HobgoblinTribal</defName>
+		<label>tribal hobgoblin</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Hobgoblin>999</Forgotten_Hobgoblin>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Bugbear ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Bugbear</defName>
 		<label>bugbear</label>
 		<description>Bugbears are a massive humanoid race distantly related to, but larger and stronger than, goblins and hobgoblins.</description>
 		<descriptionShort>Bugbears are a massive humanoid race distantly related to, but larger and stronger than, goblins and hobgoblins.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Bugbear</iconPath>
-		<combatPowerFactor>1.0</combatPowerFactor>
-		<inheritable>true</inheritable>
-		<!-- TODO: Bugbear naming -->
 		<nameMaker>Forgotten_NamerPersonHobgoblin</nameMaker>
-		<chanceToUseNameMaker>1</chanceToUseNameMaker>
-		<!-- TODO: Bugbear genes - bushy brow -->
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<!-- TODO: bushy brow gene -->
 		<genes>
+			<li>Hair_Grayless</li>
+			<li>DarkVision</li>
+			<li>Outland_Teeth_TusksSmall</li>
 			<li>Body_Hulk</li>
 			<li>Furskin</li>
 			<li>Hair_BaldOnly</li>
-			<li>Hair_BrightRed</li>
 			<li>Hair_DarkReddish</li>
 			<li>Outland_HairColor_PastelOrange</li>
 			<li>Outland_HairColor_DarkRed</li>
 			<li>Outland_Ears_Flufftop</li>
 			<li>Outland_Nose_Goblinoid</li>
 			<li>Outland_BodyScale_Large</li>
+			<li>Outland_HighMetabolism</li>
 		</genes>
 	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Bugbear</defName>
+		<label>bugbear</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Bugbear>999</Forgotten_Bugbear>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_BugbearTribal</defName>
+		<label>tribal bugbear</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Bugbear>999</Forgotten_Bugbear>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
 
 </Defs>

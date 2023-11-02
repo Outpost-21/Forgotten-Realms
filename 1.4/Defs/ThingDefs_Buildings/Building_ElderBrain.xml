@@ -4,20 +4,20 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>Forgotten_ElderBrainPool</defName>
 		<label>elder brain pool</label>
-		<description>The Elder Brain pool stores and produces Illithid tadpoles, as well as the Elder Brain itself, which will passively progress research with no interaction necessary.</description>
+		<description>The Elder Brain pool stores and produces Illithid tadpoles, as well as the Elder Brain itself.\n\nAs long as an Illithid is in the colony the Elder Brain will progress research passively at a constant rate.</description>
     	<thingClass>TabulaRasa.Building_ThingProducer</thingClass>
 		<graphicData>
 			<texPath>ForgottenRealms/Buildings/ElderBrainPool</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>4.3</drawSize>
+			<drawSize>(4, 4)</drawSize>
 		</graphicData>
         <minifiedDef>MinifiedThing</minifiedDef>
         <thingCategories>
             <li>BuildingsMisc</li>
         </thingCategories>
 		<uiIconScale>1.1</uiIconScale>
-		<size>(4,4)</size>
+		<size>(3,3)</size>
 		<rotatable>false</rotatable>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>
@@ -47,6 +47,10 @@
 				<requiresPower>false</requiresPower>
 				<researchSpeedFactor>1.2</researchSpeedFactor>
 				<xenotype>Forgotten_Illithid</xenotype>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(141, 87, 217,0)</glowColor>
 			</li>
 		</comps>
 		<modExtensions>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<Forgotten_ArcticDwarf>0.1</Forgotten_ArcticDwarf>
+			<Forgotten_GoldDwarf>0.1</Forgotten_GoldDwarf>
+			<Forgotten_ShieldDwarf>0.1</Forgotten_ShieldDwarf>
+			<!-- <Forgotten_Duergar>0.1</Forgotten_Duergar> -->
+			<Forgotten_WildDwarf>0.1</Forgotten_WildDwarf>
+			<Forgotten_Halfling>0.1</Forgotten_Halfling>
+			<!-- <Forgotten_DeepGnome>0.1</Forgotten_DeepGnome> -->
+			<Forgotten_ForestGnome>0.1</Forgotten_ForestGnome>
+			<Forgotten_RockGnome>0.1</Forgotten_RockGnome>
+			<!-- <Forgotten_Chitine>0.1</Forgotten_Chitine> -->
+			<Forgotten_Satyr>0.1</Forgotten_Satyr>
+			<Forgotten_Firbolg>0.1</Forgotten_Firbolg>
+			<Forgotten_Goliath>0.1</Forgotten_Goliath>
+			<Forgotten_Gith>0.1</Forgotten_Gith>
+			<Forgotten_HalfOrc>0.1</Forgotten_HalfOrc>
+			<!-- <Forgotten_Illithid>0.1</Forgotten_Illithid> -->
+			<Forgotten_Killoren>0.1</Forgotten_Killoren>
+			<Forgotten_Kobold>0.1</Forgotten_Kobold>
+			<!-- <Forgotten_Orc>0.1</Forgotten_Orc> -->
+			<Forgotten_Tabaxi>0.1</Forgotten_Tabaxi>
+			<Forgotten_InfernalTiefling>0.1</Forgotten_InfernalTiefling>
+			<!-- <Forgotten_AbyssalTiefling>0.1</Forgotten_AbyssalTiefling> -->
+			<!-- <Forgotten_CthonicTiefling>0.1</Forgotten_CthonicTiefling> -->
+			<Forgotten_HighElf>0.1</Forgotten_HighElf>
+			<!-- <Forgotten_Drow>0.1</Forgotten_Drow> -->
+			<Forgotten_MoonElf>0.1</Forgotten_MoonElf>
+			<Forgotten_SunElf>0.1</Forgotten_SunElf>
+			<Forgotten_WoodElf>0.1</Forgotten_WoodElf>
+			<Forgotten_WildElf>0.1</Forgotten_WildElf>
+			<Forgotten_SnowElf>0.1</Forgotten_SnowElf>
+			<!-- <Forgotten_Goblin>0.1</Forgotten_Goblin> -->
+			<!-- <Forgotten_Hobgoblin>0.1</Forgotten_Hobgoblin> -->
+			<!-- <Forgotten_Bugbear>0.1</Forgotten_Bugbear> -->
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/FactionDef[defName="TribeCivil" or defName="TribeRough" or defName="TribeSavage"]/xenotypeSet</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="TribeCivil" or defName="TribeRough" or defName="TribeSavage"]</xpath>
+			<value>
+				<xenotypeSet>
+					<xenotypeChances>
+					</xenotypeChances>
+				</xenotypeSet>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName="TribeCivil" or defName="TribeRough" or defName="TribeSavage"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<Forgotten_ArcticDwarf>0.1</Forgotten_ArcticDwarf>
+			<Forgotten_GoldDwarf>0.1</Forgotten_GoldDwarf>
+			<Forgotten_ShieldDwarf>0.1</Forgotten_ShieldDwarf>
+			<!-- <Forgotten_Duergar>0.1</Forgotten_Duergar> -->
+			<Forgotten_WildDwarf>0.1</Forgotten_WildDwarf>
+			<Forgotten_Halfling>0.1</Forgotten_Halfling>
+			<!-- <Forgotten_DeepGnome>0.1</Forgotten_DeepGnome> -->
+			<Forgotten_ForestGnome>0.1</Forgotten_ForestGnome>
+			<Forgotten_RockGnome>0.1</Forgotten_RockGnome>
+			<Forgotten_Chitine>0.1</Forgotten_Chitine>
+			<Forgotten_Satyr>0.1</Forgotten_Satyr>
+			<Forgotten_Firbolg>0.1</Forgotten_Firbolg>
+			<Forgotten_Goliath>0.1</Forgotten_Goliath>
+			<Forgotten_Gith>0.1</Forgotten_Gith>
+			<Forgotten_HalfOrc>0.1</Forgotten_HalfOrc>
+			<!-- <Forgotten_Illithid>0.1</Forgotten_Illithid> -->
+			<Forgotten_Killoren>0.1</Forgotten_Killoren>
+			<Forgotten_Kobold>0.1</Forgotten_Kobold>
+			<Forgotten_Orc>0.1</Forgotten_Orc>
+			<Forgotten_Tabaxi>0.1</Forgotten_Tabaxi>
+			<Forgotten_InfernalTiefling>0.1</Forgotten_InfernalTiefling>
+			<!-- <Forgotten_AbyssalTiefling>0.1</Forgotten_AbyssalTiefling> -->
+			<!-- <Forgotten_CthonicTiefling>0.1</Forgotten_CthonicTiefling> -->
+			<Forgotten_HighElf>0.1</Forgotten_HighElf>
+			<!-- <Forgotten_Drow>0.1</Forgotten_Drow> -->
+			<Forgotten_MoonElf>0.1</Forgotten_MoonElf>
+			<Forgotten_SunElf>0.1</Forgotten_SunElf>
+			<Forgotten_WoodElf>0.1</Forgotten_WoodElf>
+			<Forgotten_WildElf>0.1</Forgotten_WildElf>
+			<Forgotten_SnowElf>0.1</Forgotten_SnowElf>
+			<Forgotten_Goblin>0.1</Forgotten_Goblin>
+			<Forgotten_Hobgoblin>0.1</Forgotten_Hobgoblin>
+			<Forgotten_Bugbear>0.1</Forgotten_Bugbear>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[@Name="PirateBandBase"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<Forgotten_ArcticDwarf>0.1</Forgotten_ArcticDwarf>
+			<Forgotten_GoldDwarf>0.1</Forgotten_GoldDwarf>
+			<Forgotten_ShieldDwarf>0.1</Forgotten_ShieldDwarf>
+			<Forgotten_Duergar>0.1</Forgotten_Duergar>
+			<Forgotten_WildDwarf>0.1</Forgotten_WildDwarf>
+			<Forgotten_Halfling>0.1</Forgotten_Halfling>
+			<Forgotten_DeepGnome>0.1</Forgotten_DeepGnome>
+			<Forgotten_ForestGnome>0.1</Forgotten_ForestGnome>
+			<Forgotten_RockGnome>0.1</Forgotten_RockGnome>
+			<Forgotten_Chitine>0.1</Forgotten_Chitine>
+			<Forgotten_Satyr>0.1</Forgotten_Satyr>
+			<Forgotten_Firbolg>0.1</Forgotten_Firbolg>
+			<Forgotten_Goliath>0.1</Forgotten_Goliath>
+			<Forgotten_Gith>0.1</Forgotten_Gith>
+			<Forgotten_HalfOrc>0.1</Forgotten_HalfOrc>
+			<Forgotten_Illithid>0.1</Forgotten_Illithid>
+			<Forgotten_Killoren>0.1</Forgotten_Killoren>
+			<Forgotten_Kobold>0.1</Forgotten_Kobold>
+			<Forgotten_Orc>0.1</Forgotten_Orc>
+			<Forgotten_Tabaxi>0.1</Forgotten_Tabaxi>
+			<Forgotten_InfernalTiefling>0.1</Forgotten_InfernalTiefling>
+			<!-- <Forgotten_AbyssalTiefling>0.1</Forgotten_AbyssalTiefling> -->
+			<!-- <Forgotten_CthonicTiefling>0.1</Forgotten_CthonicTiefling> -->
+			<Forgotten_HighElf>0.1</Forgotten_HighElf>
+			<Forgotten_Drow>0.1</Forgotten_Drow>
+			<Forgotten_MoonElf>0.1</Forgotten_MoonElf>
+			<Forgotten_SunElf>0.1</Forgotten_SunElf>
+			<Forgotten_WoodElf>0.1</Forgotten_WoodElf>
+			<Forgotten_WildElf>0.1</Forgotten_WildElf>
+			<Forgotten_SnowElf>0.1</Forgotten_SnowElf>
+			<Forgotten_Goblin>0.1</Forgotten_Goblin>
+			<Forgotten_Hobgoblin>0.1</Forgotten_Hobgoblin>
+			<Forgotten_Bugbear>0.1</Forgotten_Bugbear>
+		</value>
+	</Operation>
+
+</Patch>

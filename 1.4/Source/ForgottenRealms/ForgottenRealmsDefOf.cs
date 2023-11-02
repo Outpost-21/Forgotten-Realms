@@ -18,5 +18,9 @@ namespace ForgottenRealms
         }
 
         public static XenotypeDef Forgotten_Illithid;
+
+        public static HediffDef Forgotten_Ceremorphosis;
+
+        public static JobDef Forgotten_UseTadpoleOn;
     }
 }

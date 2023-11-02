@@ -23,10 +23,6 @@
 			<li>BodyPartsNatural</li>
 		</thingCategories>
 		<comps>
-			<li Class="CompProperties_Rottable">
-				<daysToRotStart>2</daysToRotStart>
-				<rotDestroys>true</rotDestroys>
-			</li>
 			<li Class="CompProperties_Usable">
 				<useJob>UseItem</useJob>
 				<useLabel>Implant Tadpole</useLabel>
@@ -35,7 +31,7 @@
 			<li Class="CompProperties_Targetable">
 				<compClass>TabulaRasa.CompTargetable_NotXenotype</compClass>
 			</li>
-			<li Class="TabulaRasa.CompProperties_TargetEffectApplyHediff" />
+			<li Class="ForgottenRealms.CompProperties_TargetEffectIllithidTadpole" />
 		</comps>
 		<modExtensions>
 			<li Class="TabulaRasa.DefModExt_Xenotype">
@@ -44,7 +40,7 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="OrganicProductBase">
+	<!-- <ThingDef ParentName="OrganicProductBase">
 		<defName>Forgotten_HumanoidBrain</defName>
 		<label>humanoid brain</label>
 		<description>The weird grey matter from between the ears that most Humans seem to not be capable of using.</description>
@@ -82,7 +78,7 @@
 		<thingCategories>
 			<li>BodyPartsNatural</li>
 		</thingCategories>
-	</ThingDef>
+	</ThingDef> -->
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>Forgotten_ElderBrain</defName>

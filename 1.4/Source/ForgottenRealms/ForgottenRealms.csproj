@@ -87,10 +87,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompProperties_TargetEffectIllithidTadpole.cs" />
+    <Compile Include="CompTargetEffect_IllithidTadpole.cs" />
     <Compile Include="ForgottenRealmsDefOf.cs" />
     <Compile Include="ForgottenRealmsMod.cs" />
     <Compile Include="ForgottenRealmsSettings.cs" />
-    <Compile Include="Harmony\Patch_Thing_ButcherProducts.cs" />
+    <None Include="Harmony\Patch_Thing_ButcherProducts.cs" />
+    <Compile Include="JobDriver_UseTadpoleOn.cs" />
     <Compile Include="Utility\LogUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

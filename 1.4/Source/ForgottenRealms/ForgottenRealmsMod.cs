@@ -41,7 +41,7 @@ namespace ForgottenRealms
                 File.WriteAllText(VersionDir, CurrentVersion);
             }
 
-            Harmony ForgottenHarmony = new Harmony("com.neronix17.forgottenrealms.mod");
+            Harmony ForgottenHarmony = new Harmony("RimWorld.Neronix17.ForgottenRealms");
             ForgottenHarmony.PatchAll();
         }
 

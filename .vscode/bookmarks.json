@@ -4,124 +4,169 @@
 			"path": "1.4/Defs/GeneDefs/XenotypeDefs_ForgottenRealms.xml",
 			"bookmarks": [
 				{
-					"line": 85,
-					"column": 20,
-					"label": "Xenotype: Dwarf"
-				},
-				{
-					"line": 103,
+					"line": 4,
 					"column": 0,
-					"label": "Xenotype: Duergar"
+					"label": ""
 				},
 				{
-					"line": 129,
-					"column": 26,
-					"label": "Xenotype: Halfling"
+					"line": 37,
+					"column": 0,
+					"label": ""
 				},
 				{
 					"line": 148,
-					"column": 23,
-					"label": "Xenotype: Chitine"
-				},
-				{
-					"line": 168,
-					"column": 22,
-					"label": "Xenotype: Satyr"
-				},
-				{
-					"line": 189,
-					"column": 24,
-					"label": "Xenotype: Firbolg"
-				},
-				{
-					"line": 212,
-					"column": 25,
-					"label": "Xenotype: Goliath"
-				},
-				{
-					"line": 232,
-					"column": 22,
-					"label": "Xenotype: Gith"
-				},
-				{
-					"line": 259,
-					"column": 23,
-					"label": "Xenotype: Half-Orc"
-				},
-				{
-					"line": 277,
-					"column": 17,
-					"label": "Xenotype: Illithid"
-				},
-				{
-					"line": 299,
-					"column": 25,
-					"label": "Xenotype: Killoren"
-				},
-				{
-					"line": 322,
-					"column": 26,
-					"label": "Xenotype: Kobold"
-				},
-				{
-					"line": 343,
 					"column": 0,
-					"label": "Xenotype: Orc"
+					"label": "Arctic Dwarf"
 				},
 				{
-					"line": 366,
+					"line": 194,
 					"column": 0,
-					"label": "Xenotype: Tabaxi"
+					"label": "Gold Dwarf"
 				},
 				{
-					"line": 429,
+					"line": 243,
 					"column": 0,
-					"label": "Xenotype: Tiefling (Asmodeus)"
+					"label": "Shield Dwarf"
 				},
 				{
-					"line": 443,
+					"line": 284,
 					"column": 0,
-					"label": "Xenotype: Tiefling (Mephistopheles)"
+					"label": "Duergar"
 				},
 				{
-					"line": 456,
+					"line": 331,
 					"column": 0,
-					"label": "Xenotype: Tiefling (Zariel)"
+					"label": "Wild Dwarf"
 				},
 				{
-					"line": 492,
+					"line": 375,
 					"column": 0,
-					"label": "Xenotype: Dark Elf / Drow"
+					"label": "Halfling"
 				},
 				{
-					"line": 510,
+					"line": 408,
 					"column": 0,
-					"label": "Xenotype: Moon Elf"
+					"label": "Deep Gnome"
 				},
 				{
-					"line": 524,
+					"line": 451,
 					"column": 0,
-					"label": "Xenotype: Sun Elf"
+					"label": "Forest Gnome"
 				},
 				{
-					"line": 537,
+					"line": 491,
 					"column": 0,
-					"label": "Xenotype: Wood Elf"
+					"label": "Rock Gnome"
 				},
 				{
-					"line": 558,
+					"line": 528,
 					"column": 0,
-					"label": "Xenotype: Goblin"
+					"label": "Chitine"
 				},
 				{
-					"line": 578,
+					"line": 572,
 					"column": 0,
-					"label": "Xenotype: Hobgoblin"
+					"label": "Satyr"
 				},
 				{
-					"line": 598,
+					"line": 617,
 					"column": 0,
-					"label": "Xenotype: Bugbear"
+					"label": "Firbolg"
+				},
+				{
+					"line": 662,
+					"column": 0,
+					"label": "Goliath"
+				},
+				{
+					"line": 704,
+					"column": 0,
+					"label": "Gith"
+				},
+				{
+					"line": 758,
+					"column": 0,
+					"label": "Half-Orc"
+				},
+				{
+					"line": 800,
+					"column": 0,
+					"label": "Illithid"
+				},
+				{
+					"line": 850,
+					"column": 0,
+					"label": "Killoren"
+				},
+				{
+					"line": 898,
+					"column": 0,
+					"label": "Kobold"
+				},
+				{
+					"line": 945,
+					"column": 0,
+					"label": "Orc"
+				},
+				{
+					"line": 992,
+					"column": 0,
+					"label": "Tabaxi"
+				},
+				{
+					"line": 1044,
+					"column": 0,
+					"label": "Infernal Tiefling"
+				},
+				{
+					"line": 1116,
+					"column": 0,
+					"label": "High Elf"
+				},
+				{
+					"line": 1167,
+					"column": 0,
+					"label": "Drow"
+				},
+				{
+					"line": 1223,
+					"column": 0,
+					"label": "Moon Elf"
+				},
+				{
+					"line": 1275,
+					"column": 0,
+					"label": "Sun Elf"
+				},
+				{
+					"line": 1326,
+					"column": 0,
+					"label": "Wood Elf"
+				},
+				{
+					"line": 1379,
+					"column": 0,
+					"label": "Wild Elf"
+				},
+				{
+					"line": 1433,
+					"column": 0,
+					"label": "Snow Elf"
+				},
+				{
+					"line": 1488,
+					"column": 0,
+					"label": "Goblin"
+				},
+				{
+					"line": 1533,
+					"column": 0,
+					"label": "Hobgoblin"
+				},
+				{
+					"line": 1575,
+					"column": 0,
+					"label": "Bugbear"
 				}
 			]
 		}
