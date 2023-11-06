@@ -1,26 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- <TabulaRasa.UpdateDef>
-		<defName>ForgottenRealms_31092023</defName>
-		<date>2023/09/31</date>
+	<TabulaRasa.UpdateDef>
+		<defName>ForgottenRealms_15112023</defName>
+		<date>2023/11/15</date>
 		<banner>ForgottenRealms/UpdateInfo/Updatebanner</banner>
 		<contentList>
 			<li>
 				<header>Added Xenotypes</header>
-				<text>- Dragonborn
-- Gnome
-- </text>
+				<text>- Chthonic Tiefling
+- Abyssal Tiefling
+- Air Genasi
+- Earth Genasi
+- Fire Genasi
+- Water Genasi
+
+Unlike the ones above, these ones won't spawn naturally, but instead through very rare events, these can be individually disabled in the settings.
+- Deva
+- Planetar
+- Cambion
+- Drider</text>
 				<image>ForgottenRealms/UpdateImages/NewRaces</image>
 			</li>
 		</contentList>
 		<links>
 			<li>
 				<linkLabel>Steam Workshop</linkLabel>
-				<linkUrl></linkUrl>
+				<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3068979395</linkUrl>
 				<linkTex>TabulaRasa/UI/Steam</linkTex>
 			</li>
 		</links>
-	</TabulaRasa.UpdateDef> -->
+	</TabulaRasa.UpdateDef>
 
 </Defs>

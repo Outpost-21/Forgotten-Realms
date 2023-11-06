@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== Infernal Tiefling ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_InfernalTiefling</defName>
+		<label>infernal tiefling</label>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<description>Tieflings are planetouched humans, infernal tieflings being those who were touched by lawful evil planes, such as The Nine Hells.</description>
+		<descriptionShort>Tieflings are planetouched humans, infernal tieflings being those who were touched by lawful evil planes, such as The Nine Hells.</descriptionShort>
+		<nameMaker>Forgotten_NamerPersonTieflingMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonTieflingFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>DarkVision</li>
+			<li>FireResistant</li>
+			<li>Outland_Tail_Imp</li>
+			<li>Outland_RidgedSkin</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Skin_DeepRed</li>
+			<li>Skin_Purple</li>
+			<li>Skin_Blue</li>
+			<li>Outland_Skin_Dusk</li>
+			<li>Outland_Skin_Scarlet</li>
+			<li>Outland_Skin_OrangePastel</li>
+			<li>Hair_BrightRed</li>
+			<li>Hair_DarkReddish</li>
+			<li>Hair_DarkBlack</li>
+			<li>Hair_InkBlack</li>
+			<li>Outland_HairColor_DarkRed</li>
+			<li>Outland_HairColor_PastelBlue</li>
+			<li>Outland_HairColor_SkyBlue</li>
+			<li>Outland_HairColor_PastelOrange</li>
+			<li>Eyes_Red</li>
+			<li>Outland_Eye_LightBlue</li>
+			<li>Outland_Eye_Orange</li>
+			<li>Outland_Headbone_Bull</li>
+			<li>Outland_Headbone_Crystal</li>
+			<li>Outland_Headbone_Flame</li>
+			<li>Outland_Headbone_Row</li>
+			<li>Outland_Headbone_Ram</li>
+			<li>Outland_Headbone_LongProng</li>
+			<li>Outland_Headbone_Rough</li>
+			<li>Outland_Headbone_Thorn</li>
+			<li>Outland_Headbone_Forward</li>
+		</genes>
+		<modExtensions>
+			<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+				<xenoEggTexturePath>Outland/Items/XenoEgg_Impid</xenoEggTexturePath>
+			</li>
+		</modExtensions>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_InfernalTiefling</defName>
+		<label>infernal tiefling</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_InfernalTiefling>999</Forgotten_InfernalTiefling>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_InfernalTieflingTribal</defName>
+		<label>tribal infernal tiefling</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_InfernalTiefling>999</Forgotten_InfernalTiefling>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Chthonic Tiefling ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_ChthonicTiefling</defName>
+		<label>chthonic tiefling</label>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<description>Tieflings are planetouched humans, chthonic tieflings being those who were touched by the neutral evil planes, they tend to be at the extreme edges of the beauty spectrum.</description>
+		<descriptionShort>Tieflings are planetouched humans, chthonic tieflings being those who were touched by the neutral planes, they tend to be at the extreme edges of the beauty spectrum.</descriptionShort>
+		<nameMaker>Forgotten_NamerPersonTieflingMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonTieflingFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>ToxicEnvironmentResistance_Partial</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_Pos4Metabolism</li>
+			<li>Hair_Blonde</li>
+			<li>Hair_SandyBlonde</li>
+			<li>Hair_DarkBlack</li>
+			<li>Hair_InkBlack</li>
+			<li>Hair_BrightRed</li>
+			<li>Outland_HairColor_DarkRed</li>
+			<li>Skin_Purple</li>
+			<li>Outland_Skin_Scarlet</li>
+			<li>Outland_Skin_BlueDeep</li>
+			<li>Outland_Skin_Teal</li>
+			<li>Ears_Human</li>
+			<li>Ears_Pointed</li>
+			<li>Outland_Eye_LightBlue</li>
+			<li>Outland_Eye_Blue</li>
+			<li>Outland_Eye_Lime</li>
+			<li>Outland_Eye_Yellow</li>
+			<li>Headbone_Human</li>
+			<li>Headbone_MiniHorns</li>
+			<li>Outland_Headbone_Bull</li>
+			<li>Outland_Headbone_Drop</li>
+			<li>Outland_Headbone_Flame</li>
+			<li>Outland_Wings_None</li>
+			<li>Outland_Wings_Imp</li>
+			<li>Outland_Wings_FallenAngel</li>
+			<li>Outland_Tail_Imp</li>
+			<li>Outland_Blood_Magenta</li>
+			<li>Nearsighted</li>
+			<li>DarkVision</li>
+			<li>Outland_RidgedSkin</li>
+			<li>Outland_YouthfulAgeing</li>
+		</genes>
+		<modExtensions>
+			<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+				<xenoEggTexturePath>Outland/Items/XenoEgg_Cephalomorph</xenoEggTexturePath>
+			</li>
+		</modExtensions>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_ChthonicTiefling</defName>
+		<label>chthonic tiefling</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ChthonicTiefling>999</Forgotten_ChthonicTiefling>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_ChthonicTieflingTribal</defName>
+		<label>tribal chthonic tiefling</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ChthonicTiefling>999</Forgotten_ChthonicTiefling>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Abyssal Tiefling ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_AbyssalTiefling</defName>
+		<label>abyssal tiefling</label>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<description>Tieflings are planetouched humans, abyssal tieflings being those who were touched by chaotic evil planes, having a much more bestial visage.</description>
+		<descriptionShort>Tieflings are planetouched humans, abyssal tieflings being those who were touched by chaotic evil planes, having a much more bestial visage.</descriptionShort>
+		<nameMaker>Forgotten_NamerPersonTieflingMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonTieflingFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>MoveSpeed_Slow</li>
+			<li>ToxResist_Partial</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_Chest_Fur</li>
+			<li>Hair_DarkBrown</li>
+			<li>Hair_DarkSaturatedReddish</li>
+			<li>Hair_DarkReddish</li>
+			<li>Hair_DarkBlack</li>
+			<li>Hair_InkBlack</li>
+			<li>Outland_HairColor_DarkRed</li>
+			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_Skin_PurpleSubtle</li>
+			<li>Outland_Skin_Dusk</li>
+			<li>Outland_Skin_GreenFaded</li>
+			<li>Ears_Human</li>
+			<li>Outland_Ears_Bun</li>
+			<li>Outland_Ears_Doe</li>
+			<li>Outland_Eye_Orange</li>
+			<li>Outland_Eye_Lime</li>
+			<li>Outland_Eye_Magenta</li>
+			<li>Headbone_Human</li>
+			<li>Outland_Headbone_Antler</li>
+			<li>Outland_Headbone_King</li>
+			<li>Outland_Headbone_ZillaEx</li>
+			<li>Outland_Headbone_Forward</li>
+			<li>Outland_Headbone_Rookie</li>
+			<li>Outland_Headbone_Thorn</li>
+			<li>Outland_Wings_None</li>
+			<li>Outland_Wings_Devil</li>
+			<li>Outland_Tail_Furball</li>
+			<li>Outland_Tail_Leathery</li>
+			<li>Outland_HoovedFeet</li>
+			<li>Outland_PawFeet</li>
+			<li>Outland_TalonFeet</li>
+			<li>Outland_Teeth_None</li>
+			<li>Outland_Teeth_TusksSmall</li>
+			<li>Outland_Voice_Wolfy</li>
+			<li>DarkVision</li>
+			<li>Outland_RidgedSkin</li>
+			<li>Outland_YouthfulAgeing</li>
+		</genes>
+		<modExtensions>
+			<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+				<xenoEggTexturePath>Outland/Items/XenoEgg_Genie</xenoEggTexturePath>
+			</li>
+		</modExtensions>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_AbyssalTiefling</defName>
+		<label>abyssal tiefling</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_AbyssalTiefling>999</Forgotten_AbyssalTiefling>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_AbyssalTieflingTribal</defName>
+		<label>tribal abyssal tiefling</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_AbyssalTiefling>999</Forgotten_AbyssalTiefling>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Aasimar ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_Aasimar</defName>
+		<label>aasimar</label>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<description>TODO</description>
+		<descriptionShort>TODO</descriptionShort>
+		<genes>
+			<li>Aggression_DeadCalm</li>
+			<li>Beauty_Pretty</li>
+			<li>Hair_Gray</li>
+			<li>Hair_Blonde</li>
+			<li>Outland_Eye_Yellow</li>
+			<li>Outland_Eye_White</li>
+			<li>DarkVision</li>
+			<li>Outland_YouthfulAgeing</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Aasimar</defName>
+		<label>aasimar</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Aasimar>999</Forgotten_Aasimar>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_AasimarTribal</defName>
+		<label>tribal aasimar</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Aasimar>999</Forgotten_Aasimar>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Water Genasi ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_WaterGenasi</defName>
+		<label>water genasi</label>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<description>TODO</description>
+		<descriptionShort>TODO</descriptionShort>
+		<genes>
+			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_HairColor_PastelGreen</li>
+			<li>Outland_HairColor_Seafoam</li>
+			<li>Outland_HairColor_Aqua</li>
+			<li>Outland_HairColor_PastelBlue</li>
+			<li>Outland_Skin_Teal</li>
+			<li>Outland_Skin_Sage</li>
+			<li>Outland_Skin_GreenForest</li>
+			<li>Outland_Skin_Viridian</li>
+			<li>Outland_Ears_Webbed</li>
+			<li>Outland_Eye_Blue</li>
+			<li>Outland_WebbedFeet</li>
+			<li>Outland_Blood_Lime</li>
+			<li>DarkVision</li>
+			<li>Outland_YouthfulAgeing</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_WaterGenasi</defName>
+		<label>water genasi</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_WaterGenasi>999</Forgotten_WaterGenasi>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_WaterGenasiTribal</defName>
+		<label>tribal water genasi</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_WaterGenasi>999</Forgotten_WaterGenasi>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Earth Genasi ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_EarthGenasi</defName>
+		<label>earth genasi</label>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<description>TODO</description>
+		<descriptionShort>TODO</descriptionShort>
+		<genes>
+			<li>MoveSpeed_Slow</li>
+			<li>MeleeDamage_Strong</li>
+			<li>Robust</li>
+			<li>Hair_MidBlack</li>
+			<li>Hair_DarkBlack</li>
+			<li>Hair_InkBlack</li>
+			<li>Skin_SlateGray</li>
+			<li>Outland_Skin_Limestone</li>
+			<li>Outland_Skin_Marble</li>
+			<li>Outland_Skin_Sandstone</li>
+			<li>Outland_Skin_Granite</li>
+			<li>Outland_Blood_Gray</li>
+			<li>DarkVision</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_BodyScale_Large</li>
+			<li>Outland_ExtremeMetabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_EarthGenasi</defName>
+		<label>earth genasi</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_EarthGenasi>999</Forgotten_EarthGenasi>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_EarthGenasiTribal</defName>
+		<label>tribal earth genasi</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_EarthGenasi>999</Forgotten_EarthGenasi>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Fire Genasi ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_FireGenasi</defName>
+		<label>fire genasi</label>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<description>TODO</description>
+		<descriptionShort>TODO</descriptionShort>
+		<genes>
+			<li>MinTemp_SmallIncrease</li>
+			<li>MaxTemp_LargeIncrease</li>
+			<li>FireResistant</li>
+			<li>Ears_Pointed</li>
+			<li>Hair_BrightRed</li>
+			<li>Outland_HairColor_DarkRed</li>
+			<li>Outland_HairColor_PastelOrange</li>
+			<li>Skin_DeepRed</li>
+			<li>Outland_Skin_Auburn</li>
+			<li>Outland_Skin_Scarlet</li>
+			<li>Outland_Eye_Orange</li>
+			<li>Outland_Blood_Orange</li>
+			<li>DarkVision</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_Pos5Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_FireGenasi</defName>
+		<label>fire genasi</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_FireGenasi>999</Forgotten_FireGenasi>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_FireGenasiTribal</defName>
+		<label>tribal fire genasi</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_FireGenasi>999</Forgotten_FireGenasi>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Air Genasi ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_AirGenasi</defName>
+		<label>air genasi</label>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<description>TODO</description>
+		<descriptionShort>TODO</descriptionShort>
+		<genes>
+			<li>MoveSpeed_Quick</li>
+			<li>MinTemp_SmallDecrease</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Outland_Pos4Metabolism</li>
+			<li>Outland_HairColor_PastelGreen</li>
+			<li>Outland_HairColor_Aqua</li>
+			<li>Outland_HairColor_PastelBlue</li>
+			<li>Outland_HairColor_SkyBlue</li>
+			<li>Outland_Skin_BlueSky</li>
+			<li>Outland_Skin_Dusk</li>
+			<li>Ears_Pointed</li>
+			<li>Voice_Human</li>
+			<li>Outland_Voice_Groany</li>
+			<li>DarkVision</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_AirGenasi</defName>
+		<label>air genasi</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_AirGenasi>999</Forgotten_AirGenasi>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_AirGenasiTribal</defName>
+		<label>tribal air genasi</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_AirGenasi>999</Forgotten_AirGenasi>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+</Defs>

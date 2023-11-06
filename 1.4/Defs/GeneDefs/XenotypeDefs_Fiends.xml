@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== Cambion ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_Cambion</defName>
+		<label>Cambion</label>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<description>Cambions are a half-fiend race, and typically those who tieflings are mistaken for.</description>
+		<descriptionShort>Cambions are a half-fiend race, and typically those who tieflings are mistaken for.</descriptionShort>
+		<genes>
+			<li>DarkVision</li>
+			<li>FireResistant</li>
+			<li>Outland_Tail_Pointed</li>
+			<li>Outland_RidgedSkin</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Skin_DeepRed</li>
+			<li>Outland_Skin_Scarlet</li>
+			<li>Hair_BrightRed</li>
+			<li>Hair_DarkReddish</li>
+			<li>Hair_DarkBlack</li>
+			<li>Hair_InkBlack</li>
+			<li>Outland_HairColor_DarkRed</li>
+			<li>Outland_Eye_Orange</li>
+			<li>Outland_Headbone_Bull</li>
+			<li>Outland_Headbone_Flame</li>
+			<li>Outland_Headbone_Thorn</li>
+			<li>Outland_Headbone_Forward</li>
+			<li>Outland_BodyScale_Large</li>
+			<li>Ears_Pointed</li>
+			<li>Outland_Wings_Devil</li>
+		</genes>
+		<modExtensions>
+			<li Class="OutlandGenes.DefModExt_GeneSpecifics">
+				<xenoEggTexturePath>Outland/Items/XenoEgg_Impid</xenoEggTexturePath>
+			</li>
+		</modExtensions>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Cambion</defName>
+		<label>cambion</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Cambion>999</Forgotten_Cambion>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_CambionTribal</defName>
+		<label>tribal cambion</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Cambion>999</Forgotten_Cambion>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+</Defs>

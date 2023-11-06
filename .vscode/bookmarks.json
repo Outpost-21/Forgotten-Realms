@@ -1,172 +1,242 @@
 {
 	"files": [
 		{
-			"path": "1.4/Defs/GeneDefs/XenotypeDefs_ForgottenRealms.xml",
+			"path": "1.4/Defs/GeneDefs/XenotypeDefs_Misc.xml",
 			"bookmarks": [
 				{
-					"line": 4,
-					"column": 0,
-					"label": ""
-				},
-				{
-					"line": 37,
-					"column": 0,
-					"label": ""
-				},
-				{
-					"line": 148,
-					"column": 0,
-					"label": "Arctic Dwarf"
-				},
-				{
-					"line": 194,
-					"column": 0,
-					"label": "Gold Dwarf"
-				},
-				{
-					"line": 243,
-					"column": 0,
-					"label": "Shield Dwarf"
-				},
-				{
-					"line": 284,
-					"column": 0,
-					"label": "Duergar"
-				},
-				{
-					"line": 331,
-					"column": 0,
-					"label": "Wild Dwarf"
-				},
-				{
-					"line": 375,
+					"line": 3,
 					"column": 0,
 					"label": "Halfling"
 				},
 				{
-					"line": 408,
-					"column": 0,
-					"label": "Deep Gnome"
-				},
-				{
-					"line": 451,
-					"column": 0,
-					"label": "Forest Gnome"
-				},
-				{
-					"line": 491,
-					"column": 0,
-					"label": "Rock Gnome"
-				},
-				{
-					"line": 528,
+					"line": 36,
 					"column": 0,
 					"label": "Chitine"
 				},
 				{
-					"line": 572,
+					"line": 80,
 					"column": 0,
 					"label": "Satyr"
 				},
 				{
-					"line": 617,
+					"line": 125,
 					"column": 0,
 					"label": "Firbolg"
 				},
 				{
-					"line": 662,
+					"line": 170,
 					"column": 0,
 					"label": "Goliath"
 				},
 				{
-					"line": 704,
+					"line": 212,
 					"column": 0,
 					"label": "Gith"
 				},
 				{
-					"line": 758,
+					"line": 266,
 					"column": 0,
 					"label": "Half-Orc"
 				},
 				{
-					"line": 800,
+					"line": 308,
 					"column": 0,
 					"label": "Illithid"
 				},
 				{
-					"line": 850,
+					"line": 358,
 					"column": 0,
 					"label": "Killoren"
 				},
 				{
-					"line": 898,
+					"line": 406,
 					"column": 0,
 					"label": "Kobold"
 				},
 				{
-					"line": 945,
+					"line": 453,
 					"column": 0,
 					"label": "Orc"
 				},
 				{
-					"line": 992,
+					"line": 500,
 					"column": 0,
 					"label": "Tabaxi"
 				},
 				{
-					"line": 1044,
-					"column": 0,
-					"label": "Infernal Tiefling"
-				},
-				{
-					"line": 1116,
-					"column": 0,
-					"label": "High Elf"
-				},
-				{
-					"line": 1167,
-					"column": 0,
-					"label": "Drow"
-				},
-				{
-					"line": 1223,
-					"column": 0,
-					"label": "Moon Elf"
-				},
-				{
-					"line": 1275,
-					"column": 0,
-					"label": "Sun Elf"
-				},
-				{
-					"line": 1326,
-					"column": 0,
-					"label": "Wood Elf"
-				},
-				{
-					"line": 1379,
-					"column": 0,
-					"label": "Wild Elf"
-				},
-				{
-					"line": 1433,
-					"column": 0,
-					"label": "Snow Elf"
-				},
-				{
-					"line": 1488,
+					"line": 552,
 					"column": 0,
 					"label": "Goblin"
 				},
 				{
-					"line": 1533,
+					"line": 597,
 					"column": 0,
 					"label": "Hobgoblin"
 				},
 				{
-					"line": 1575,
+					"line": 639,
 					"column": 0,
 					"label": "Bugbear"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/XenotypeDefs_Fiends.xml",
+			"bookmarks": [
+				{
+					"line": 3,
+					"column": 0,
+					"label": "Cambion"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/XenotypeDefs_Planetouched.xml",
+			"bookmarks": [
+				{
+					"line": 3,
+					"column": 0,
+					"label": "Infernal Tiefling"
+				},
+				{
+					"line": 77,
+					"column": 0,
+					"label": "Chthonic Tiefling"
+				},
+				{
+					"line": 151,
+					"column": 0,
+					"label": "Abyssal Tiefling"
+				},
+				{
+					"line": 232,
+					"column": 0,
+					"label": "Aasimar"
+				},
+				{
+					"line": 272,
+					"column": 0,
+					"label": "Water Genasi"
+				},
+				{
+					"line": 319,
+					"column": 0,
+					"label": "Earth Genasi"
+				},
+				{
+					"line": 367,
+					"column": 0,
+					"label": "Fire Genasi"
+				},
+				{
+					"line": 414,
+					"column": 0,
+					"label": "Air Genasi"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/XenotypeDefs_Celestials.xml",
+			"bookmarks": [
+				{
+					"line": 3,
+					"column": 0,
+					"label": "Deva"
+				},
+				{
+					"line": 49,
+					"column": 0,
+					"label": "Planetar"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/XenotypeDefs_Elves.xml",
+			"bookmarks": [
+				{
+					"line": 3,
+					"column": 0,
+					"label": "High Elf"
+				},
+				{
+					"line": 52,
+					"column": 0,
+					"label": "Drow"
+				},
+				{
+					"line": 108,
+					"column": 0,
+					"label": "Moon Elf"
+				},
+				{
+					"line": 160,
+					"column": 0,
+					"label": "Sun Elf"
+				},
+				{
+					"line": 211,
+					"column": 0,
+					"label": "Wood Elf"
+				},
+				{
+					"line": 264,
+					"column": 0,
+					"label": "Wild Elf"
+				},
+				{
+					"line": 318,
+					"column": 0,
+					"label": "Snow Elf"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/XenotypeDefs_Dwarves.xml",
+			"bookmarks": [
+				{
+					"line": 3,
+					"column": 0,
+					"label": "Arctic Dwarf"
+				},
+				{
+					"line": 49,
+					"column": 0,
+					"label": "Gold Dwarf"
+				},
+				{
+					"line": 98,
+					"column": 0,
+					"label": "Shield Dwarf"
+				},
+				{
+					"line": 139,
+					"column": 0,
+					"label": "Duergar"
+				},
+				{
+					"line": 186,
+					"column": 0,
+					"label": "Wild Dwarf"
+				}
+			]
+		},
+		{
+			"path": "1.4/Defs/GeneDefs/XenotypeDefs_Gnomes.xml",
+			"bookmarks": [
+				{
+					"line": 3,
+					"column": 0,
+					"label": "Deep Gnome"
+				},
+				{
+					"line": 46,
+					"column": 0,
+					"label": "Forest Gnome"
+				},
+				{
+					"line": 86,
+					"column": 0,
+					"label": "Rock Gnome"
 				}
 			]
 		}

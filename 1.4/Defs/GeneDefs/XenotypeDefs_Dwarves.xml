@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== Arctic Dwarf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_ArcticDwarf</defName>
+		<label>arctic dwarf</label>
+		<description>Arctic dwarves, also known as Inugaakalikurit, were a race of dwarves located in the isolated reaches of the Great Glacier in Faerûn's northernmost reaches. Arctic dwarves had a different origin from most other dwarves in Faerûn and were significantly different physiologically and culturally from other members of the Stout Folk, so much that they might be considered their own race.</description>
+		<descriptionShort>Arctic dwarves, also known as Inugaakalikurit, were a race of dwarves located in the isolated reaches of the Great Glacier in Faerûn's northernmost reaches.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Dwarf</iconPath>
+		<nameMaker>Forgotten_NamerPersonDwarfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonDwarfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>DarkVision</li>
+			<li>Beard_BushyOnly</li>
+			<li>Body_Standard</li>
+			<li>Hair_SnowWhite</li>
+			<li>Skin_SheerWhite</li>
+			<li>Outland_Skin_BlueIce</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>MaxTemp_SmallDecrease</li>
+			<li>Outland_BodyScale_Tiny</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_ExtremeMetabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_ArcticDwarf</defName>
+		<label>arctic dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ArcticDwarf>999</Forgotten_ArcticDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_ArcticDwarfTribal</defName>
+		<label>tribal arctic dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ArcticDwarf>999</Forgotten_ArcticDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Gold Dwarf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_GoldDwarf</defName>
+		<label>gold dwarf</label>
+		<description>Gold dwarves, also known as hill dwarves, were the aloof, confident and sometimes proud subrace of dwarves that predominantly came from the Great Rift. They were known to be particularly stalwart warriors and shrewd traders. Gold dwarves were often trained specifically to battle the horrendous aberrations that were known to come from the Underdark.</description>
+		<descriptionShort>Gold dwarves, also known as hill dwarves, were the aloof, confident and sometimes proud subrace of dwarves that predominantly came from the Great Rift.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Dwarf</iconPath>
+		<nameMaker>Forgotten_NamerPersonDwarfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonDwarfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>DarkVision</li>
+			<li>Beard_BushyOnly</li>
+			<li>Body_Standard</li>
+			<li>Outland_Skin_LightBrown</li>
+			<li>Outland_Skin_BrownWood</li>
+			<li>Outland_Skin_UmberBurnt</li>
+			<li>Outland_BodyScale_Squat</li>
+			<li>Hair_DarkBlack</li>
+			<li>Hair_InkBlack</li>
+			<li>Hair_MidBlack</li>
+			<li>Hair_DarkBrown</li>
+			<li>Hair_DarkReddish</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_HighMetabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_GoldDwarf</defName>
+		<label>gold dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_GoldDwarf>999</Forgotten_GoldDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_GoldDwarfTribal</defName>
+		<label>tribal gold dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_GoldDwarf>999</Forgotten_GoldDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Shield Dwarf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_ShieldDwarf</defName>
+		<label>shield dwarf</label>
+		<description>Shield dwarves, also known as mountain dwarves, were among the most common of the dwarven peoples. Once the rulers of mighty kingdoms across Faerûn, the shield dwarves had since fallen by the wayside after centuries of warfare with their goblinoid enemies.</description>
+		<descriptionShort>Shield dwarves, also known as mountain dwarves, were among the most common of the dwarven peoples.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Dwarf</iconPath>
+		<nameMaker>Forgotten_NamerPersonDwarfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonDwarfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>DarkVision</li>
+			<li>Beard_BushyOnly</li>
+			<li>Body_Standard</li>
+			<li>Outland_BodyScale_Squat</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_HighMetabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_ShieldDwarf</defName>
+		<label>shield dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ShieldDwarf>999</Forgotten_ShieldDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_ShieldDwarfTribal</defName>
+		<label>tribal shield dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ShieldDwarf>999</Forgotten_ShieldDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Duergar ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_Duergar</defName>
+		<label>duergar</label>
+		<description>Duergar, also known as gray dwarves, or underdwarves were a subterranean subrace of dwarves. They carved out an existence in the Underdark, often near volcanoes. Their kinship to other dwarven subraces could be compared to that of the drow to surface elves.</description>
+		<descriptionShort>Duergar, also known as gray dwarves, or underdwarves were a subterranean subrace of dwarves.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Dwarf</iconPath>
+		<genes>
+			<li>DarkVision</li>
+			<li>Beard_BushyOnly</li>
+			<li>Body_Standard</li>
+			<li>Outland_BodyScale_Squat</li>
+			<li>Outland_DarklightAffinity</li>
+			<li>Outland_BaldMale</li>
+			<li>Outland_Skin_BlueSubtle</li>
+			<li>Skin_SlateGray</li>
+			<li>Skin_InkBlack</li>
+			<li>Hair_MidBlack</li>
+			<li>Hair_DarkBlack</li>
+			<li>Hair_InkBlack</li>
+			<li>Hair_SnowWhite</li>
+			<li>Hair_Gray</li>
+			<li>Outland_YouthfulAgeing</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Duergar</defName>
+		<label>duergar</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Duergar>999</Forgotten_Duergar>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DuergarTribal</defName>
+		<label>tribal duergar</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Duergar>999</Forgotten_Duergar>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Wild Dwarf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_WildDwarf</defName>
+		<label>wild dwarf</label>
+		<description>Wild dwarves, also known as jungle dwarves, greenbeards, or dur Authalar ("the People") in their own language, were primitive dwarves who inhabited the Jungles of Chult, the Mhair and Black Jungles, as well as the more temperate Winterglen on Gwynneth.</description>
+		<descriptionShort>Wild dwarves, also known as jungle dwarves, greenbeards, or dur Authalar ("the People") in their own language, were primitive dwarves who inhabited the Jungles of Chult, the Mhair and Black Jungles, as well as the more temperate Winterglen on Gwynneth.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Dwarf</iconPath>
+		<nameMaker>Forgotten_NamerPersonDwarfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonDwarfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>DarkVision</li>
+			<li>Beard_BushyOnly</li>
+			<li>Body_Standard</li>
+			<li>Outland_BodyScale_Squat</li>
+			<li>MaxTemp_LargeIncrease</li>
+			<li>Immunity_Strong</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_Pos4Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_WildDwarf</defName>
+		<label>wild dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_WildDwarf>999</Forgotten_WildDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_WildDwarfTribal</defName>
+		<label>tribal wild dwarf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_WildDwarf>999</Forgotten_WildDwarf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+</Defs>

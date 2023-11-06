@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- 
+		== Implemented ==
+		+ Cambrion
+		+ Deva
+		+ Aasimar
+		+ Cthonic Tiefling
+		+ Abyssal Tiefling
+		+ Genasi (Air)
+		+ Genasi (Earth)
+		+ Genasi (Fire)
+		+ Genasi (Water)
+
+		== To-Do ==
+		Elf (Avariel)
+		Half-Elf (Avariel)
+		Elf (Shadar-kai)
+		Half-Elf (Shadar-kai)
+		Dragonborn (Black)
+		Dragonborn (Blue)
+		Dragonborn (Brass)
+		Dragonborn (Bronze)
+		Dragonborn (Copper)
+		Dragonborn (Gold)
+		Dragonborn (Green)
+		Dragonborn (Red)
+		Dragonborn (Silver)
+		Dragonborn (White)
+		(Might be worth doing something fancy for Dragonborn involving a single ancestry gene instead)
+		Saurial
+		Sarrukh
+		Lizardfolk
+		Minotaur
+		Gnolls
+		Triton
+		Aarakocra
+		Alaghi
+		Loxo
+		Kuo-Toa
+		Harssaf
+		Thri-kreen
+		Drider
+
+		Warforged (Only with Asimov, so no point till that's out)
+
+		Elf (Sea) (No real point until underwater biomes with Rimnautica are available)
+		Half-Elf (Sea) (No real point until underwater biomes with Rimnautica are available)
+		
+		>> Half-Elf races may not be worth doing, come back to for future update maybe
+		Half-Elf (High)
+		Half-Elf (Drow)
+		Half-Elf (Moon)
+		Half-Elf (Snow)
+		Half-Elf (Sun)
+		Half-Elf (Wild)
+		Half-Elf (Wood)
+
+		Abilities, leave for an update, can have them retroactively applied.
+
+	-->
+
+	<XenotypeDef Name="ForgottenXenoBase" Abstract="true">
+		<combatPowerFactor>1.0</combatPowerFactor>
+		<inheritable>true</inheritable>
+		<genes />
+	</XenotypeDef>
+
+	<PawnKindDef Name="ForgottenBaseColonyPawnKind" Abstract="True">
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<combatPower>40</combatPower>
+		<isFighter>false</isFighter>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>100~600</apparelMoney>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef Name="ForgottenBaseTribalPawnKind" Abstract="True">
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+			<warnIfTotalAbove1>false</warnIfTotalAbove1>
+		</xenotypeSet>
+		<combatPower>40</combatPower>
+		<isFighter>false</isFighter>
+		<defaultFactionType>PlayerTribe</defaultFactionType>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelTags>
+			<li>Neolithic</li>
+			<li>Medieval</li>
+		</apparelTags>
+		<apparelMoney>100~600</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	</PawnKindDef>
+
+</Defs>
