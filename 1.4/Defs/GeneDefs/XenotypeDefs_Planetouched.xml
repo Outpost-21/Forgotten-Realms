@@ -235,7 +235,7 @@
 	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Aasimar</defName>
 		<label>aasimar</label>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Aasimar</iconPath>
 		<description>TODO</description>
 		<descriptionShort>TODO</descriptionShort>
 		<genes>
@@ -275,7 +275,7 @@
 	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_WaterGenasi</defName>
 		<label>water genasi</label>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_WaterGenasi</iconPath>
 		<description>TODO</description>
 		<descriptionShort>TODO</descriptionShort>
 		<genes>
@@ -322,7 +322,7 @@
 	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_EarthGenasi</defName>
 		<label>earth genasi</label>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_EarthGenasi</iconPath>
 		<description>TODO</description>
 		<descriptionShort>TODO</descriptionShort>
 		<genes>
@@ -370,7 +370,7 @@
 	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_FireGenasi</defName>
 		<label>fire genasi</label>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_FireGenasi</iconPath>
 		<description>TODO</description>
 		<descriptionShort>TODO</descriptionShort>
 		<genes>
@@ -417,7 +417,7 @@
 	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_AirGenasi</defName>
 		<label>air genasi</label>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_AirGenasi</iconPath>
 		<description>TODO</description>
 		<descriptionShort>TODO</descriptionShort>
 		<genes>

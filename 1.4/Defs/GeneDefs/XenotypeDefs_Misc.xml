@@ -685,4 +685,48 @@
 		</xenotypeSet>
 	</PawnKindDef>
 
+	<!-- ==================== Thri-kreen ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_ThriKreen</defName>
+		<label>thri-kreen</label>
+		<description>The thri-kreen were an insectoid monstrous humanoid race that primarily lived in the Shaar. The thri-kreen were a race of nomads and hunters. They were also known as mantis warriors and sometimes called "tri-kreen".</description>
+		<descriptionShort>The thri-kreen were an insectoid monstrous humanoid race that primarily lived in the Shaar.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_ThriKreen</iconPath>
+		<genes>
+			<li>Hair_BaldOnly</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>NakedSpeed</li>
+			<li>Outland_InsectHead</li>
+			<li>Skin_Green</li>
+			<li>Skin_PaleYellow</li>
+			<li>Outland_Skin_Sandstone</li>
+			<li>Outland_Antenna_Segmented</li>
+			<li>Outland_Teeth_Mandibles</li>
+			<li>Outland_Blood_Green</li>
+			<li>DarkVision</li>
+			<li>Outland_InsectBody</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_ThriKreen</defName>
+		<label>thri-kreen</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ThriKreen>999</Forgotten_ThriKreen>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_ThriKreenTribal</defName>
+		<label>tribal thri-kreen</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ThriKreen>999</Forgotten_ThriKreen>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
 </Defs>

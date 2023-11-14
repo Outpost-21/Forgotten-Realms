@@ -6,7 +6,7 @@
 	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Deva</defName>
 		<label>Deva</label>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Deva</iconPath>
 		<description>TODO</description>
 		<descriptionShort>TODO</descriptionShort>
 		<genes>
@@ -52,7 +52,7 @@
 	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Planetar</defName>
 		<label>Planetar</label>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Planetar</iconPath>
 		<description>TODO</description>
 		<descriptionShort>TODO</descriptionShort>
 		<genes>

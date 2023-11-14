@@ -6,7 +6,7 @@
 	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Cambion</defName>
 		<label>Cambion</label>
-		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</iconPath>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Cambion</iconPath>
 		<description>Cambions are a half-fiend race, and typically those who tieflings are mistaken for.</description>
 		<descriptionShort>Cambions are a half-fiend race, and typically those who tieflings are mistaken for.</descriptionShort>
 		<genes>
