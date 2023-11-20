@@ -729,4 +729,57 @@
 		</xenotypeSet>
 	</PawnKindDef>
 
+	<!-- ==================== Minotaur ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_Minotaur</defName>
+		<label>minotaur</label>
+		<description>TODO</description>
+		<descriptionShort>TODO</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Minotaur</iconPath>
+		<genes>
+			<li>Aggression_Aggressive</li>
+			<li>Robust</li>
+			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_BovineHead</li>
+			<li>Body_Hulk</li>
+			<li>Hair_DarkBrown</li>
+			<li>Hair_DarkReddish</li>
+			<li>Hair_MidBlack</li>
+			<li>Hair_DarkBlack</li>
+			<li>Outland_Ears_Doe</li>
+			<li>Outland_Headbone_Bull</li>
+			<li>Outland_Headbone_Benevolent</li>
+			<li>Outland_Headbone_Forward</li>
+			<li>Outland_Headbone_Rookie</li>
+			<li>Outland_Tail_Pom</li>
+			<li>Outland_HoovedFeet</li>
+			<li>VoiceRoar</li>
+			<li>DarkVision</li>
+			<li>Outland_Furbody</li>
+			<li>Outland_BodyScale_Large</li>
+			<li>Hair_BaldOnly</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Minotaur</defName>
+		<label>minotaur</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Minotaur>999</Forgotten_Minotaur>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_MinotaurTribal</defName>
+		<label>tribal minotaur</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Minotaur>999</Forgotten_Minotaur>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
 </Defs>
