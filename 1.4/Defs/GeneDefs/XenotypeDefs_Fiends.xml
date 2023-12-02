@@ -40,6 +40,11 @@
 			</li>
 		</modExtensions>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Cambion</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Cambion</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Cambion</defName>

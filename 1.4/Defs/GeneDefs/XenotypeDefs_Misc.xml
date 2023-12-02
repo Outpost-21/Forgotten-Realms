@@ -13,6 +13,11 @@
 			<li>Outland_BodyScale_Tiny</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Halfling</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Halfling</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Halfling</defName>
@@ -57,6 +62,11 @@
 			<li>Outland_Pos1Metabolism</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Chitine</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Chitine</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Chitine</defName>
@@ -102,6 +112,11 @@
 			<li>Outland_Pos4Metabolism</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Satyr</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Satyr</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Satyr</defName>
@@ -147,6 +162,11 @@
 			<li>Outland_Pos4Metabolism</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Firbolg</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Firbolg</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Firbolg</defName>
@@ -189,6 +209,11 @@
 			<li>Outland_ExtremeMetabolism</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Goliath</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Goliath</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Goliath</defName>
@@ -243,6 +268,11 @@
 			</li>
 		</modExtensions>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Gith</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Gith</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Gith</defName>
@@ -335,6 +365,11 @@
 			</li>
 		</modExtensions>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Illithid</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Illithid</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Illithid</defName>
@@ -383,6 +418,11 @@
 			<li>Outland_ExtremeMetabolism</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Killoren</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Killoren</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Killoren</defName>
@@ -430,6 +470,11 @@
 			<li>Outland_Neg1Metabolism</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Kobold</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Kobold</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Kobold</defName>
@@ -477,6 +522,11 @@
 			<li>Outland_Pos1Metabolism</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Orc</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Orc</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Orc</defName>
@@ -529,6 +579,11 @@
 			<li>Outland_Pos4Metabolism</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Tabaxi</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Tabaxi</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Tabaxi</defName>
@@ -574,6 +629,11 @@
 			<li>Outland_Neg2Metabolism</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Goblin</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Goblin</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Goblin</defName>
@@ -616,6 +676,11 @@
 			<li>Outland_Pos1Metabolism</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Hobgoblin</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Hobgoblin</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Hobgoblin</defName>
@@ -664,6 +729,11 @@
 			<li>Outland_HighMetabolism</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Bugbear</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Bugbear</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Bugbear</defName>
@@ -708,6 +778,11 @@
 			<li>Outland_InsectBody</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_ThriKreen</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_ThriKreen</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_ThriKreen</defName>
@@ -761,6 +836,11 @@
 			<li>Hair_BaldOnly</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Minotaur</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Minotaur</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Minotaur</defName>

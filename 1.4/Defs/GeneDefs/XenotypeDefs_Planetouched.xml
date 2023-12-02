@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Tiefling</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Tiefling</texPath>
+	</XenotypeIconDef>
 
 	<!-- ==================== Infernal Tiefling ==================== -->
 
@@ -247,8 +252,14 @@
 			<li>Outland_Eye_White</li>
 			<li>DarkVision</li>
 			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_Back_FeathersWhite</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Aasimar</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Aasimar</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Aasimar</defName>
@@ -296,6 +307,11 @@
 			<li>Outland_YouthfulAgeing</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_WaterGenasi</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_WaterGenasi</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_WaterGenasi</defName>
@@ -344,6 +360,11 @@
 			<li>Outland_ExtremeMetabolism</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_EarthGenasi</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_EarthGenasi</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_EarthGenasi</defName>
@@ -391,6 +412,11 @@
 			<li>Outland_Pos5Metabolism</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_FireGenasi</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_FireGenasi</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_FireGenasi</defName>
@@ -437,6 +463,11 @@
 			<li>DarkVision</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_AirGenasi</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_AirGenasi</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_AirGenasi</defName>

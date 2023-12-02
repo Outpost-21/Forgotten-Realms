@@ -26,6 +26,11 @@
 			<li>Outland_BodyScale_Large</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Deva</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Deva</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Deva</defName>
@@ -75,6 +80,11 @@
 			<li>AptitudeRemarkable_Intellectual</li>
 		</genes>
 	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Planetar</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Planetar</texPath>
+	</XenotypeIconDef>
 
 	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
 		<defName>Forgotten_Planetar</defName>

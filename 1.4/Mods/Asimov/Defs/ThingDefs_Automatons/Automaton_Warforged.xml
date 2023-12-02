@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<Asimov.PawnDef ParentName="BasePawn">
+		<defName>Forgotten_Warforged</defName>
+		<label>warforged</label>
+		<description>TODO</description>
+		<!-- Start of Asimov Data -->
+		<pawnSettings>
+			<immuneToAge>true</immuneToAge>
+			<generateRelations>false</generateRelations>
+			<!-- Styles -->
+			<allowHair>false</allowHair>
+			<allowBeards>false</allowBeards>
+			<allowTattoos>false</allowTattoos>
+			<!-- Traits -->
+			<onlyRestrictedTraits>true</onlyRestrictedTraits>
+			<traits />
+			<!-- Thoughts -->
+			<onlyRestrictedThoughts>true</onlyRestrictedThoughts>
+			<thoughts />
+			<!-- Backstories -->
+			<onlyRestrictedBackstories>true</onlyRestrictedBackstories>
+			<backstories>
+				<li>Forgotten_Warforged</li>
+			</backstories>
+			<!-- Body -->
+			<headTypeWhitelist>
+				<li>Forgotten_WarforgedA</li>
+				<!-- <li>Forgotten_WarforgedB</li>
+				<li>Forgotten_WarforgedC</li>
+				<li>Forgotten_WarforgedD</li>
+				<li>Forgotten_WarforgedE</li>
+				<li>Forgotten_WarforgedF</li> -->
+			</headTypeWhitelist>
+			<bodyTypeWhitelist>
+				<li>Male</li>
+				<!-- <li>Thin</li>
+				<li>Female</li>
+				<li>Hulk</li> -->
+			</bodyTypeWhitelist>
+		</pawnSettings>
+		<customGraphics>
+			<bodyPath>ForgottenRealms/Pawn/Warforged/Body/</bodyPath>
+			<shaderType>CutoutComplex</shaderType>
+			<skinColorPairs>
+				<li>
+					<!-- Default Factory Colours -->
+					<colorOne>(239, 228, 176)</colorOne>
+					<colorTwo>(239, 228, 176)</colorTwo>
+					<weight>100</weight>
+				</li>
+			</skinColorPairs>
+		</customGraphics>
+		<!-- End of Asimov Data -->
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<MoveSpeed>4.8</MoveSpeed>
+			<Flammability>0.1</Flammability>
+			<ComfyTemperatureMin>-250</ComfyTemperatureMin>
+			<ComfyTemperatureMax>250</ComfyTemperatureMax>
+			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<ToxicResistance>1</ToxicResistance>
+			<ImmunityGainSpeed>100</ImmunityGainSpeed>
+			<PainShockThreshold>10</PainShockThreshold>
+		</statBases>
+		<race>
+			<nameGenerator>Forgotten_WarforgedNamer</nameGenerator>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>0.8</baseHealthScale>
+			<fleshType>Asimov_Automaton</fleshType>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>100000</lifeExpectancy>
+			<leatherDef>Leather_Human</leatherDef>
+			<bloodDef>Filth_MachineBits</bloodDef>
+			<body>Forgotten_HumanoidConstruct</body>
+			<useMeatFrom>Human</useMeatFrom>
+			<foodType>None</foodType>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>Forgotten_Warforged</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(1,100)</li>
+					<li>(2,100)</li>
+					<li>(4,30)</li>
+					<li>(5,10)</li>
+					<li>(10,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>Asimov_Automaton</li>
+			</hediffGiverSets>
+		</race>
+		<recipes>
+			<li>RemoveBodyPart</li>
+		</recipes>
+		<comps>
+			<li Class="Asimov.CompProperties_Automaton">
+				<canUseRanged>true</canUseRanged>
+				<canUseMelee>true</canUseMelee>
+				<corpseEdible>false</corpseEdible>
+				<corpseRots>false</corpseRots>
+				<affectedByEMP>false</affectedByEMP>
+				<immuneToDisease>true</immuneToDisease>
+				<huntTarget>true</huntTarget>
+				<clearPassions>false</clearPassions>
+				<flattenSkills>false</flattenSkills>
+				<skillGainMulti>1</skillGainMulti>
+				<skillLossMulti>1</skillLossMulti>
+				<enableAllWorkTypes>true</enableAllWorkTypes>
+				<repairThings>
+					<li>Steel</li>
+				</repairThings>
+				<disabledNeeds>
+					<li>Mood</li>
+					<li>Food</li>
+					<li>Rest</li>
+					<li>Joy</li>
+					<li>Beauty</li>
+					<li>Comfort</li>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+					<li>DrugDesire</li>
+					<li>RoomSize</li>
+				</disabledNeeds>
+			</li>
+			<li Class="Asimov.CompProperties_RecolourablePawn">
+				<channelOne>true</channelOne>
+				<channelTwo>true</channelTwo>
+			</li>
+			<li Class="Asimov.CompProperties_Hibernation" />
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_DiseaseImmunity">
+				<hediffs>
+					<li>WoundInfection</li>
+					<li>BadBack</li>
+					<li>Frail</li>
+					<li>Cataract</li>
+					<li>HearingLoss</li>
+					<li>Blindness</li>
+					<li>Dementia</li>
+					<li>Alzheimers</li>
+					<li>Asthma</li>
+					<li>HeartArteryBlockage</li>
+					<li>Carcinoma</li>
+					<li>GutWorms</li>
+					<li>MuscleParasites</li>
+					<li>FibrousMechanites</li>
+					<li>SensoryMechanites</li>
+					<li>Flu</li>
+					<li>Plague</li>
+					<li>Malaria</li>
+					<li>SleepingSickness</li>
+					<li>TraumaSavant</li>
+					<li>ChemicalDamageModerate</li>
+					<li>ChemicalDamageSevere</li>
+					<li>Cirrhosis</li>
+					<li>ResurrectionPsychosis</li>
+					<li>Scaria</li>
+					<li>WaterInEyes</li>
+				</hediffs>
+			</li>
+		</modExtensions>
+	</Asimov.PawnDef>
+
+	<PawnKindDef>
+		<defName>Forgotten_Warforged</defName>
+		<label>warforged</label>
+		<race>Forgotten_Warforged</race>
+		<combatPower>40</combatPower>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Forgotten_Warforged</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags Inherit="false" />
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>0~0</apparelMoney>
+		<techHediffsChance>0.0</techHediffsChance>
+		<techHediffsMoney>0~0</techHediffsMoney>
+		<techHediffsTags Inherit="false" />
+		<initialWillRange>0</initialWillRange>
+		<initialResistanceRange>30~40</initialResistanceRange>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<clearApparel>True</clearApparel>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+</Defs>

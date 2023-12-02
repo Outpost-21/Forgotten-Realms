@@ -3,5 +3,6 @@
 	<v1.4>
 		<li>/</li>
 		<li>1.4</li>
+		<li IfModActive="Neronix17.Asimov">1.4/Mods/Asimov</li>
 	</v1.4>
 </loadFolders>

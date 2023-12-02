@@ -9,82 +9,82 @@
 					"label": "Halfling"
 				},
 				{
-					"line": 36,
+					"line": 41,
 					"column": 0,
 					"label": "Chitine"
 				},
 				{
-					"line": 80,
+					"line": 90,
 					"column": 0,
 					"label": "Satyr"
 				},
 				{
-					"line": 125,
+					"line": 140,
 					"column": 0,
 					"label": "Firbolg"
 				},
 				{
-					"line": 170,
+					"line": 190,
 					"column": 0,
 					"label": "Goliath"
 				},
 				{
-					"line": 212,
+					"line": 237,
 					"column": 0,
 					"label": "Gith"
 				},
 				{
-					"line": 266,
+					"line": 296,
 					"column": 0,
 					"label": "Half-Orc"
 				},
 				{
-					"line": 308,
+					"line": 338,
 					"column": 0,
 					"label": "Illithid"
 				},
 				{
-					"line": 358,
+					"line": 393,
 					"column": 0,
 					"label": "Killoren"
 				},
 				{
-					"line": 406,
+					"line": 446,
 					"column": 0,
 					"label": "Kobold"
 				},
 				{
-					"line": 453,
+					"line": 498,
 					"column": 0,
 					"label": "Orc"
 				},
 				{
-					"line": 500,
+					"line": 550,
 					"column": 0,
 					"label": "Tabaxi"
 				},
 				{
-					"line": 552,
+					"line": 607,
 					"column": 0,
 					"label": "Goblin"
 				},
 				{
-					"line": 597,
+					"line": 657,
 					"column": 0,
 					"label": "Hobgoblin"
 				},
 				{
-					"line": 639,
+					"line": 704,
 					"column": 0,
 					"label": "Bugbear"
 				},
 				{
-					"line": 687,
+					"line": 757,
 					"column": 0,
 					"label": "Thri-kreen"
 				},
 				{
-					"line": 731,
+					"line": 806,
 					"column": 0,
 					"label": "Minotaur"
 				}
@@ -104,42 +104,42 @@
 			"path": "1.4/Defs/GeneDefs/XenotypeDefs_Planetouched.xml",
 			"bookmarks": [
 				{
-					"line": 3,
+					"line": 8,
 					"column": 0,
 					"label": "Infernal Tiefling"
 				},
 				{
-					"line": 77,
+					"line": 82,
 					"column": 0,
 					"label": "Chthonic Tiefling"
 				},
 				{
-					"line": 151,
+					"line": 156,
 					"column": 0,
 					"label": "Abyssal Tiefling"
 				},
 				{
-					"line": 232,
+					"line": 237,
 					"column": 0,
 					"label": "Aasimar"
 				},
 				{
-					"line": 272,
+					"line": 283,
 					"column": 0,
 					"label": "Water Genasi"
 				},
 				{
-					"line": 319,
+					"line": 335,
 					"column": 0,
 					"label": "Earth Genasi"
 				},
 				{
-					"line": 367,
+					"line": 388,
 					"column": 0,
 					"label": "Fire Genasi"
 				},
 				{
-					"line": 414,
+					"line": 440,
 					"column": 0,
 					"label": "Air Genasi"
 				}
@@ -149,12 +149,7 @@
 			"path": "1.4/Defs/GeneDefs/XenotypeDefs_Celestials.xml",
 			"bookmarks": [
 				{
-					"line": 3,
-					"column": 0,
-					"label": "Deva"
-				},
-				{
-					"line": 49,
+					"line": 54,
 					"column": 0,
 					"label": "Planetar"
 				}
@@ -164,37 +159,37 @@
 			"path": "1.4/Defs/GeneDefs/XenotypeDefs_Elves.xml",
 			"bookmarks": [
 				{
-					"line": 3,
+					"line": 8,
 					"column": 0,
 					"label": "High Elf"
 				},
 				{
-					"line": 52,
+					"line": 57,
 					"column": 0,
 					"label": "Drow"
 				},
 				{
-					"line": 108,
+					"line": 113,
 					"column": 0,
 					"label": "Moon Elf"
 				},
 				{
-					"line": 160,
+					"line": 165,
 					"column": 0,
 					"label": "Sun Elf"
 				},
 				{
-					"line": 211,
+					"line": 216,
 					"column": 0,
 					"label": "Wood Elf"
 				},
 				{
-					"line": 264,
+					"line": 269,
 					"column": 0,
 					"label": "Wild Elf"
 				},
 				{
-					"line": 318,
+					"line": 323,
 					"column": 0,
 					"label": "Snow Elf"
 				}
@@ -204,27 +199,27 @@
 			"path": "1.4/Defs/GeneDefs/XenotypeDefs_Dwarves.xml",
 			"bookmarks": [
 				{
-					"line": 3,
+					"line": 8,
 					"column": 0,
 					"label": "Arctic Dwarf"
 				},
 				{
-					"line": 49,
+					"line": 54,
 					"column": 0,
 					"label": "Gold Dwarf"
 				},
 				{
-					"line": 98,
+					"line": 103,
 					"column": 0,
 					"label": "Shield Dwarf"
 				},
 				{
-					"line": 139,
+					"line": 144,
 					"column": 0,
 					"label": "Duergar"
 				},
 				{
-					"line": 186,
+					"line": 191,
 					"column": 0,
 					"label": "Wild Dwarf"
 				}
@@ -234,17 +229,17 @@
 			"path": "1.4/Defs/GeneDefs/XenotypeDefs_Gnomes.xml",
 			"bookmarks": [
 				{
-					"line": 3,
+					"line": 8,
 					"column": 0,
 					"label": "Deep Gnome"
 				},
 				{
-					"line": 46,
+					"line": 51,
 					"column": 0,
 					"label": "Forest Gnome"
 				},
 				{
-					"line": 86,
+					"line": 91,
 					"column": 0,
 					"label": "Rock Gnome"
 				}

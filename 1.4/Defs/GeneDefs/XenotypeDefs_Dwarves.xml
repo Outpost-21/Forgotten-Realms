@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Dwarf</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Dwarf</texPath>
+	</XenotypeIconDef>
 
 	<!-- ==================== Arctic Dwarf ==================== -->
 

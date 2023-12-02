@@ -2,8 +2,8 @@
 <Defs>
 
 	<TabulaRasa.UpdateDef>
-		<defName>ForgottenRealms_15112023</defName>
-		<date>2023/11/15</date>
+		<defName>ForgottenRealms_29112023</defName>
+		<date>2023/11/29</date>
 		<banner>ForgottenRealms/UpdateInfo/Updatebanner</banner>
 		<contentList>
 			<li>
@@ -14,14 +14,17 @@
 - Earth Genasi
 - Fire Genasi
 - Water Genasi
+- Thri-kreen
 - Minotaur
 
 Unlike the ones above, these ones won't spawn naturally. Events will be added in future updates for them to spawn through.
 - Deva
 - Planetar
-- Cambion
-- Drider</text>
-				<image>ForgottenRealms/UpdateImages/NewRaces</image>
+- Cambion</text>
+			</li>
+			<li>
+				<header>Xenotype Icons</header>
+				<text>All of the icons used for the xenotypes in this are now available to use on custom xenotypes too.</text>
 			</li>
 		</contentList>
 		<links>
