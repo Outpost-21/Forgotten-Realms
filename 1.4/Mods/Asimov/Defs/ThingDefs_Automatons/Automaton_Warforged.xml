@@ -165,6 +165,7 @@
 			</ageGenerationCurve>
 			<hediffGiverSets>
 				<li>Asimov_Automaton</li>
+				<li>Forgotten_Warforged</li>
 			</hediffGiverSets>
 		</race>
 		<recipes>
@@ -270,5 +271,99 @@
 			</li>
 		</modExtensions>
 	</PawnKindDef>
+
+	<ThingDef>
+		<defName>Forgotten_Spawner_Warforged</defName>
+		<label>warforged</label>
+		<description>Spawns a brand new warforged.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Alpha</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>550</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<comps>
+			<li Class="TabulaRasa.CompProperties_PawnSpawner">
+				<pawnKind>Forgotten_Warforged</pawnKind>
+				<newborn>true</newborn>
+			</li>
+		</comps>
+		<size>(1,1)</size>
+		<category>Building</category>
+		<pathCost>200</pathCost>
+		<passability>Standable</passability>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleRock</filthLeaving>
+		<hasInteractionCell>false</hasInteractionCell>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<repairEffect>Repair</repairEffect>
+		<useHitPoints>True</useHitPoints>
+		<selectable>true</selectable>
+		<surfaceType>Item</surfaceType>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>Forgotten_MakeWarforged</defName>
+		<label>make warforged</label>
+		<description>Make a warforged.</description>
+		<jobString>Making warforged.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>8000</workAmount>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Forgotten_WarforgedAltar</li>
+		</recipeUsers>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Forgotten_WarforgedHeartstone</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>120</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Forgotten_WarforgedHeartstone</li>
+				<li>Steel</li>
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Forgotten_Spawner_Warforged>1</Forgotten_Spawner_Warforged>
+		</products>
+		<!-- <researchPrerequisite>Forgotten_Warforged</researchPrerequisite> -->
+	</RecipeDef>
 
 </Defs>

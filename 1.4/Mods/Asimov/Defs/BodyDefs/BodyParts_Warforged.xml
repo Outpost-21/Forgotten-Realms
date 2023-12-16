@@ -18,8 +18,8 @@
 	</BodyPartDef>
 
 	<BodyPartDef>
-		<defName>Forgotten_ConstructBrain</defName>
-		<label>construct brain</label>
+		<defName>Forgotten_ConstructNeuric</defName>
+		<label>neuric</label>
 		<hitPoints>10</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
@@ -33,8 +33,8 @@
 	</BodyPartDef>
 
 	<BodyPartDef>
-		<defName>Forgotten_ConstructReactor</defName>
-		<label>reactor</label>
+		<defName>Forgotten_ConstructHeartstone</defName>
+		<label>heartstone</label>
 		<hitPoints>20</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
@@ -47,8 +47,8 @@
 	</BodyPartDef>
 
 	<BodyPartDef>
-		<defName>Forgotten_ConstructFluidReprocessor</defName>
-		<label>fluid reprocessor</label>
+		<defName>Forgotten_ConstructNephros</defName>
+		<label>nephros</label>
 		<hitPoints>15</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
@@ -61,8 +61,8 @@
 	</BodyPartDef>
 
 	<BodyPartDef>
-		<defName>Forgotten_ConstructSightSensor</defName>
-		<label>visual sensor</label>
+		<defName>Forgotten_ConstructOculary</defName>
+		<label>oculary</label>
 		<hitPoints>10</hitPoints>
 		<frostbiteVulnerability>2</frostbiteVulnerability>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -77,8 +77,8 @@
 	</BodyPartDef>
 
 	<BodyPartDef>
-		<defName>Forgotten_ConstructSoundSensor</defName>
-		<label>sound sensor</label>
+		<defName>Forgotten_ConstructAuralis</defName>
+		<label>auralis</label>
 		<hitPoints>10</hitPoints>
 		<frostbiteVulnerability>2</frostbiteVulnerability>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -92,8 +92,8 @@
 	</BodyPartDef>
 
 	<BodyPartDef>
-		<defName>Forgotten_ConstructSmellSensor</defName>
-		<label>chemical analyzer</label>
+		<defName>Forgotten_ConstructRhinicary</defName>
+		<label>rhinicary</label>
 		<hitPoints>10</hitPoints>
 		<frostbiteVulnerability>2</frostbiteVulnerability>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>

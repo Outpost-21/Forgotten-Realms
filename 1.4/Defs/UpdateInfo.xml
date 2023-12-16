@@ -2,8 +2,8 @@
 <Defs>
 
 	<TabulaRasa.UpdateDef>
-		<defName>ForgottenRealms_29112023</defName>
-		<date>2023/11/29</date>
+		<defName>ForgottenRealms_03112023</defName>
+		<date>2023/12/03</date>
 		<banner>ForgottenRealms/UpdateInfo/Updatebanner</banner>
 		<contentList>
 			<li>
@@ -26,11 +26,20 @@ Unlike the ones above, these ones won't spawn naturally. Events will be added in
 				<header>Xenotype Icons</header>
 				<text>All of the icons used for the xenotypes in this are now available to use on custom xenotypes too.</text>
 			</li>
+			<li>
+				<header>Warforged</header>
+				<text>Warforged are now included if you have Asimov (link at the top), they're self repairing and do not suffer many of the frailties that biological pawns have. You won't find them wandering the world (yet), but you can find Heartstones on traders and as a quest reward, which will allow you to create them at the Warforged Altar building.</text>
+			</li>
 		</contentList>
 		<links>
 			<li>
 				<linkLabel>Steam Workshop</linkLabel>
 				<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3068979395</linkUrl>
+				<linkTex>TabulaRasa/UI/Steam</linkTex>
+			</li>
+			<li>
+				<linkLabel>Asimov</linkLabel>
+				<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3096481956</linkUrl>
 				<linkTex>TabulaRasa/UI/Steam</linkTex>
 			</li>
 		</links>

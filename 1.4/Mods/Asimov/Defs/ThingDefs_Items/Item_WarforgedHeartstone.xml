@@ -1,4 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>Forgotten_WarforgedHeartstone</defName>
+		<label>heartstone</label>
+		<description>A densely magic imbued gemstone, used to kickstart the life of a Warforged.</description>
+		<graphicData>
+			<texPath>ForgottenRealms/Items/Heartstone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>10</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>5000</MarketValue>
+			<Mass>1</Mass>
+			<Flammability>0.3</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>ItemsMisc</li>
+		</thingCategories>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<allowedArchonexusCount>10</allowedArchonexusCount>
+	</ThingDef>
+
 </Defs>

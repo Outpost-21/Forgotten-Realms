@@ -25,8 +25,8 @@
 			<!-- <Forgotten_Orc>0.1</Forgotten_Orc> -->
 			<Forgotten_Tabaxi>0.1</Forgotten_Tabaxi>
 			<Forgotten_InfernalTiefling>0.1</Forgotten_InfernalTiefling>
-			<!-- <Forgotten_AbyssalTiefling>0.1</Forgotten_AbyssalTiefling> -->
-			<!-- <Forgotten_CthonicTiefling>0.1</Forgotten_CthonicTiefling> -->
+			<Forgotten_AbyssalTiefling>0.1</Forgotten_AbyssalTiefling>
+			<Forgotten_ChthonicTiefling>0.1</Forgotten_ChthonicTiefling>
 			<Forgotten_HighElf>0.1</Forgotten_HighElf>
 			<!-- <Forgotten_Drow>0.1</Forgotten_Drow> -->
 			<Forgotten_MoonElf>0.1</Forgotten_MoonElf>
@@ -37,6 +37,12 @@
 			<!-- <Forgotten_Goblin>0.1</Forgotten_Goblin> -->
 			<!-- <Forgotten_Hobgoblin>0.1</Forgotten_Hobgoblin> -->
 			<!-- <Forgotten_Bugbear>0.1</Forgotten_Bugbear> -->
+			<Forgotten_AirGenasi>0.1</Forgotten_AirGenasi>
+			<Forgotten_EarthGenasi>0.1</Forgotten_EarthGenasi>
+			<Forgotten_FireGenasi>0.1</Forgotten_FireGenasi>
+			<Forgotten_WaterGenasi>0.1</Forgotten_WaterGenasi>
+			<Forgotten_ThriKreen>0.1</Forgotten_ThriKreen>
+			<!-- <Forgotten_Minotaur>0.1</Forgotten_Minotaur> -->
 		</value>
 	</Operation>
 
@@ -78,7 +84,7 @@
 			<Forgotten_Tabaxi>0.1</Forgotten_Tabaxi>
 			<Forgotten_InfernalTiefling>0.1</Forgotten_InfernalTiefling>
 			<!-- <Forgotten_AbyssalTiefling>0.1</Forgotten_AbyssalTiefling> -->
-			<!-- <Forgotten_CthonicTiefling>0.1</Forgotten_CthonicTiefling> -->
+			<!-- <Forgotten_ChthonicTiefling>0.1</Forgotten_ChthonicTiefling> -->
 			<Forgotten_HighElf>0.1</Forgotten_HighElf>
 			<!-- <Forgotten_Drow>0.1</Forgotten_Drow> -->
 			<Forgotten_MoonElf>0.1</Forgotten_MoonElf>
@@ -89,6 +95,12 @@
 			<Forgotten_Goblin>0.1</Forgotten_Goblin>
 			<Forgotten_Hobgoblin>0.1</Forgotten_Hobgoblin>
 			<Forgotten_Bugbear>0.1</Forgotten_Bugbear>
+			<Forgotten_AirGenasi>0.1</Forgotten_AirGenasi>
+			<Forgotten_EarthGenasi>0.1</Forgotten_EarthGenasi>
+			<Forgotten_FireGenasi>0.1</Forgotten_FireGenasi>
+			<Forgotten_WaterGenasi>0.1</Forgotten_WaterGenasi>
+			<Forgotten_ThriKreen>0.1</Forgotten_ThriKreen>
+			<Forgotten_Minotaur>0.1</Forgotten_Minotaur>
 		</value>
 	</Operation>
 
@@ -117,7 +129,7 @@
 			<Forgotten_Tabaxi>0.1</Forgotten_Tabaxi>
 			<Forgotten_InfernalTiefling>0.1</Forgotten_InfernalTiefling>
 			<!-- <Forgotten_AbyssalTiefling>0.1</Forgotten_AbyssalTiefling> -->
-			<!-- <Forgotten_CthonicTiefling>0.1</Forgotten_CthonicTiefling> -->
+			<!-- <Forgotten_ChthonicTiefling>0.1</Forgotten_ChthonicTiefling> -->
 			<Forgotten_HighElf>0.1</Forgotten_HighElf>
 			<Forgotten_Drow>0.1</Forgotten_Drow>
 			<Forgotten_MoonElf>0.1</Forgotten_MoonElf>
@@ -128,6 +140,12 @@
 			<Forgotten_Goblin>0.1</Forgotten_Goblin>
 			<Forgotten_Hobgoblin>0.1</Forgotten_Hobgoblin>
 			<Forgotten_Bugbear>0.1</Forgotten_Bugbear>
+			<Forgotten_AirGenasi>0.1</Forgotten_AirGenasi>
+			<Forgotten_EarthGenasi>0.1</Forgotten_EarthGenasi>
+			<Forgotten_FireGenasi>0.1</Forgotten_FireGenasi>
+			<Forgotten_WaterGenasi>0.1</Forgotten_WaterGenasi>
+			<Forgotten_ThriKreen>0.1</Forgotten_ThriKreen>
+			<Forgotten_Minotaur>0.1</Forgotten_Minotaur>
 		</value>
 	</Operation>
 

@@ -30,7 +30,7 @@
 							</groups>
 							<parts>
 								<li>
-									<def>Forgotten_ConstructBrain</def>
+									<def>Forgotten_ConstructNeuric</def>
 									<coverage>0.10</coverage>
 									<depth>Inside</depth>
                                     <groups>
@@ -39,8 +39,8 @@
                                     </groups>
 								</li>
 								<li>
-									<def>Forgotten_ConstructSightSensor</def>
-									<customLabel>left sight sensor</customLabel>
+									<def>Forgotten_ConstructOculary</def>
+									<customLabel>left oculary</customLabel>
 									<coverage>0.13</coverage>
                                     <groups>
                                         <li>FullHead</li>
@@ -48,8 +48,8 @@
                                     </groups>
 								</li>
 								<li>
-									<def>Forgotten_ConstructSightSensor</def>
-									<customLabel>right sight sensor</customLabel>
+									<def>Forgotten_ConstructOculary</def>
+									<customLabel>right oculary</customLabel>
 									<coverage>0.13</coverage>
                                     <groups>
                                         <li>FullHead</li>
@@ -57,8 +57,8 @@
                                     </groups>
 								</li>
 								<li>
-									<def>Forgotten_ConstructSoundSensor</def>
-									<customLabel>left sound sensor</customLabel>
+									<def>Forgotten_ConstructAuralis</def>
+									<customLabel>left auralis</customLabel>
 									<coverage>0.10</coverage>
                                     <groups>
                                         <li>UpperHead</li>
@@ -66,8 +66,8 @@
                                     </groups>
 								</li>
 								<li>
-									<def>Forgotten_ConstructSoundSensor</def>
-									<customLabel>right sound sensor</customLabel>
+									<def>Forgotten_ConstructAuralis</def>
+									<customLabel>right auralis</customLabel>
 									<coverage>0.10</coverage>
                                     <groups>
                                         <li>UpperHead</li>
@@ -75,7 +75,7 @@
                                     </groups>
 								</li>
 								<li>
-									<def>Forgotten_ConstructSmellSensor</def>
+									<def>Forgotten_ConstructRhinicary</def>
 									<coverage>0.10</coverage>
                                     <groups>
                                         <li>Teeth</li>
@@ -269,7 +269,7 @@
 					</parts>
 				</li>
 				<li>
-					<def>Forgotten_ConstructReactor</def>
+					<def>Forgotten_ConstructHeartstone</def>
 					<coverage>0.06</coverage>
 					<depth>Inside</depth>
 					<groups>
@@ -277,7 +277,7 @@
 					</groups>
 				</li>
 				<li>
-					<def>Forgotten_ConstructFluidReprocessor</def>
+					<def>Forgotten_ConstructNephros</def>
 					<coverage>0.04</coverage>
 					<depth>Inside</depth>
 					<groups>
@@ -285,7 +285,7 @@
 					</groups>
 				</li>
 				<li>
-					<def>Forgotten_ConstructFluidReprocessor</def>
+					<def>Forgotten_ConstructNephros</def>
 					<coverage>0.04</coverage>
 					<depth>Inside</depth>
 					<groups>
