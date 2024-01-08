@@ -9,7 +9,8 @@
 		<graphicData>
 			<texPath>ForgottenRealms/Buildings/WarforgedAltar</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3, 3)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4, 4)</drawSize>
 		</graphicData>
 		<size>(3, 3)</size>
 		<uiIconScale>1.0</uiIconScale>

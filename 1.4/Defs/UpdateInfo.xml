@@ -2,8 +2,8 @@
 <Defs>
 
 	<TabulaRasa.UpdateDef>
-		<defName>ForgottenRealms_03112023</defName>
-		<date>2023/12/03</date>
+		<defName>ForgottenRealms_02012024</defName>
+		<date>2024/01/02</date>
 		<banner>ForgottenRealms/UpdateInfo/Updatebanner</banner>
 		<contentList>
 			<li>
@@ -28,7 +28,7 @@ Unlike the ones above, these ones won't spawn naturally. Events will be added in
 			</li>
 			<li>
 				<header>Warforged</header>
-				<text>Warforged are now included if you have Asimov (link at the top), they're self repairing and do not suffer many of the frailties that biological pawns have. You won't find them wandering the world (yet), but you can find Heartstones on traders and as a quest reward, which will allow you to create them at the Warforged Altar building.</text>
+				<text>Warforged are now included if you have Asimov (link at the top), they're self repairing and do not suffer many of the frailties that biological pawns have. You won't find them wandering the world, but you can find Heartstones on traders and as a quest reward, allowing you to create them at the new Creation Forge which you can build at any time.</text>
 			</li>
 		</contentList>
 		<links>
