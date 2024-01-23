@@ -2,8 +2,8 @@
 <Defs>
 
 	<TabulaRasa.UpdateDef>
-		<defName>ForgottenRealms_02012024</defName>
-		<date>2024/01/02</date>
+		<defName>ForgottenRealms_24012024</defName>
+		<date>2024/01/24</date>
 		<banner>ForgottenRealms/UpdateInfo/Updatebanner</banner>
 		<contentList>
 			<li>
@@ -16,6 +16,7 @@
 - Water Genasi
 - Thri-kreen
 - Minotaur
+- Dragonborn
 
 Unlike the ones above, these ones won't spawn naturally. Events will be added in future updates for them to spawn through.
 - Deva
