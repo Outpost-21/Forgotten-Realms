@@ -11,6 +11,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4, 4)</drawSize>
+			<drawRotated>false</drawRotated>
 		</graphicData>
 		<size>(3, 3)</size>
 		<uiIconScale>1.0</uiIconScale>
@@ -19,7 +20,7 @@
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<pathCost>50</pathCost>
 		<passability>Standable</passability>
-		<rotatable>false</rotatable>
+		<rotatable>true</rotatable>
 		<canOverlapZones>true</canOverlapZones>
 		<tradeability>Sellable</tradeability>
 		<tickerType>Normal</tickerType>
@@ -30,6 +31,11 @@
 			<WorkToBuild>8000</WorkToBuild>
 		</statBases>
 		<costStuffCount>200</costStuffCount>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<placeWorkers>
+		  <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
 		<stuffCategories>
 			<li>Stony</li>
 		</stuffCategories>

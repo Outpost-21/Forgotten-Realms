@@ -4,7 +4,7 @@
 	<Asimov.PawnDef ParentName="BasePawn">
 		<defName>Forgotten_Warforged</defName>
 		<label>warforged</label>
-		<description>TODO</description>
+		<description>The warforged were built to fight in the Last War. The first warforged were mindless automatons, but House Cannith devoted vast resources to improving these steel soldiers. An unexpected breakthrough produced fully sentient soldiers, blending organic and inorganic materials. Warforged are made from wood and metal, but they can feel pain and emotion. Built as weapons, they must now find a purpose beyond the war. A warforged can be a steadfast ally, a cold-hearted killing machine, or a visionary in search of purpose and meaning.</description>
 		<!-- Start of Asimov Data -->
 		<pawnSettings>
 			<immuneToAge>true</immuneToAge>
@@ -44,12 +44,36 @@
 			<bodyPath>ForgottenRealms/Pawn/Warforged/Body/</bodyPath>
 			<shaderType>CutoutComplex</shaderType>
 			<skinColorPairs>
+				<!-- Steel -->
 				<li>
-					<!-- Default Factory Colours -->
-					<colorOne>(239, 228, 176)</colorOne>
-					<colorTwo>(239, 228, 176)</colorTwo>
-					<weight>100</weight>
+					<colorOne>(105, 105, 105)</colorOne>
+					<colorTwo>(102, 208, 222)</colorTwo>
+					<weight>55</weight>
 				</li>
+				<!-- Silver -->
+				<!-- <li>
+					<colorOne>(180, 173, 150)</colorOne>
+					<colorTwo>(102, 208, 222)</colorTwo>
+					<weight>20</weight>
+				</li> -->
+				<!-- Gold -->
+				<!-- <li>
+					<colorOne>(255, 235, 122)</colorOne>
+					<colorTwo>(102, 208, 222)</colorTwo>
+					<weight>10</weight>
+				</li> -->
+				<!-- Plasteel -->
+				<!-- <li>
+					<colorOne>(160, 178, 181)</colorOne>
+					<colorTwo>(102, 208, 222)</colorTwo>
+					<weight>5</weight>
+				</li> -->
+				<!-- Uranium -->
+				<!-- <li>
+					<colorOne>(100, 100, 100)</colorOne>
+					<colorTwo>(102, 208, 222)</colorTwo>
+					<weight>10</weight>
+				</li> -->
 			</skinColorPairs>
 		</customGraphics>
 		<!-- End of Asimov Data -->
@@ -59,7 +83,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>5.2</power>
+				<power>10</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -76,7 +100,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>5.2</power>
+				<power>10</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
 				<surpriseAttack>
@@ -93,7 +117,7 @@
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
-				<power>3</power>
+				<power>6</power>
 				<cooldownTime>2</cooldownTime>
 				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
 				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -101,23 +125,26 @@
 			</li>
 		</tools>
 		<statBases>
-			<MarketValue>1500</MarketValue>
-			<MoveSpeed>4.8</MoveSpeed>
-			<Flammability>0.1</Flammability>
+			<MarketValue>2500</MarketValue>
+			<MoveSpeed>4.4</MoveSpeed>
+			<Flammability>0.4</Flammability>
 			<ComfyTemperatureMin>-250</ComfyTemperatureMin>
-			<ComfyTemperatureMax>250</ComfyTemperatureMax>
+			<ComfyTemperatureMax>90</ComfyTemperatureMax>
 			<LeatherAmount>0</LeatherAmount>
 			<MeatAmount>0</MeatAmount>
 			<PsychicSensitivity>0</PsychicSensitivity>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
 			<ToxicResistance>1</ToxicResistance>
 			<ImmunityGainSpeed>100</ImmunityGainSpeed>
-			<PainShockThreshold>10</PainShockThreshold>
+			<PainShockThreshold>3</PainShockThreshold>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
 		</statBases>
 		<race>
-			<nameGenerator>Forgotten_WarforgedNamer</nameGenerator>
+			<nameGenerator>Forgotten_NamerPersonWarforged</nameGenerator>
 			<baseBodySize>1</baseBodySize>
-			<baseHealthScale>0.8</baseHealthScale>
+			<baseHealthScale>0.7</baseHealthScale>
 			<fleshType>Asimov_Automaton</fleshType>
 			<thinkTreeMain>Humanlike</thinkTreeMain>
 			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
@@ -239,6 +266,11 @@
 				</hediffs>
 			</li>
 		</modExtensions>
+		<butcherProducts>
+			<Forgotten_WarforgedHeartstone>1</Forgotten_WarforgedHeartstone>
+			<Steel>60</Steel>
+			<WoodLog>75</WoodLog>
+		</butcherProducts>
 	</Asimov.PawnDef>
 
 	<PawnKindDef>
@@ -319,7 +351,7 @@
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<workAmount>8000</workAmount>
-		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<unfinishedThingDef>Forgotten_UnfinishedWarforged</unfinishedThingDef>
 		<skillRequirements>
 			<Crafting>8</Crafting>
 		</skillRequirements>
@@ -365,5 +397,19 @@
 		</products>
 		<!-- <researchPrerequisite>Forgotten_Warforged</researchPrerequisite> -->
 	</RecipeDef>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>Forgotten_UnfinishedWarforged</defName>
+		<label>unfinished warforged</label>
+		<description>An unfinished warforged.</description>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>ForgottenRealms/Items/UnfinishedWarforged</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
 
 </Defs>
