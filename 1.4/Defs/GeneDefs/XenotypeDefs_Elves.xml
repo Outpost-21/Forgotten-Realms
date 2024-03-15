@@ -84,10 +84,11 @@
 			<li>MeleeDamage_Weak</li>
 			<li>Outland_DeceleratedPregnancy</li>
 			<li>Outland_LowFertility</li>
-			<li>Outland_Pos5Metabolism</li>
+			<li>Outland_Pos6Metabolism</li>
 			<li>Outland_FeyAgeing</li>
 			<li>LowSleep</li>
 			<li>Beauty_Pretty</li>
+			<li>DarkVision</li>
 		</genes>
 	</XenotypeDef>
 

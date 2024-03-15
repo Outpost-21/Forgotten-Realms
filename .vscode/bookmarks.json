@@ -119,27 +119,27 @@
 					"label": "Abyssal Tiefling"
 				},
 				{
-					"line": 237,
+					"line": 238,
 					"column": 0,
 					"label": "Aasimar"
 				},
 				{
-					"line": 283,
+					"line": 285,
 					"column": 0,
 					"label": "Water Genasi"
 				},
 				{
-					"line": 335,
+					"line": 337,
 					"column": 0,
 					"label": "Earth Genasi"
 				},
 				{
-					"line": 388,
+					"line": 390,
 					"column": 0,
 					"label": "Fire Genasi"
 				},
 				{
-					"line": 440,
+					"line": 442,
 					"column": 0,
 					"label": "Air Genasi"
 				}
@@ -169,27 +169,27 @@
 					"label": "Drow"
 				},
 				{
-					"line": 113,
+					"line": 114,
 					"column": 0,
 					"label": "Moon Elf"
 				},
 				{
-					"line": 165,
+					"line": 166,
 					"column": 0,
 					"label": "Sun Elf"
 				},
 				{
-					"line": 216,
+					"line": 217,
 					"column": 0,
 					"label": "Wood Elf"
 				},
 				{
-					"line": 269,
+					"line": 270,
 					"column": 0,
 					"label": "Wild Elf"
 				},
 				{
-					"line": 323,
+					"line": 324,
 					"column": 0,
 					"label": "Snow Elf"
 				}

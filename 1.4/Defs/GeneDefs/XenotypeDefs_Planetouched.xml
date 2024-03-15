@@ -207,6 +207,7 @@
 			<li>DarkVision</li>
 			<li>Outland_RidgedSkin</li>
 			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_Pos4Metabolism</li>
 		</genes>
 		<modExtensions>
 			<li Class="OutlandGenes.DefModExt_GeneSpecifics">
@@ -253,6 +254,7 @@
 			<li>DarkVision</li>
 			<li>Outland_YouthfulAgeing</li>
 			<li>Outland_Back_FeathersWhite</li>
+			<li>Outland_Pos4Metabolism</li>
 		</genes>
 	</XenotypeDef>
 	

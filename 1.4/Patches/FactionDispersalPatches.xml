@@ -7,10 +7,10 @@
 			<Forgotten_ArcticDwarf>0.1</Forgotten_ArcticDwarf>
 			<Forgotten_GoldDwarf>0.1</Forgotten_GoldDwarf>
 			<Forgotten_ShieldDwarf>0.1</Forgotten_ShieldDwarf>
-			<!-- <Forgotten_Duergar>0.1</Forgotten_Duergar> -->
+			<Forgotten_Duergar>0.1</Forgotten_Duergar>
 			<Forgotten_WildDwarf>0.1</Forgotten_WildDwarf>
 			<Forgotten_Halfling>0.1</Forgotten_Halfling>
-			<!-- <Forgotten_DeepGnome>0.1</Forgotten_DeepGnome> -->
+			<Forgotten_DeepGnome>0.1</Forgotten_DeepGnome>
 			<Forgotten_ForestGnome>0.1</Forgotten_ForestGnome>
 			<Forgotten_RockGnome>0.1</Forgotten_RockGnome>
 			<!-- <Forgotten_Chitine>0.1</Forgotten_Chitine> -->
@@ -28,7 +28,7 @@
 			<Forgotten_AbyssalTiefling>0.1</Forgotten_AbyssalTiefling>
 			<Forgotten_ChthonicTiefling>0.1</Forgotten_ChthonicTiefling>
 			<Forgotten_HighElf>0.1</Forgotten_HighElf>
-			<!-- <Forgotten_Drow>0.1</Forgotten_Drow> -->
+			<Forgotten_Drow>0.1</Forgotten_Drow>
 			<Forgotten_MoonElf>0.1</Forgotten_MoonElf>
 			<Forgotten_SunElf>0.1</Forgotten_SunElf>
 			<Forgotten_WoodElf>0.1</Forgotten_WoodElf>
@@ -43,6 +43,15 @@
 			<Forgotten_WaterGenasi>0.1</Forgotten_WaterGenasi>
 			<Forgotten_ThriKreen>0.1</Forgotten_ThriKreen>
 			<!-- <Forgotten_Minotaur>0.1</Forgotten_Minotaur> -->
+			<Forgotten_DragonbornWhite>0.015</Forgotten_DragonbornWhite>
+			<Forgotten_DragonbornSilver>0.015</Forgotten_DragonbornSilver>
+			<Forgotten_DragonbornRed>0.015</Forgotten_DragonbornRed>
+			<Forgotten_DragonbornGreen>0.015</Forgotten_DragonbornGreen>
+			<Forgotten_DragonbornGold>0.015</Forgotten_DragonbornGold>
+			<Forgotten_DragonbornCopper>0.015</Forgotten_DragonbornCopper>
+			<Forgotten_DragonbornBrass>0.015</Forgotten_DragonbornBrass>
+			<Forgotten_DragonbornBlue>0.015</Forgotten_DragonbornBlue>
+			<Forgotten_DragonbornBlack>0.015</Forgotten_DragonbornBlack>
 		</value>
 	</Operation>
 
@@ -65,10 +74,10 @@
 			<Forgotten_ArcticDwarf>0.1</Forgotten_ArcticDwarf>
 			<Forgotten_GoldDwarf>0.1</Forgotten_GoldDwarf>
 			<Forgotten_ShieldDwarf>0.1</Forgotten_ShieldDwarf>
-			<!-- <Forgotten_Duergar>0.1</Forgotten_Duergar> -->
+			<Forgotten_Duergar>0.1</Forgotten_Duergar>
 			<Forgotten_WildDwarf>0.1</Forgotten_WildDwarf>
 			<Forgotten_Halfling>0.1</Forgotten_Halfling>
-			<!-- <Forgotten_DeepGnome>0.1</Forgotten_DeepGnome> -->
+			<Forgotten_DeepGnome>0.1</Forgotten_DeepGnome>
 			<Forgotten_ForestGnome>0.1</Forgotten_ForestGnome>
 			<Forgotten_RockGnome>0.1</Forgotten_RockGnome>
 			<Forgotten_Chitine>0.1</Forgotten_Chitine>
@@ -83,10 +92,10 @@
 			<Forgotten_Orc>0.1</Forgotten_Orc>
 			<Forgotten_Tabaxi>0.1</Forgotten_Tabaxi>
 			<Forgotten_InfernalTiefling>0.1</Forgotten_InfernalTiefling>
-			<!-- <Forgotten_AbyssalTiefling>0.1</Forgotten_AbyssalTiefling> -->
-			<!-- <Forgotten_ChthonicTiefling>0.1</Forgotten_ChthonicTiefling> -->
+			<Forgotten_AbyssalTiefling>0.1</Forgotten_AbyssalTiefling>
+			<Forgotten_ChthonicTiefling>0.1</Forgotten_ChthonicTiefling>
 			<Forgotten_HighElf>0.1</Forgotten_HighElf>
-			<!-- <Forgotten_Drow>0.1</Forgotten_Drow> -->
+			<Forgotten_Drow>0.05</Forgotten_Drow>
 			<Forgotten_MoonElf>0.1</Forgotten_MoonElf>
 			<Forgotten_SunElf>0.1</Forgotten_SunElf>
 			<Forgotten_WoodElf>0.1</Forgotten_WoodElf>
@@ -101,6 +110,15 @@
 			<Forgotten_WaterGenasi>0.1</Forgotten_WaterGenasi>
 			<Forgotten_ThriKreen>0.1</Forgotten_ThriKreen>
 			<Forgotten_Minotaur>0.1</Forgotten_Minotaur>
+			<Forgotten_DragonbornWhite>0.015</Forgotten_DragonbornWhite>
+			<Forgotten_DragonbornSilver>0.015</Forgotten_DragonbornSilver>
+			<Forgotten_DragonbornRed>0.015</Forgotten_DragonbornRed>
+			<Forgotten_DragonbornGreen>0.015</Forgotten_DragonbornGreen>
+			<Forgotten_DragonbornGold>0.015</Forgotten_DragonbornGold>
+			<Forgotten_DragonbornCopper>0.015</Forgotten_DragonbornCopper>
+			<Forgotten_DragonbornBrass>0.015</Forgotten_DragonbornBrass>
+			<Forgotten_DragonbornBlue>0.015</Forgotten_DragonbornBlue>
+			<Forgotten_DragonbornBlack>0.015</Forgotten_DragonbornBlack>
 		</value>
 	</Operation>
 
@@ -128,8 +146,8 @@
 			<Forgotten_Orc>0.1</Forgotten_Orc>
 			<Forgotten_Tabaxi>0.1</Forgotten_Tabaxi>
 			<Forgotten_InfernalTiefling>0.1</Forgotten_InfernalTiefling>
-			<!-- <Forgotten_AbyssalTiefling>0.1</Forgotten_AbyssalTiefling> -->
-			<!-- <Forgotten_ChthonicTiefling>0.1</Forgotten_ChthonicTiefling> -->
+			<Forgotten_AbyssalTiefling>0.1</Forgotten_AbyssalTiefling>
+			<Forgotten_ChthonicTiefling>0.1</Forgotten_ChthonicTiefling>
 			<Forgotten_HighElf>0.1</Forgotten_HighElf>
 			<Forgotten_Drow>0.1</Forgotten_Drow>
 			<Forgotten_MoonElf>0.1</Forgotten_MoonElf>
@@ -146,6 +164,15 @@
 			<Forgotten_WaterGenasi>0.1</Forgotten_WaterGenasi>
 			<Forgotten_ThriKreen>0.1</Forgotten_ThriKreen>
 			<Forgotten_Minotaur>0.1</Forgotten_Minotaur>
+			<Forgotten_DragonbornWhite>0.015</Forgotten_DragonbornWhite>
+			<Forgotten_DragonbornSilver>0.015</Forgotten_DragonbornSilver>
+			<Forgotten_DragonbornRed>0.015</Forgotten_DragonbornRed>
+			<Forgotten_DragonbornGreen>0.015</Forgotten_DragonbornGreen>
+			<Forgotten_DragonbornGold>0.015</Forgotten_DragonbornGold>
+			<Forgotten_DragonbornCopper>0.015</Forgotten_DragonbornCopper>
+			<Forgotten_DragonbornBrass>0.015</Forgotten_DragonbornBrass>
+			<Forgotten_DragonbornBlue>0.015</Forgotten_DragonbornBlue>
+			<Forgotten_DragonbornBlack>0.015</Forgotten_DragonbornBlack>
 		</value>
 	</Operation>
 

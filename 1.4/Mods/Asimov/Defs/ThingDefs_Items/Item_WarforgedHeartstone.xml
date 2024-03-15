@@ -27,6 +27,9 @@
 		<tradeTags>
 			<li>ExoticMisc</li>
 		</tradeTags>
+		<thingSetMakerTags>
+		  <li>RewardStandardCore</li>
+		</thingSetMakerTags>
 		<allowedArchonexusCount>10</allowedArchonexusCount>
 	</ThingDef>
 

@@ -23,6 +23,7 @@
 			<li>Outland_DeceleratedPregnancy</li>
 			<li>Outland_Teeth_Fangs</li>
 			<li>Outland_AcceleratedMaturation</li>
+			<li>Outland_Scalebody</li>
 		</genes>
 	</XenotypeDef>
 	
@@ -75,6 +76,9 @@
 		<genes>
 			<li>Outland_FreezingSpray</li>
 			<li>Skin_SheerWhite</li>
+			<li>MinTemp_SmallDecrease</li>
+			<li>MaxTemp_SmallDecrease</li>
+			<li>Outland_ExtremeMetabolism</li>
 		</genes>
 	</XenotypeDef>
 
@@ -106,6 +110,9 @@
 		<genes>
 			<li>Outland_FreezingSpray</li>
 			<li>Outland_Skin_Silver</li>
+			<li>MinTemp_SmallDecrease</li>
+			<li>MaxTemp_SmallDecrease</li>
+			<li>Outland_ExtremeMetabolism</li>
 		</genes>
 	</XenotypeDef>
 
@@ -137,6 +144,10 @@
 		<genes>
 			<li>Skin_DeepRed</li>
 			<li>FireSpew</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>FireResistant</li>
+			<li>Outland_Pos5Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
@@ -166,8 +177,12 @@
 		<defName>Forgotten_DragonbornGreen</defName>
 		<label>dragonborn (green)</label>
 		<genes>
+			<li>ToxicEnvironmentResistance_Total</li>
+			<li>ToxResist_Partial</li>
 			<li>Outland_ToxicSpray</li>
 			<li>Outland_Skin_GreenSwamp</li>
+			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_Pos5Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
@@ -199,6 +214,10 @@
 		<genes>
 			<li>Outland_Skin_Gold</li>
 			<li>FireSpew</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>FireResistant</li>
+			<li>Outland_Pos5Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
@@ -230,6 +249,7 @@
 		<genes>
 			<li>AcidSpray</li>
 			<li>Outland_Skin_Copper</li>
+			<li>Outland_ExtremeMetabolism</li>
 		</genes>
 	</XenotypeDef>
 
@@ -261,6 +281,10 @@
 		<genes>
 			<li>Skin_PaleYellow</li>
 			<li>FireSpew</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>FireResistant</li>
+			<li>Outland_Pos5Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
@@ -292,6 +316,7 @@
 		<genes>
 			<li>Outland_LightningSpray</li>
 			<li>Outland_Skin_Dusk</li>
+			<li>Outland_ExtremeMetabolism</li>
 		</genes>
 	</XenotypeDef>
 
@@ -323,6 +348,7 @@
 		<genes>
 			<li>AcidSpray</li>
 			<li>Skin_InkBlack</li>
+			<li>Outland_ExtremeMetabolism</li>
 		</genes>
 	</XenotypeDef>
 

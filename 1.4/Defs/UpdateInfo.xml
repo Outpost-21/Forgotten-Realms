@@ -2,8 +2,8 @@
 <Defs>
 
 	<TabulaRasa.UpdateDef>
-		<defName>ForgottenRealms_24012024</defName>
-		<date>2024/01/24</date>
+		<defName>ForgottenRealms_06032024</defName>
+		<date>2024/03/06</date>
 		<banner>ForgottenRealms/UpdateInfo/Updatebanner</banner>
 		<contentList>
 			<li>
@@ -16,9 +16,9 @@
 - Water Genasi
 - Thri-kreen
 - Minotaur
-- Dragonborn
+- Dragonborn (Various types, each with appropriate breath style abilities)
 
-Unlike the ones above, these ones won't spawn naturally. Events will be added in future updates for them to spawn through.
+Unlike the ones above, these ones won't show up as part of factions. Events will be added in future updates for them to spawn through. Until then they can be selected at the start of the game or any other way you can manually choose Xenotype.
 - Deva
 - Planetar
 - Cambion</text>
@@ -26,6 +26,10 @@ Unlike the ones above, these ones won't spawn naturally. Events will be added in
 			<li>
 				<header>Xenotype Icons</header>
 				<text>All of the icons used for the xenotypes in this are now available to use on custom xenotypes too.</text>
+			</li>
+			<li>
+				<header>Fixes</header>
+				<text>Several fixes, including some additional/edited genes to existing Xenotypes are in this, gene changes on Xenotypes are not applied retroactively, only new generated pawns will be affected.</text>
 			</li>
 			<li>
 				<header>Warforged</header>
