@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<TabulaRasa.UpdateDef>
+		<defName>ForgottenRealms_06032024</defName>
+		<date>2024/03/06</date>
+		<banner>ForgottenRealms/UpdateInfo/Updatebanner</banner>
+		<contentList>
+			<li>
+				<header>Added Xenotypes</header>
+				<text>- Chthonic Tiefling
+- Abyssal Tiefling
+- Air Genasi
+- Earth Genasi
+- Fire Genasi
+- Water Genasi
+- Thri-kreen
+- Minotaur
+- Dragonborn (Various types, each with appropriate breath style abilities)
+
+Unlike the ones above, these ones won't show up as part of factions. Events will be added in future updates for them to spawn through. Until then they can be selected at the start of the game or any other way you can manually choose Xenotype.
+- Deva
+- Planetar
+- Cambion</text>
+			</li>
+			<li>
+				<header>Xenotype Icons</header>
+				<text>All of the icons used for the xenotypes in this are now available to use on custom xenotypes too.</text>
+			</li>
+			<li>
+				<header>Fixes</header>
+				<text>Several fixes, including some additional/edited genes to existing Xenotypes are in this, gene changes on Xenotypes are not applied retroactively, only new generated pawns will be affected.</text>
+			</li>
+			<li>
+				<header>Warforged</header>
+				<text>Warforged are now included if you have Asimov (link at the top), they're self repairing and do not suffer many of the frailties that biological pawns have. You won't find them wandering the world, but you can find Heartstones on exotics traders and as a quest reward, allowing you to create them at the new Creation Forge which you can build at any time.</text>
+			</li>
+		</contentList>
+		<links>
+			<li>
+				<linkLabel>Steam Workshop</linkLabel>
+				<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3068979395</linkUrl>
+				<linkTex>TabulaRasa/UI/Steam</linkTex>
+			</li>
+			<li>
+				<linkLabel>Asimov</linkLabel>
+				<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3096481956</linkUrl>
+				<linkTex>TabulaRasa/UI/Steam</linkTex>
+			</li>
+		</links>
+	</TabulaRasa.UpdateDef>
+
+</Defs>

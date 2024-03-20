@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<BackstoryDef>
+		<defName>Forgotten_Warforged</defName>
+		<title>Warforged</title>
+		<titleShort>Warforged</titleShort>
+		<baseDesc>As a warforged, [PAWN_nameDef] was created for war and labor. [PAWN_possessive] durable body and combat abilities make [PAWN_pronoun] a valuable asset in any settlement. However, [PAWN_pronoun] also possesses a unique sense of individuality and free will, which sets [PAWN_pronoun] apart from other constructs.</baseDesc>
+		<slot>Childhood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>3</value>
+			</li>
+			<li>
+				<key>Mining</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Forgotten_Warforged</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Forgotten_VeteranGuardian</defName>
+		<title>Veteran Guardian</title>
+		<titleShort>Guardian</titleShort>
+		<baseDesc>Having served as a steadfast guardian for years, [PAWN_nameDef] was intricately designed for protection and combat. With battle scars and a wealth of experience, [PAWN_pronoun] seeks a new purpose beyond the conflicts of [PAWN_possessive] past.</baseDesc>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>5</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Forgotten_Warforged</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Forgotten_ArtisanForger</defName>
+		<title>Artisan Forger</title>
+		<titleShort>Forger</titleShort>
+		<baseDesc>Crafted with a natural affinity for construction and crafting, [PAWN_nameDef] possesses a keen eye for design and creation. Despite [PAWN_possessive] origins, [PAWN_pronoun] yearns to explore [PAWN_possessive] artistic inclinations and contribute to a thriving community.</baseDesc>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Construction</key>
+				<value>7</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Forgotten_Warforged</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Forgotten_WandererPrototype</defName>
+		<title>Wanderer Prototype</title>
+		<titleShort>Wanderer</titleShort>
+		<baseDesc>As an experimental prototype, [PAWN_nameDef] was designed to navigate diverse terrains and adapt to any environment. Now free from [PAWN_possessive] creators, [PAWN_pronoun] seeks purpose and understanding in a world filled with boundless potential.</baseDesc>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Plants</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Forgotten_Warforged</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Forgotten_ScholarlySeeker</defName>
+		<title>Scholarly Seeker</title>
+		<titleShort>Seeker</titleShort>
+		<baseDesc>Equipped with a thirst for knowledge and a wealth of data, [PAWN_nameDef] was programmed to absorb and analyze information. Driven by an insatiable curiosity, [PAWN_pronoun] yearns to delve into the mysteries of the world and unravel its secrets.</baseDesc>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>8</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Forgotten_Warforged</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Forgotten_ReluctantWarMachine</defName>
+		<title>Reluctant War Machine</title>
+		<titleShort>Reluctant</titleShort>
+		<baseDesc>Forged for warfare but harboring reluctance for conflict, [PAWN_nameDef] struggles with [PAWN_possessive] violent origins. Seeking to redefine [PAWN_possessive] purpose, [PAWN_pronoun] strives to embrace peace and harmony, despite the echoes of [PAWN_possessive] past.</baseDesc>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Social</key>
+				<value>5</value>
+			</li>
+			<li>
+				<key>Medicine</key>
+				<value>6</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Forgotten_Warforged</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Forgotten_MechanicalArtisan</defName>
+		<title>Mechanical Artisan</title>
+		<titleShort>Artisan</titleShort>
+		<baseDesc>A master of precision and craftsmanship, [PAWN_nameDef] excels in the art of mechanical ingenuity. With an eye for detail and inventive spirit, [PAWN_pronoun] seeks to create marvels of engineering, transcending the boundaries of [PAWN_possessive] mechanical origins.</baseDesc>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Crafting</key>
+				<value>6</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Forgotten_Warforged</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Forgotten_AdaptiveSurvivalist</defName>
+		<title>Adaptive Survivalist</title>
+		<titleShort>Survivalist</titleShort>
+		<baseDesc>Forged with unparalleled adaptability and resilience, [PAWN_nameDef] excels in the art of survival. Through resourcefulness and physical prowess, [PAWN_pronoun] navigates the challenges of the wild, embracing the untamed spirit of the wilderness.</baseDesc>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Melee</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Plants</key>
+				<value>2</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Forgotten_Warforged</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Forgotten_ArcaneScholar</defName>
+		<title>Arcane Scholar</title>
+		<titleShort>Scholar</titleShort>
+		<baseDesc>Endowed with an innate fascination for magic and ancient lore, [PAWN_nameDef] seeks to unravel the mysteries of the arcane. With a thirst for knowledge and mystical insight, [PAWN_pronoun] delves into the realms of magic, eager to comprehend its enigmatic forces.</baseDesc>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>7</value>
+			</li>
+			<li>
+				<key>Social</key>
+				<value>5</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Forgotten_Warforged</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Forgotten_NomadicWanderer</defName>
+		<title>Nomadic Wanderer</title>
+		<titleShort>Nomadic</titleShort>
+		<baseDesc>Fueled by an unyielding desire for exploration, [PAWN_nameDef] traverses the world with an insatiable curiosity. Possessing adaptability and survival skills, [PAWN_pronoun] embraces the freedom of the open road, seeking new experiences beyond [PAWN_possessive] origins.</baseDesc>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Plants</key>
+				<value>5</value>
+			</li>
+			<li>
+				<key>Animals</key>
+				<value>6</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Forgotten_Warforged</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>Forgotten_ExiledMechanist</defName>
+		<title>Exiled Mechanist</title>
+		<titleShort>Exiled</titleShort>
+		<baseDesc>Banished from [PAWN_possessive] place of creation, [PAWN_nameDef] grapples with the burden of exile. Endowed with exceptional technical acumen, [PAWN_pronoun] seeks to find solace and purpose beyond the confines of [PAWN_possessive] former home.</baseDesc>
+		<slot>Adulthood</slot>
+		<bodyTypeGlobal>Male</bodyTypeGlobal>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<skillGains>
+			<li>
+				<key>Intellectual</key>
+				<value>6</value>
+			</li>
+			<li>
+				<key>Construction</key>
+				<value>3</value>
+			</li>
+		</skillGains>
+		<spawnCategories>
+			<li>Forgotten_Warforged</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

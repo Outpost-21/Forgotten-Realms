@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<XenotypeDef ParentName="ForgottenXenoBase" Name="ForgottenDragonbornBase" Abstract="True">
+		<description>Dragonborn are a race of draconic humanoids, despite having no ancestral links to true dragons, the blood of dragons ran through the dragonborn clans, giving them traits and some abilities of those dragons. Their so called ancestry is reflected most obviously by their colouring.</description>
+		<descriptionShort>Dragonborn are a race of draconic humanoids, despite having no ancestral links to true dragons, the blood of dragons ran through the dragonborn clans, giving them traits and some abilities of those dragons.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Dragonborn</iconPath>
+		<genes>
+			<li>Hair_BaldOnly</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Outland_DraconicHead</li>
+			<li>Outland_Headbone_CrownArcuate</li>
+			<li>Outland_Headbone_CrownClaws</li>
+			<li>Outland_Headbone_CrownHandles</li>
+			<li>Outland_Headbone_CrownPredacious</li>
+			<li>Outland_Headbone_CrownReptile</li>
+			<li>Outland_Headbone_CrownSpinous</li>
+			<li>Outland_Headbone_CrownHalberd</li>
+			<li>Outland_Headbone_CrownPhalanx</li>
+			<li>Outland_Tail_Leathery</li>
+			<li>Outland_BodyScale_Large</li>
+			<li>Outland_EggLayer</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_Teeth_Fangs</li>
+			<li>Outland_AcceleratedMaturation</li>
+			<li>Outland_Scalebody</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Dragonborn</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Dragonborn</texPath>
+	</XenotypeIconDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Dragonborn</defName>
+		<label>dragonborn</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornWhite>111</Forgotten_DragonbornWhite>
+				<Forgotten_DragonbornSilver>111</Forgotten_DragonbornSilver>
+				<Forgotten_DragonbornRed>111</Forgotten_DragonbornRed>
+				<Forgotten_DragonbornGreen>111</Forgotten_DragonbornGreen>
+				<Forgotten_DragonbornGold>111</Forgotten_DragonbornGold>
+				<Forgotten_DragonbornCopper>111</Forgotten_DragonbornCopper>
+				<Forgotten_DragonbornBrass>111</Forgotten_DragonbornBrass>
+				<Forgotten_DragonbornBlue>111</Forgotten_DragonbornBlue>
+				<Forgotten_DragonbornBlack>111</Forgotten_DragonbornBlack>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DragonbornTribal</defName>
+		<label>tribal dragonborn</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornWhite>111</Forgotten_DragonbornWhite>
+				<Forgotten_DragonbornSilver>111</Forgotten_DragonbornSilver>
+				<Forgotten_DragonbornRed>111</Forgotten_DragonbornRed>
+				<Forgotten_DragonbornGreen>111</Forgotten_DragonbornGreen>
+				<Forgotten_DragonbornGold>111</Forgotten_DragonbornGold>
+				<Forgotten_DragonbornCopper>111</Forgotten_DragonbornCopper>
+				<Forgotten_DragonbornBrass>111</Forgotten_DragonbornBrass>
+				<Forgotten_DragonbornBlue>111</Forgotten_DragonbornBlue>
+				<Forgotten_DragonbornBlack>111</Forgotten_DragonbornBlack>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Dragonborn (White) ==================== -->
+
+	<XenotypeDef ParentName="ForgottenDragonbornBase">
+		<defName>Forgotten_DragonbornWhite</defName>
+		<label>dragonborn (white)</label>
+		<genes>
+			<li>Outland_FreezingSpray</li>
+			<li>Skin_SheerWhite</li>
+			<li>MinTemp_SmallDecrease</li>
+			<li>MaxTemp_SmallDecrease</li>
+			<li>Outland_ExtremeMetabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_DragonbornWhite</defName>
+		<label>dragonborn (white)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornWhite>999</Forgotten_DragonbornWhite>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DragonbornTribalWhite</defName>
+		<label>tribal dragonborn (white)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornWhite>999</Forgotten_DragonbornWhite>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Dragonborn (Silver) ==================== -->
+
+	<XenotypeDef ParentName="ForgottenDragonbornBase">
+		<defName>Forgotten_DragonbornSilver</defName>
+		<label>dragonborn (silver)</label>
+		<genes>
+			<li>Outland_FreezingSpray</li>
+			<li>Outland_Skin_Silver</li>
+			<li>MinTemp_SmallDecrease</li>
+			<li>MaxTemp_SmallDecrease</li>
+			<li>Outland_ExtremeMetabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_DragonbornSilver</defName>
+		<label>dragonborn (silver)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornSilver>999</Forgotten_DragonbornSilver>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DragonbornTribalSilver</defName>
+		<label>tribal dragonborn (silver)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornSilver>999</Forgotten_DragonbornSilver>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Dragonborn (Red) ==================== -->
+
+	<XenotypeDef ParentName="ForgottenDragonbornBase">
+		<defName>Forgotten_DragonbornRed</defName>
+		<label>dragonborn (red)</label>
+		<genes>
+			<li>Skin_DeepRed</li>
+			<li>FireSpew</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>FireResistant</li>
+			<li>Outland_Pos5Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_DragonbornRed</defName>
+		<label>dragonborn (red)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornRed>999</Forgotten_DragonbornRed>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DragonbornTribalRed</defName>
+		<label>tribal dragonborn (red)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornRed>999</Forgotten_DragonbornRed>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Dragonborn (Green) ==================== -->
+
+	<XenotypeDef ParentName="ForgottenDragonbornBase">
+		<defName>Forgotten_DragonbornGreen</defName>
+		<label>dragonborn (green)</label>
+		<genes>
+			<li>ToxicEnvironmentResistance_Total</li>
+			<li>ToxResist_Partial</li>
+			<li>Outland_ToxicSpray</li>
+			<li>Outland_Skin_GreenSwamp</li>
+			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_Pos5Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_DragonbornGreen</defName>
+		<label>dragonborn (green)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornGreen>999</Forgotten_DragonbornGreen>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DragonbornTribalGreen</defName>
+		<label>tribal dragonborn (green)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornGreen>999</Forgotten_DragonbornGreen>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Dragonborn (Gold) ==================== -->
+
+	<XenotypeDef ParentName="ForgottenDragonbornBase">
+		<defName>Forgotten_DragonbornGold</defName>
+		<label>dragonborn (gold)</label>
+		<genes>
+			<li>Outland_Skin_Gold</li>
+			<li>FireSpew</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>FireResistant</li>
+			<li>Outland_Pos5Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_DragonbornGold</defName>
+		<label>dragonborn (gold)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornGold>999</Forgotten_DragonbornGold>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DragonbornTribalGold</defName>
+		<label>tribal dragonborn (gold)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornGold>999</Forgotten_DragonbornGold>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Dragonborn (Copper) ==================== -->
+
+	<XenotypeDef ParentName="ForgottenDragonbornBase">
+		<defName>Forgotten_DragonbornCopper</defName>
+		<label>dragonborn (copper)</label>
+		<genes>
+			<li>AcidSpray</li>
+			<li>Outland_Skin_Copper</li>
+			<li>Outland_ExtremeMetabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_DragonbornCopper</defName>
+		<label>dragonborn (copper)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornCopper>999</Forgotten_DragonbornCopper>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DragonbornTribalCopper</defName>
+		<label>tribal dragonborn (copper)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornCopper>999</Forgotten_DragonbornCopper>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Dragonborn (Brass) ==================== -->
+
+	<XenotypeDef ParentName="ForgottenDragonbornBase">
+		<defName>Forgotten_DragonbornBrass</defName>
+		<label>dragonborn (brass)</label>
+		<genes>
+			<li>Skin_PaleYellow</li>
+			<li>FireSpew</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>FireResistant</li>
+			<li>Outland_Pos5Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_DragonbornBrass</defName>
+		<label>dragonborn (brass)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornBrass>999</Forgotten_DragonbornBrass>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DragonbornTribalBrass</defName>
+		<label>tribal dragonborn (brass)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornBrass>999</Forgotten_DragonbornBrass>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Dragonborn (Blue) ==================== -->
+
+	<XenotypeDef ParentName="ForgottenDragonbornBase">
+		<defName>Forgotten_DragonbornBlue</defName>
+		<label>dragonborn (blue)</label>
+		<genes>
+			<li>Outland_LightningSpray</li>
+			<li>Outland_Skin_Dusk</li>
+			<li>Outland_ExtremeMetabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_DragonbornBlue</defName>
+		<label>dragonborn (blue)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornBlue>999</Forgotten_DragonbornBlue>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DragonbornTribalBlue</defName>
+		<label>tribal dragonborn (blue)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornBlue>999</Forgotten_DragonbornBlue>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Dragonborn (Black) ==================== -->
+
+	<XenotypeDef ParentName="ForgottenDragonbornBase">
+		<defName>Forgotten_DragonbornBlack</defName>
+		<label>dragonborn (black)</label>
+		<genes>
+			<li>AcidSpray</li>
+			<li>Skin_InkBlack</li>
+			<li>Outland_ExtremeMetabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_DragonbornBlack</defName>
+		<label>dragonborn (black)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornBlack>999</Forgotten_DragonbornBlack>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DragonbornTribalBlack</defName>
+		<label>tribal dragonborn (black)</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DragonbornBlack>999</Forgotten_DragonbornBlack>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+</Defs>

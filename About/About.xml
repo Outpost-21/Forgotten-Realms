@@ -6,6 +6,7 @@
 	<url>https://www.patreon.com/neronix17</url>
 	<supportedVersions>
 		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<description>Forgotten Realms inspired races, implemented as Biotech Xenotypes.</description>
 	<modDependencies>

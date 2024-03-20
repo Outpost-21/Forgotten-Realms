@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HediffGiverSetDef>
+		<defName>Forgotten_Warforged</defName>
+		<hediffGivers>
+			<li Class="HediffGiver_Birthday">
+				<hediff>Forgotten_WarforgedRepairing</hediff>
+				<ageFractionChanceCurve>
+					<points>
+						<li>(0, 1)</li>
+					</points>
+				</ageFractionChanceCurve>
+			</li>
+		</hediffGivers>
+	</HediffGiverSetDef>
+
+	<HediffDef>
+		<defName>Forgotten_WarforgedRepairing</defName>
+		<label>Warforged Self-Repair</label>
+		<description>Given time, a warforged will repair itself from any non-fatal damage, even to the extent of rapidly reassembling body parts entirely.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.6,0.85,0.91)</defaultLabelColor>
+		<isBad>false</isBad>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="TabulaRasa.HediffCompProperties_PassiveHealing">
+				<!-- 60 ticks is one second real time, healing too often may cause performance issues, best to keep at the lowest 60 -->
+				<healTicks>60</healTicks>
+				<!-- If true, inuries will be healed every healTick -->
+				<healWounds>true</healWounds>
+				<!-- If true, inuries will be marked as tended, which stops bleeding and the quality simply sets the tend quality (0.0 - 2.0) -->
+				<tendWounds>true</tendWounds>
+				<tendQuality>1.15</tendQuality>
+				<!-- If true, only one wound will be healed at a time, false means all wounds will be healed at the same time. -->
+				<healWoundsSeq>false</healWoundsSeq>
+				<!-- This value is how much is healed every attempt, 0.0-1.0 values typically. A value of 1 will fully heal. -->
+				<healWoundsVal>0.5</healWoundsVal>
+				<!-- List of wound defs to ignore when healing, useful if a wound shouldn't be able to be healed through normal means. -->
+				<woundBlacklist />
+				<!-- Same as healTicks, but for handling sicknesses. -->
+				<sickTicks>60</sickTicks>
+				<!-- If true, sicknessess will also be healed, this counts any hediff with "makesSickThought" set to true. -->
+				<healSickness>true</healSickness>
+				<!-- If true, this will also prevent sicknesses from even applying to begin with. -->
+				<preventSicknesses>true</preventSicknesses>
+				<!-- A list of hediffDefs explicitly targetted, if there are any in this list it'll only remove them and no others. -->
+				<sicknessWhitelist />
+				<!-- A list of hediffDefs to ignore, much like woundBlacklist, it won't heal anything listed in this. -->
+				<sicknessBlacklist />
+				<!-- Regrow Ticks, same as sickTicks and healTicks -->
+				<regrowTicks>180</regrowTicks>
+				<!-- If true, then body parts will attempt to regrow using the regrowingPartDef. -->
+				<regrowParts>true</regrowParts>
+				<!-- If true, body parts will regrow one at a time, otherwise all at the same time. -->
+				<regrowPartsSeq>false</regrowPartsSeq>
+				<!-- Regrowing Part hediff, must use the Hediff_RegrowingPart class and DefModExt_RegrowingPart to handle properly. -->
+				<regrowingPartDef>Forgotten_WarforgedReparingPart</regrowingPartDef>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Forgotten_WarforgedReparingPart</defName>
+		<label>repairing</label>
+		<description>This body part is reparing itself, seemingly causing no pain.</description>
+		<hediffClass>TabulaRasa.Hediff_RegrowingPart</hediffClass>
+		<defaultLabelColor>(0.59, 0.92, 0.69)</defaultLabelColor>
+		<isBad>false</isBad>
+		<addedPartProps>
+			<partEfficiency>0.1</partEfficiency>
+		</addedPartProps>
+		<initialSeverity>0.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_RegrowingPart">
+				<!-- Label displayed before the percentage -->
+				<labelText>Repairing: </labelText>
+				<!-- Growth per day, 1 would be fully regrown in one day, if coverage multiplier is false. 
+				With coverage multiplier true, most parts would takea few days to a couple weeks. -->
+				<growthPerDay>2</growthPerDay>
+				<!-- If true, the ticks to regrow will be multiplied by the coverage of the part. 
+				Most body parts have a very small amount of coverage, a finger should regrow much faster than a leg. -->
+				<coverageMultiplier>true</coverageMultiplier>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+</Defs>

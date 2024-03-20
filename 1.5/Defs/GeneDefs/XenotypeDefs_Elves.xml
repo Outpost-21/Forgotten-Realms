@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Elf</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Elf</texPath>
+	</XenotypeIconDef>
+
+	<!-- ==================== High Elf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_HighElf</defName>
+		<label>high elf</label>
+		<description>High elves, also sometimes known as eladrin, were graceful warriors and wizards who originated from the realm of Faerie, also known as the Feywild. They lived in the forests of the world. They were magical in nature and shared an interest in the arcane arts. From an early age they also learned to defend themselves, particularly with swords.</description>
+		<descriptionShort>High elves, also sometimes known as eladrin, were graceful warriors and wizards who originated from the realm of Faerie, also known as the Feywild.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Elf</iconPath>
+		<nameMaker>Forgotten_NamerPersonElfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonElfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Outland_SvelteHead</li>
+			<li>Ears_Pointed</li>
+			<li>Outland_BodyScale_Small</li>
+			<li>Delicate</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_Pos4Metabolism</li>
+			<li>DarkVision</li>
+			<li>Outland_FeyAgeing</li>
+			<li>LowSleep</li>
+			<li>Beauty_Pretty</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_HighElf</defName>
+		<label>high elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_HighElf>999</Forgotten_HighElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_HighElfTribal</defName>
+		<label>tribal high elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_HighElf>999</Forgotten_HighElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Drow ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_Drow</defName>
+		<label>drow</label>
+		<description>Drow, also known as dark elves, deep elves, night elves, or sometimes "The Ones Who Went Below" on the surface, were a dark-skinned sub-race of elves that predominantly lived in the Underdark. They were hated and feared due to their cruelty, though some non-evil and an even smaller number of good drow existed.</description>
+		<descriptionShort>Drow, also known as dark elves, deep elves, night elves, or sometimes "The Ones Who Went Below" on the surface, were a dark-skinned sub-race of elves that predominantly lived in the Underdark.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Elf</iconPath>
+		<nameMaker>Forgotten_NamerPersonElfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonElfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Outland_SvelteHead</li>
+			<li>Ears_Pointed</li>
+			<li>Outland_BodyScale_Small</li>
+			<li>Skin_SlateGray</li>
+			<li>Skin_InkBlack</li>
+			<li>Outland_Skin_BlueSubtle</li>
+			<li>Hair_MidBlack</li>
+			<li>Hair_DarkBlack</li>
+			<li>Hair_InkBlack</li>
+			<li>Hair_SnowWhite</li>
+			<li>Hair_Gray</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_Pos6Metabolism</li>
+			<li>Outland_FeyAgeing</li>
+			<li>LowSleep</li>
+			<li>Beauty_Pretty</li>
+			<li>DarkVision</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Drow</defName>
+		<label>drow</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Drow>999</Forgotten_Drow>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DrowTribal</defName>
+		<label>tribal drow</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Drow>999</Forgotten_Drow>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Moon Elf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_MoonElf</defName>
+		<label>moon elf</label>
+		<description>Moon elves, also known as Teu-tel-quessir in the elven language or as silver elves, were the most common of all the elven subraces. More tolerant of humans than other elves, moon elves were the ancestors of most half-elves.</description>
+		<descriptionShort>Moon elves, also known as Teu-tel-quessir in the elven language or as silver elves, were the most common of all the elven subraces.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Elf</iconPath>
+		<nameMaker>Forgotten_NamerPersonElfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonElfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Outland_SvelteHead</li>
+			<li>Ears_Pointed</li>
+			<li>Outland_BodyScale_Small</li>
+			<li>Outland_Skin_BlueSky</li>
+			<li>Outland_Skin_BlueIce</li>
+			<li>Outland_HairColor_PastelBlue</li>
+			<li>Outland_HairColor_SkyBlue</li>
+			<li>Outland_FeyAgeing</li>
+			<li>LowSleep</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_Pos5Metabolism</li>
+			<li>Beauty_Pretty</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_MoonElf</defName>
+		<label>moon elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_MoonElf>999</Forgotten_MoonElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_MoonElfTribal</defName>
+		<label>tribal moon elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_MoonElf>999</Forgotten_MoonElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Sun Elf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_SunElf</defName>
+		<label>sun elf</label>
+		<description>The sun elves, also sometimes known as gold elves, sometimes as high elves due to their stereotypically elitist ways, and Ar-tel-quessir in their own language were a subrace of high elves historically rare in Faerûn due to the Retreat, in which the majority abandoned the continent for Evermeet, although during the Era of Upheaval they began returning to the mainland. Haughty and arrogant, sun elves typically felt themselves superior to most other races, including other Tel-quessir.</description>
+		<descriptionShort>The sun elves, also sometimes known as gold elves, sometimes as high elves due to their stereotypically elitist ways, and Ar-tel-quessir in their own language were a subrace of high elves historically rare in Faerûn.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Elf</iconPath>
+		<nameMaker>Forgotten_NamerPersonElfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonElfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Outland_SvelteHead</li>
+			<li>Ears_Pointed</li>
+			<li>Outland_BodyScale_Small</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Skin_PaleYellow</li>
+			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_HairColor_Yellow</li>
+			<li>Outland_FeyAgeing</li>
+			<li>LowSleep</li>
+			<li>Beauty_Pretty</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_Pos5Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_SunElf</defName>
+		<label>sun elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_SunElf>999</Forgotten_SunElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_SunElfTribal</defName>
+		<label>tribal sun elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_SunElf>999</Forgotten_SunElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Wood Elf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_WoodElf</defName>
+		<label>wood elf</label>
+		<description>Wood elves, also known as copper elves, or Or-tel-quessir were the most populous of the elven races. Wood elves saw themselves as guardians of the Tel-quessir forest homes that were largely abandoned after the Crown Wars and before the Retreat, but unlike most elves they did not view themselves as a people apart from the rest of Faerûn.</description>
+		<descriptionShort>Wood elves, also known as copper elves, or Or-tel-quessir were the most populous of the elven races.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Elf</iconPath>
+		<nameMaker>Forgotten_NamerPersonElfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonElfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Outland_SvelteHead</li>
+			<li>Ears_Pointed</li>
+			<li>Outland_BodyScale_Small</li>
+			<li>Outland_Skin_GreenMarsh</li>
+			<li>Outland_Skin_LightBrown</li>
+			<li>Hair_BrightRed</li>
+			<li>Outland_HairColor_DarkRed</li>
+			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_FeyAgeing</li>
+			<li>LowSleep</li>
+			<li>Beauty_Pretty</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_Pos5Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_WoodElf</defName>
+		<label>wood elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_WoodElf>999</Forgotten_WoodElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_WoodElfTribal</defName>
+		<label>tribal wood elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_WoodElf>999</Forgotten_WoodElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Wild Elf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_WildElf</defName>
+		<label>wild elf</label>
+		<description>Wood elves, also known as copper elves, or Or-tel-quessir were the most populous of the elven races. Wood elves saw themselves as guardians of the Tel-quessir forest homes that were largely abandoned after the Crown Wars and before the Retreat, but unlike most elves they did not view themselves as a people apart from the rest of Faerûn.</description>
+		<descriptionShort>Wood elves, also known as copper elves, or Or-tel-quessir were the most populous of the elven races.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Elf</iconPath>
+		<nameMaker>Forgotten_NamerPersonElfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonElfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Outland_SvelteHead</li>
+			<li>Ears_Pointed</li>
+			<li>DarkVision</li>
+			<li>Outland_Skin_GreenMarsh</li>
+			<li>Outland_Skin_LightBrown</li>
+			<li>Hair_BrightRed</li>
+			<li>Outland_HairColor_DarkRed</li>
+			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_BodyScale_Tiny</li>
+			<li>Outland_FeyAgeing</li>
+			<li>LowSleep</li>
+			<li>Beauty_Pretty</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_Pos6Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_WildElf</defName>
+		<label>wild elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_WildElf>999</Forgotten_WildElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_WildElfTribal</defName>
+		<label>tribal wild elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_WildElf>999</Forgotten_WildElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Snow Elf ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_SnowElf</defName>
+		<label>snow elf</label>
+		<description>Snow elves were rare, reclusive elves who lived in icy, mountainous regions far from other civilization.</description>
+		<descriptionShort>Snow elves were rare, reclusive elves who lived in icy, mountainous regions far from other civilization.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Elf</iconPath>
+		<nameMaker>Forgotten_NamerPersonElfMale</nameMaker>
+		<nameMakerFemale>Forgotten_NamerPersonElfFemale</nameMakerFemale>
+		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<genes>
+			<li>Skin_SheerWhite</li>
+			<li>Outland_Skin_BlueIce</li>
+			<li>Hair_SnowWhite</li>
+			<li>Outland_HairColor_PastelBlue</li>
+			<li>Outland_HairColor_SkyBlue</li>
+			<li>Body_Thin</li>
+			<li>Body_Standard</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Outland_SvelteHead</li>
+			<li>Ears_Pointed</li>
+			<li>Outland_BodyScale_Large</li>
+			<li>DarkVision</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>MaxTemp_SmallDecrease</li>
+			<li>Outland_FeyAgeing</li>
+			<li>LowSleep</li>
+			<li>MeleeDamage_Weak</li>
+			<li>Outland_DeceleratedPregnancy</li>
+			<li>Outland_LowFertility</li>
+			<li>Outland_Pos6Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_SnowElf</defName>
+		<label>snow elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_SnowElf>999</Forgotten_SnowElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_SnowElfTribal</defName>
+		<label>tribal snow elf</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_SnowElf>999</Forgotten_SnowElf>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+</Defs>

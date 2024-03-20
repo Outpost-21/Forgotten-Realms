@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<Asimov.PawnDef ParentName="BasePawn">
+		<defName>Forgotten_Warforged</defName>
+		<label>warforged</label>
+		<description>The warforged were built to fight in the Last War. The first warforged were mindless automatons, but House Cannith devoted vast resources to improving these steel soldiers. An unexpected breakthrough produced fully sentient soldiers, blending organic and inorganic materials. Warforged are made from wood and metal, but they can feel pain and emotion. Built as weapons, they must now find a purpose beyond the war. A warforged can be a steadfast ally, a cold-hearted killing machine, or a visionary in search of purpose and meaning.</description>
+		<!-- Start of Asimov Data -->
+		<pawnSettings>
+			<immuneToAge>true</immuneToAge>
+			<generateRelations>false</generateRelations>
+			<!-- Styles -->
+			<allowHair>false</allowHair>
+			<allowBeards>false</allowBeards>
+			<allowTattoos>false</allowTattoos>
+			<!-- Traits -->
+			<onlyRestrictedTraits>true</onlyRestrictedTraits>
+			<traits />
+			<!-- Thoughts -->
+			<onlyRestrictedThoughts>true</onlyRestrictedThoughts>
+			<thoughts />
+			<!-- Backstories -->
+			<onlyRestrictedBackstories>true</onlyRestrictedBackstories>
+			<backstories>
+				<li>Forgotten_Warforged</li>
+			</backstories>
+			<!-- Body -->
+			<headTypeWhitelist>
+				<li>Forgotten_WarforgedA</li>
+				<!-- <li>Forgotten_WarforgedB</li>
+				<li>Forgotten_WarforgedC</li>
+				<li>Forgotten_WarforgedD</li>
+				<li>Forgotten_WarforgedE</li>
+				<li>Forgotten_WarforgedF</li> -->
+			</headTypeWhitelist>
+			<bodyTypeWhitelist>
+				<li>Male</li>
+				<!-- <li>Thin</li>
+				<li>Female</li>
+				<li>Hulk</li> -->
+			</bodyTypeWhitelist>
+		</pawnSettings>
+		<customGraphics>
+			<bodyPath>ForgottenRealms/Pawn/Warforged/Body/</bodyPath>
+			<shaderType>CutoutComplex</shaderType>
+			<skinColorPairs>
+				<!-- Steel -->
+				<li>
+					<colorOne>(105, 105, 105)</colorOne>
+					<colorTwo>(102, 208, 222)</colorTwo>
+					<weight>55</weight>
+				</li>
+				<!-- Silver -->
+				<!-- <li>
+					<colorOne>(180, 173, 150)</colorOne>
+					<colorTwo>(102, 208, 222)</colorTwo>
+					<weight>20</weight>
+				</li> -->
+				<!-- Gold -->
+				<!-- <li>
+					<colorOne>(255, 235, 122)</colorOne>
+					<colorTwo>(102, 208, 222)</colorTwo>
+					<weight>10</weight>
+				</li> -->
+				<!-- Plasteel -->
+				<!-- <li>
+					<colorOne>(160, 178, 181)</colorOne>
+					<colorTwo>(102, 208, 222)</colorTwo>
+					<weight>5</weight>
+				</li> -->
+				<!-- Uranium -->
+				<!-- <li>
+					<colorOne>(100, 100, 100)</colorOne>
+					<colorTwo>(102, 208, 222)</colorTwo>
+					<weight>10</weight>
+				</li> -->
+			</skinColorPairs>
+		</customGraphics>
+		<!-- End of Asimov Data -->
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<MoveSpeed>4.4</MoveSpeed>
+			<Flammability>0.4</Flammability>
+			<ComfyTemperatureMin>-250</ComfyTemperatureMin>
+			<ComfyTemperatureMax>90</ComfyTemperatureMax>
+			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<ToxicResistance>1</ToxicResistance>
+			<ImmunityGainSpeed>100</ImmunityGainSpeed>
+			<PainShockThreshold>3</PainShockThreshold>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+		</statBases>
+		<race>
+			<renderTree>Asimov_Automaton</renderTree>
+			<nameGenerator>Forgotten_NamerPersonWarforged</nameGenerator>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>0.7</baseHealthScale>
+			<fleshType>Asimov_Automaton</fleshType>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>100000</lifeExpectancy>
+			<leatherDef>Leather_Human</leatherDef>
+			<bloodDef>Filth_MachineBits</bloodDef>
+			<body>Forgotten_HumanoidConstruct</body>
+			<useMeatFrom>Human</useMeatFrom>
+			<foodType>None</foodType>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<gestationPeriodDays>45</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li>
+					<def>Forgotten_Warforged</def>
+					<minAge>0</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li>(0,0)</li>
+					<li>(1,100)</li>
+					<li>(2,100)</li>
+					<li>(4,30)</li>
+					<li>(5,10)</li>
+					<li>(10,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>Asimov_Automaton</li>
+				<li>Forgotten_Warforged</li>
+			</hediffGiverSets>
+		</race>
+		<recipes>
+			<li>RemoveBodyPart</li>
+		</recipes>
+		<comps>
+			<li Class="Asimov.CompProperties_Automaton">
+				<canUseRanged>true</canUseRanged>
+				<canUseMelee>true</canUseMelee>
+				<corpseEdible>false</corpseEdible>
+				<corpseRots>false</corpseRots>
+				<affectedByEMP>false</affectedByEMP>
+				<immuneToDisease>true</immuneToDisease>
+				<huntTarget>true</huntTarget>
+				<clearPassions>false</clearPassions>
+				<flattenSkills>false</flattenSkills>
+				<skillGainMulti>1</skillGainMulti>
+				<skillLossMulti>1</skillLossMulti>
+				<enableAllWorkTypes>true</enableAllWorkTypes>
+				<repairThings>
+					<li>Steel</li>
+				</repairThings>
+				<disabledNeeds>
+					<li>Mood</li>
+					<li>Food</li>
+					<li>Rest</li>
+					<li>Joy</li>
+					<li>Beauty</li>
+					<li>Comfort</li>
+					<li>Outdoors</li>
+					<li>Indoors</li>
+					<li>DrugDesire</li>
+					<li>RoomSize</li>
+				</disabledNeeds>
+			</li>
+			<li Class="Asimov.CompProperties_RecolourablePawn">
+				<channelOne>true</channelOne>
+				<channelTwo>true</channelTwo>
+			</li>
+			<li Class="Asimov.CompProperties_Hibernation" />
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_DiseaseImmunity">
+				<hediffs>
+					<li>WoundInfection</li>
+					<li>BadBack</li>
+					<li>Frail</li>
+					<li>Cataract</li>
+					<li>HearingLoss</li>
+					<li>Blindness</li>
+					<li>Dementia</li>
+					<li>Alzheimers</li>
+					<li>Asthma</li>
+					<li>HeartArteryBlockage</li>
+					<li>Carcinoma</li>
+					<li>GutWorms</li>
+					<li>MuscleParasites</li>
+					<li>FibrousMechanites</li>
+					<li>SensoryMechanites</li>
+					<li>Flu</li>
+					<li>Plague</li>
+					<li>Malaria</li>
+					<li>SleepingSickness</li>
+					<li>TraumaSavant</li>
+					<li>ChemicalDamageModerate</li>
+					<li>ChemicalDamageSevere</li>
+					<li>Cirrhosis</li>
+					<li>ResurrectionPsychosis</li>
+					<li>Scaria</li>
+					<li>WaterInEyes</li>
+				</hediffs>
+			</li>
+		</modExtensions>
+		<butcherProducts>
+			<Forgotten_WarforgedHeartstone>1</Forgotten_WarforgedHeartstone>
+			<Steel>60</Steel>
+			<WoodLog>75</WoodLog>
+		</butcherProducts>
+	</Asimov.PawnDef>
+
+	<PawnKindDef>
+		<defName>Forgotten_Warforged</defName>
+		<label>warforged</label>
+		<race>Forgotten_Warforged</race>
+		<combatPower>40</combatPower>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Forgotten_Warforged</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelTags Inherit="false" />
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>0~0</apparelMoney>
+		<techHediffsChance>0.0</techHediffsChance>
+		<techHediffsMoney>0~0</techHediffsMoney>
+		<techHediffsTags Inherit="false" />
+		<initialWillRange>0</initialWillRange>
+		<initialResistanceRange>30~40</initialResistanceRange>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_PawnKindExtended">
+				<clearApparel>True</clearApparel>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<ThingDef>
+		<defName>Forgotten_Spawner_Warforged</defName>
+		<label>warforged</label>
+		<description>Spawns a brand new warforged.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Alpha</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<WorkToMake>550</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<comps>
+			<li Class="TabulaRasa.CompProperties_PawnSpawner">
+				<pawnKind>Forgotten_Warforged</pawnKind>
+				<newborn>true</newborn>
+			</li>
+		</comps>
+		<size>(1,1)</size>
+		<category>Building</category>
+		<pathCost>200</pathCost>
+		<passability>Standable</passability>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleRock</filthLeaving>
+		<hasInteractionCell>false</hasInteractionCell>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<repairEffect>Repair</repairEffect>
+		<useHitPoints>True</useHitPoints>
+		<selectable>true</selectable>
+		<surfaceType>Item</surfaceType>
+		<tickerType>Normal</tickerType>
+	</ThingDef>
+
+	<RecipeDef>
+		<defName>Forgotten_MakeWarforged</defName>
+		<label>make warforged</label>
+		<description>Make a warforged.</description>
+		<jobString>Making warforged.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>8000</workAmount>
+		<unfinishedThingDef>Forgotten_UnfinishedWarforged</unfinishedThingDef>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<recipeUsers>
+			<li>Forgotten_WarforgedAltar</li>
+		</recipeUsers>
+		<workSkill>Crafting</workSkill>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Forgotten_WarforgedHeartstone</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>120</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>150</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Forgotten_WarforgedHeartstone</li>
+				<li>Steel</li>
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Forgotten_Spawner_Warforged>1</Forgotten_Spawner_Warforged>
+		</products>
+		<!-- <researchPrerequisite>Forgotten_Warforged</researchPrerequisite> -->
+	</RecipeDef>
+
+	<ThingDef ParentName="UnfinishedBase">
+		<defName>Forgotten_UnfinishedWarforged</defName>
+		<label>unfinished warforged</label>
+		<description>An unfinished warforged.</description>
+		<statBases>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<graphicData>
+			<texPath>ForgottenRealms/Items/UnfinishedWarforged</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories Inherit="false" />
+	</ThingDef>
+
+</Defs>

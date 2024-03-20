@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Gnome</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Gnome</texPath>
+	</XenotypeIconDef>
+
+	<!-- ==================== Deep Gnome ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_DeepGnome</defName>
+		<label>deep gnome</label>
+		<description>Deep gnomes, called svirfneblin in their own language, were a gnome subrace that lived in the Underdark. While their surface cousins were known for their boundless optimism and cheerful mischief, the svirfneblin were serious and suspicious creatures. They survived in the Underdark by maintaining wariness of others and working hard to keep their underground society secret.</description>
+		<descriptionShort>Deep gnomes, called svirfneblin in their own language, were a gnome subrace that lived in the Underdark. While their surface cousins were known for their boundless optimism and cheerful mischief, the svirfneblin were serious and suspicious creatures.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Gnome</iconPath>
+		<genes>
+			<li>Outland_BodyScale_Tiny</li>
+			<li>Outland_Skin_BlueSubtle</li>
+			<li>Skin_SlateGray</li>
+			<li>Skin_InkBlack</li>
+			<li>Hair_MidBlack</li>
+			<li>Hair_DarkBlack</li>
+			<li>Hair_InkBlack</li>
+			<li>Hair_SnowWhite</li>
+			<li>Hair_Gray</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_Pos1Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_DeepGnome</defName>
+		<label>deep gnome</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DeepGnome>999</Forgotten_DeepGnome>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DeepGnomeTribal</defName>
+		<label>tribal deep gnome</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_DeepGnome>999</Forgotten_DeepGnome>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Forest Gnome ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_ForestGnome</defName>
+		<label>forest gnome</label>
+		<description>Forest gnomes were among the least commonly seen gnomes on Toril, far shyer than even their deep gnome cousins. Small and reclusive, forest gnomes were so unknown to most non-gnomes that they had repeatedly been "discovered" by wandering outsiders who happened into their villages.</description>
+		<descriptionShort>Forest gnomes were among the least commonly seen gnomes on Toril, far shyer than even their deep gnome cousins.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Gnome</iconPath>
+		<genes>
+			<li>Outland_BodyScale_Tiny</li>
+			<li>Outland_Skin_GreenMarsh</li>
+			<li>Outland_Skin_LightBrown</li>
+			<li>Hair_BrightRed</li>
+			<li>Outland_HairColor_DarkRed</li>
+			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Outland_Pos1Metabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_ForestGnome</defName>
+		<label>forest gnome</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ForestGnome>999</Forgotten_ForestGnome>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_ForestGnomeTribal</defName>
+		<label>tribal forest gnome</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_ForestGnome>999</Forgotten_ForestGnome>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Rock Gnome ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_RockGnome</defName>
+		<label>rock gnome</label>
+		<description>Rock gnomes were a curious, childlike race very much unlike their cousins, the svirfneblin (or deep gnomes) and the forest gnomes. When most people thought of gnomes, they were thinking of the rock gnome. Rock gnomes embodied the characteristics of their creator and patron deity, Garl Glittergold, choosing to spend their long lives by filling each day with as much fun and enjoyment as possible.</description>
+		<descriptionShort>Rock gnomes were a curious, childlike race very much unlike their cousins, the svirfneblin (or deep gnomes) and the forest gnomes.</descriptionShort>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Gnome</iconPath>
+		<genes>
+			<li>Outland_BodyScale_Tiny</li>
+			<li>AptitudeStrong_Intellectual</li>
+			<li>Outland_YouthfulAgeing</li>
+			<li>Mood_Optimist</li>
+			<li>Outland_ExtremeMetabolism</li>
+		</genes>
+	</XenotypeDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_RockGnome</defName>
+		<label>rock gnome</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_RockGnome>999</Forgotten_RockGnome>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_RockGnomeTribal</defName>
+		<label>tribal rock gnome</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_RockGnome>999</Forgotten_RockGnome>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+</Defs>

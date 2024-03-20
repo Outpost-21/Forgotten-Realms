@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ==================== Deva ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_Deva</defName>
+		<label>Deva</label>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Deva</iconPath>
+		<description>TODO</description>
+		<descriptionShort>TODO</descriptionShort>
+		<genes>
+			<li>DarkVision</li>
+			<li>Aggression_DeadCalm</li>
+			<li>Outland_Pos7Metabolism</li>
+			<li>Outland_Skin_Golden</li>
+			<li>Hair_SnowWhite</li>
+			<li>Hair_Blonde</li>
+			<li>Outland_Eye_Orange</li>
+			<li>Outland_Eye_Yellow</li>
+			<li>Outland_Wings_Angel</li>
+			<li>Outland_Blood_Yellow</li>
+			<li>Outland_KindEyes</li>
+			<li>Outland_FeyAgeing</li>
+			<li>Outland_Aura_LightAspect</li>
+			<li>Outland_BodyScale_Large</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Deva</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Deva</texPath>
+	</XenotypeIconDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Deva</defName>
+		<label>deva</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Deva>999</Forgotten_Deva>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_DevaTribal</defName>
+		<label>tribal deva</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Deva>999</Forgotten_Deva>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- ==================== Planetar ==================== -->
+
+	<XenotypeDef ParentName="ForgottenXenoBase">
+		<defName>Forgotten_Planetar</defName>
+		<label>Planetar</label>
+		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Planetar</iconPath>
+		<description>TODO</description>
+		<descriptionShort>TODO</descriptionShort>
+		<genes>
+			<li>DarkVision</li>
+			<li>Beauty_Pretty</li>
+			<li>Hair_BaldOnly</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_Pos7Metabolism</li>
+			<li>Outland_Skin_MossBright</li>
+			<li>Outland_Skin_GreenForest</li>
+			<li>Outland_Skin_Viridian</li>
+			<li>Outland_Eye_LightBlue</li>
+			<li>Outland_Wings_Angel</li>
+			<li>Outland_Blood_Cyan</li>
+			<li>Outland_Voice_Vibronic</li>
+			<li>Outland_FeyAgeing</li>
+			<li>Outland_Aura_LightAspect</li>
+			<li>Outland_BodyScale_Large</li>
+			<li>AptitudeRemarkable_Intellectual</li>
+		</genes>
+	</XenotypeDef>
+	
+	<XenotypeIconDef>
+		<defName>Forgotten_Planetar</defName>
+		<texPath>ForgottenRealms/XenotypeIcons/Xenotype_Planetar</texPath>
+	</XenotypeIconDef>
+
+	<PawnKindDef ParentName="ForgottenBaseColonyPawnKind">
+		<defName>Forgotten_Planetar</defName>
+		<label>planetar</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Planetar>999</Forgotten_Planetar>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ForgottenBaseTribalPawnKind">
+		<defName>Forgotten_PlanetarTribal</defName>
+		<label>tribal planetar</label>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Forgotten_Planetar>999</Forgotten_Planetar>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+</Defs>
