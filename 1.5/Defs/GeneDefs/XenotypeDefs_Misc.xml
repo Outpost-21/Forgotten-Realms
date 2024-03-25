@@ -206,7 +206,7 @@
 			<li>Outland_DestinyMarks</li>
 			<li>Outland_BaldMale</li>
 			<li>Outland_ThickSkin</li>
-			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_Pos2Metabolism</li>
 		</genes>
 	</XenotypeDef>
 	
@@ -312,7 +312,7 @@
 			<li>Skin_Green</li>
 			<li>MeleeDamage_Strong</li>
 			<li>Outland_ThickSkin</li>
-			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_Pos2Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
@@ -415,7 +415,7 @@
 			<li>Outland_HairColor_Seafoam</li>
 			<li>Outland_HairColor_PastelGreen</li>
 			<li>Outland_FeyAgeing</li>
-			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_Pos2Metabolism</li>
 		</genes>
 	</XenotypeDef>
 	
@@ -572,7 +572,8 @@
 			<li>Hair_LightOrange</li>
 			<li>Hair_DarkBrown</li>
 			<li>Hair_SnowWhite</li>
-			<li>Outland_FelineFur</li>
+			<li>Outland_Furbody</li>
+			<li>Outland_FelineHead</li>
 			<li>Tail_Smooth</li>
 			<li>MoveSpeed_VeryQuick</li>
 			<li>Delicate</li>
@@ -726,7 +727,7 @@
 			<li>Outland_Ears_Flufftop</li>
 			<li>Outland_Nose_Goblinoid</li>
 			<li>Outland_BodyScale_Large</li>
-			<li>Outland_HighMetabolism</li>
+			<li>Outland_Pos1Metabolism</li>
 		</genes>
 	</XenotypeDef>
 	
@@ -815,7 +816,7 @@
 		<genes>
 			<li>Aggression_Aggressive</li>
 			<li>Robust</li>
-			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_Pos2Metabolism</li>
 			<li>Outland_BovineHead</li>
 			<li>Body_Hulk</li>
 			<li>Hair_DarkBrown</li>

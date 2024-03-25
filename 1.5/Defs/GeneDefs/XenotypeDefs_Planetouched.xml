@@ -24,7 +24,7 @@
 			<li>Outland_RidgedSkin</li>
 			<li>Outland_YouthfulAgeing</li>
 			<li>Outland_LowFertility</li>
-			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_Pos2Metabolism</li>
 			<li>Outland_DeceleratedPregnancy</li>
 			<li>Skin_DeepRed</li>
 			<li>Skin_Purple</li>
@@ -292,7 +292,7 @@
 		<description>TODO</description>
 		<descriptionShort>TODO</descriptionShort>
 		<genes>
-			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_Pos2Metabolism</li>
 			<li>Outland_HairColor_PastelGreen</li>
 			<li>Outland_HairColor_Seafoam</li>
 			<li>Outland_HairColor_Aqua</li>
@@ -359,7 +359,7 @@
 			<li>DarkVision</li>
 			<li>Outland_YouthfulAgeing</li>
 			<li>Outland_BodyScale_Large</li>
-			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_Pos2Metabolism</li>
 		</genes>
 	</XenotypeDef>
 	

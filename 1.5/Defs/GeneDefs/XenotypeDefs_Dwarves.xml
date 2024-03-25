@@ -28,7 +28,7 @@
 			<li>MaxTemp_SmallDecrease</li>
 			<li>Outland_BodyScale_Tiny</li>
 			<li>Outland_YouthfulAgeing</li>
-			<li>Outland_ExtremeMetabolism</li>
+			<li>Outland_Pos2Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
@@ -77,7 +77,7 @@
 			<li>Hair_DarkBrown</li>
 			<li>Hair_DarkReddish</li>
 			<li>Outland_YouthfulAgeing</li>
-			<li>Outland_HighMetabolism</li>
+			<li>Outland_Pos1Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
@@ -118,7 +118,7 @@
 			<li>Body_Standard</li>
 			<li>Outland_BodyScale_Squat</li>
 			<li>Outland_YouthfulAgeing</li>
-			<li>Outland_HighMetabolism</li>
+			<li>Outland_Pos1Metabolism</li>
 		</genes>
 	</XenotypeDef>
 
