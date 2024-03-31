@@ -180,7 +180,7 @@
 			<li>ToxicEnvironmentResistance_Total</li>
 			<li>ToxResist_Partial</li>
 			<li>Outland_ToxicSpray</li>
-			<li>Outland_Skin_GreenSwamp</li>
+			<li>Outland_Skin_Sage</li>
 			<li>Outland_Pos2Metabolism</li>
 			<li>Outland_Pos5Metabolism</li>
 		</genes>
@@ -315,7 +315,7 @@
 		<label>dragonborn (blue)</label>
 		<genes>
 			<li>Outland_LightningSpray</li>
-			<li>Outland_Skin_Dusk</li>
+			<li>Outland_Skin_DeepAzure</li>
 			<li>Outland_Pos2Metabolism</li>
 		</genes>
 	</XenotypeDef>

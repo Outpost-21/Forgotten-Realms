@@ -16,7 +16,7 @@
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Gnome</iconPath>
 		<genes>
 			<li>Outland_BodyScale_Tiny</li>
-			<li>Outland_Skin_BlueSubtle</li>
+			<li>Outland_Skin_DeepAzure</li>
 			<li>Skin_SlateGray</li>
 			<li>Skin_InkBlack</li>
 			<li>Hair_MidBlack</li>
@@ -59,8 +59,8 @@
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Gnome</iconPath>
 		<genes>
 			<li>Outland_BodyScale_Tiny</li>
-			<li>Outland_Skin_GreenMarsh</li>
-			<li>Outland_Skin_LightBrown</li>
+			<li>Outland_Skin_DeepGreen</li>
+			<li>Outland_Skin_PaleBrown</li>
 			<li>Hair_BrightRed</li>
 			<li>Outland_HairColor_DarkRed</li>
 			<li>Outland_HairColor_PastelOrange</li>

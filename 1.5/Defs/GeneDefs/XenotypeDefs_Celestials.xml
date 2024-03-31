@@ -7,13 +7,13 @@
 		<defName>Forgotten_Deva</defName>
 		<label>Deva</label>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Deva</iconPath>
-		<description>TODO</description>
-		<descriptionShort>TODO</descriptionShort>
+		<description>Devas are human-like angels of extraordinary beauty or hansdomeness with two magnificent feathered wings.</description>
+		<descriptionShort>Devas are human-like angels of extraordinary beauty or hansdomeness with two magnificent feathered wings.</descriptionShort>
 		<genes>
 			<li>DarkVision</li>
 			<li>Aggression_DeadCalm</li>
 			<li>Outland_Pos7Metabolism</li>
-			<li>Outland_Skin_Golden</li>
+			<li>Skin_PaleYellow</li>
 			<li>Hair_SnowWhite</li>
 			<li>Hair_Blonde</li>
 			<li>Outland_Eye_Orange</li>
@@ -58,8 +58,8 @@
 		<defName>Forgotten_Planetar</defName>
 		<label>Planetar</label>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Planetar</iconPath>
-		<description>TODO</description>
-		<descriptionShort>TODO</descriptionShort>
+		<description>Planetars are and order of angels that come from the Celestial Planes, defenders of truth and avengers of the fallen righteous.</description>
+		<descriptionShort>Planetars are and order of angels that come from the Celestial Planes, defenders of truth and avengers of the fallen righteous.</descriptionShort>
 		<genes>
 			<li>DarkVision</li>
 			<li>Beauty_Pretty</li>
@@ -67,8 +67,7 @@
 			<li>Beard_NoBeardOnly</li>
 			<li>Outland_Pos2Metabolism</li>
 			<li>Outland_Pos7Metabolism</li>
-			<li>Outland_Skin_MossBright</li>
-			<li>Outland_Skin_GreenForest</li>
+			<li>Outland_Skin_DeepViridian</li>
 			<li>Outland_Skin_Viridian</li>
 			<li>Outland_Eye_LightBlue</li>
 			<li>Outland_Wings_Angel</li>

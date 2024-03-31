@@ -29,9 +29,9 @@
 			<li>Skin_DeepRed</li>
 			<li>Skin_Purple</li>
 			<li>Skin_Blue</li>
-			<li>Outland_Skin_Dusk</li>
-			<li>Outland_Skin_Scarlet</li>
-			<li>Outland_Skin_OrangePastel</li>
+			<li>Outland_Skin_DeepAzure</li>
+			<li>Outland_Skin_Red</li>
+			<li>Skin_Orange</li>
 			<li>Hair_BrightRed</li>
 			<li>Hair_DarkReddish</li>
 			<li>Hair_DarkBlack</li>
@@ -103,9 +103,9 @@
 			<li>Hair_BrightRed</li>
 			<li>Outland_HairColor_DarkRed</li>
 			<li>Skin_Purple</li>
-			<li>Outland_Skin_Scarlet</li>
-			<li>Outland_Skin_BlueDeep</li>
-			<li>Outland_Skin_Teal</li>
+			<li>Outland_Skin_Red</li>
+			<li>Outland_Skin_DeepAzure</li>
+			<li>Outland_Skin_DeepViridian</li>
 			<li>Ears_Human</li>
 			<li>Ears_Pointed</li>
 			<li>Outland_Eye_LightBlue</li>
@@ -178,9 +178,9 @@
 			<li>Hair_InkBlack</li>
 			<li>Outland_HairColor_DarkRed</li>
 			<li>Outland_HairColor_PastelOrange</li>
-			<li>Outland_Skin_PurpleSubtle</li>
-			<li>Outland_Skin_Dusk</li>
-			<li>Outland_Skin_GreenFaded</li>
+			<li>Outland_Skin_DeepPurple</li>
+			<li>Outland_Skin_DeepAzure</li>
+			<li>Outland_Skin_DeepSage</li>
 			<li>Ears_Human</li>
 			<li>Outland_Ears_Bun</li>
 			<li>Outland_Ears_Doe</li>
@@ -242,8 +242,8 @@
 		<defName>Forgotten_Aasimar</defName>
 		<label>aasimar</label>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Aasimar</iconPath>
-		<description>TODO</description>
-		<descriptionShort>TODO</descriptionShort>
+		<description>Aasimar are humans who have been touched by another plane, often descended from celestials or other creatures of pure good, however their ancestry doesn't mean they're always kind.</description>
+		<descriptionShort>Aasimar are humans who have been touched by another plane, often descended from celestials or other creatures of pure good, however their ancestry doesn't mean they're always kind.</descriptionShort>
 		<genes>
 			<li>Aggression_DeadCalm</li>
 			<li>Beauty_Pretty</li>
@@ -289,17 +289,16 @@
 		<defName>Forgotten_WaterGenasi</defName>
 		<label>water genasi</label>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_WaterGenasi</iconPath>
-		<description>TODO</description>
-		<descriptionShort>TODO</descriptionShort>
+		<description>Humans with water elemental ancestry, they generally appear human besides some clearly elemental features and colourings.</description>
+		<descriptionShort>Humans with water elemental ancestry, they generally appear human besides some clearly elemental features and colourings.</descriptionShort>
 		<genes>
 			<li>Outland_Pos2Metabolism</li>
 			<li>Outland_HairColor_PastelGreen</li>
 			<li>Outland_HairColor_Seafoam</li>
 			<li>Outland_HairColor_Aqua</li>
 			<li>Outland_HairColor_PastelBlue</li>
-			<li>Outland_Skin_Teal</li>
+			<li>Outland_Skin_DeepViridian</li>
 			<li>Outland_Skin_Sage</li>
-			<li>Outland_Skin_GreenForest</li>
 			<li>Outland_Skin_Viridian</li>
 			<li>Outland_Ears_Webbed</li>
 			<li>Outland_Eye_Blue</li>
@@ -341,8 +340,8 @@
 		<defName>Forgotten_EarthGenasi</defName>
 		<label>earth genasi</label>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_EarthGenasi</iconPath>
-		<description>TODO</description>
-		<descriptionShort>TODO</descriptionShort>
+		<description>Humans with earth elemental ancestry, they generally appear human besides some clearly elemental features and colourings.</description>
+		<descriptionShort>Humans with earth elemental ancestry, they generally appear human besides some clearly elemental features and colourings.</descriptionShort>
 		<genes>
 			<li>MoveSpeed_Slow</li>
 			<li>MeleeDamage_Strong</li>
@@ -394,8 +393,8 @@
 		<defName>Forgotten_FireGenasi</defName>
 		<label>fire genasi</label>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_FireGenasi</iconPath>
-		<description>TODO</description>
-		<descriptionShort>TODO</descriptionShort>
+		<description>Humans with fire elemental ancestry, they generally appear human besides some clearly elemental features and colourings.</description>
+		<descriptionShort>Humans with fire elemental ancestry, they generally appear human besides some clearly elemental features and colourings.</descriptionShort>
 		<genes>
 			<li>MinTemp_SmallIncrease</li>
 			<li>MaxTemp_LargeIncrease</li>
@@ -405,8 +404,7 @@
 			<li>Outland_HairColor_DarkRed</li>
 			<li>Outland_HairColor_PastelOrange</li>
 			<li>Skin_DeepRed</li>
-			<li>Outland_Skin_Auburn</li>
-			<li>Outland_Skin_Scarlet</li>
+			<li>Outland_Skin_Red</li>
 			<li>Outland_Eye_Orange</li>
 			<li>Outland_Blood_Orange</li>
 			<li>DarkVision</li>
@@ -446,8 +444,8 @@
 		<defName>Forgotten_AirGenasi</defName>
 		<label>air genasi</label>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_AirGenasi</iconPath>
-		<description>TODO</description>
-		<descriptionShort>TODO</descriptionShort>
+		<description>Humans with air elemental ancestry, they generally appear human besides some clearly elemental features and colourings.</description>
+		<descriptionShort>Humans with air elemental ancestry, they generally appear human besides some clearly elemental features and colourings.</descriptionShort>
 		<genes>
 			<li>MoveSpeed_Quick</li>
 			<li>MinTemp_SmallDecrease</li>
@@ -457,8 +455,8 @@
 			<li>Outland_HairColor_Aqua</li>
 			<li>Outland_HairColor_PastelBlue</li>
 			<li>Outland_HairColor_SkyBlue</li>
-			<li>Outland_Skin_BlueSky</li>
-			<li>Outland_Skin_Dusk</li>
+			<li>Outland_Skin_PaleBlue</li>
+			<li>Outland_Skin_DeepAzure</li>
 			<li>Ears_Pointed</li>
 			<li>Voice_Human</li>
 			<li>Outland_Voice_Groany</li>

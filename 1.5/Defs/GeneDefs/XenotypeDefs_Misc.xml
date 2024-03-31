@@ -153,9 +153,8 @@
 			<li>Outland_Ears_Flufftop</li>
 			<li>KindInstinct</li>
 			<li>Outland_KindEyes</li>
-			<li>Outland_Skin_Dusk</li>
-			<li>Outland_Skin_BlueSky</li>
-			<li>Outland_Skin_BlueIce</li>
+			<li>Outland_Skin_DeepAzure</li>
+			<li>Outland_Skin_PaleBlue</li>
 			<li>Outland_HairColor_DarkRed</li>
 			<li>Outland_HairColor_PastelOrange</li>
 			<li>Mood_Sanguine</li>
@@ -351,9 +350,9 @@
 			<li>Beard_NoBeardOnly</li>
 			<li>Outland_Blood_White</li>
 			<li>Outland_CephalomorphHead</li>
-			<li>Outland_Skin_PurpleMuted</li>
-			<li>Outland_Skin_PurpleSubtle</li>
-			<li>Outland_Skin_Indigo</li>
+			<li>Skin_Purple</li>
+			<li>Outland_Skin_DeepPurple</li>
+			<li>Outland_Skin_DeepMagenta</li>
 			<li>ElongatedFingers</li>
 			<li>Sterile</li>
 			<li>PsychicAbility_Extreme</li>
@@ -407,9 +406,9 @@
 			<li>Hair_Grayless</li>
 			<li>Outland_Headbone_Leafy</li>
 			<li>Beard_NoBeardOnly</li>
-			<li>Outland_Skin_BrownWood</li>
-			<li>Outland_Skin_BrownSubtle</li>
-			<li>Outland_Skin_DarkBrown</li>
+			<li>Outland_Skin_PaleBrown</li>
+			<li>Outland_Skin_Brown</li>
+			<li>Outland_Skin_DeepBrown</li>
 			<li>Outland_FeybarkHead</li>
 			<li>Outland_HairColor_Lime</li>
 			<li>Outland_HairColor_Seafoam</li>
@@ -456,8 +455,7 @@
 			<li>Hair_BaldOnly</li>
 			<li>Beard_NoBeardOnly</li>
 			<li>Outland_DraconicHead</li>
-			<li>Outland_Skin_Auburn</li>
-			<li>Outland_Skin_Burgundy</li>
+			<li>Outland_Skin_Red</li>
 			<li>Skin_DeepRed</li>
 			<li>Outland_Headbone_Ram</li>
 			<li>Outland_Headbone_LongProng</li>
@@ -620,8 +618,8 @@
 			<li>DarkVision</li>
 			<li>Outland_Ears_BigEars</li>
 			<li>Skin_Green</li>
-			<li>Outland_Skin_Auburn</li>
-			<li>Outland_Skin_Mustard</li>
+			<li>Outland_Skin_Red</li>
+			<li>Skin_DeepYellow</li>
 			<li>Outland_BodyScale_Small</li>
 			<li>Outland_Nose_Goblinoid</li>
 			<li>Outland_LesserGoblinoidHead</li>
@@ -668,8 +666,7 @@
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
 			<li>DarkVision</li>
-			<li>Outland_Skin_Auburn</li>
-			<li>Outland_Skin_Burgundy</li>
+			<li>Outland_Skin_Red</li>
 			<li>Skin_DeepRed</li>
 			<li>Outland_Nose_Goblinoid</li>
 			<li>Outland_GreaterGoblinoidHead</li>
@@ -810,8 +807,8 @@
 	<XenotypeDef ParentName="ForgottenXenoBase">
 		<defName>Forgotten_Minotaur</defName>
 		<label>minotaur</label>
-		<description>TODO</description>
-		<descriptionShort>TODO</descriptionShort>
+		<description>Monstrous humanoids resembling a bull-human hybrid.</description>
+		<descriptionShort>Monstrous humanoids resembling a bull-human hybrid.</descriptionShort>
 		<iconPath>ForgottenRealms/XenotypeIcons/Xenotype_Minotaur</iconPath>
 		<genes>
 			<li>Aggression_Aggressive</li>

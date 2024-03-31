@@ -75,7 +75,7 @@
 			<li>Outland_BodyScale_Small</li>
 			<li>Skin_SlateGray</li>
 			<li>Skin_InkBlack</li>
-			<li>Outland_Skin_BlueSubtle</li>
+			<li>Outland_Skin_DeepAzure</li>
 			<li>Hair_MidBlack</li>
 			<li>Hair_DarkBlack</li>
 			<li>Hair_InkBlack</li>
@@ -130,8 +130,7 @@
 			<li>Outland_SvelteHead</li>
 			<li>Ears_Pointed</li>
 			<li>Outland_BodyScale_Small</li>
-			<li>Outland_Skin_BlueSky</li>
-			<li>Outland_Skin_BlueIce</li>
+			<li>Outland_Skin_PaleBlue</li>
 			<li>Outland_HairColor_PastelBlue</li>
 			<li>Outland_HairColor_SkyBlue</li>
 			<li>Outland_FeyAgeing</li>
@@ -233,8 +232,8 @@
 			<li>Outland_SvelteHead</li>
 			<li>Ears_Pointed</li>
 			<li>Outland_BodyScale_Small</li>
-			<li>Outland_Skin_GreenMarsh</li>
-			<li>Outland_Skin_LightBrown</li>
+			<li>Outland_Skin_DeepGreen</li>
+			<li>Outland_Skin_PaleBrown</li>
 			<li>Hair_BrightRed</li>
 			<li>Outland_HairColor_DarkRed</li>
 			<li>Outland_HairColor_PastelOrange</li>
@@ -286,8 +285,8 @@
 			<li>Outland_SvelteHead</li>
 			<li>Ears_Pointed</li>
 			<li>DarkVision</li>
-			<li>Outland_Skin_GreenMarsh</li>
-			<li>Outland_Skin_LightBrown</li>
+			<li>Outland_Skin_DeepGreen</li>
+			<li>Outland_Skin_PaleBrown</li>
 			<li>Hair_BrightRed</li>
 			<li>Outland_HairColor_DarkRed</li>
 			<li>Outland_HairColor_PastelOrange</li>
@@ -335,7 +334,7 @@
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
 			<li>Skin_SheerWhite</li>
-			<li>Outland_Skin_BlueIce</li>
+			<li>Outland_Skin_PaleBlue</li>
 			<li>Hair_SnowWhite</li>
 			<li>Outland_HairColor_PastelBlue</li>
 			<li>Outland_HairColor_SkyBlue</li>
