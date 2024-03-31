@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ScenarioDef>
+		<defName>Forgotten_LostWarforged</defName>
+		<label>Lost Warforged</label>
+		<description>You awaken to a world you do not know, sounds in the distance you have never heard, animals wandering around you have never seen, not surprising since you don't remember much of anything, all you can remember is the name of the place you came from, Eber...Eb...no, that too is gone now. You'll have to figure things out as you go, hopefully the people here are welcoming...\n\nDifficult start as you only have the one pawn, with limited skills, knowledge and no weapons, easier in some ways though as you do not need to worry about food or medicine.</description>
+		<scenario>
+			<summary>One lone Warforged.</summary>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>PlayerTribe</factionDef>
+			</playerFaction>
+			<parts>
+				<!-- Game start dialog -->
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>You awaken to a world you do not know, sounds in the distance you have never heard, animals wandering around you have never seen, not surprising since you don't remember much of anything, all you can remember is the name of the place you came from, Eber...Eb...no, that too is gone now. You'll have to figure things out as you go, hopefully the people here are welcoming...</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+				<!-- Config pages -->
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+					<def>ConfigurePawnsKindDefs</def>
+					<pawnChoiceCount>8</pawnChoiceCount>
+					<leftBehindPawnKind>Forgotten_Warforged</leftBehindPawnKind>
+					<kindCounts>
+						<li>
+							<kindDef>Forgotten_Warforged</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</kindCounts>
+				</li>
+				<!-- Player starting stuff spawn method-->
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<visible>false</visible>
+					<method>Standing</method>
+				</li>
+
+				<!-- Starting research -->
+
+				<!-- Player starting things -->
+
+				<!-- Scatter some things near player start -->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>200</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>500</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>200</count>
+				</li>
+
+				<!-- Starting structure -->
+				<!-- <li Class="KCSG.ScenPart_AddStartingStructure">
+					<def>VFEC_AddStartingStructure</def>
+					<structureLabel>A strange round structure.</structureLabel>
+					<nearMapCenter>True</nearMapCenter>
+					<fullClear>True</fullClear>
+					<clearFogInRect>True</clearFogInRect>
+					<chooseFrom>
+						<li>Forgotten_CreationForgeStructure</li>
+					</chooseFrom>
+				</li> -->
+			</parts>
+		</scenario>
+	</ScenarioDef>
+
+	<!-- <KCSG.StructureLayoutDef>
+		<defName>Forgotten_CreationForgeStructure</defName>
+		<spawnConduits>false</spawnConduits>
+		<layouts>
+			<li>
+				<li>.,.,.,.,Wall_BlocksGranite,.,.,.,Wall_BlocksGranite,.,.,.,.</li>
+				<li>.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.</li>
+				<li>.,.,Wall_BlocksGranite,Wall_BlocksGranite,TorchLamp,.,.,.,TorchLamp,Wall_BlocksGranite,Wall_BlocksGranite,.,.</li>
+				<li>.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+				<li>.,.,.,OrnateDoor_WoodLog_East,.,.,.,.,.,OrnateDoor_WoodLog_East,.,.,.</li>
+				<li>.,.,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,.,.</li>
+				<li>.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.</li>
+				<li>.,Wall_BlocksGranite,TorchLamp,.,.,.,.,.,.,.,TorchLamp,Wall_BlocksGranite,.</li>
+				<li>Wall_BlocksGranite,Wall_BlocksGranite,.,.,Column_BlocksGranite,.,.,.,Column_BlocksGranite,.,.,Wall_BlocksGranite,Wall_BlocksGranite</li>
+				<li>Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite</li>
+				<li>Wall_BlocksGranite,.,.,.,.,.,Forgotten_WarforgedAltar_BlocksGranite_North,.,.,.,.,.,Wall_BlocksGranite</li>
+				<li>Wall_BlocksGranite,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksGranite</li>
+				<li>Wall_BlocksGranite,Wall_BlocksGranite,.,.,Column_BlocksGranite,.,.,.,Column_BlocksGranite,.,.,Wall_BlocksGranite,Wall_BlocksGranite</li>
+				<li>.,Wall_BlocksGranite,TorchLamp,.,.,.,.,.,.,.,TorchLamp,Wall_BlocksGranite,.</li>
+				<li>.,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,.</li>
+				<li>.,.,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,.,.</li>
+				<li>.,.,.,.,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,Wall_BlocksGranite,.,.,.,.</li>
+			</li>
+		</layouts>
+		<roofGrid>
+			<li>.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+			<li>.,.,.,1,1,1,1,1,1,1,.,.,.</li>
+			<li>.,.,.,1,1,1,1,1,1,1,.,.,.</li>
+			<li>.,.,.,1,1,1,1,1,1,1,.,.,.</li>
+			<li>.,.,.,1,1,1,1,1,1,1,.,.,.</li>
+			<li>.,.,1,1,1,1,1,1,1,1,1,.,.</li>
+			<li>.,1,1,1,1,1,1,1,1,1,1,1,.</li>
+			<li>.,1,1,1,1,1,1,1,1,1,1,1,.</li>
+			<li>1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+			<li>1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+			<li>1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+			<li>1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+			<li>1,1,1,1,1,1,1,1,1,1,1,1,1</li>
+			<li>.,1,1,1,1,1,1,1,1,1,1,1,.</li>
+			<li>.,1,1,1,1,1,1,1,1,1,1,1,.</li>
+			<li>.,.,1,1,1,1,1,1,1,1,1,.,.</li>
+			<li>.,.,.,.,1,1,1,1,1,.,.,.,.</li>
+		</roofGrid>
+		<terrainGrid>
+			<li>.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+			<li>.,.,.,.,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,.,.,.,.</li>
+			<li>.,.,.,.,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,.,.,.,.</li>
+			<li>.,.,.,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,.,.,.</li>
+			<li>.,.,.,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,.,.,.</li>
+			<li>.,.,.,.,.,TileGranite,TileGranite,TileGranite,.,.,.,.,.</li>
+			<li>.,.,.,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,.,.,.</li>
+			<li>.,.,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,.,.</li>
+			<li>.,.,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,.,.</li>
+			<li>.,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,.</li>
+			<li>.,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,.</li>
+			<li>.,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,.</li>
+			<li>.,.,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,.,.</li>
+			<li>.,.,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,.,.</li>
+			<li>.,.,.,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,TileGranite,.,.,.</li>
+			<li>.,.,.,.,.,TileGranite,TileGranite,TileGranite,.,.,.,.,.</li>
+			<li>.,.,.,.,.,.,.,.,.,.,.,.,.</li>
+		</terrainGrid>
+		<forceGenerateRoof>true</forceGenerateRoof>
+		<randomizeWallStuffAtGen>true</randomizeWallStuffAtGen>
+		<tags>
+			<li>Forgotten_CreationForgeStructure</li>
+		</tags>
+		<modRequirements>
+			<li>neronix17.forgottenrealms</li>
+		</modRequirements>
+	</KCSG.StructureLayoutDef>
+
+	<KCSG.SymbolDef>
+		<defName>Forgotten_WarforgedAltar_BlocksGranite_North</defName>
+		<thing>Forgotten_WarforgedAltar</thing>
+		<stuff>BlocksGranite</stuff>
+		<randomizeStuff>true</randomizeStuff>
+	</KCSG.SymbolDef> -->
+
+</Defs>
