@@ -37,9 +37,9 @@
 			<li>Hair_DarkBlack</li>
 			<li>Hair_InkBlack</li>
 			<li>Outland_HairColor_DarkRed</li>
-			<li>Outland_HairColor_PastelBlue</li>
-			<li>Outland_HairColor_SkyBlue</li>
-			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_HairColor_BrightBlue</li>
+			<li>Outland_HairColor_DarkBlue</li>
+			<li>Outland_HairColor_BrightOrange</li>
 			<li>Eyes_Red</li>
 			<li>Outland_Eye_LightBlue</li>
 			<li>Outland_Eye_Orange</li>
@@ -177,7 +177,7 @@
 			<li>Hair_DarkBlack</li>
 			<li>Hair_InkBlack</li>
 			<li>Outland_HairColor_DarkRed</li>
-			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_HairColor_BrightOrange</li>
 			<li>Outland_Skin_DeepPurple</li>
 			<li>Outland_Skin_DeepAzure</li>
 			<li>Outland_Skin_DeepSage</li>
@@ -293,10 +293,10 @@
 		<descriptionShort>Humans with water elemental ancestry, they generally appear human besides some clearly elemental features and colourings.</descriptionShort>
 		<genes>
 			<li>Outland_Pos2Metabolism</li>
-			<li>Outland_HairColor_PastelGreen</li>
-			<li>Outland_HairColor_Seafoam</li>
-			<li>Outland_HairColor_Aqua</li>
-			<li>Outland_HairColor_PastelBlue</li>
+			<li>Outland_HairColor_BrightGreen</li>
+			<li>Outland_HairColor_DarkViridian</li>
+			<li>Outland_HairColor_BrightViridian</li>
+			<li>Outland_HairColor_BrightBlue</li>
 			<li>Outland_Skin_DeepViridian</li>
 			<li>Outland_Skin_Sage</li>
 			<li>Outland_Skin_Viridian</li>
@@ -402,7 +402,7 @@
 			<li>Ears_Pointed</li>
 			<li>Hair_BrightRed</li>
 			<li>Outland_HairColor_DarkRed</li>
-			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_HairColor_BrightOrange</li>
 			<li>Skin_DeepRed</li>
 			<li>Outland_Skin_Red</li>
 			<li>Outland_Eye_Orange</li>
@@ -451,10 +451,10 @@
 			<li>MinTemp_SmallDecrease</li>
 			<li>MeleeDamage_Weak</li>
 			<li>Outland_Pos4Metabolism</li>
-			<li>Outland_HairColor_PastelGreen</li>
-			<li>Outland_HairColor_Aqua</li>
-			<li>Outland_HairColor_PastelBlue</li>
-			<li>Outland_HairColor_SkyBlue</li>
+			<li>Outland_HairColor_BrightGreen</li>
+			<li>Outland_HairColor_DarkGreen</li>
+			<li>Outland_HairColor_BrightBlue</li>
+			<li>Outland_HairColor_DarkBlue</li>
 			<li>Outland_Skin_PaleBlue</li>
 			<li>Outland_Skin_DeepAzure</li>
 			<li>Ears_Pointed</li>

@@ -131,8 +131,8 @@
 			<li>Ears_Pointed</li>
 			<li>Outland_BodyScale_Small</li>
 			<li>Outland_Skin_PaleBlue</li>
-			<li>Outland_HairColor_PastelBlue</li>
-			<li>Outland_HairColor_SkyBlue</li>
+			<li>Outland_HairColor_BrightBlue</li>
+			<li>Outland_HairColor_DarkBlue</li>
 			<li>Outland_FeyAgeing</li>
 			<li>LowSleep</li>
 			<li>MeleeDamage_Weak</li>
@@ -182,8 +182,8 @@
 			<li>Outland_BodyScale_Small</li>
 			<li>Beard_NoBeardOnly</li>
 			<li>Skin_PaleYellow</li>
-			<li>Outland_HairColor_PastelOrange</li>
-			<li>Outland_HairColor_Yellow</li>
+			<li>Outland_HairColor_BrightOrange</li>
+			<li>Outland_HairColor_BrightYellow</li>
 			<li>Outland_FeyAgeing</li>
 			<li>LowSleep</li>
 			<li>Beauty_Pretty</li>
@@ -236,7 +236,7 @@
 			<li>Outland_Skin_PaleBrown</li>
 			<li>Hair_BrightRed</li>
 			<li>Outland_HairColor_DarkRed</li>
-			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_HairColor_BrightOrange</li>
 			<li>Outland_FeyAgeing</li>
 			<li>LowSleep</li>
 			<li>Beauty_Pretty</li>
@@ -289,7 +289,7 @@
 			<li>Outland_Skin_PaleBrown</li>
 			<li>Hair_BrightRed</li>
 			<li>Outland_HairColor_DarkRed</li>
-			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_HairColor_BrightOrange</li>
 			<li>Outland_BodyScale_Tiny</li>
 			<li>Outland_FeyAgeing</li>
 			<li>LowSleep</li>
@@ -336,8 +336,8 @@
 			<li>Skin_SheerWhite</li>
 			<li>Outland_Skin_PaleBlue</li>
 			<li>Hair_SnowWhite</li>
-			<li>Outland_HairColor_PastelBlue</li>
-			<li>Outland_HairColor_SkyBlue</li>
+			<li>Outland_HairColor_BrightBlue</li>
+			<li>Outland_HairColor_DarkBlue</li>
 			<li>Body_Thin</li>
 			<li>Body_Standard</li>
 			<li>Beard_NoBeardOnly</li>

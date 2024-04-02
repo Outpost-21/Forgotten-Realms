@@ -156,7 +156,7 @@
 			<li>Outland_Skin_DeepAzure</li>
 			<li>Outland_Skin_PaleBlue</li>
 			<li>Outland_HairColor_DarkRed</li>
-			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_HairColor_BrightOrange</li>
 			<li>Mood_Sanguine</li>
 			<li>Outland_Pos4Metabolism</li>
 		</genes>
@@ -410,9 +410,9 @@
 			<li>Outland_Skin_Brown</li>
 			<li>Outland_Skin_DeepBrown</li>
 			<li>Outland_FeybarkHead</li>
-			<li>Outland_HairColor_Lime</li>
-			<li>Outland_HairColor_Seafoam</li>
-			<li>Outland_HairColor_PastelGreen</li>
+			<li>Outland_HairColor_BrightLime</li>
+			<li>Outland_HairColor_BrightViridian</li>
+			<li>Outland_HairColor_BrightGreen</li>
 			<li>Outland_FeyAgeing</li>
 			<li>Outland_Pos2Metabolism</li>
 		</genes>
@@ -564,7 +564,7 @@
 			<li>Beard_NoBeardOnly</li>
 			<li>Outland_Ears_Flick</li>
 			<li>Outland_Ears_Woosh</li>
-			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_HairColor_BrightOrange</li>
 			<li>Outland_HairColor_DarkRed</li>
 			<li>Hair_SandyBlonde</li>
 			<li>Hair_LightOrange</li>
@@ -719,7 +719,7 @@
 			<li>Furskin</li>
 			<li>Hair_BaldOnly</li>
 			<li>Hair_DarkReddish</li>
-			<li>Outland_HairColor_PastelOrange</li>
+			<li>Outland_HairColor_BrightOrange</li>
 			<li>Outland_HairColor_DarkRed</li>
 			<li>Outland_Ears_Flufftop</li>
 			<li>Outland_Nose_Goblinoid</li>
