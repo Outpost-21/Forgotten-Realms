@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>Forgotten_ElderBrainPool</defName>
 		<label>elder brain pool</label>
-		<description>The Elder Brain pool stores and produces Illithid tadpoles, as well as the Elder Brain itself.\n\nAs long as an Illithid is in the colony the Elder Brain will progress research passively at a constant rate.</description>
-    	<thingClass>TabulaRasa.Building_ThingProducer</thingClass>
+		<description>The Elder Brain is the core of any Illithid colony, it both guides them and allows them to exist at all as it produces tadpoles which are used to create more Illithids.</description>
+		<thingClass>TabulaRasa.Building_ThingProducer</thingClass>
 		<graphicData>
 			<texPath>ForgottenRealms/Buildings/ElderBrainPool</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(4, 4)</drawSize>
 		</graphicData>
-        <minifiedDef>MinifiedThing</minifiedDef>
-        <thingCategories>
-            <li>BuildingsMisc</li>
-        </thingCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
 		<uiIconScale>1.1</uiIconScale>
 		<size>(3,3)</size>
 		<rotatable>false</rotatable>
@@ -26,7 +26,7 @@
 		<designationCategory>Misc</designationCategory>
 		<canOverlapZones>false</canOverlapZones>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    	<tickerType>Normal</tickerType>
+		<tickerType>Normal</tickerType>
 		<statBases>
 			<MaxHitPoints>100</MaxHitPoints>
 			<WorkToBuild>3000</WorkToBuild>
@@ -53,12 +53,15 @@
 				<glowColor>(141, 87, 217,0)</glowColor>
 			</li>
 		</comps>
+		<inspectorTabs>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">ITab_StudyNotes</li>
+		</inspectorTabs>
 		<modExtensions>
 			<li Class="TabulaRasa.DefModExt_ThingProducer">
 				<thingDef>Forgotten_IllithidTadpole</thingDef>
 				<productionTime>6000</productionTime>
 				<maxThings>8</maxThings>
-				<retrievalString>Extract Tadpole</retrievalString>
+				<retrievalString>ExtractTadpole</retrievalString>
 				<requiresPower>False</requiresPower>
 			</li>
 		</modExtensions>

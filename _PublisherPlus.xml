@@ -4,5 +4,6 @@
     <exclude>.git</exclude>
     <exclude>.plans</exclude>
     <exclude>.vscode</exclude>
+    <exclude>1.5\Source</exclude>
   </Excluded>
 </Configuration>
