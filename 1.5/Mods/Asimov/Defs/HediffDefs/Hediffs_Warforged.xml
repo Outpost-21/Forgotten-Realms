@@ -4,13 +4,8 @@
 	<HediffGiverSetDef>
 		<defName>Forgotten_Warforged</defName>
 		<hediffGivers>
-			<li Class="HediffGiver_Birthday">
+			<li Class="TabulaRasa.HediffGiver_Racial">
 				<hediff>Forgotten_WarforgedRepairing</hediff>
-				<ageFractionChanceCurve>
-					<points>
-						<li>(0, 1)</li>
-					</points>
-				</ageFractionChanceCurve>
 			</li>
 		</hediffGivers>
 	</HediffGiverSetDef>

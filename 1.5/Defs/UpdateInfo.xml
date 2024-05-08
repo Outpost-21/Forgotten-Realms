@@ -2,6 +2,34 @@
 <Defs>
 
 	<TabulaRasa.UpdateDef>
+		<defName>ForgottenRealms_08052024</defName>
+		<date>2024/05/08</date>
+		<banner>ForgottenRealms/UpdateInfo/Updatebanner</banner>
+		<contentList>
+			<li>
+				<header>Anomaly Support</header>
+				<text>The Illithid Elder Brain is now recognised as an Anomaly entity if you have the DLC, doesn't really change anything about it but it lets you study it for basic entity research.</text>
+			</li>
+			<li>
+				<header>Fixes</header>
+				<text>Several fixes, mainly around Warforged, like their auto-repair hediff not always applying properly.</text>
+			</li>
+		</contentList>
+		<links>
+			<li>
+				<linkLabel>Steam Workshop</linkLabel>
+				<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3068979395</linkUrl>
+				<linkTex>TabulaRasa/UI/Steam</linkTex>
+			</li>
+			<li>
+				<linkLabel>Asimov</linkLabel>
+				<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3096481956</linkUrl>
+				<linkTex>TabulaRasa/UI/Steam</linkTex>
+			</li>
+		</links>
+	</TabulaRasa.UpdateDef>
+
+	<TabulaRasa.UpdateDef>
 		<defName>ForgottenRealms_06032024</defName>
 		<date>2024/03/06</date>
 		<banner>ForgottenRealms/UpdateInfo/Updatebanner</banner>
