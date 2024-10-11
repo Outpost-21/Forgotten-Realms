@@ -263,6 +263,7 @@
 					<li>ResurrectionPsychosis</li>
 					<li>Scaria</li>
 					<li>WaterInEyes</li>
+					<li MayRequire="Ludeon.RimWorld.Anomaly">MetalhorrorImplant</li>
 				</hediffs>
 			</li>
 		</modExtensions>
