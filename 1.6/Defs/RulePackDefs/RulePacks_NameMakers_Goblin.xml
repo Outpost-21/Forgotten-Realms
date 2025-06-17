@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>Forgotten_NamerPersonGoblin</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[GoblinList5][GoblinList2][GoblinList7][GoblinList8]</li>
+				<li>name->[GoblinList5][GoblinList2][GoblinList6][GoblinList2][GoblinList7][GoblinList8]</li>
+				<li>name->[GoblinList5][GoblinList2][GoblinList4]</li>
+				<li>name->[GoblinList1][GoblinList2][GoblinList3][GoblinList2][GoblinList4]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>GoblinList1</keyword>
+					<path>Goblin_Names/Goblin1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList2</keyword>
+					<path>Goblin_Names/Goblin2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList3</keyword>
+					<path>Goblin_Names/Goblin3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList4</keyword>
+					<path>Goblin_Names/Goblin4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList5</keyword>
+					<path>Goblin_Names/Goblin5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList6</keyword>
+					<path>Goblin_Names/Goblin6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList7</keyword>
+					<path>Goblin_Names/Goblin7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>GoblinList8</keyword>
+					<path>Goblin_Names/Goblin8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

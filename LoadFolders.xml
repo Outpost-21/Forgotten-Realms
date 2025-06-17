@@ -11,4 +11,10 @@
 		<li IfModActive="Ludeon.RimWorld.Anomaly">1.5/Mods/Anomaly</li>
 		<li IfModActive="Neronix17.Asimov">1.5/Mods/Asimov</li>
 	</v1.5>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="Ludeon.RimWorld.Anomaly">1.6/Mods/Anomaly</li>
+		<li IfModActive="Neronix17.Asimov">1.6/Mods/Asimov</li>
+	</v1.6>
 </loadFolders>
