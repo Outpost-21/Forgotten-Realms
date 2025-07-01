@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-	<ScenarioDef>
+	<ScenarioDef ParentName="ScenarioBase">
 		<defName>Forgotten_LostWarforged</defName>
 		<label>Lost Warforged</label>
 		<description>You awaken to a world you do not know, sounds in the distance you have never heard, animals wandering around you have never seen, not surprising since you don't remember much of anything, all you can remember is the name of the place you came from, Eber...Eb...no, that too is gone now. You'll have to figure things out as you go, hopefully the people here are welcoming...\n\nDifficult start as you only have the one pawn, with limited skills, knowledge and no weapons, easier in some ways though as you do not need to worry about food or medicine.</description>
