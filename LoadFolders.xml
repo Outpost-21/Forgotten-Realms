@@ -2,17 +2,20 @@
 <loadFolders>
 	<v1.4>
 		<li>/</li>
+		<li>Common_Old</li>
 		<li>1.4</li>
 		<li IfModActive="Neronix17.Asimov">1.4/Mods/Asimov</li>
 	</v1.4>
 	<v1.5>
 		<li>/</li>
+		<li>Common_Old</li>
 		<li>1.5</li>
 		<li IfModActive="Ludeon.RimWorld.Anomaly">1.5/Mods/Anomaly</li>
 		<li IfModActive="Neronix17.Asimov">1.5/Mods/Asimov</li>
 	</v1.5>
 	<v1.6>
 		<li>/</li>
+		<li>Common</li>
 		<li>1.6</li>
 		<li IfModActive="Ludeon.RimWorld.Anomaly">1.6/Mods/Anomaly</li>
 		<li IfModActive="Neronix17.Asimov">1.6/Mods/Asimov</li>
