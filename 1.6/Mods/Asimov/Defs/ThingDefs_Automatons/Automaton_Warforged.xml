@@ -9,6 +9,7 @@
 		<pawnSettings>
 			<immuneToAge>true</immuneToAge>
 			<generateRelations>false</generateRelations>
+			<hasGrowthMoments>false</hasGrowthMoments>
 			<!-- Styles -->
 			<allowHair>false</allowHair>
 			<allowBeards>false</allowBeards>

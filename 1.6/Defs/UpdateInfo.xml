@@ -2,6 +2,30 @@
 <Defs>
 
 	<TabulaRasa.UpdateDef>
+		<defName>ForgottenRealms_11032026</defName>
+		<date>2026/03/11</date>
+		<banner>ForgottenRealms/UpdateInfo/Updatebanner</banner>
+		<contentList>
+			<li>
+				<header>Warforged Growth Moments</header>
+				<text>Kept forgetting to fix this, they now no longer have growth moments.</text>
+			</li>
+		</contentList>
+		<links>
+			<li>
+				<linkLabel>Steam Workshop</linkLabel>
+				<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3068979395</linkUrl>
+				<linkTex>TabulaRasa/UI/Steam</linkTex>
+			</li>
+			<li>
+				<linkLabel>Asimov</linkLabel>
+				<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3096481956</linkUrl>
+				<linkTex>TabulaRasa/UI/Steam</linkTex>
+			</li>
+		</links>
+	</TabulaRasa.UpdateDef>
+
+	<TabulaRasa.UpdateDef>
 		<defName>ForgottenRealms_08052024</defName>
 		<date>2024/05/08</date>
 		<banner>ForgottenRealms/UpdateInfo/Updatebanner</banner>
