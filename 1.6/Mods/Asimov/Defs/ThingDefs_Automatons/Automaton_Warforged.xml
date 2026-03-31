@@ -135,6 +135,7 @@
 			<MeatAmount>0</MeatAmount>
 			<PsychicSensitivity>0</PsychicSensitivity>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
 			<ToxicResistance>1</ToxicResistance>
 			<ImmunityGainSpeed>100</ImmunityGainSpeed>
 			<PainShockThreshold>3</PainShockThreshold>
