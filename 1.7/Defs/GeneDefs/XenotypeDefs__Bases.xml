@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<XenotypeDef Name="ForgottenXenoBase" Abstract="true">
+		<combatPowerFactor>1.0</combatPowerFactor>
+		<inheritable>true</inheritable>
+		<genes />
+	</XenotypeDef>
+
+	<PawnKindDef Name="ForgottenBaseColonyPawnKind" Abstract="True">
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+		</xenotypeSet>
+		<combatPower>40</combatPower>
+		<isFighter>false</isFighter>
+		<defaultFactionType>PlayerColony</defaultFactionType>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>100~600</apparelMoney>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.03</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef Name="ForgottenBaseTribalPawnKind" Abstract="True">
+		<race>Human</race>
+		<xenotypeSet Inherit="False">
+		</xenotypeSet>
+		<combatPower>40</combatPower>
+		<isFighter>false</isFighter>
+		<defaultFactionType>PlayerTribe</defaultFactionType>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<apparelTags>
+			<li>Neolithic</li>
+			<li>Medieval</li>
+		</apparelTags>
+		<apparelMoney>100~600</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsMoney>50~50</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.02</techHediffsChance>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	</PawnKindDef>
+
+</Defs>

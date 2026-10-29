@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<JobDef>
+		<defName>Forgotten_UseTadpoleOn</defName>
+		<driverClass>ForgottenRealms.JobDriver_UseTadpoleOn</driverClass>
+		<reportString>applying TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+</Defs>

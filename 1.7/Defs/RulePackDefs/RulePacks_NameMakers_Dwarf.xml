@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>Forgotten_NamerPersonDwarfMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[DwarfList4][DwarfList5][DwarfList6] [DwarfList7][DwarfList8]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>DwarfList1</keyword>
+					<path>DwarfNames/Dwarf1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList2</keyword>
+					<path>DwarfNames/Dwarf2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList3</keyword>
+					<path>DwarfNames/Dwarf3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList4</keyword>
+					<path>DwarfNames/Dwarf4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList5</keyword>
+					<path>DwarfNames/Dwarf5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList6</keyword>
+					<path>DwarfNames/Dwarf6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList7</keyword>
+					<path>DwarfNames/Dwarf7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList8</keyword>
+					<path>DwarfNames/Dwarf8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+	<RulePackDef>
+		<defName>Forgotten_NamerPersonDwarfFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[DwarfList1][DwarfList2][DwarfList3] [DwarfList7][DwarfList8]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>DwarfList1</keyword>
+					<path>DwarfNames/Dwarf1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList2</keyword>
+					<path>DwarfNames/Dwarf2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList3</keyword>
+					<path>DwarfNames/Dwarf3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList4</keyword>
+					<path>DwarfNames/Dwarf4</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList5</keyword>
+					<path>DwarfNames/Dwarf5</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList6</keyword>
+					<path>DwarfNames/Dwarf6</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList7</keyword>
+					<path>DwarfNames/Dwarf7</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>DwarfList8</keyword>
+					<path>DwarfNames/Dwarf8</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<EntityCodexEntryDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>Forgotten_ElderBrainPool</defName>
+		<label>elder brain</label>
+		<category>Basic</category>
+		<useDescriptionFrom>Forgotten_ElderBrainPool</useDescriptionFrom>
+		<uiIconPath>ForgottenRealms/UI/CodexEntries/ElderBrain</uiIconPath>
+		<orderInCategory>50</orderInCategory>
+		<linkedThings>
+			<li>Forgotten_ElderBrain</li>
+			<li>Forgotten_ElderBrainPool</li>
+			<li>Forgotten_IllithidTadpole</li>
+		</linkedThings>
+	</EntityCodexEntryDef>
+
+</Defs>

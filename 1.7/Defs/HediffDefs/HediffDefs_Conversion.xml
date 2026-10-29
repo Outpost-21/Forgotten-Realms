@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>Forgotten_Ceremorphosis</defName>
+		<label>illithid ceremorphosis</label>
+		<description>This pawn is currently having its brain replaced with an illithid tadpole, very soon this pawn will turn into an illithid and there's no way to prevent this from happening. The process takes around three days, they retain all their sense of self, and an elder brain pool being present will force them to your faction.</description>
+    	<hediffClass>TabulaRasa.Hediff_BasicConversion</hediffClass>
+		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+		<makesSickThought>false</makesSickThought>
+		<tendable>false</tendable>
+    	<initialSeverity>0.1</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.3</severityPerDay>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_BasicConversion">
+				<xenotype>Forgotten_Illithid</xenotype>
+				<structure>Forgotten_ElderBrainPool</structure>
+				<structureOnMapChangesFaction>true</structureOnMapChangesFaction>
+			</li>
+		</modExtensions>
+	</HediffDef>
+
+</Defs>

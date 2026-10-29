@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>Forgotten_WarforgedAltar</defName>
+		<label>creation forge</label>
+		<description>A carved stone altar designed to aid in the creation of a Warforged.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>ForgottenRealms/Buildings/WarforgedAltar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(4, 4)</drawSize>
+			<drawRotated>false</drawRotated>
+		</graphicData>
+		<size>(3, 3)</size>
+		<uiIconScale>1.0</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.3</fillPercent>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<pathCost>50</pathCost>
+		<passability>Standable</passability>
+		<rotatable>true</rotatable>
+		<canOverlapZones>true</canOverlapZones>
+		<tradeability>Sellable</tradeability>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Beauty>0</Beauty>
+			<WorkToBuild>8000</WorkToBuild>
+		</statBases>
+		<costStuffCount>200</costStuffCount>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<hasInteractionCell>true</hasInteractionCell>
+		<placeWorkers>
+		  <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<stuffCategories>
+			<li>Stony</li>
+		</stuffCategories>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<designationCategory>Production</designationCategory>
+		<!-- <researchPrerequisite>Forgotten_Warforged</researchPrerequisite> -->
+	</ThingDef>
+
+	<WorkGiverDef>
+		<defName>Forgotten_WorkAtWarforgedAltar</defName>
+		<label>create at a creation altar</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>Forgotten_WarforgedAltar</li>
+		</fixedBillGiverDefs>
+		<verb>create</verb>
+		<gerund>creating at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+	
+</Defs>

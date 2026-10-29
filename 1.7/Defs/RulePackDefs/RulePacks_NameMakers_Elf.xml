@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>Forgotten_NamerPersonElfMale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[ElfList1][ElfList2]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>ElfList1</keyword>
+					<path>Elf_Names/Elf1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList2</keyword>
+					<path>Elf_Names/Elf2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList3</keyword>
+					<path>Elf_Names/Elf3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList4</keyword>
+					<path>Elf_Names/Elf4</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>Forgotten_NamerPersonElfFemale</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[ElfList3][ElfList4]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>ElfList1</keyword>
+					<path>Elf_Names/Elf1</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList2</keyword>
+					<path>Elf_Names/Elf2</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList3</keyword>
+					<path>Elf_Names/Elf3</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>ElfList4</keyword>
+					<path>Elf_Names/Elf4</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>
